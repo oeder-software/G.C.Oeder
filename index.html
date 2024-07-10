@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" href="framestyle.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title id="title">forside</title>
+</head> 
+    <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
+    <iframe id="framenav" class="frame" src="nav.html" frameborder="2" scrolling="no"> </iframe>
+<body class="body" id="dex">
+    <table >
+        <br>
+        <tr >
+            <td colspan="4" style="text-align: center;">
+               <h1> Welcome / Velkommen / Willkommen</h1>
+            </td>
+            <td ></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr >
+            <td rowspan="2">
+                <img src="./img/oeder.png">
+            </td>
+            <td colspan="3" style="text-align: center;"><h1>Choose your language <br><br> Vælg sprog <br><br> Sprache whälen</h1></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr >
+              <td></td>
+              <td><a href="indexdkny.html" onclick="chalang('dk')"><img src="dk.png" style="float: none; margin-right: 5px;"></a>Dansk</td>
+              <td><a href="indexenny.html" onclick="chalang('gb')"><img src="gb.png" style="float:none; margin-right: 5px;" ></a>English</td>
+              <td><a href="indexdeny.html" onclick="chalang('de')"><img src="de.png" style="float: none; margin-right: 5px;"></a>Deutsch</td>
+
+        </tr>
+
+    </table>
+    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    <script src="navscript.js">
+    </script>
+        </body>
+</html>
