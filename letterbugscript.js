@@ -65,7 +65,7 @@ if (document.title == "letterbugdk") {
     document.getElementById("bio1").setAttribute("data", "./bio/DK-ryberg.txt")
     document.getElementById("bio2").setAttribute("data", "./bio/DK-Moltke.txt")
 
-    document.getElementById("bio3").setAttribute("data", "./bio/Wessel.txt")
+    document.getElementById("bio3").setAttribute("data", "./bio/DK-Wessel.txt")
     document.getElementById("bio4").setAttribute("data", "./bio/DK-jupiter.txt")
 
 
