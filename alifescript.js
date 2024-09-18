@@ -246,7 +246,7 @@ function SetAlifeBio(bio, language) {
   for (let index = 0; index < bio.length; index++) {
     document
       .getElementById("bio" + (index + 1))
-      .setAttribute("data", "/bio/" + language + "-" + bio[index] + ".txt");
+      .setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
   }
 }
 function SetAlifeImg(img) {
