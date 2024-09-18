@@ -1,0 +1,32 @@
+body{
+    width: 90%;  
+    margin-left: auto;
+  margin-right: auto;
+
+    
+
+  }
+  table{
+     width: 80%; 
+     margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+
+  }
+  button{
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+    background-color: darkblue; 
+    color: white; 
+  }
+  .button:hover{
+    background-color: rgb(4, 108, 172); 
+  }
+  .buthid:hover{
+    background-color: rgb(4, 108, 172); 
+  }
+img:not(img[alt]){
+  outline: 3px solid red;
+}
+ 

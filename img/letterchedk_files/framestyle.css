@@ -1,0 +1,64 @@
+#frameindex{
+    width: 80%;
+    height: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+    border: 0cm;
+    
+
+position: static;
+top: 0;
+z-index: 10;
+background-color: white;
+
+}
+#framenav{
+    width: 80%;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+    border: 0cm;
+
+position: static;
+top: 0;
+z-index: 10;
+background-color: white;
+
+}
+#framefooter{
+    width: 80%;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+    border: 0cm;
+
+position: sticky;
+top: 0;
+z-index: 10;
+background-color: white;
+  }
+  #frameside{
+    width: 100px;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+    border: 0cm;
+
+position: sticky;
+top: 0;
+z-index: 10;
+background-color: white;
+  }
+
