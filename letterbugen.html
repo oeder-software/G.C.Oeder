@@ -1,231 +1,478 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <link rel="stylesheet" href="framestyle.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbarstyle.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="breve fra Georg Christian Oeder til Thomas Bugge. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="letterstyle.css">
+    <link rel="stylesheet" href="style.css">
 
 
-    <title id="title">letterbugen</title>
-</head> 
-    <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
-<body class="body" id="dex">
-    <div class="navbar">
-        <a id="home" href="#home">Home</a>
-        
-        <div class="dropdown">
-            <button class="dropbtn" id="drop" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-                <a id="bug" href="#">Link 1</a>
-                <a id="che" href="#">Link 2</a>
-                <a id="lin" href="#">Link 3</a>
-            </div>
+    <title id="title">Georg Christian Oeder's Letters to Thomas Bugge</title>
+</head>
+
+<body id="dex">
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+            <li id="chapname">
+                <p>chapname</p>
+            </li>
+            <li class="listelement"><a id="home" href="">home</a></li>
+            <li class="listelement"><a id="drop1">breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="alife" href="">che</a></li>
+                    <li class="listelement"><a id="andenken" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="drop"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="che" href="">che</a></li>
+                    <li class="listelement"><a id="bug" href="">bug</a></li>
+                    <li class="listelement"><a id="lin" href="">lin</a></li>
+                </ul>
+            </li>
+            <li class="listelement"><a id="drop2"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="family" href="">che</a></li>
+                    <li class="listelement"><a id="gco" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="software" href="">dev</a></li>
+            <li class="listelement"><a id="lang" href="index.html">lang</a></li>
+            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
+                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black;"></p>
+            <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <li onclick="closeSidebar();"> <a id="drop1m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="andenkenm" href="">home1</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="dropm"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="chem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="linm" href="">home1</a></li>
+                    <li onclick="closeSidebar();"><a id="bugm" href="">home2</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="drop2m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="familym" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="gcom" href="">home1</a></li>
+                </ul>
+            </li>
+
+            <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
+            <li><a id="langm" href="index.html">home3</a></li>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
         </div>
-        <div class="dropdown1">
-            <button class="dropbtn1" id="drop1" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content1" id="myDropdown1">
-                <a id="alife" href="#">Link 1</a>
-                <a id="andenken" href="#">Link 2</a>
-                <a id="tre" href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown2">
-            <button class="dropbtn2" id="drop2" onclick="myFunction()">Dropdown
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content2" id="myDropdown2">
-              <a id="gco" href="#">Link 1</a>
-              <a id="family" href="#">Link 2</a>
-            </div>
-            </div>
-            <a id="contact" href="#">Home</a>
-            <a id="software" href="http://oeder-software.github.io/dev" target="_blank">Oeder Software Dev</a>
 
-        <a id="lang" href="index.html" style="float: right;">News</a> 
-      </div>
-      <table>
-        <tr>
-            <td style="width: 10%; align-content:start ;"> 
-                <aside id="content">
+    </nav>
+    <div class="main">
+
+        <aside id="content" class="left" style="position: sticky;"></aside>
+        <aside id="contbut" class="left" style="position: sticky;">
+            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
+                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+        </aside>
+
+
+
+        <main>
+            <section>
+                <aside class="asideleft"><img id="imgind" src="/img/bugge.png">
                 </aside>
+                <h2>
+                    Letters to Thomas Bugge
+                </h2>
+                <h3>
+                    <p>
+                        Thomas Bugge (1740 - 1815) <br>
+                        Danish astronomer, mathematician, and surveyor.<br>
+                        In 1761, he observed a transit of Venus in Trondheim.<br>
+                        Head of the country's surveying, organized by the Academy of Sciences.<br>
+                        1775: Member of the Academy of Sciences, and from 1801, its secretary.<br>
+                        1777: Appointed professor of astronomy.<br>
+                        Director of the Royal Widow's Fund.<br>
+                        Lecturer in mathematics for the Navy.<br>
+                        1784: Appointed Justitsråd (Counselor of Justice) and in 1810, Etatsråd (Counselor of State).
+                    </p>
+                </h3>
+            </section>
+            <section id="chap1">
+                <p>
+                <h2> 9. jan 1782</h2>
 
-            </td>
-            <td>
-
-
-                <h2 id="letterhead">Thomas Bugge (October 12, 1740 – January 15, 1815) was a Danish astronomer, mathematician, and surveyor. </h2>
-
-<section id="chap1">
-    <p>
-        <h2>  9. jan 1782</h2>
-
-        <aside class="asideright"><img id="img2" src="./img/ryberg.jpg">
-            <br>
-            <object id="bio2" data=""></object> </aside>
-            Councilor Ryberg will have informed Your Esteemed what I wrote to him last Sunday. Since then, I have received a long-awaited letter from Count von Holmer dated 31 Dec., in which he states that "regarding the royal permission for Mr. Wessel, a ministerial note was sent 10 days ago from him (von Holmer) to the Royal Danish envoy Count von Moltke in Copenhagen, and he hopes we will soon receive a response."<br>
-            Since Your Esteemed noted yourself that the contract between Mr. Wessel and me cannot be signed until the permission is received, the draft of the contract, which I sent to Eutin for further processing, is temporarily withheld and will be returned to you.<br>
-            I will be informed immediately when Mr. Wessel returns from Norway to Copenhagen, and I repeat that it would be useful to be informed of his opinion regarding the residence here.<br>
-            I thank Your Esteemed for the kindness in allowing us to borrow Your geographical instrument and ensuring that we do not encounter any difficulties. Your assistance with our entire matter will certainly not go unnoticed, and I ask for Your continued support.<br>
-            Should it be necessary to pay Mr. Ahl for some of the ordered work already completed, to motivate him to complete the rest, I ask to be informed. Your Esteemed mentioned in the first letter which instruments are necessary for the triangulation observatory: now I ask for a note on what Mr. Ahl is currently working on and the cost of each part, both to plan the finances and to assess what should also be ordered for use by the surveyors from Mr. Ahl.<br>
-            With wishes that the new year may be blessed, I remain with respect,<br>
-            Your Esteemed most humble servant<br>
-            Oldenburg 9 Jan. 1782<br>
-            Oeder<br><br>
-            Please excuse my haste today.
-                    </section>
-        <br><br>
-        <section id="chap2">
-            <p>
-                <aside class="asideleft"><img id="img3" src="./img/ryberg.jpg">
+                <aside class="asideright"><img id="img2" src="/img/ryberg.jpg">
                     <br>
-                    <object id="bio3" data=""></object> </aside>
+                    <object id="bio2" data=""></object>
+                </aside>
+                Councilor Ryberg will have informed Your Esteemed what I wrote to him last Sunday. Since then, I have
+                received a
+                long-awaited letter from Count von Holmer dated 31 Dec., in which he states that "regarding the royal
+                permission for
+                Mr. Wessel, a ministerial note was sent 10 days ago from him (von Holmer) to the Royal Danish envoy
+                Count von Moltke
+                in Copenhagen, and he hopes we will soon receive a response."<br>
+                Since Your Esteemed noted yourself that the contract between Mr. Wessel and me cannot be signed until
+                the permission
+                is received, the draft of the contract, which I sent to Eutin for further processing, is temporarily
+                withheld and
+                will be returned to you.<br>
+                I will be informed immediately when Mr. Wessel returns from Norway to Copenhagen, and I repeat that it
+                would be
+                useful to be informed of his opinion regarding the residence here.<br>
+                I thank Your Esteemed for the kindness in allowing us to borrow Your geographical instrument and
+                ensuring that we do
+                not encounter any difficulties. Your assistance with our entire matter will certainly not go unnoticed,
+                and I ask
+                for Your continued support.<br>
+                Should it be necessary to pay Mr. Ahl for some of the ordered work already completed, to motivate him to
+                complete
+                the rest, I ask to be informed. Your Esteemed mentioned in the first letter which instruments are
+                necessary for the
+                triangulation observatory: now I ask for a note on what Mr. Ahl is currently working on and the cost of
+                each part,
+                both to plan the finances and to assess what should also be ordered for use by the surveyors from Mr.
+                Ahl.<br>
+                With wishes that the new year may be blessed, I remain with respect,<br>
+                Your Esteemed most humble servant<br>
+                Oldenburg 9 Jan. 1782<br>
+                Oeder<br><br>
+                Please excuse my haste today.
+            </section>
+            <br><br>
+            <section id="chap2">
+                <p>
+                <aside class="asideleft"><img id="img3" src="/img/ryberg.jpg">
+                    <br>
+                    <object id="bio3" data=""></object>
+                </aside>
                 <h2>
                     13. nov 1782
                 </h2>
-                
+
                 Esteemed
                 Honorable Sir Professor<br>
-                Through a response received with the last post from Eutin, I am authorized to enter into further negotiations with Your Esteemed regarding the surveyor Mr. Cimber. Also, the establishment of a small observatory for Mr. Wessel and the purchase of the clock and (…?) with stand, which Your Esteemed kindly offered, have been approved.<br>
-                I therefore reiterate the request in my last letter to arrange the shipment of these two items before the (…?) sailing, as indicated via Kiel and Altona.<br>
-                For the contract with Mr. Cimber, I enclose an appendix. Count von Holmer's excellency will ministerially secure royal permission. Should any difficulties arise from Mr. Cimber's side, I remember Mr. Wessel mentioned and praised a Mr. Johnson.<br>
+                Through a response received with the last post from Eutin, I am authorized to enter into further
+                negotiations with
+                Your Esteemed regarding the surveyor Mr. Cimber. Also, the establishment of a small observatory for Mr.
+                Wessel and
+                the purchase of the clock and (…?) with stand, which Your Esteemed kindly offered, have been
+                approved.<br>
+                I therefore reiterate the request in my last letter to arrange the shipment of these two items before
+                the (…?)
+                sailing, as indicated via Kiel and Altona.<br>
+                For the contract with Mr. Cimber, I enclose an appendix. Count von Holmer's excellency will
+                ministerially secure
+                royal permission. Should any difficulties arise from Mr. Cimber's side, I remember Mr. Wessel mentioned
+                and praised
+                a Mr. Johnson.<br>
                 In anticipation of a prompt response, I remain with respect,<br>
                 Your Esteemed
                 most humble servant<br>
                 Oeder.<br>
                 Oldenburg 13 Nov. 1782.
-                                </p>
+                </p>
             </section>
             <br><br>
             <section id="chap3">
                 <p>
-                    <h2>
-                        28. jan. 1783
-                    </h2>
-                    As we continue to await the royal permission, no significant step can be taken in the matter with Mr. Wessel. Despite the kind intentions and persistent efforts of Your Esteemed, Mr. Professor! and from Mr. Count v. Holmer, I believe the entire matter will be abandoned. As long as it is not ministerially secured, I do not consider it proper, in Mr. Wessel's interest, to take further measures. The unpleasant situation Mr. Wessel finds himself in does not allow it, as it is dangerous for his health to remain here for an additional 8 weeks, so he plans, as he has informed you, to go to Norway. He may not be seen here again unless there is a change. What we can do in the current situation, without taking further action, is to request permission from Mr. Count von Moltke, and I cannot propose more than to present Your Esteemed with a draft and contract for kind review and signature, and then await a final decision on the entire matter, whereupon I await your commands while I hold myself back.<br>
-                    Finding another in Mr. Wessel's place will hardly be possible, and time does not allow it. Moreover, I have no instruction on it, and I do not consider it appropriate either. The recognized Mr. Cimber, whom I was recommended in this context, did not wish to be subordinate to the geodetic officer here, but only to act independently, and his approach would require a disproportionately large sum of money.<br>
-                    Your Esteemed
-                    most humble servant<br>
-                    Oeder<br>
-                    Oldenburg 28 Jan. 1783.
-                                    </p>
+                <h2>
+                    28. jan. 1783
+                </h2>
+                As we continue to await the royal permission, no significant step can be taken in the matter with Mr.
+                Wessel.
+                Despite the kind intentions and persistent efforts of Your Esteemed, Mr. Professor! and from Mr. Count
+                v. Holmer, I
+                believe the entire matter will be abandoned. As long as it is not ministerially secured, I do not
+                consider it
+                proper, in Mr. Wessel's interest, to take further measures. The unpleasant situation Mr. Wessel finds
+                himself in
+                does not allow it, as it is dangerous for his health to remain here for an additional 8 weeks, so he
+                plans, as he
+                has informed you, to go to Norway. He may not be seen here again unless there is a change. What we can
+                do in the
+                current situation, without taking further action, is to request permission from Mr. Count von Moltke,
+                and I cannot
+                propose more than to present Your Esteemed with a draft and contract for kind review and signature, and
+                then await a
+                final decision on the entire matter, whereupon I await your commands while I hold myself back.<br>
+                Finding another in Mr. Wessel's place will hardly be possible, and time does not allow it. Moreover, I
+                have no
+                instruction on it, and I do not consider it appropriate either. The recognized Mr. Cimber, whom I was
+                recommended in
+                this context, did not wish to be subordinate to the geodetic officer here, but only to act
+                independently, and his
+                approach would require a disproportionately large sum of money.<br>
+                Your Esteemed
+                most humble servant<br>
+                Oeder<br>
+                Oldenburg 28 Jan. 1783.
+                </p>
             </section>
             <br><br>
             <section id="chap4">
                 <p>
-                    <aside class="asideright"><img id="img4" src="./img/ryberg.jpg">
-                        <br>
-                        <object id="bio4" data=""></object> </aside>
-                        <h2>
-                            5. okt. 1783
-                        </h2>
-                        
-                        Esteemed
-                        Honorable Sir Professor!<br>
-                        Trusting in Your Esteemed continued friendly interest in our surveying work and Mr. Wessel's operations, I take the liberty to request a kind notice of Your observations of the lunar eclipse on 10 and 11 September and enclose Mr. Wessel's report of his observation. He also observed the immersion of two of Jupiter's moons on 16 and 17 September but was prevented from observing the emersions on 23 and 27 due to illness, and hence does not mention these remarks.<br>
-                        I also request a kind notice of remarks regarding Jupiter's moons on the mentioned days.<br>
-                        According to Mr. Wessel's triangulation operations, the longitude of Bremen differs from that here by 2´´20´´52´´´ time: but as far as we know, no reliable value for Bremen has been indicated in any letter.<br>
-                        Oldenburg's latitude, according to Mr. Wessel's determination, is 53 08´ 23´´, and Bremen's (Ansgard Thum) 53 04´ 53´´ 04´´´.<br>
-                        I am very sorry, not only for our work but also out of true friendship for Mr. Wessel, that the brave man is a little ill and suffers from quartan fever, and not only he but also his wife. Otherwise, he has made good progress this summer.<br>
-                        I recommend myself and our work to Your continued friendly participation and remain with respect,<br>
-                        Your Esteemed
-                        most humble servant<br>
-                        Gl. Oeder<br>
-                        Oldenburg 5 Oct. 1783.
-                                            </p>
-                </section>
-                <br><br>
-                <section id="chap5"> 
-                    <h2>
-                        25. jan. 1784 
-                    </h2>
-                    <p>
-                        I thank Your Esteemed on my own and Mr. Wessel's behalf for the provided information in Your valuable letter of 27 Dec., and simultaneously request a kind notice of observations regarding the occultations of some (…?) of the moon mentioned in Mr. Wessel's enclosed memorandum.<br>
-                        In his future observations, as he noted long ago, Mr. Wessel will also be motivated by Your Esteemed admonition to conduct measurements as well as such precise corresponding observation from Your observatory. We assume that the observations from Göttingen, which Mr. Wessel received, will also not be insignificant or uninteresting to him. We kindly request the return of Mr. Wessel's memorandum at your convenience. I now hope that Mr. Wessel's health condition and the weather will be favorable for his projects, and I have good hopes, as his health has significantly improved, and the fever only occasionally gives small symptoms, which the doctor prefers to tolerate rather than suppress the fever forcefully. His appearance has improved, and he has regained energy and strength to work.<br>
-                        As one can often make a virtue out of necessity, it is also the case with our triangles, which we must take as they are due to the character of our land. This disadvantage of the short distances is compensated by the advantages that the triangulators are not hindered by high obstacles, as with large distances, which were impeded last summer by a strange dry haze. With the short distances, such obstacles do not stand in the way, and the work of the surveyors is supported accurately by the amount of trigonometrically determined points. The corrections are generally smaller than Mr. Wessel first feared, and the difficulties with the results are mitigated, especially also by the extensive chain of triangle series, by Mr. Wessel's great care. In my eyes, it is also an advantage that I can choose and mark entire triangle series in advance and thus pave the way for the triangulator, so he, without wasting time choosing points, can proceed directly with his observations from point to point.<br>
-                        I recommend us and our work to Your continued kind participation and remain with respect,<br>
-                        Your Esteemed
-                        most humble servant<br>
-                        Gl. Oeder.<br>
-                        Oldenburg 25 Jan. 1784.
-                                            </p>
-                </section>
-                <br><br>
-                <section id="chap6">
-                    <aside class="asideleft"><img id="img1" src="./img/ryberg.jpg">
-                       <br>
-                       <object id="bio1" data=""></object> </aside>
-                    <h2>
-                        20. apr. 1784
-                    </h2>
-        <p>
-           
+                <aside class="asideright"><img id="img4" src="/img/ryberg.jpg">
+                    <br>
+                    <object id="bio4" data=""></object>
+                </aside>
+                <h2>
+                    5. okt. 1783
+                </h2>
 
-            Most Noble, Highly Honored Mr. Justiciary and Professor!<br>
-            In order to use the determination of our meridian made by Mr. Wessel through two points, one being the center of our (…?…) improvised observatory, and the other approximately a mile away and marked by a stone pillar, to, I say, also use this meridian for the secondary purpose of regulating our city clocks, we would like to have a well-drawn horizontal sundial. When the observatory, which stands on a bastion of the wall, is torn down, a pillar with a marble plate on top should be erected in its center, in which a line pointing in the direction of the midday line is engraved, so that the clock, which will otherwise be stored in the nearby castle, can be taken and placed on the marble plate and, as often as necessary, check the accuracy of the public clocks against the true time indicated by the sundial.<br>
-            
-            Mr. Ähl will hopefully be moved to make this clock according to the accompanying drawing by Mr. Wessel and the associated instructions, and also the valuable verbal instructions that Your Excellency will kindly give him at my request, in the specified size. He will also consider the usage and indicated circumstance that the clock should not remain in place but be set up and taken down as needed, and therefore give the brass plate the appropriate thickness and strength, and give the (…) serving (…) the necessary firmness, and give the edge of the hypotenuse, which indicates the shadow, the necessary sharpness, and also pack the whole clock for shipment in such a way that it cannot be damaged during transport, which unavoidably partly goes overland from Kiel to Altona.<br>
-            
-            Mr. Conference Councilor Ryberg will have the kindness to handle the payment and the shipping, assuming that he does not have to deal with the packing, which is the responsibility of the craftsman. I ask Your Excellency to agree on the price with Mr. Ähl and to attest his bill. The making of the clock is not urgent, as long as it is in Altona before Michaelmas. Drawing and case will then be returned.<br>
-            
-            Mr. Wessel has had much to do with the bothersome fever until this hour. Due to fog, the low position of the moon, and the sun being covered by it, not a single observation of multiple occultations has succeeded throughout the winter. Perhaps it will go better on May 6, where I do not know how such a threat, I do not know which (…?) will occur.<br>
-            
-            If, as I hope, Mr. Ähl takes on the work, I also request that he be informed of the price through Mr. C. R. Ryberg; otherwise, please return the drawing and instructions with the case.<br>
-            
-            I have the honor, with the recommendation of Mr. Wessel, to remain,<br>
-            With respect,<br>
-            Your Excellency's
-            most humble servant,<br>
-            Gl. Oeder
-                  </section > 
-      <br><br>
+                Esteemed
+                Honorable Sir Professor!<br>
+                Trusting in Your Esteemed continued friendly interest in our surveying work and Mr. Wessel's operations,
+                I take the
+                liberty to request a kind notice of Your observations of the lunar eclipse on 10 and 11 September and
+                enclose Mr.
+                Wessel's report of his observation. He also observed the immersion of two of Jupiter's moons on 16 and
+                17 September
+                but was prevented from observing the emersions on 23 and 27 due to illness, and hence does not mention
+                these
+                remarks.<br>
+                I also request a kind notice of remarks regarding Jupiter's moons on the mentioned days.<br>
+                According to Mr. Wessel's triangulation operations, the longitude of Bremen differs from that here by
+                2´´20´´52´´´
+                time: but as far as we know, no reliable value for Bremen has been indicated in any letter.<br>
+                Oldenburg's latitude, according to Mr. Wessel's determination, is 53 08´ 23´´, and Bremen's (Ansgard
+                Thum) 53 04´
+                53´´ 04´´´.<br>
+                I am very sorry, not only for our work but also out of true friendship for Mr. Wessel, that the brave
+                man is a
+                little ill and suffers from quartan fever, and not only he but also his wife. Otherwise, he has made
+                good progress
+                this summer.<br>
+                I recommend myself and our work to Your continued friendly participation and remain with respect,<br>
+                Your Esteemed
+                most humble servant<br>
+                Gl. Oeder<br>
+                Oldenburg 5 Oct. 1783.
+                </p>
+            </section>
+            <br><br>
+            <section id="chap5">
+                <h2>
+                    25. jan. 1784
+                </h2>
+                <p>
+                    I thank Your Esteemed on my own and Mr. Wessel's behalf for the provided information in Your
+                    valuable letter of
+                    27 Dec., and simultaneously request a kind notice of observations regarding the occultations of some
+                    (…?) of the
+                    moon mentioned in Mr. Wessel's enclosed memorandum.<br>
+                    In his future observations, as he noted long ago, Mr. Wessel will also be motivated by Your Esteemed
+                    admonition
+                    to conduct measurements as well as such precise corresponding observation from Your observatory. We
+                    assume that
+                    the observations from Göttingen, which Mr. Wessel received, will also not be insignificant or
+                    uninteresting to
+                    him. We kindly request the return of Mr. Wessel's memorandum at your convenience. I now hope that
+                    Mr. Wessel's
+                    health condition and the weather will be favorable for his projects, and I have good hopes, as his
+                    health has
+                    significantly improved, and the fever only occasionally gives small symptoms, which the doctor
+                    prefers to
+                    tolerate rather than suppress the fever forcefully. His appearance has improved, and he has regained
+                    energy and
+                    strength to work.<br>
+                    As one can often make a virtue out of necessity, it is also the case with our triangles, which we
+                    must take as
+                    they are due to the character of our land. This disadvantage of the short distances is compensated
+                    by the
+                    advantages that the triangulators are not hindered by high obstacles, as with large distances, which
+                    were
+                    impeded last summer by a strange dry haze. With the short distances, such obstacles do not stand in
+                    the way, and
+                    the work of the surveyors is supported accurately by the amount of trigonometrically determined
+                    points. The
+                    corrections are generally smaller than Mr. Wessel first feared, and the difficulties with the
+                    results are
+                    mitigated, especially also by the extensive chain of triangle series, by Mr. Wessel's great care. In
+                    my eyes, it
+                    is also an advantage that I can choose and mark entire triangle series in advance and thus pave the
+                    way for the
+                    triangulator, so he, without wasting time choosing points, can proceed directly with his
+                    observations from point
+                    to point.<br>
+                    I recommend us and our work to Your continued kind participation and remain with respect,<br>
+                    Your Esteemed
+                    most humble servant<br>
+                    Gl. Oeder.<br>
+                    Oldenburg 25 Jan. 1784.
+                </p>
+            </section>
+            <br><br>
+            <section id="chap6">
+                <aside class="asideleft"><img id="img5" src="/img/ryberg.jpg">
+                    <br>
+                    <object id="bio5" data=""></object>
+                </aside>
+                <h2>
+                    20. apr. 1784
+                </h2>
+                <p>
 
-      <section id="chap7">
-        <h2>
-   2. jan. 1785
-        </h2>
-        <p>
-            Esteemed
-            Honorable Sir Professor<br>
-            The interest that Your Esteemed holds for our dear Mr. Wessel's local enterprise, and especially also the common benefit presented in the enclosed memorandum's proposal, leads me to have no doubt that Your Esteemed will recommend the imminent combination of the local triangulation center with that over there, and to make arrangements in the spring. Should Your Esteemed wish for ministerial support for the matter, I kindly ask that you inform me, as I will immediately do my best to secure it.<br>
-            I await with hope for a prompt reply, with respect,<br>
-            Your Esteemed
-            most humble servant<br>
-            Gl. Oeder<br>
-            Oldenburg 2 Jan. 1785
-                                </p>
-      </section > 
-      <br><br>
-      <section id="chap8">
-        <h2>
- 18. feb. 1785
-        </h2>
-        <p>
-            Esteemed
-            Honorable Sir Professor!<br>
-            Through the post, I have received information that the observations our dear Mr. Wessel carried out last year, as well as the ongoing measurements, have now resumed. His long stay in Copenhagen is the cause of the extensive delays in the work, which we are very sorry about, but he is back and active again, and I hope that our work will now be able to continue with faster progress. I await with anticipation and joy the results and observations that Mr. Wessel will present, and I am confident that his efforts will be of great value to our common goal. Should Your Esteemed have further requests or instructions regarding our work, I kindly ask you to inform me.<br>
-            With respect,<br>
-            Your Esteemed
-            most humble servant
-            Oeder<br>
-            Oldenburg 18 Feb. 1785.      
-        </section > 
 
-    </td>
-    <td style="width: 10%;"></td>
-</tr>
-</table>
+                    Most Noble, Highly Honored Mr. Justiciary and Professor!<br>
+                    In order to use the determination of our meridian made by Mr. Wessel through two points, one being
+                    the center of
+                    our (…?…) improvised observatory, and the other approximately a mile away and marked by a stone
+                    pillar, to, I
+                    say, also use this meridian for the secondary purpose of regulating our city clocks, we would like
+                    to have a
+                    well-drawn horizontal sundial. When the observatory, which stands on a bastion of the wall, is torn
+                    down, a
+                    pillar with a marble plate on top should be erected in its center, in which a line pointing in the
+                    direction of
+                    the midday line is engraved, so that the clock, which will otherwise be stored in the nearby castle,
+                    can be
+                    taken and placed on the marble plate and, as often as necessary, check the accuracy of the public
+                    clocks against
+                    the true time indicated by the sundial.<br>
 
-    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
-    <script src="navbarscript.js"></script>
-    <script src="headerimgscript.js"></script>
+                    Mr. Ähl will hopefully be moved to make this clock according to the accompanying drawing by Mr.
+                    Wessel and the
+                    associated instructions, and also the valuable verbal instructions that Your Excellency will kindly
+                    give him at
+                    my request, in the specified size. He will also consider the usage and indicated circumstance that
+                    the clock
+                    should not remain in place but be set up and taken down as needed, and therefore give the brass
+                    plate the
+                    appropriate thickness and strength, and give the (…) serving (…) the necessary firmness, and give
+                    the edge of
+                    the hypotenuse, which indicates the shadow, the necessary sharpness, and also pack the whole clock
+                    for shipment
+                    in such a way that it cannot be damaged during transport, which unavoidably partly goes overland
+                    from Kiel to
+                    Altona.<br>
+
+                    Mr. Conference Councilor Ryberg will have the kindness to handle the payment and the shipping,
+                    assuming that he
+                    does not have to deal with the packing, which is the responsibility of the craftsman. I ask Your
+                    Excellency to
+                    agree on the price with Mr. Ähl and to attest his bill. The making of the clock is not urgent, as
+                    long as it is
+                    in Altona before Michaelmas. Drawing and case will then be returned.<br>
+
+                    Mr. Wessel has had much to do with the bothersome fever until this hour. Due to fog, the low
+                    position of the
+                    moon, and the sun being covered by it, not a single observation of multiple occultations has
+                    succeeded
+                    throughout the winter. Perhaps it will go better on May 6, where I do not know how such a threat, I
+                    do not know
+                    which (…?) will occur.<br>
+
+                    If, as I hope, Mr. Ähl takes on the work, I also request that he be informed of the price through
+                    Mr. C. R.
+                    Ryberg; otherwise, please return the drawing and instructions with the case.<br>
+
+                    I have the honor, with the recommendation of Mr. Wessel, to remain,<br>
+                    With respect,<br>
+                    Your Excellency's
+                    most humble servant,<br>
+                    Gl. Oeder
+            </section>
+            <br><br>
+
+            <section id="chap7">
+                <h2>
+                    2. jan. 1785
+                </h2>
+                <p>
+                    Esteemed
+                    Honorable Sir Professor<br>
+                    The interest that Your Esteemed holds for our dear Mr. Wessel's local enterprise, and especially
+                    also the common
+                    benefit presented in the enclosed memorandum's proposal, leads me to have no doubt that Your
+                    Esteemed will
+                    recommend the imminent combination of the local triangulation center with that over there, and to
+                    make
+                    arrangements in the spring. Should Your Esteemed wish for ministerial support for the matter, I
+                    kindly ask that
+                    you inform me, as I will immediately do my best to secure it.<br>
+                    I await with hope for a prompt reply, with respect,<br>
+                    Your Esteemed
+                    most humble servant<br>
+                    Gl. Oeder<br>
+                    Oldenburg 2 Jan. 1785
+                </p>
+            </section>
+            <br><br>
+            <section id="chap8">
+                <h2>
+                    18. feb. 1785
+                </h2>
+                <p>
+                    Esteemed
+                    Honorable Sir Professor!<br>
+                    Through the post, I have received information that the observations our dear Mr. Wessel carried out
+                    last year,
+                    as well as the ongoing measurements, have now resumed. His long stay in Copenhagen is the cause of
+                    the extensive
+                    delays in the work, which we are very sorry about, but he is back and active again, and I hope that
+                    our work
+                    will now be able to continue with faster progress. I await with anticipation and joy the results and
+                    observations that Mr. Wessel will present, and I am confident that his efforts will be of great
+                    value to our
+                    common goal. Should Your Esteemed have further requests or instructions regarding our work, I kindly
+                    ask you to
+                    inform me.<br>
+                    With respect,<br>
+                    Your Esteemed
+                    most humble servant
+                    Oeder<br>
+                    Oldenburg 18 Feb. 1785.
+            </section>
+
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script>
+        function showSidebar() {
+            document.querySelector(".sidebar").style.display = "flex";
+
+        }
+        function showSidebarContent() {
+            document.getElementById("sidebarcontent").style.display = "flex";
+
+        }
+
+        function closeSidebar() {
+            document.querySelector(".sidebar").style.display = "none";
+            document.getElementById("sidebarcontent").style.display = "none"
+        }
+        /*     if (document.title == "forside"){
+                document.getElementById("hjem").innerText="hjem"
+            }
+         */</script>
+    <!--     <script src="headerimgscript.js"></script>
+ -->
     <script src="letterbugscript.js"></script>
+    <script src="navbarscript.js"></script>
 
 
-    </script>
-        </body>
+</body>
+
 </html>

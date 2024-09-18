@@ -1,185 +1,330 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <link rel="stylesheet" href="framestyle.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbarstyle.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Brief from Georg Christian Oeder first wife, Charlotte Hedevig Ericius. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="letterstyle.css">
+    <link rel="stylesheet" href="style.css">
 
+    <title id="title">Georg Christian Oeder's Letters to Carl von Linné</title>
+</head>
 
-    <title id="title">lettercheen</title>
-</head> 
-    <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
-<body class="body" id="dex">
-    <div class="navbar">
-        <a id="home" href="#home">Home</a>
-        
-        <div class="dropdown">
-            <button class="dropbtn" id="drop" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-                <a id="bug" href="#">Link 1</a>
-                <a id="che" href="#">Link 2</a>
-                <a id="lin" href="#">Link 3</a>
-            </div>
+<body id="dex">
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+            <li id="chapname">
+                <p>chapname</p>
+            </li>
+            <li class="listelement"><a id="home" href="">home</a></li>
+            <li class="listelement"><a id="drop1">breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="alife" href="">che</a></li>
+                    <li class="listelement"><a id="andenken" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="drop"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="che" href="">che</a></li>
+                    <li class="listelement"><a id="bug" href="">bug</a></li>
+                    <li class="listelement"><a id="lin" href="">lin</a></li>
+                </ul>
+            </li>
+            <li class="listelement"><a id="drop2"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="family" href="">che</a></li>
+                    <li class="listelement"><a id="gco" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="software" href="">dev</a></li>
+            <li class="listelement"><a id="lang" href="index.html">lang</a></li>
+            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
+                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black;"></p>
+            <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <li onclick="closeSidebar();"> <a id="drop1m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="andenkenm" href="">home1</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="dropm"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="chem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="linm" href="">home1</a></li>
+                    <li onclick="closeSidebar();"><a id="bugm" href="">home2</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="drop2m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="familym" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="gcom" href="">home1</a></li>
+                </ul>
+            </li>
+
+            <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
+            <li><a id="langm" href="index.html">home3</a></li>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
         </div>
-        <div class="dropdown1">
-            <button class="dropbtn1" id="drop1" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content1" id="myDropdown1">
-                <a id="alife" href="#">Link 1</a>
-                <a id="andenken" href="#">Link 2</a>
-                <a id="tre" href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown2">
-            <button class="dropbtn2" id="drop2" onclick="myFunction()">Dropdown
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content2" id="myDropdown2">
-              <a id="gco" href="#">Link 1</a>
-              <a id="family" href="#">Link 2</a>
-            </div>
-            </div>
-            <a id="contact" href="#">Home</a>
-            <a id="software" href="http://oeder-software.github.io/dev" target="_blank">Oeder Software Dev</a>
 
-        <a id="lang" href="index.html" style="float: right;">News</a> 
-      </div>
-      <table>
-        <tr>
-            <td style="width: 10%; align-content:start ;"> 
-                <aside id="content">
+    </nav>
+    <div class="main">
+
+        <aside id="content" class="left" style="position: sticky;"></aside>
+        <aside id="contbut" class="left" style="position: sticky;">
+            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
+                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+        </aside>
+        <main>
+            <section>
+                <h2 id="letterhead">
+                    Brief from Charlotte Hedevig Ericius from the journal "NEUE ERWEITERUNGEN DER ERKENNTNISS UND
+                    VERGNÜGENS," Collection 6, Volume III.
+                    LETTERS FROM NORWAY BY A TRAVELING WOMAN.</h2><br>
+                <h3>
+                    <p>
+                    <aside class="asideleft"><img id="imgind" src="/img/cheblomst.png">
+                        Charlotte Hedvig Ericius (1728 – 1775)
+                        Oeder's first wife.
+                        From 1746-49, Oeder studied in Göttingen at the same time as Johann Friedrich Camerer, Ernst
+                        Ludwig Ericius, and Moritz Christian Ericius. Camerer married Marie Dorothea Ericius in
+                        1754.
+                        Marie Dorothea is the sister of Charlotte Hedvig.
+                        The following year, Charlotte Hedvig came together with Oeder.
+
+                        The letter is to her brother, either Chancellor Moritz Christian Ericius or Ernst Ludwig
+                        Ericius, who was employed as a regimental quartermaster in the Oldenburg cavalry regiment.
+                        </p>
+                </h3>
+            </section>
+            <section id="chap1">
+                <p>
+                <h2> At Helsingør, 20.05.1755</h2>
+
+                <aside class="asideleft"><img id="img1" src="/img/Laurvig.jpg">
+                    <br>
+                    <object id="bio1" data=""></object>
                 </aside>
+                Worthy Brother,<br><br>
 
-            </td>
-            <td>
+                Do not take it badly that I have not written sooner. My short stay in Copenhagen did not allow me
+                to.<br><br>
 
+                Now I am writing to you on board the ship on which we are to sail to Norway. We have now, God be
+                merciful to us, been anchored for six days, and we have very little hope that the wind will change. We
+                have the best opportunity to train ourselves in patience. For we realize that patience is a very great
+                virtue. This punishment by the weather could not affect my husband at all. His idea that we should sail
+                all the way to Norway is the cause of this fine story, but isn't it unfair that we innocent children—
+                you know my companion— should suffer because of his stubbornness.<br><br>
 
-                <h2 id="letterhead">Brief from Charlotte Hedevig Ericius from the journal "NEUE ERWEITERUNGEN DER ERKENNTNISS UND VERGNÜGENS," Collection 6, Volume III.
-                    LETTERS FROM NORWAY BY A TRAVELING WOMAN.</h2>
+                I am certain I will not see any summer this year. For two days it was a bit warm in Copenhagen—I thought
+                those two days were the beginning of summer. These two beautiful days had just passed when my merciless
+                husband ordered me to board the ship. We wives must obey, and I took my duty seriously.<br><br>
 
-<section id="chap1">
-    <p>
-        <h2> At Helsingør, 20.05.1755</h2>
+                Here I sit on the ship, and around me, it is "winter," and since we are still traveling north, I
+                definitely expect to encounter ice and snow mountains. The summer in Norway, as you have often said
+                yourself, is very short. Now I will experience it for myself. - What do you say, won't you envy me my
+                journey? My only comfort is that we have a lovely ship that belongs to Count von Lauervig. The anchorage
+                is also good in this roadstead when I get to talk to Admiral Troigeon.<br><br>
 
- <aside class="asideleft"><img id="img1" src="./img/Laurvig.jpg">
-    <br>
-    <object id="bio1" data=""></object> </aside>
+                A boat brings us provisions from the distant town every day.<br><br>
 
-   
+                Our cooking conditions are decent. We had meat brought to keep the biting cold from our stomachs with a
+                hearty soup. Now we only lack kitchen utensils. We had only one container intended for something else.
+                Necessity "breaks iron." We salt our meat down so we won't ruin our health.<br><br>
 
-    Worthy Brother,<br>
-    
-    Do not take it badly that I have not written sooner. My short stay in Copenhagen did not allow me to.<br>
-    
-    Now I am writing to you on board the ship on which we are to sail to Norway. We have now, God be merciful to us, been anchored for six days, and we have very little hope that the wind will change. We have the best opportunity to train ourselves in patience. For we realize that patience is a very great virtue. This punishment by the weather could not affect my husband at all. His idea that we should sail all the way to Norway is the cause of this fine story, but isn't it unfair that we innocent children— you know my companion— should suffer because of his stubbornness.<br>
-    
-    I am certain I will not see any summer this year. For two days it was a bit warm in Copenhagen—I thought those two days were the beginning of summer. These two beautiful days had just passed when my merciless husband ordered me to board the ship. We wives must obey, and I took my duty seriously.<br>
-    
-    Here I sit on the ship, and around me, it is "winter," and since we are still traveling north, I definitely expect to encounter ice and snow mountains. The summer in Norway, as you have often said yourself, is very short. Now I will experience it for myself. - What do you say, won't you envy me my journey? My only comfort is that we have a lovely ship that belongs to Count von Lauervig. The anchorage is also good in this roadstead when I get to talk to Admiral Troigeon.<br>
-    
-    A boat brings us provisions from the distant town every day.<br>
-    
-    Our cooking conditions are decent. We had meat brought to keep the biting cold from our stomachs with a hearty soup. Now we only lack kitchen utensils. We had only one container intended for something else. Necessity "breaks iron." We salt our meat down so we won't ruin our health.<br>
-    
-    The gentlemen from the Swedish coast have frightened us by saying that we should not eat from copper plates for any reason. It wouldn't match their face, so we chose an iron pot to cook in, we fry everything in it, and we also eat from it. When boredom plagues us, we fish, and you know I am happy. The fish that bite best are called flounders, a type of plaice, but they are smaller. And so we slaughter, salt, and eat. Now I must hurry to describe our journey. Thus you will further learn about life at sea. You already know it from the unfortunate storms between Als and Ærø, now you will learn more from a woman's experiences.<br>
-    
-    Next to me and my husband, serving us, is the draughtsman, a little good man—a Moor. We know that they also employ "blacks" in the south. A girl, who prides herself on saying that she once imprisoned herself to protect herself from poverty. It's up to anyone to believe her. The captain and all his crew, apart from the Moorish woman, are Danish or rather Nordic. The captain and his mate understand German, but they cannot speak it. The Nordic language is mostly what is called Danish. They just speak it faster.<br>
-    
-    As long as the crew prays, which happens very often—very devoutly, I can almost understand everything. But when they sing, I can hardly understand a word.<br>
-    
-    We have the cabin all to ourselves. We pass the time as best as possible, we read, bait, and catch fish for the household—this is how we kill time. But to lie in a wooden house, still in the same place, constantly unaware of whether the wind will change or not, - THAT, dear brother, makes time long and out of sheer boredom, I don't want to write more. - maybe I will write a bit more cheerfully tomorrow when a blessed wind drives us north.<br>
-    
-        </p>
-</section>
-<section id="chap2">
-    <h2>
-         May 21 in the evening
-    </h2>
-    <p>
-        Still in the same place.<br>
-        
-        Once again, my dear Brother, another day has passed, and it was accompanied by quite a bad storm. Still, we have not moved forward. The eternal Helsingør is still in front of us. I think we are stuck. The unfortunate anchorage! I do not hope that the magnetic mountain has such power. We are not in the world of "A Thousand and One Nights." Alas no, our captain is wiser than we are. - Do you know what he says? - "There is a person on the ship who brings him this misfortune—a great person whom wind and weather pursue."<br>
-        
-        It seems to me that people pursue each other. Our good captain had unfortunately heard that misfortune could come from this one woman who did not have the best reputation. It was clear that she was guilty. Throwing her overboard did not seem possible to him, but he is vindictive, do you know how he wants to exact his revenge? When he gets up and when he goes to bed, he prays and at the same time curses his supposed "enemy." As soon as the wind changes and still hinders his progress, he curses her. To complete his revenge.<br>
-        
-        He has forbidden his crew to let her drink from his teacup. - Isn't he a mean man? - I thought that he would eventually consider us as people whom the wind should punish, pointing out that on all his journeys, nothing like this had ever happened before. But I was too clever for him.<br>
-        
-        I told him about my two recent sea journeys and assured him that I had never spent more than three days at sea. This encouraged the good man: My story cheered his heart. He often drinks a cup of tea with us, yes, he often eats with us. Even tonight we have the honor to serve him. I am inclined to save the innocent person. For you know well, who is to blame for this? My husband, his stubbornness, and his persistence. I constantly warned him, but leaving Copenhagen was his constant goal. Not once have I been allowed to see (the Field Camp?). I give him a feeling of guilt. He believed that when I wanted so much to get to know Copenhagen, I would refuse to accompany him on his crusade to the Nordic icebergs.<br>
-        
-        It is easy to make excuses—I could have just fallen ill, or I could have used other pretexts. He could have been forced to leave me behind. Isn't that true? He knows that in Norway, I can't speak much, and before I have learned Norwegian, we will be on our way home. - But I had almost intended to retaliate by visiting England while he was crawling around the rocks and wading through the forest. Should I do it? Should I do it?<br>
-        
-            </p>
-</section>
-<section id="chap3">
-    <p>
-        <h2>
-           May 22
-        </h2>
-        Still anchored. Now my stubborn husband is also getting annoyed. Almost all his books are read, and time falls long for him. I am a bit mischievous, you know. Thus I pointed out his stubbornness to him. Then he got angry. To make him good again, I found a remedy. I pointed to the basket where our provisions are stored. - Then his anger and annoyance suddenly disappeared.<br>
-        
-        Immediately his eyes cleared at this wonderful sight. And to ensure that we do not starve, he now checks the supply of food and drink as the provision master.<br>
-        
-        He did not believe that I alone with my fishing gear could feed us, as I nevertheless promised.<br>
-        
-        Again today he sent the boat away and ordered so much that no matter how long the journey would take, we will be ensured against dying of hunger. You know the King's grace towards him. And I am sure that we will spend the time well in the future. It will surprise me.<br>
-        
-        The captain is in a good mood. He hopes for a good wind soon. When will this letter show you my affection.<br>
-            </p>
-</section>
-      <section id="chap4">
-        <h2>
-May 25
-        </h2>
-        <p>
-            After we had been anchored—we set sail, and it seemed to me that now I could glimpse the open sea's Triton. I had already given up all hope of getting free from the firm anchorage. Yesterday we fetched another load of provisions.<br>
-            
-            At 6 o'clock, when we least expected it, the wind shifted, and a gentle zephyr carried us forward until one o'clock. Now it goes a little faster, on the sea a light wind is pleasant, but a strong wind is more advantageous. I would rather stay down in the cabin and get moving faster, than drift slowly over the sea with a gentle breeze. We already have beautiful northern lights and can sail all night long. In two days, we hope to arrive. I would also like a bit of a storm if it would just go a little faster.<br>
-                    </p>
-      </section>
-      <section id="chap5"> 
-        <h2>  May 27</h2>
-        <p>
-            Today we had to tack. You know from experience how annoying this necessity can be at sea. And dear brother, we had to turn back. THAT is life at sea! Now we are still again, just in another position. If only the wind had stayed or not started at all. Now I am even more impatient. I had gotten used to the inconvenience. Our cooking place, our beds, everything is uncomfortable. Now I believe you too, that you were satisfied in Leipzig, even if you slept uncomfortably.<br>
-                    </p>
-      </section>
-      <section id="chap6">
-        <h2>
-June 21
-        </h2>
-        <p>
-            
+                The gentlemen from the Swedish coast have frightened us by saying that we should not eat from copper
+                plates for any reason. It wouldn't match their face, so we chose an iron pot to cook in, we fry
+                everything in it, and we also eat from it. When boredom plagues us, we fish, and you know I am happy.
+                The fish that bite best are called flounders, a type of plaice, but they are smaller. And so we
+                slaughter, salt, and eat. Now I must hurry to describe our journey. Thus you will further learn about
+                life at sea. You already know it from the unfortunate storms between Als and Ærø, now you will learn
+                more from a woman's experiences.<br><br>
 
- 
+                Next to me and my husband, serving us, is the draughtsman, a little good man—a Moor. We know that they
+                also employ "blacks" in the south. A girl, who prides herself on saying that she once imprisoned herself
+                to protect herself from poverty. It's up to anyone to believe her. The captain and all his crew, apart
+                from the Moorish woman, are Danish or rather Nordic. The captain and his mate understand German, but
+                they cannot speak it. The Nordic language is mostly what is called Danish. They just speak it
+                faster.<br><br>
 
-            
+                As long as the crew prays, which happens very often—very devoutly, I can almost understand everything.
+                But when they sing, I can hardly understand a word.<br>
 
-            It is now almost five weeks since I arrived in Christiania—I am so overjoyed to be "above my tree line" that I can hardly keep track of time. It is difficult to find accommodation, as there are not many houses with two kitchens. And it is even harder to find the necessary rooms. Nevertheless, I am very well here. The people are generally polite, neat, helpful, and good at entertaining foreigners. Everyone seeks to make Norway pleasant for us foreigners. There are many dignified people in the city. Everyone seeks to make Norway pleasant for us. Most of the inhabitants are wealthy. We rarely leave the table before we have consumed 24 to 30 courses with accompanying drinks.<br>
-            
-            Rarely fewer than 24 courses and up to 30 courses are on the table, and that does not include the drinks.<br>
-            
-            The weather, while it lasts, is incomparable, the nights are hardly dark. I am still reading at 12 midnight. At 3 in the morning, the sun is up again and shines as at midday.<br>
-            
-            However—unfortunately—all these comforts last only a short time, - winter, I am told, lasts almost nine months. It becomes day at 9 o'clock and night at 3 o'clock. Rainy periods are rare, but it freezes almost all winter. One passes the time with sleigh rides. There is an abundance of firewood. And so, I believe, I will also be able to survive the winter.<br>
-            
-            Enough for now, there will be more later. You know that I am always your devoted sister.<br>
-            <br><br>
-            C.H.E.        </p>
-      </section i="chap6"> 
-    </td>
-    <td style="width: 10%;"></td>
-</tr>
-</table>
+                We have the cabin all to ourselves. We pass the time as best as possible, we read, bait, and catch fish
+                for the household—this is how we kill time. But to lie in a wooden house, still in the same place,
+                constantly unaware of whether the wind will change or not, - THAT, dear brother, makes time long and out
+                of sheer boredom, I don't want to write more. - maybe I will write a bit more cheerfully tomorrow when a
+                blessed wind drives us north.<br><br>
 
-    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
-    <script src="navbarscript.js"></script>
-    <script src="headerimgscript.js"></script>
-    <script src="letterchescript.js"></script>
+                </p>
+            </section>
+            <section id="chap2">
+                <h2>
+                    May 21 in the evening
+                </h2>
+                <p>
+                    Still in the same place.<br>
 
+                    Once again, my dear Brother, another day has passed, and it was accompanied by quite a bad storm.
+                    Still, we have not moved forward. The eternal Helsingør is still in front of us. I think we are
+                    stuck. The unfortunate anchorage! I do not hope that the magnetic mountain has such power. We are
+                    not in the world of "A Thousand and One Nights." Alas no, our captain is wiser than we are. - Do you
+                    know what he says? - "There is a person on the ship who brings him this misfortune—a great person
+                    whom wind and weather pursue."<br><br>
 
+                    It seems to me that people pursue each other. Our good captain had unfortunately heard that
+                    misfortune could come from this one woman who did not have the best reputation. It was clear that
+                    she was guilty. Throwing her overboard did not seem possible to him, but he is vindictive, do you
+                    know how he wants to exact his revenge? When he gets up and when he goes to bed, he prays and at the
+                    same time curses his supposed "enemy." As soon as the wind changes and still hinders his progress,
+                    he curses her. To complete his revenge.<br><br>
+
+                    He has forbidden his crew to let her drink from his teacup. - Isn't he a mean man? - I thought that
+                    he would eventually consider us as people whom the wind should punish, pointing out that on all his
+                    journeys, nothing like this had ever happened before. But I was too clever for him.<br><br>
+
+                    I told him about my two recent sea journeys and assured him that I had never spent more than three
+                    days at sea. This encouraged the good man: My story cheered his heart. He often drinks a cup of tea
+                    with us, yes, he often eats with us. Even tonight we have the honor to serve him. I am inclined to
+                    save the innocent person. For you know well, who is to blame for this? My husband, his stubbornness,
+                    and his persistence. I constantly warned him, but leaving Copenhagen was his constant goal. Not once
+                    have I been allowed to see (the Field Camp?). I give him a feeling of guilt. He believed that when I
+                    wanted so much to get to know Copenhagen, I would refuse to accompany him on his crusade to the
+                    Nordic icebergs.<br><br>
+
+                    It is easy to make excuses—I could have just fallen ill, or I could have used other pretexts. He
+                    could have been forced to leave me behind. Isn't that true? He knows that in Norway, I can't speak
+                    much, and before I have learned Norwegian, we will be on our way home. - But I had almost intended
+                    to retaliate by visiting England while he was crawling around the rocks and wading through the
+                    forest. Should I do it? Should I do it?<br><br>
+
+                </p>
+            </section>
+            <section id="chap3">
+                <p>
+                <h2>
+                    May 22
+                </h2>
+                Still anchored. Now my stubborn husband is also getting annoyed. Almost all his books are read, and time
+                falls long for him. I am a bit mischievous, you know. Thus I pointed out his stubbornness to him. Then
+                he got angry. To make him good again, I found a remedy. I pointed to the basket where our provisions are
+                stored. - Then his anger and annoyance suddenly disappeared.<br><br>
+
+                Immediately his eyes cleared at this wonderful sight. And to ensure that we do not starve, he now checks
+                the supply of food and drink as the provision master.<br><br>
+
+                He did not believe that I alone with my fishing gear could feed us, as I nevertheless promised.<br><br>
+
+                Again today he sent the boat away and ordered so much that no matter how long the journey would take, we
+                will be ensured against dying of hunger. You know the King's grace towards him. And I am sure that we
+                will spend the time well in the future. It will surprise me.<br><br>
+
+                The captain is in a good mood. He hopes for a good wind soon. When will this letter show you my
+                affection.<br><br>
+                </p>
+            </section>
+            <section id="chap4">
+                <h2>
+                    May 25
+                </h2>
+                <p>
+                    After we had been anchored—we set sail, and it seemed to me that now I could glimpse the open sea's
+                    Triton. I had already given up all hope of getting free from the firm anchorage. Yesterday we
+                    fetched another load of provisions.<br><br>
+
+                    At 6 o'clock, when we least expected it, the wind shifted, and a gentle zephyr carried us forward
+                    until one o'clock. Now it goes a little faster, on the sea a light wind is pleasant, but a strong
+                    wind is more advantageous. I would rather stay down in the cabin and get moving faster, than drift
+                    slowly over the sea with a gentle breeze. We already have beautiful northern lights and can sail all
+                    night long. In two days, we hope to arrive. I would also like a bit of a storm if it would just go a
+                    little faster.<br><br>
+                </p>
+            </section>
+            <section id="chap5">
+                <h2> May 27</h2>
+                <p>
+                    Today we had to tack. You know from experience how annoying this necessity can be at sea. And dear
+                    brother, we had to turn back. THAT is life at sea! Now we are still again, just in another position.
+                    If only the wind had stayed or not started at all. Now I am even more impatient. I had gotten used
+                    to the inconvenience. Our cooking place, our beds, everything is uncomfortable. Now I believe you
+                    too, that you were satisfied in Leipzig, even if you slept uncomfortably.<br><br>
+                </p>
+            </section>
+            <section id="chap6">
+                <h2>
+                    June 21
+                </h2>
+                <p>
+
+                    It is now almost five weeks since I arrived in Christiania—I am so overjoyed to be "above my tree
+                    line" that I can hardly keep track of time. It is difficult to find accommodation, as there are not
+                    many houses with two kitchens. And it is even harder to find the necessary rooms. Nevertheless, I am
+                    very well here. The people are generally polite, neat, helpful, and good at entertaining foreigners.
+                    Everyone seeks to make Norway pleasant for us foreigners. There are many dignified people in the
+                    city. Everyone seeks to make Norway pleasant for us. Most of the inhabitants are wealthy. We rarely
+                    leave the table before we have consumed 24 to 30 courses with accompanying drinks.<br><br>
+
+                    Rarely fewer than 24 courses and up to 30 courses are on the table, and that does not include the
+                    drinks.<br><br>
+
+                    The weather, while it lasts, is incomparable, the nights are hardly dark. I am still reading at 12
+                    midnight. At 3 in the morning, the sun is up again and shines as at midday.<br><br>
+
+                    However—unfortunately—all these comforts last only a short time, - winter, I am told, lasts almost
+                    nine months. It becomes day at 9 o'clock and night at 3 o'clock. Rainy periods are rare, but it
+                    freezes almost all winter. One passes the time with sleigh rides. There is an abundance of firewood.
+                    And so, I believe, I will also be able to survive the winter.<br><br>
+
+                    Enough for now, there will be more later. You know that I am always your devoted sister.<br><br>
+                    <br><br>
+                    C.H.E.
+                </p>
+            </section i="chap6">
+
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script>
+        function showSidebar() {
+            document.querySelector(".sidebar").style.display = "flex";
+
+        }
+        function showSidebarContent() {
+            document.getElementById("sidebarcontent").style.display = "flex";
+
+        }
+
+        function closeSidebar() {
+            document.querySelector(".sidebar").style.display = "none";
+            document.getElementById("sidebarcontent").style.display = "none"
+        }
+        if (document.title == "forside") {
+            document.getElementById("hjem").innerText = "hjem"
+        }
     </script>
-        </body>
+    <script src="letterchescript.js"></script>
+    <script src="navbarscript.js"></script>
+    <!--     <script src="headerimgscript.js"></script>
+ -->
+</body>
+
 </html>

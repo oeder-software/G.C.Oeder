@@ -1,233 +1,411 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <link rel="stylesheet" href="framestyle.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbarstyle.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="breve fra Georg Christian Oeder til Thomas Bugge. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="letterstyle.css">
+    <link rel="stylesheet" href="style.css">
 
 
-    <title id="title">letterbugdk</title>
-</head> 
-    <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
-<body class="body" id="dex">
-    <div class="navbar">
-        <a id="home" href="#home">Home</a>
-        
-        <div class="dropdown">
-            <button class="dropbtn" id="drop" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-                <a id="bug" href="#">Link 1</a>
-                <a id="che" href="#">Link 2</a>
-                <a id="lin" href="#">Link 3</a>
-            </div>
+    <title id="title">Georg Chritian Oeders's breve til Thomas Bugge</title>
+</head>
+
+<body id="dex">
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+    <nav class="navbar">
+        <ul class="list" id="list">
+            <li id="chapname">
+                <p>chapname</p>
+            </li>
+            <li class="listelement"><a id="home" href="">home</a></li>
+            <li class="listelement"><a id="drop1">breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="alife" href="">che</a></li>
+                    <li class="listelement"><a id="andenken" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="drop"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="che" href="">che</a></li>
+                    <li class="listelement"><a id="bug" href="">bug</a></li>
+                    <li class="listelement"><a id="lin" href="">lin</a></li>
+                </ul>
+            </li>
+            <li class="listelement"><a id="drop2"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="family" href="">che</a></li>
+                    <li class="listelement"><a id="gco" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="software" href="">dev</a></li>
+            <li class="listelement"><a id="lang" href="index.html">lang</a></li>
+            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
+                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black;"></p>
+            <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <li onclick="closeSidebar();"> <a id="drop1m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="andenkenm" href="">home1</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="dropm"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="chem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="linm" href="">home1</a></li>
+                    <li onclick="closeSidebar();"><a id="bugm" href="">home2</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="drop2m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="familym" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="gcom" href="">home1</a></li>
+                </ul>
+            </li>
+
+            <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
+            <li><a id="langm" href="index.html">home3</a></li>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
         </div>
-        <div class="dropdown1">
-            <button class="dropbtn1" id="drop1" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content1" id="myDropdown1">
-                <a id="alife" href="#">Link 1</a>
-                <a id="andenken" href="#">Link 2</a>
-                <a id="tre" href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown2">
-            <button class="dropbtn2" id="drop2" onclick="myFunction()">Dropdown
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content2" id="myDropdown2">
-              <a id="gco" href="#">Link 1</a>
-              <a id="family" href="#">Link 2</a>
-            </div>
-            </div>
-            <a id="contact" href="#">Home</a>
-            <a id="software" href="http://oeder-software.github.io/dev" target="_blank">Oeder Software Dev</a>
 
-        <a id="lang" href="index.html" style="float: right;">News</a> 
-      </div>
-      <table>
-        <tr>
-            <td style="width: 10%; align-content:start ;"> 
-                <aside id="content">
+    </nav>
+    <div class="main">
+
+        <aside id="content" class="left" style="position: sticky;"></aside>
+        <aside id="contbut" class="left" style="position: sticky;">
+            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
+                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+        </aside>
+
+
+
+        <main id="sections">
+            <section>
+                <aside class="asideleft"><img id="imgind" src="/img/bugge.png">
                 </aside>
+                <h2>
+                    Breve til Thomas Bugge
+                </h2>
+                <h3>
+                    <p>
+                        Thomas Bugge 1740 - 1815 <br>
+                        Dansk Astronom, matematiker og landmåler.<br>
+                        I 1761 observerede han en venuspassage i Trondhjem.<br>
+                        Leder af opmålingen af landet, foranstaltet af videnskabernes selskab.<br>
+                        1775 medlem af videnskabernes selskab, fra 1801 sekretær i samme.<br>
+                        1777 udnævnt til professor i astronomi.<br>
+                        Direktør i den kongelige enkekasse.<br>
+                        Lektor i matematik ved søetaten. <br>
+                        I 1784 udnævnt til justistråd og i 1810 til etatsråd <br><br><br><br>
+                    </p>
+                </h3>
+            </section>
+            <section id="chap1">
+                <p>
+                <h2> 9. jan 1782</h2>
 
-            </td>
-            <td>
-
-
-                <h2 id="letterhead">Thomas Bugge (12. oktober 1740 – 15. januar 1815) dansk astronom, matematiker og landmåler. </h2>
-
-<section id="chap1">
-    <p>
-        <h2>  9. jan 1782</h2>
-
-        <aside class="asideright"><img id="img2" src="./img/ryberg.jpg">
-            <br>
-            <object id="bio2" data=""></object> </aside>
-            Råd Ryberg vil have meddelt Deres Velbårne, hvad jeg skrev til ham sidste søndag. Siden har jeg modtaget et længe ventet brev fra grev von Holmer d. 31. dec., hvori han meddeler, at “med hensyn til den kongelige tilladelse til hr. Wessel, blev en ministeriel note sendt for 10 dage siden fra ham (von Holmer) til den kongelige danske gesandt hr. grev von Moltke i København, og han håber, at vi snart vil modtage svar.”<br>
-            Da Deres Velbårne selv bemærkede, at kontrakten mellem hr. Wessel og mig ikke kan underskrives, før tilladelsen er modtaget, er konceptet til kontrakten, som jeg sendte til Eutin til yderligere behandling, midlertidigt tilbageholdt og vil blive returneret til Dem.<br>
-            Jeg vil straks blive informeret, når hr. Wessel vender tilbage fra Norge til København, og jeg gentager, at det vil være nyttigt at blive informeret om hans mening angående boligen her.<br>
-            Jeg takker Deres Velbårne for venligheden ved at lade os låne Deres geografiske instrument og sikre, at vi ikke kommer i nogen vanskeligheder. Deres hjælp med hele vores sag vil bestemt ikke gå ubemærket hen, og jeg beder om Deres fortsatte støtte.<br>
-            Skulle det være nødvendigt at betale hr. Ahl for noget af det bestilte arbejde, der allerede er færdigt, for at motivere ham til at fuldføre resten, beder jeg om at blive informeret. Deres Velbårne nævnte i det første brev, hvilke instrumenter der er nødvendige til det trigonometriske observatorium: nu beder jeg om en note om, hvad hr. Ahl aktuelt arbejder på, og hvad hver del koster, både for at kunne planlægge pengene og for at vurdere, hvad der også bør bestilles til brug for geodæterne hos hr. Ahl.<br>
-            Med ønsket om, at det nye år må blive velsignet, forbliver jeg med højagtelse
-            Deres Velbårne ærbødigste tjener
-            Oldenburg d. 9 jan. 1782
-            Oeder<br><br>
-            Undskyld venligst (-?-) min hast i dag.    </p>
-        </section>
-        <br><br>
-        <section id="chap2">
-            <p>
-                <aside class="asideleft"><img id="img3" src="./img/ryberg.jpg">
+                <aside class="asideright"><img id="img2" src="/img/ryberg.jpg">
                     <br>
-                    <object id="bio3" data=""></object> </aside>
+                    <object id="bio2" data=""></object>
+                </aside>
+                Råd Ryberg vil have meddelt Deres Velbårne, hvad jeg skrev til ham sidste søndag. Siden har jeg
+                modtaget et længe ventet brev fra grev von Holmer d. 31. dec., hvori han meddeler, at “med hensyn
+                til den kongelige tilladelse til hr. Wessel, blev en ministeriel note sendt for 10 dage siden fra
+                ham (von Holmer) til den kongelige danske gesandt hr. grev von Moltke i København, og han håber, at
+                vi snart vil modtage svar.”<br>
+                Da Deres Velbårne selv bemærkede, at kontrakten mellem hr. Wessel og mig ikke kan underskrives, før
+                tilladelsen er modtaget, er konceptet til kontrakten, som jeg sendte til Eutin til yderligere
+                behandling, midlertidigt tilbageholdt og vil blive returneret til Dem.<br>
+                Jeg vil straks blive informeret, når hr. Wessel vender tilbage fra Norge til København, og jeg
+                gentager, at det vil være nyttigt at blive informeret om hans mening angående boligen her.<br>
+                Jeg takker Deres Velbårne for venligheden ved at lade os låne Deres geografiske instrument og sikre,
+                at vi ikke kommer i nogen vanskeligheder. Deres hjælp med hele vores sag vil bestemt ikke gå
+                ubemærket hen, og jeg beder om Deres fortsatte støtte.<br>
+                Skulle det være nødvendigt at betale hr. Ahl for noget af det bestilte arbejde, der allerede er
+                færdigt, for at motivere ham til at fuldføre resten, beder jeg om at blive informeret. Deres
+                Velbårne nævnte i det første brev, hvilke instrumenter der er nødvendige til det trigonometriske
+                observatorium: nu beder jeg om en note om, hvad hr. Ahl aktuelt arbejder på, og hvad hver del
+                koster, både for at kunne planlægge pengene og for at vurdere, hvad der også bør bestilles til brug
+                for geodæterne hos hr. Ahl.<br>
+                Med ønsket om, at det nye år må blive velsignet, forbliver jeg med højagtelse
+                Deres Velbårne ærbødigste tjener
+                Oldenburg d. 9 jan. 1782
+                Oeder<br><br>
+                Undskyld venligst (-?-) min hast i dag. </p>
+            </section>
+            <br><br>
+            <section id="chap2">
+                <p>
+                <aside class="asideleft"><img id="img3" src="/img/ryberg.jpg">
+                    <br>
+                    <object id="bio3" data=""></object>
+                </aside>
                 <h2>
                     13. nov 1782
                 </h2>
-                
-                    Velbårne
-                    Højærværdige Herre Professor<br>
-                    Gennem et svar modtaget med sidste post fra Eutin er jeg bemyndiget til at gå i nærmere forhandling med Deres Velbårne vedrørende geodæten hr. Cimber. Også oprettelsen af et lille observatorium for hr. Wessel og købet af det ur og (…?) med stativ, som Deres Velbårne venligt har tilbudt, er godkendt.<br>
-                    Jeg gentager derfor anmodningen i mit sidste brev om at sørge for forsendelsen af disse to stykker inden (…?) sejladsen, som anvist via Kiel og Altona.<br>
-                    Til kontrakten med hr. Cimber vedlægger jeg en apunktuation. Grev von Holmers excellence vil ministerielt sikre kongelig tilladelse. Skulle der opstå vanskeligheder fra hr. Cimbers side, husker jeg, at hr. Wessel har nævnt og rost en hr. Johnson.<br>
-                    I forventning om snarligt svar forbliver jeg med højagtelse<br>
-                    Deres Velbårne
-                    ærbødigste tjener
-                    Oeder.<br>
-                    Oldenburg den 13. nov. 1782.
+
+                Velbårne
+                Højærværdige Herre Professor<br>
+                Gennem et svar modtaget med sidste post fra Eutin er jeg bemyndiget til at gå i nærmere forhandling
+                med Deres Velbårne vedrørende geodæten hr. Cimber. Også oprettelsen af et lille observatorium for
+                hr. Wessel og købet af det ur og (…?) med stativ, som Deres Velbårne venligt har tilbudt, er
+                godkendt.<br>
+                Jeg gentager derfor anmodningen i mit sidste brev om at sørge for forsendelsen af disse to stykker
+                inden (…?) sejladsen, som anvist via Kiel og Altona.<br>
+                Til kontrakten med hr. Cimber vedlægger jeg en apunktuation. Grev von Holmers excellence vil
+                ministerielt sikre kongelig tilladelse. Skulle der opstå vanskeligheder fra hr. Cimbers side, husker
+                jeg, at hr. Wessel har nævnt og rost en hr. Johnson.<br>
+                I forventning om snarligt svar forbliver jeg med højagtelse<br>
+                Deres Velbårne
+                ærbødigste tjener
+                Oeder.<br>
+                Oldenburg den 13. nov. 1782.
                 </p>
             </section>
             <br><br>
             <section id="chap3">
                 <p>
-                    <h2>
-                        28. jan. 1783
-                    </h2>
-                    Da vi fortsat venter på den kongelige tilladelse, kan der ikke foretages noget væsentligt skridt i sagen med hr. Wessel. På trods af de venlige intentioner og vedholdende bestræbelser fra Deres Velbårne, hr. Professor! og fra hr. Grev v. Holmer, tror jeg, at hele sagen vil blive opgivet. Så længe den ikke er ministerielt sikret, anser jeg det ikke for rigtigt, i hr. Wessels interesse, at foretage flere foranstaltninger.<br>
-                    Den ubehagelige situation, som hr. Wessel står i, tillader det ikke, da det er farligt for hans helbred at blive her i yderligere 8 uger, så han planlægger, som han har informeret Dem, om at tage til Norge. Han bliver muligvis ikke set her igen, medmindre der sker en forandring. <br>
-                    Hvad vi kan gøre i den nuværende situation, uden at foretage os yderligere, er at anmode hr. Grev von Moltke om tilladelse, og jeg kan ikke foreslå mere end at forelægge Deres Velbårne et koncept og udkast til en kontrakt til venlig gennemgang og underskrift, og derefter afvente en endelig afgørelse om hele sagen, hvorpå jeg afventer Deres befalinger, mens jeg selv holder mig tilbage.<br>
-                    At finde en anden i hr. Wessels sted vil næppe være muligt, og tiden tillader det ikke. Derudover har jeg ingen instruks om det, og jeg anser det heller ikke for passende. Den anerkendte hr. Cimber, som jeg blev anbefalet i denne sammenhæng, ønskede ikke at være underordnet den geodætiske officer her, men kun at agere uafhængigt, og hans fremgangsmåde ville kræve en uforholdsmæssigt stor sum penge.<br>
-                    Deres Velbårne
-                    ærbødigste tjener
-                    Oeder<br>
-                    Oldenburg den 28. jan. 1783.
+                <h2>
+                    28. jan. 1783
+                </h2>
+                Da vi fortsat venter på den kongelige tilladelse, kan der ikke foretages noget væsentligt skridt i
+                sagen med hr. Wessel. På trods af de venlige intentioner og vedholdende bestræbelser fra Deres
+                Velbårne, hr. Professor! og fra hr. Grev v. Holmer, tror jeg, at hele sagen vil blive opgivet. Så
+                længe den ikke er ministerielt sikret, anser jeg det ikke for rigtigt, i hr. Wessels interesse, at
+                foretage flere foranstaltninger.<br>
+                Den ubehagelige situation, som hr. Wessel står i, tillader det ikke, da det er farligt for hans
+                helbred at blive her i yderligere 8 uger, så han planlægger, som han har informeret Dem, om at tage
+                til Norge. Han bliver muligvis ikke set her igen, medmindre der sker en forandring. <br>
+                Hvad vi kan gøre i den nuværende situation, uden at foretage os yderligere, er at anmode hr. Grev
+                von Moltke om tilladelse, og jeg kan ikke foreslå mere end at forelægge Deres Velbårne et koncept og
+                udkast til en kontrakt til venlig gennemgang og underskrift, og derefter afvente en endelig
+                afgørelse om hele sagen, hvorpå jeg afventer Deres befalinger, mens jeg selv holder mig tilbage.<br>
+                At finde en anden i hr. Wessels sted vil næppe være muligt, og tiden tillader det ikke. Derudover
+                har jeg ingen instruks om det, og jeg anser det heller ikke for passende. Den anerkendte hr. Cimber,
+                som jeg blev anbefalet i denne sammenhæng, ønskede ikke at være underordnet den geodætiske officer
+                her, men kun at agere uafhængigt, og hans fremgangsmåde ville kræve en uforholdsmæssigt stor sum
+                penge.<br>
+                Deres Velbårne
+                ærbødigste tjener
+                Oeder<br>
+                Oldenburg den 28. jan. 1783.
                 </p>
             </section>
             <br><br>
             <section id="chap4">
                 <p>
-                    <aside class="asideright"><img id="img4" src="./img/ryberg.jpg">
-                        <br>
-                        <object id="bio4" data=""></object> </aside>
-                        <h2>
-                            5. okt. 1783
-                        </h2>
-                        
-                        Velbårne
-                        Højærværdige Herre Professor!<br>
-                        I tillid til Deres Velbårne fortsatte venskabelige interesse for vores målearbejde og hr. Wessels operationer, tillader jeg mig at anmode om venlig meddelelse om Deres observationer af måneformørkelsen den 10. og 11. september og vedlægger hr. Wessels rapport om hans observation. Han observerede også immersionen af to af Jupiters måner den 16. og 17. september, men var forhindret i at observere emersionerne den 23. og 27. på grund af sygdom, og det er derfor, han ikke nævner disse bemærkninger.<br>
-                        Jeg beder også om venlig meddelelse om bemærkninger vedrørende Jupiters måner på de nævnte dage.<br>
-                        Ifølge hr. Wessels trigonometriske operationer adskiller longituden af Bremen sig fra den her med 2´´20´´52´´´ tid: men så vidt vi ved, er ingen pålidelig værdi for Bremen blevet angivet i nogen brev.<br>
-                        Oldenburgs breddegrad er ifølge hr. Wessels bestemmelse 53 08´ 23´´, og Bremens (Ansgard Thum) 53 04´ 53´´ 04´´´.
-                        Jeg er meget ked af det, ikke kun på grund af vores arbejde, men også af ægte venskab for hr. Wessel, at den modige mand er lidt syg og lider af kvartan feber, og ikke kun han, men også hans kone. Ellers har han gjort gode fremskridt denne sommer.<br>
-                        Jeg anbefaler mig selv og vores arbejde til Deres fortsatte venlige deltagelse og forbliver med højagtelse<br>
-                        Deres Velbårne
-                        ærbødigste tjener<br>
-                        Gl. Oeder<br>
-                        Oldenburg den 5. okt. 1783.
-                    </p>
-                </section>
-                <br><br>
-                <section id="chap5"> 
-                    <h2>
-                        25. jan. 1784 
-                    </h2>
-                    <p>
-                        I takker Deres Velbårne på egne og hr. Wessels vegne for de meddelte oplysninger i Deres værdifulde brev af 27. dec., og beder samtidig om venlig meddelelse om observationer vedrørende de i hr. Wessels vedlagte memorandum nævnte tildækninger af nogle (…?) af månen, som blev foretaget.<br>
-                        Hr. Wessel vil i sine fremtidige observationer, som han for længe siden noterede sig, også være motiveret af Deres Velbårnes formaning om at foretage målinger samt en så præcis korresponderende observation fra Deres observatorium. Vi formoder, at observationerne fra Göttingen, som hr. Wessel modtog, heller ikke vil være uvæsentlige eller uinteressante for ham. Vi beder venligst om at returnere hr. Wessels memorandum ved lejlighed. Jeg håber nu, at hr. Wessels helbredstilstand og vejret vil være gunstige for hans projekter, og jeg har gode forhåbninger, da hans helbred er blevet betydeligt forbedret, og feberen kun lejlighedsvis giver små symptomer, som lægen foretrækker at tolerere frem for at undertrykke feberen med magt. Hans udseende er forbedret, og han har genvundet energi og styrke til at arbejde.<br>
-                        Som man ofte kan skabe en dyd af nødvendigheden, er det også tilfældet med vores trekanter, som vi må tage som de er på grund af vores lands karakter. Denne ulempe ved de korte afstande kompenseres af fordelene ved, at trigonometrister ikke hæmmes af høje forhindringer, som med store afstande, der som sidste sommer blev besværet af en mærkelig tør tåge. Ved de korte afstande står sådanne forhindringer ikke i vejen, og arbejdet med geodæterne understøttes nøjagtigt af mængden af trigonometrisk fastlagte punkter. Korrektionerne er generelt mindre, end hr. Wessel først frygtede, og vanskelighederne med resultaterne afhjælpes, især også ved den omfattende kæde af trekantserier, ved hr. Wessels store omhu. I mine øjne er det også en fordel, at jeg kan vælge og afmærke hele trekantserier på forhånd og dermed bane vejen for trigonometrikeren, så han uden at spilde tid på at vælge punkter, kan fortsætte direkte med sine observationer fra punkt til punkt.<br>
-                        Jeg anbefaler os og vores arbejde til Deres vedvarende velvillige deltagelse og forbliver med højagtelse<br>
-                        Deres Velbårne
-                        ærbødigste tjener<br>
-                        Gl. Oeder.<br>
-                        Oldenburg den 25. jan. 1784.
-                    </p>
-                </section>
-                <br><br>
-                <section id="chap6">
-                    <aside class="asideleft"><img id="img1" src="./img/ryberg.jpg">
-                       <br>
-                       <object id="bio1" data=""></object> </aside>
-                    <h2>
-                        20. apr. 1784
-                    </h2>
-        <p>
-           
+                <aside class="asideright"><img id="img4" src="/img/ryberg.jpg">
+                    <br>
+                    <object id="bio4" data=""></object>
+                </aside>
+                <h2>
+                    5. okt. 1783
+                </h2>
 
-            Højvelbårne Højagtværdige Hr. Justitsråd og Professor!<br>
-            For at kunne bruge Hr. Wessels bestemmelse af vores meridian ved hjælp af to punkter, hvoraf det ene er centrum for vores (…?…) eksperimentale observatorium, og det andet er placeret omtrent en mil væk og markeret med en stenpille, for, siger jeg, også at kunne bruge denne meridian til den sekundære hensigt at regulere vores byure, vil vi gerne have et meget godt tegnet horisontalt solur. Når observatoriet, som står på en bastion af volden, bliver nedrevet, skal der i dets centrum også opmures en pille med en marmorplade på toppen, i hvilken der er indgraveret en streg i retning af middagslinjen, så man kan tage uret, som ellers vil blive opbevaret på det nærliggende slot, og sætte det på marmorpladen og så ofte som nødvendigt fastslå nøjagtigheden af de offentlige ure efter solurets tid.<br>
-            
-            Hr. Ähl vil forhåbentlig blive bevæget til at fremstille dette ur efter den medfølgende tegning af Hr. Wessel og tilhørende anvisninger, samt de mundtlige instruktioner, som jeg beder Deres Højvelbårenhed om venligst at give ham, i den foreskrevne størrelse. Han vil også tage hensyn til, at uret ikke skal blive stående på stedet, men sættes op og tages ned igen, og derfor give messingpladen den nødvendige tykkelse og styrke og give den skyggeindikerende kant på hypotenusen den nødvendige skarphed, og pakke uret til forsendelse på en måde, så det ikke kan blive beskadiget under transporten, som uundgåeligt delvist går over land fra Kiel til Altona.<br>
-            
-            Hr. Konferensråd Ryberg vil have venligheden at sørge for betalingen og forsendelsen, forudsat at han ikke behøver at tage sig af indpakningen, som er kunstnerens opgave. Jeg beder Deres Højvelbårenhed aftale prisen med Hr. Ähl og attestere hans nota. Det haster ikke med fremstillingen, så længe uret er i Altona inden Michaelis. Tegning og kasse sendes så tilbage.<br>
-            
-            Hr. Wessel har indtil nu været meget plaget af en irriterende feber. På grund af tåge, den lave position af månen og solen, som var dækket af den, er det hele vinteren ikke lykkedes at foretage en eneste observation af flere dækningsfænomener. Måske går det bedre den 6. maj, hvor jeg ikke ved hvordan, virkelig sker en sådan trussel, jeg ved ikke hvilket (…?…) opstår.<br>
-            
-            Hvis, som jeg håber, Hr. Ähl påtager sig arbejdet, så bedes han også ved Hr. C. R. Rybergs hjælp, informere om prisen, ellers bedes tegning og anvisning sendes tilbage med kassen.<br>
-            
-            Jeg har med Hr. Wessels anbefaling den ære at forblive,<br>
-            Med højagtelse,
-            Deres Højvelbårne
-            ydmyg tjener<br>
-            Gl. Oeder                    </p>
-      </section > 
-      <br><br>
+                Velbårne
+                Højærværdige Herre Professor!<br>
+                I tillid til Deres Velbårne fortsatte venskabelige interesse for vores målearbejde og hr. Wessels
+                operationer, tillader jeg mig at anmode om venlig meddelelse om Deres observationer af
+                måneformørkelsen den 10. og 11. september og vedlægger hr. Wessels rapport om hans observation. Han
+                observerede også immersionen af to af Jupiters måner den 16. og 17. september, men var forhindret i
+                at observere emersionerne den 23. og 27. på grund af sygdom, og det er derfor, han ikke nævner disse
+                bemærkninger.<br>
+                Jeg beder også om venlig meddelelse om bemærkninger vedrørende Jupiters måner på de nævnte dage.<br>
+                Ifølge hr. Wessels trigonometriske operationer adskiller longituden af Bremen sig fra den her med
+                2´´20´´52´´´ tid: men så vidt vi ved, er ingen pålidelig værdi for Bremen blevet angivet i nogen
+                brev.<br>
+                Oldenburgs breddegrad er ifølge hr. Wessels bestemmelse 53 08´ 23´´, og Bremens (Ansgard Thum) 53
+                04´ 53´´ 04´´´.
+                Jeg er meget ked af det, ikke kun på grund af vores arbejde, men også af ægte venskab for hr.
+                Wessel, at den modige mand er lidt syg og lider af kvartan feber, og ikke kun han, men også hans
+                kone. Ellers har han gjort gode fremskridt denne sommer.<br>
+                Jeg anbefaler mig selv og vores arbejde til Deres fortsatte venlige deltagelse og forbliver med
+                højagtelse<br>
+                Deres Velbårne
+                ærbødigste tjener<br>
+                Gl. Oeder<br>
+                Oldenburg den 5. okt. 1783.
+                </p>
+            </section>
+            <br><br>
+            <section id="chap5">
+                <h2>
+                    25. jan. 1784
+                </h2>
+                <p>
+                    I takker Deres Velbårne på egne og hr. Wessels vegne for de meddelte oplysninger i Deres
+                    værdifulde brev af 27. dec., og beder samtidig om venlig meddelelse om observationer vedrørende
+                    de i hr. Wessels vedlagte memorandum nævnte tildækninger af nogle (…?) af månen, som blev
+                    foretaget.<br>
+                    Hr. Wessel vil i sine fremtidige observationer, som han for længe siden noterede sig, også være
+                    motiveret af Deres Velbårnes formaning om at foretage målinger samt en så præcis
+                    korresponderende observation fra Deres observatorium. Vi formoder, at observationerne fra
+                    Göttingen, som hr. Wessel modtog, heller ikke vil være uvæsentlige eller uinteressante for ham.
+                    Vi beder venligst om at returnere hr. Wessels memorandum ved lejlighed. Jeg håber nu, at hr.
+                    Wessels helbredstilstand og vejret vil være gunstige for hans projekter, og jeg har gode
+                    forhåbninger, da hans helbred er blevet betydeligt forbedret, og feberen kun lejlighedsvis giver
+                    små symptomer, som lægen foretrækker at tolerere frem for at undertrykke feberen med magt. Hans
+                    udseende er forbedret, og han har genvundet energi og styrke til at arbejde.<br>
+                    Som man ofte kan skabe en dyd af nødvendigheden, er det også tilfældet med vores trekanter, som
+                    vi må tage som de er på grund af vores lands karakter. Denne ulempe ved de korte afstande
+                    kompenseres af fordelene ved, at trigonometrister ikke hæmmes af høje forhindringer, som med
+                    store afstande, der som sidste sommer blev besværet af en mærkelig tør tåge. Ved de korte
+                    afstande står sådanne forhindringer ikke i vejen, og arbejdet med geodæterne understøttes
+                    nøjagtigt af mængden af trigonometrisk fastlagte punkter. Korrektionerne er generelt mindre, end
+                    hr. Wessel først frygtede, og vanskelighederne med resultaterne afhjælpes, især også ved den
+                    omfattende kæde af trekantserier, ved hr. Wessels store omhu. I mine øjne er det også en fordel,
+                    at jeg kan vælge og afmærke hele trekantserier på forhånd og dermed bane vejen for
+                    trigonometrikeren, så han uden at spilde tid på at vælge punkter, kan fortsætte direkte med sine
+                    observationer fra punkt til punkt.<br>
+                    Jeg anbefaler os og vores arbejde til Deres vedvarende velvillige deltagelse og forbliver med
+                    højagtelse<br>
+                    Deres Velbårne
+                    ærbødigste tjener<br>
+                    Gl. Oeder.<br>
+                    Oldenburg den 25. jan. 1784.
+                </p>
+            </section>
+            <br><br>
+            <section id="chap6">
+                <aside class="asideleft"><img id="img5" src="/img/ryberg.jpg">
+                    <br>
+                    <object id="bio5" data=""></object>
+                </aside>
+                <h2>
+                    20. apr. 1784
+                </h2>
+                <p>
 
-      <section id="chap7">
-        <h2>
-   2. jan. 1785
-        </h2>
-        <p>
-            Velbårne
-            Højærværdige Herre Professor<br>
-            Den interesse, som Deres Velbårne har for vores kære hr. Wessels lokale virksomhed, og især også den fælles nytte, som i det vedlagte memorandum præsenterede forslag har, får mig til ikke at tvivle på, at Deres Velbårne vil anbefale den forestående kombination af det lokale trekantscenter med det derovre, og den ved forårstide at træffe foranstaltning. Skulle Deres Velbårne ønske en ministeriel støtte til sagen, beder jeg Dem blot om at informere mig, da jeg straks vil gøre mit bedste for at opnå denne.<br>
-            Jeg afventer med håb om snarligt svar, med højagtelse<br>
-            Deres Velbårne
-            ærbødigste tjener<br>
-            Gl. Oeder<br>
-            Oldenburg 2. jan. 1785
-                    </p>
-      </section > 
-      <br><br>
-      <section id="chap8">
-        <h2>
- 18. feb. 1785
-        </h2>
-        <p>
-            Velbårne
-            Højærværdige Herre Professor!<br>
-            Under postgangen har jeg modtaget informationer om, at observationerne, som vores kære hr. Wessel udførte i fjor, såvel som de udførte målinger, der var i gang, nu er genoptaget. Hans lange ophold i København er skyld i de omfattende forsinkelser i arbejdet, som vi er meget kede af, men han er tilbage og aktiv igen, og jeg håber, at vores arbejde nu vil kunne fortsætte med hurtigere fremskridt. Jeg afventer med spænding og glæde de resultater og observationer, som hr. Wessel vil præsentere, og jeg er sikker på, at hans indsats vil være af stor værdi for vores fælles mål. Skulle Deres Velbårne have yderligere anmodninger eller instrukser vedrørende vores arbejde, beder jeg Dem om venligst at informere mig.<br>
-            Med højagtelse
-            Deres Velbårne
-            ærbødigste tjener<br>
-            Oeder<br>
-            Oldenburg den 18. feb. 1785.                    </p>
-      </section > 
 
-    </td>
-    <td style="width: 10%;"></td>
-</tr>
-</table>
+                    Højvelbårne Højagtværdige Hr. Justitsråd og Professor!<br>
+                    For at kunne bruge Hr. Wessels bestemmelse af vores meridian ved hjælp af to punkter, hvoraf det
+                    ene er centrum for vores (…?…) eksperimentale observatorium, og det andet er placeret omtrent en
+                    mil væk og markeret med en stenpille, for, siger jeg, også at kunne bruge denne meridian til den
+                    sekundære hensigt at regulere vores byure, vil vi gerne have et meget godt tegnet horisontalt
+                    solur. Når observatoriet, som står på en bastion af volden, bliver nedrevet, skal der i dets
+                    centrum også opmures en pille med en marmorplade på toppen, i hvilken der er indgraveret en
+                    streg i retning af middagslinjen, så man kan tage uret, som ellers vil blive opbevaret på det
+                    nærliggende slot, og sætte det på marmorpladen og så ofte som nødvendigt fastslå nøjagtigheden
+                    af de offentlige ure efter solurets tid.<br>
 
-    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
-    <script src="navbarscript.js"></script>
-    <script src="headerimgscript.js"></script>
+                    Hr. Ähl vil forhåbentlig blive bevæget til at fremstille dette ur efter den medfølgende tegning
+                    af Hr. Wessel og tilhørende anvisninger, samt de mundtlige instruktioner, som jeg beder Deres
+                    Højvelbårenhed om venligst at give ham, i den foreskrevne størrelse. Han vil også tage hensyn
+                    til, at uret ikke skal blive stående på stedet, men sættes op og tages ned igen, og derfor give
+                    messingpladen den nødvendige tykkelse og styrke og give den skyggeindikerende kant på
+                    hypotenusen den nødvendige skarphed, og pakke uret til forsendelse på en måde, så det ikke kan
+                    blive beskadiget under transporten, som uundgåeligt delvist går over land fra Kiel til
+                    Altona.<br>
+
+                    Hr. Konferensråd Ryberg vil have venligheden at sørge for betalingen og forsendelsen, forudsat
+                    at han ikke behøver at tage sig af indpakningen, som er kunstnerens opgave. Jeg beder Deres
+                    Højvelbårenhed aftale prisen med Hr. Ähl og attestere hans nota. Det haster ikke med
+                    fremstillingen, så længe uret er i Altona inden Michaelis. Tegning og kasse sendes så
+                    tilbage.<br>
+
+                    Hr. Wessel har indtil nu været meget plaget af en irriterende feber. På grund af tåge, den lave
+                    position af månen og solen, som var dækket af den, er det hele vinteren ikke lykkedes at
+                    foretage en eneste observation af flere dækningsfænomener. Måske går det bedre den 6. maj, hvor
+                    jeg ikke ved hvordan, virkelig sker en sådan trussel, jeg ved ikke hvilket (…?…) opstår.<br>
+
+                    Hvis, som jeg håber, Hr. Ähl påtager sig arbejdet, så bedes han også ved Hr. C. R. Rybergs
+                    hjælp, informere om prisen, ellers bedes tegning og anvisning sendes tilbage med kassen.<br>
+
+                    Jeg har med Hr. Wessels anbefaling den ære at forblive,<br>
+                    Med højagtelse,
+                    Deres Højvelbårne
+                    ydmyg tjener<br>
+                    Gl. Oeder </p>
+            </section>
+            <br><br>
+
+            <section id="chap7">
+                <h2>
+                    2. jan. 1785
+                </h2>
+                <p>
+                    Velbårne
+                    Højærværdige Herre Professor<br>
+                    Den interesse, som Deres Velbårne har for vores kære hr. Wessels lokale virksomhed, og især også
+                    den fælles nytte, som i det vedlagte memorandum præsenterede forslag har, får mig til ikke at
+                    tvivle på, at Deres Velbårne vil anbefale den forestående kombination af det lokale
+                    trekantscenter med det derovre, og den ved forårstide at træffe foranstaltning. Skulle Deres
+                    Velbårne ønske en ministeriel støtte til sagen, beder jeg Dem blot om at informere mig, da jeg
+                    straks vil gøre mit bedste for at opnå denne.<br>
+                    Jeg afventer med håb om snarligt svar, med højagtelse<br>
+                    Deres Velbårne
+                    ærbødigste tjener<br>
+                    Gl. Oeder<br>
+                    Oldenburg 2. jan. 1785
+                </p>
+            </section>
+            <br><br>
+            <section id="chap8">
+                <h2>
+                    18. feb. 1785
+                </h2>
+                <p>
+                    Velbårne
+                    Højærværdige Herre Professor!<br>
+                    Under postgangen har jeg modtaget informationer om, at observationerne, som vores kære hr.
+                    Wessel udførte i fjor, såvel som de udførte målinger, der var i gang, nu er genoptaget. Hans
+                    lange ophold i København er skyld i de omfattende forsinkelser i arbejdet, som vi er meget kede
+                    af, men han er tilbage og aktiv igen, og jeg håber, at vores arbejde nu vil kunne fortsætte med
+                    hurtigere fremskridt. Jeg afventer med spænding og glæde de resultater og observationer, som hr.
+                    Wessel vil præsentere, og jeg er sikker på, at hans indsats vil være af stor værdi for vores
+                    fælles mål. Skulle Deres Velbårne have yderligere anmodninger eller instrukser vedrørende vores
+                    arbejde, beder jeg Dem om venligst at informere mig.<br>
+                    Med højagtelse
+                    Deres Velbårne
+                    ærbødigste tjener<br>
+                    Oeder<br>
+                    Oldenburg den 18. feb. 1785. </p>
+            </section>
+
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script>
+        function showSidebar() {
+            document.querySelector(".sidebar").style.display = "flex";
+
+        }
+        function showSidebarContent() {
+            document.getElementById("sidebarcontent").style.display = "flex";
+
+        }
+
+        function closeSidebar() {
+            document.querySelector(".sidebar").style.display = "none";
+            document.getElementById("sidebarcontent").style.display = "none"
+        }
+        /*     if (document.title == "forside"){
+                document.getElementById("hjem").innerText="hjem"
+            }
+         */</script>
+    <!--     <script src="headerimgscript.js"></script>
+ -->
     <script src="letterbugscript.js"></script>
+    <script src="navbarscript.js"></script>
 
 
-    </script>
-        </body>
+</body>
+
 </html>

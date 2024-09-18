@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Georg Christian Oeder nad Family tree of Nicolai Gottfried Oeder ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        main {
+            margin-top: 100px;
+        }
+
+        @media(max-width: 800px) {
+            main {
+                margin-top: 15px;
+            }
+        }
+    </style>
+    <title id="title">indexen</title>
+</head>
+
+<body>
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+
+            <li class="listelement"><a id="home" href="">home</a></li>
+            <li class="listelement"><a id="drop1">breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="alife" href="">che</a></li>
+                    <li class="listelement"><a id="andenken" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="drop"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="che" href="">che</a></li>
+                    <li class="listelement"><a id="bug" href="">bug</a></li>
+                    <li class="listelement"><a id="lin" href="">lin</a></li>
+                </ul>
+            </li>
+            <li class="listelement"><a id="drop2"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="family" href="">che</a></li>
+                    <li class="listelement"><a id="gco" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="software" href="">dev</a></li>
+            <li class="listelement"><a id="lang" href="index.html">lang</a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black;"></p>
+            <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <li onclick="closeSidebar();"> <a id="drop1m" href=""> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="andenkenm" href="">home1</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="dropm" href=""> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="chem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="linm" href="">home1</a></li>
+                    <li onclick="closeSidebar();"><a id="bugm" href="">home2</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"><a id="drop2m" href=""> breve </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="familym" href="">che</a></li>
+                    <li onclick="closeSidebar();"><a id="gcom" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
+            <li onclick="closeSidebar();"><a id="langm" href="index.html">home3</a></li>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+        </div>
+
+    </nav>
+    <div class="main">
+
+
+
+        <main onclick="closeSidebar()">
+            <h3>
+                <aside class="asideleft"><img id="imgind" src="/img/oeder.png" style="float: left; padding: 10px;">
+
+                    Georg Christian Oeder, M.D. and botanist, was brought to Denmark by J.H.E. Bernstorff on the
+                    recommendation of the German naturalist Albrecht von Haller. <br>
+                    He was the director of the second botanical garden and from 1761 to 1771 collected plants for the
+                    first 10 volumes with 600 plates for Flora Danica.<br> <br>
+                    This site tells his story using Ernst Willumsen's manuscript “Georg Christian Oeder. A life – with
+                    more than one effort”.<br>
+                    Gerhard Anton von Halem's “Andenken an Oeder”, translated into Danish by Ernst Willumsen.<br>
+                    Charlotte Hedevig Ericius' letters to her brother, excerpted from the journal “NEUE ERWEITERUNGEN
+                    DER ERKENNTNISS UND DES VERGNÜGENS”. Collection 6, Volume III.
+                    LETTERS FROM NORWAY BY A TRAVELING LADY.<br>
+                    As well as Oeder's letters to Thomas Bugge, transcribed from Sütterlin thanks to my parents-in-law,
+                    Lenore and Klaus Schürenberg and the volunteer Sütterlinerstube at the Hospital Heiligen Geist in
+                    Hamburg.<br> <br>
+                    I have created a family tree that starts with Nicolai Gottfried Oeder as the first member of our
+                    family, but I hope someone has proof that G.C. Oeder also belongs. <br>
+                    Many have contacted me to have their family added, so if you have time, please write to me.<br>
+                    So even if we may not share G.C. Oeder, we are all great-great-...-grandchildren of Nicolai
+                    Gottfried Oeder. <br> <br> <br>
+                    Best regards <br>
+                    Stig
+            </h3>
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script>
+        function showSidebar() {
+            document.querySelector(".sidebar").style.display = "flex";
+
+        }
+        function showSidebarContent() {
+            document.getElementById("sidebarcontent").style.display = "flex";
+
+        }
+
+        function closeSidebar() {
+            document.querySelector(".sidebar").style.display = "none";
+            document.getElementById("sidebarcontent").style.display = "none"
+        }
+    </script>
+    <!--             <script src="letterchescript.js"></script>
+ -->
+    <script src="navbarscript.js"></script>
+
+</body>
+
+</html>
