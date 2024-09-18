@@ -106,7 +106,7 @@ if (path == "letterchedk") {
   a.setAttribute("onclick", "closeSidebar()");
   document.getElementById("sidebarcontent").appendChild(a);
 
-  let image = ["/img/laurvig.jpg"];
+  let image = ["./img/laurvig.jpg"];
   function SetImage(list) {
     for (let index = 0; index < list.length; index++) {
       const element = image[index];
@@ -222,8 +222,8 @@ if (path == "lettercheen") {
   a.setAttribute("onclick", "closeSidebar()");
   document.getElementById("sidebarcontent").appendChild(a);
 
-  document.getElementById("img1").setAttribute("src", "/img/laurvig.jpg");
-  document.getElementById("bio1").setAttribute("data", "/bio/EN-laurvig.txt");
+  document.getElementById("img1").setAttribute("src", "./img/laurvig.jpg");
+  document.getElementById("bio1").setAttribute("data", "./bio/EN-laurvig.txt");
 }
 
 if (path == "letterchede") {
@@ -329,6 +329,6 @@ if (path == "letterchede") {
   a.setAttribute("onclick", "closeSidebar()");
   document.getElementById("sidebarcontent").appendChild(a);
 
-  document.getElementById("img1").setAttribute("src", "/img/laurvig.jpg");
-  document.getElementById("bio1").setAttribute("data", "/bio/DE-laurvig.txt");
+  document.getElementById("img1").setAttribute("src", "./img/laurvig.jpg");
+  document.getElementById("bio1").setAttribute("data", "./bio/DE-laurvig.txt");
 }
