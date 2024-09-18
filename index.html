@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html>
-   <head>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Georg Christian Oeder">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="framestyle.css">
-    <link rel="stylesheet" href="style.css">
-
     <title id="title">forside</title>
-</head> 
-    <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
-    <iframe id="framenav" class="frame" src="nav.html" frameborder="2" scrolling="no"> </iframe>
+</head>
+<style>
+    iframe {
+        width: 100vw;
+        border: 3px;
+        border-color: blueviolet;
+    }
+
+    nav {
+        height: 50px;
+        background-color: darkblue;
+    }
+
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(241, 235, 209);
+    }
+
+    table {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+
+    td {
+        width: 20vw;
+    }
+
+    @media(max-width: 800px) {
+        #img1 {
+            width: 200px;
+        }
+
+        h1 {
+            font-size: 1rem;
+        }
+    }
+</style>
+
 <body class="body" id="dex">
-    <table >
+    <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    <nav></nav>
+    <table>
         <br>
-        <tr >
+        <tr>
             <td colspan="4" style="text-align: center;">
-               <h1> Welcome / Velkommen / Willkommen</h1>
+                <h1> Welcome / Velkommen / Willkommen</h1>
             </td>
-            <td ></td>
+            <td></td>
             <td></td>
             <td></td>
         </tr>
-
-        <tr >
-            <td rowspan="2">
-                <img src="./img/oeder.png">
+        <tr>
+            <td rowspan="2" style="width: 50vw;">
+                <img id="img1" src="/img/oeder.png" style="float: right;">
             </td>
-            <td colspan="3" style="text-align: center;"><h1>Choose your language <br><br> Vælg sprog <br><br> Sprache whälen</h1></td>
+            <td colspan="3" style="text-align: center;">
+                <h1>Choose your language <br><br> Vælg sprog <br><br> Sprache whälen</h1>
+            </td>
             <td></td>
             <td></td>
         </tr>
-
-        <tr >
-              <td></td>
-              <td><a href="indexdkny.html" onclick="chalang('dk')"><img src="dk.png" style="float: none; margin-right: 5px;"></a>Dansk</td>
-              <td><a href="indexenny.html" onclick="chalang('gb')"><img src="gb.png" style="float:none; margin-right: 5px;" ></a>English</td>
-              <td><a href="indexdeny.html" onclick="chalang('de')"><img src="de.png" style="float: none; margin-right: 5px;"></a>Deutsch</td>
-
+        <tr>
+            <td></td>
+            <td><a href="indexdk.html"><img src="./buttons/dk.png"
+                        style="float: none; margin-right: 5px; vertical-align:middle;"></a>Dansk</td>
+            <td><a href="indexen.html"><img src="./buttons/gb.png"
+                        style="float: none; margin-right: 5px; vertical-align:middle;"></a>English</td>
+            <td><a href="indexde.html"><img src="./buttons/de.png"
+                        style="float: none; margin-right: 5px; vertical-align:middle;"></a>Deutsch</td>
         </tr>
-
     </table>
-    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
-    <script src="navscript.js">
-    </script>
-        </body>
+    <!--     <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+ -->
+</body>
+
 </html>

@@ -1,91 +1,165 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <link rel="stylesheet" href="framestyle.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Georg Christian Oeder. Stamtræ af Nicloai Gottfried oeder ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbarstyle.css">
     <link rel="stylesheet" href="familystyle.css">
 
 
-    <title id="title">familynicodk</title>
-</head> 
-    <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
-<body class="body" id="dex">
-    <div class="navbar">
-        <a id="home" href="#home">Home</a>
-        
-        <div class="dropdown">
-            <button class="dropbtn" id="drop" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-                <a id="bug" href="#">Link 1</a>
-                <a id="che" href="#">Link 2</a>
-                <a id="lin" href="#">Link 3</a>
-            </div>
+    <style>
+        main {
+            margin-top: 100px;
+        }
+
+        @media(max-width: 800px) {
+            main {
+                margin-top: 15px;
+            }
+        }
+    </style>
+    <title id="title">Georg Christian Oeder - Stamtræ - familien Öder / Oeder - Oeder's våbenskjold</title>
+</head>
+
+<body>
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="2" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+
+            <li class="listelement"><a id="home" href="">home</a></li>
+            <li class="listelement"><a id="drop1">breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="alife" href="">che</a></li>
+                    <li class="listelement"><a id="andenken" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="drop"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="che" href="">che</a></li>
+                    <li class="listelement"><a id="bug" href="">bug</a></li>
+                    <li class="listelement"><a id="lin" href="">lin</a></li>
+                </ul>
+            </li>
+            <li class="listelement"><a id="drop2"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="family" href="">che</a></li>
+                    <li class="listelement"><a id="gco" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="software" href="">dev</a></li>
+            <li class="listelement"><a id="lang" href="index.html"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black;"></p>
+            <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <li onclick="closeSidebar();"> <a id="drop1m" href=""> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="andenkenm" href="">home1</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="dropm" href=""> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="chem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="linm" href="">home1</a></li>
+                    <li onclick="closeSidebar();"><a id="bugm" href="">home2</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"><a id="drop2m" href=""> breve </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="familym" href="">che</a></li>
+                    <li onclick="closeSidebar();"><a id="gcom" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
+            <li onclick="closeSidebar();"><a id="langm" href="index.html">home3</a></li>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
         </div>
-        <div class="dropdown1">
-            <button class="dropbtn1" id="drop1" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content1" id="myDropdown1">
-                <a id="alife" href="#">Link 1</a>
-                <a id="andenken" href="#">Link 2</a>
-                <a id="tre" href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown2">
-            <button class="dropbtn2" id="drop2" onclick="myFunction()">Dropdown
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content2" id="myDropdown2">
-              <a id="gco" href="#">Link 1</a>
-              <a id="family" href="#">Link 2</a>
-            </div>
-            </div>
-            <a id="contact" href="#">Home</a>
-            <a id="software" href="http://oeder-software.github.io/dev" target="_blank">Oeder Software Dev</a>
 
-        <a id="lang" href="index.html" style="float: right;">News</a> 
-      </div>
-      <table id="tabletree">
-        <tr>    
-           <td style="text-align: center;">
-            <br>
-            <br>
-            <p style="font-size: 20px;"> 
-                Stamtræ begyndende med Nicolai Gotfried Oeder. <br><br>
-                Stamtræet er fuldstændigt uvidenskabligt. <br>Det stykket sammen af materiale jeg har modtaget fra havearkitekt Vibeke Dalh, informationer jeg har fundet på nettet <br>samt  
-                henvendelser fra personer der ønsker at blive tilføjet.
-                <br><br>
-                Kontakt mig gerne hvis der er ureglmæssigheder eller hvis du ønsker noget tilføjet.
-            </p>
-        </td>
-        <td style="text-align: center;">
-            <a href="https://heraldikonline.dk/RostockKort/18.%20Firedelt%20med%20centerfelt/18%20Firedelt%20med%20centerfelt%2C%20symmetrisk-0089.jpg" target="_blank">
-                <img id="wappen" src="./img/vaaben.png" alt="G. C. Oeder's våbenskjold">
-            </a>
-            <p>
-            Aftegning af Georg Christian Oeders våbenskjold. <br>Fundet i Ole Rostocks kartotek med slægtsvåben. <a href="https://heraldikonline.dk/RostockKort/18.%20Firedelt%20med%20centerfelt/18%20Firedelt%20med%20centerfelt%2C%20symmetrisk-0089.jpg">Se det her, hos heraldikonline</a>
-            </p>
+    </nav>
+    <div class="main">
 
-</td>
-        </tr>
-        <tr>    
-            <td colspan="2" style="text-align: center;">
-                <div ><object id="familyobj" data="./txt/familytreedk.txt" ></object></div> 
-               
-            </td>
-            <td>
 
-            </td>
-        </tr>
-      </table>
 
-    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
-    <script src="navbarscript.js"></script>
-          <script src="headerimgscript.js">
+        <main>
+            <table id="tabletree">
+                <tr>
+                    <td style="text-align: center;">
+                        <br>
+                        <br>
+                        <p style="font-size: 20px;">
+                            Stamtræ begyndende med Nicolai Gotfried Oeder. <br><br>
+                            Stamtræet er fuldstændigt uvidenskabligt. <br>Det stykket sammen af materiale jeg har
+                            modtaget fra
+                            havearkitekt Vibeke Dalh, informationer jeg har fundet på nettet <br>samt
+                            henvendelser fra personer der ønsker at blive tilføjet.
+                            <br><br>
+                            Kontakt mig gerne hvis der er ureglmæssigheder eller hvis du ønsker noget tilføjet.
+                        </p>
+                    </td>
+                    <td style="text-align: center;">
+                        <a href="https://heraldikonline.dk/RostockKort/18.%20Firedelt%20med%20centerfelt/18%20Firedelt%20med%20centerfelt%2C%20symmetrisk-0089.jpg"
+                            target="_blank">
+                            <img id="wappen" src="/img/vaaben.png" alt="Georg Christian Oeder's våbenskjol">
+                        </a>
+                        <p>
+                            Aftegning af Georg Christian Oeders våbenskjold. <br>Fundet i Ole Rostocks kartotek med
+                            slægtsvåben. <a
+                                href="https://heraldikonline.dk/RostockKort/18.%20Firedelt%20med%20centerfelt/18%20Firedelt%20med%20centerfelt%2C%20symmetrisk-0089.jpg">Se
+                                det her, hos heraldikonline</a>
+                        </p>
 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <div><object id="familyobj" data="/txt/familytreedk.txt"></object></div>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script>
+        function showSidebar() {
+            document.querySelector(".sidebar").style.display = "flex";
+
+        }
+        function showSidebarContent() {
+            document.getElementById("sidebarcontent").style.display = "flex";
+
+        }
+
+        function closeSidebar() {
+            document.querySelector(".sidebar").style.display = "none";
+            document.getElementById("sidebarcontent").style.display = "none"
+        }
     </script>
-        </body>
+    <!--             <script src="letterchescript.js"></script>
+ -->
+    <script src="navbarscript.js"></script>
+
+</body>
+
 </html>
