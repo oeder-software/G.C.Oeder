@@ -117,26 +117,6 @@ document
 document.getElementById("img13href").setAttribute("target", "_blank");
 document.getElementById("img13href").style = "cursor: pointer";
 
-// var a = document.createElement("li");
-// a.setAttribute("class", "listelement");
-// a.setAttribute("id", "manu");
-// document.getElementById("list").appendChild(a);
-
-// var a = document.createElement("a");
-// a.setAttribute("id", "drop3");
-// a.innerText = "Manuskripter";
-// document.getElementById("manu").appendChild(a);
-
-// var a = document.createElement("ul");
-// a.setAttribute("class", "drop1");
-// a.setAttribute("id", "manulist");
-// document.getElementById("manu").appendChild(a);
-
-// var a = document.createElement("li");
-// a.setAttribute("class", "listelement");
-// a.setAttribute("id", "manulist1");
-// document.getElementById("manulist").appendChild(a);
-
 //TODO:sæt sprog i if samt sæt href samt lav sidebar
 
 SetAlifeImg(alifeImg);
@@ -145,14 +125,6 @@ path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "alifedk") {
-  // var a = document.createElement("a");
-  // a.innerText = "Betænkning";
-  // a.setAttribute("id", "bedenken");
-  // document.getElementById("manulist1").appendChild(a);
-
-  // a.setAttribute("href", "alifedk.html");
-  // document.getElementById("bedenken").appendChild(a);
-
   var a = document.createElement("a");
   a.innerText = "Indhold";
   a.style = "cursor: none; font-size: 20px";
@@ -281,7 +253,7 @@ function SetAlifeImg(img) {
   for (let index = 0; index < img.length; index++) {
     document
       .getElementById("img" + (index + 1))
-      .setAttribute("src", "/img/" + img[index]);
+      .setAttribute("src", "./img/" + img[index]);
     // document
     //   .getElementById("img" + (index + 1))
     //   .setAttribute("alt", alt[index]);
