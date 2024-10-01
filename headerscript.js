@@ -24,23 +24,50 @@ if (path == "letterbugdk" || path == "letterbugde" || path == "letterbugen") {
 
 if (path == "letterlindk" || path == "letterlinde" || path == "letterlinen") {
   document.querySelector("body").style =
-    "background-image:  url(./img/logo.png), url(.img/linne.jpg),url(./img/headerbg.png);";
+    "background-image:  url(./img/logo.png), url(./img/linne.jpg),url(./img/headerbg.png);";
   document.getElementById("headerh2").innerText = "Carl von Linné";
 }
 if (path == "andenkendk" || path == "andenkende" || path == "andenkenen") {
   document.querySelector("body").style =
-    "background-image:  url(./img/logo.png), url(.img/halem1.jpg),url(./img/headerbg.png);";
+    "background-image:  url(./img/logo.png), url(./img/halem1.jpg),url(./img/headerbg.png);";
 }
+if (path == "oederianadk" || path == "oederianadk" || path == "oederianadk") {
+  document.querySelector("body").style =
+    "background-image:  url(./img/logo.png), url(./img/oederlogo.png),url(./img/headerbg.png);";
+      document.getElementById("headerh2").innerText = "Oederiana";
+
+}
+
+if (
+  path == "botanicaljourney-de" ||
+  path == "botanicaljourney-dk" ||
+  path == "botanicaljourney-en"
+) {
+  document.querySelector("body").style =
+    "background-image:  url(./img/logo.png), url(./img/botaniskhave.jpg),url(./img/headerbg.png);";
+}
+
 if (
   path == "bedenkenprefacedk" ||
   path == "bedenkenprefacede" ||
-  path == "bedenkenprefaceen"
+  path == "bedenkenprefaceen" ||
+  path == "bedenkenadditionde" ||
+  path == "bedenkenadditiondk" ||
+  path == "bedenkenadditionen" ||
+  path == "bedenkensupplementde" ||
+  path == "bedenkensupplementdk" ||
+  path == "bedenkensupplementen"
 ) {
   document.querySelector("body").style =
     "background-image:  url(./img/logo.png), url(./img/bedenkenforside.png),url(./img/headerbg.png);";
   // document.querySelector("body").style =
-  //   "background-size: 110px 120px, 110px 110px, cover;";
+  //   "background-size: 110px 120px, 70px 110px, cover;";
 }
+if (path == "bedenkendk" || path == "bedenkende" || path == "bedenkenen") {
+  document.querySelector("body").style =
+    "background-image:  url(./img/logo.png), url(./img/bedenkenforside.png),url(./img/headerbg.png);";
+}
+
 switch (path) {
   case "andenkendk":
     document.getElementById("headerh2").innerText = "Til minde om Oeder";
@@ -76,10 +103,83 @@ switch (path) {
     break;
 }
 
+switch (path) {
+  case "bedenkenadditionen":
+    document.getElementById("headerh2").innerText =
+      "Addition to the Reflections";
+    break;
+
+  case "bedenkenadditiondk":
+    document.getElementById("headerh2").innerText = "Tillæg til betænkningen";
+    break;
+  case "bedenkenadditionde":
+    document.getElementById("headerh2").innerText = "Zusäße Zu dem Bedenken";
+    break;
+}
+switch (path) {
+  case "bedenkensupplementen":
+    document.getElementById("headerh2").innerText =
+      "Supplement to the Reflections";
+    break;
+
+  case "bedenkensupplementdk":
+    document.getElementById("headerh2").innerText =
+      "Tilføjelser til betænkningen";
+    break;
+  case "bedenkensupplementde":
+    document.getElementById("headerh2").innerText = "Zulage Zu dem Bedenken";
+    break;
+}
+switch (path) {
+  case "bedenkenen":
+    document.getElementById("headerh2").innerText =
+      "Reflections on the Question:";
+    break;
+
+  case "bedenkendk":
+    document.getElementById("headerh2").innerText =
+      "Overvejelser over spørgsmålet:";
+    break;
+  case "bedenkende":
+    document.getElementById("headerh2").innerText = "Bedenken über di Frage:";
+    break;
+}
+
+switch (path) {
+  case "botanicaljourney-de":
+    document.getElementById("headerh2").innerText = "Oeders Botanische reise";
+    break;
+
+  case "botanicaljourney-dk":
+    document.getElementById("headerh2").innerText = "Oeders Botanische reise";
+    break;
+  case "botanicaljourney-en":
+    document.getElementById("headerh2").innerText = "Oeders Botanische reise";
+    break;
+}
+switch (path) {
+  case "familynicodk":
+    document.getElementById("headerh2").innerText = "Stamtræ familien Oeder";
+    break;
+
+  case "familynicode":
+    document.getElementById("headerh2").innerText = "Stambaum Familie Oeder";
+    break;
+  case "familynicoen":
+    document.getElementById("headerh2").innerText = "Family Oeder";
+    break;
+}
+
+switch (path) {
+  case "familyoederdk":
+    document.getElementById("headerh2").innerText = "Oeder's stamtræ";
+    break;
+}
 if (
   path == "familynicodk" ||
   path == "familynicode" ||
-  path == "familynicoen"
+  path == "familynicoen" ||
+  path == "familyoederdk"
 ) {
   document.querySelector("body").style =
     "background-image:  url(./img/logo.png), url(./img/oederlogo.png),url(./img/headerbg.png);";

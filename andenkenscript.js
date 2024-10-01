@@ -246,7 +246,9 @@ document
   .getElementById("img19href")
   .setAttribute("href", "http://www5.kb.dk/e-mat/dod/130020341018.pdf");
 
-document.getElementById("img20").setAttribute("src", "/img/folketaelling1.png");
+document
+  .getElementById("img20")
+  .setAttribute("src", "./img/folketaelling1.png");
 document
   .getElementById("img20")
   .setAttribute("alt", "Sammlungen zur Geschichte und Staatswissenschaft");
@@ -344,7 +346,7 @@ if (path == "andenkende") {
 }
 if (path == "andenkenen") {
   var a = document.createElement("a");
-  a.innerText = "ontent";
+  a.innerText = "Content";
   a.style = "cursor: none; font-size: 20px";
   document.getElementById("content").appendChild(a);
 

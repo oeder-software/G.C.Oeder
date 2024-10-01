@@ -21,7 +21,7 @@
             <li id="chapname">
                 <p>chapname</p>
             </li>
-            <li class="listelement"><a id="home" href="">home</a></li>
+            <!-- <li class="listelement"><a id="home" href="">home</a></li>
             <li class="listelement"><a id="drop1">breve </a>
                 <ul class="drop1">
                     <li class="listelement"><a id="alife" href="">che</a></li>
@@ -44,7 +44,7 @@
             </li>
 
             <li class="listelement"><a id="software" href="">dev</a></li>
-            <li class="listelement"><a id="lang" href="index.html">lang</a></li>
+            <li class="listelement"><a id="lang" href="index.html">lang</a></li> -->
             <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
                         src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
 
@@ -54,7 +54,7 @@
         <ul class="sidebar" id="listm">
             <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
                     width="30px" height="30px" style="color: black;"></p>
-            <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <!-- <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
             <li onclick="closeSidebar();"> <a id="drop1m"> home1 </a>
                 <ul class="drop11">
                     <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
@@ -76,7 +76,7 @@
             </li>
 
             <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
-            <li><a id="langm" href="index.html">home3</a></li>
+            <li><a id="langm" href="index.html">home3</a></li> -->
         </ul>
         <div id="sidebarcontent">
             <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
@@ -96,7 +96,7 @@
 
         <main id="sections">
             <section>
-                <aside class="asideleft"><img id="imgind" src="/img/bugge.png">
+                <aside class="asideleft"><img id="imgind" src="./img/bugge.png">
                 </aside>
                 <h2>
                     Breve til Thomas Bugge
@@ -119,7 +119,7 @@
                 <p>
                 <h2> 9. jan 1782</h2>
 
-                <aside class="asideright"><img id="img2" src="/img/ryberg.jpg">
+                <aside class="asideright"><img id="img2" src="./img/ryberg.jpg">
                     <br>
                     <object id="bio2" data=""></object>
                 </aside>
@@ -151,7 +151,7 @@
             <br><br>
             <section id="chap2">
                 <p>
-                <aside class="asideleft"><img id="img3" src="/img/ryberg.jpg">
+                <aside class="asideleft"><img id="img3" src="./img/ryberg.jpg">
                     <br>
                     <object id="bio3" data=""></object>
                 </aside>
@@ -209,7 +209,7 @@
             <br><br>
             <section id="chap4">
                 <p>
-                <aside class="asideright"><img id="img4" src="/img/ryberg.jpg">
+                <aside class="asideright"><img id="img4" src="./img/ryberg.jpg">
                     <br>
                     <object id="bio4" data=""></object>
                 </aside>
@@ -282,7 +282,7 @@
             </section>
             <br><br>
             <section id="chap6">
-                <aside class="asideleft"><img id="img5" src="/img/ryberg.jpg">
+                <aside class="asideleft"><img id="img5" src="./img/ryberg.jpg">
                     <br>
                     <object id="bio5" data=""></object>
                 </aside>
@@ -383,25 +383,26 @@
     <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
     </footer>
     <script>
-        function showSidebar() {
-            document.querySelector(".sidebar").style.display = "flex";
+        // function showSidebar() {
+        //     document.querySelector(".sidebar").style.display = "flex";
 
-        }
-        function showSidebarContent() {
-            document.getElementById("sidebarcontent").style.display = "flex";
+        // }
+        // function showSidebarContent() {
+        //     document.getElementById("sidebarcontent").style.display = "flex";
 
-        }
+        // }
 
-        function closeSidebar() {
-            document.querySelector(".sidebar").style.display = "none";
-            document.getElementById("sidebarcontent").style.display = "none"
-        }
+        // function closeSidebar() {
+        //     document.querySelector(".sidebar").style.display = "none";
+        //     document.getElementById("sidebarcontent").style.display = "none"
+        // }
         /*     if (document.title == "forside"){
                 document.getElementById("hjem").innerText="hjem"
             }
          */</script>
     <!--     <script src="headerimgscript.js"></script>
  -->
+    <script src="functionscript.js"></script>
     <script src="letterbugscript.js"></script>
     <script src="navbarscript.js"></script>
 

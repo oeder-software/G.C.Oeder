@@ -73,6 +73,26 @@ let alifeImg = [
   "caroline.jpg",
   "multebaer.gif",
 ];
+let alifeImgAlt = [
+  "Johannes Wiedewelt",
+  "Georg Christian Oeder",
+  "Johan Hartvig Ernst",
+  "Adam Gottlob Moltke",
+  "Barthold Johan Lodde",
+  "Betænkning over spørgmålet hvorledes man kan giver bondestanden frihed og ejdomsret i de lande hvor begge mangler.",
+  "Tillæg til : Betænkning over det spørgsmaal",
+  "Hvorledes Frihed og Eiendom kunde forskaffes Bondestanden i de Lande, hvor den fattes begge Dele",
+  "Joachim Otto Schack-Rathlou",
+  "Johann Friedrich Struensee",
+  "Juliane Marie",
+  "Andreas Peter Bernstorff",
+  "Gerhard Anton von Halem",
+  "Caspar Wessel - Complex Plane",
+  "Christian Ditlev Reventlow",
+  "Hertug Peter Friedrich Ludwig af Oldenburg",
+  "Caroline Mathilde",
+  "Rubus Chamaemorus Linn. Multebær",
+];
 let alifeBio = [
   "wiedewelt",
   "oeder",
@@ -119,157 +139,157 @@ document.getElementById("img13href").style = "cursor: pointer";
 
 //TODO:sæt sprog i if samt sæt href samt lav sidebar
 
-SetAlifeImg(alifeImg);
+SetAlifeImg(alifeImg, alifeImgAlt);
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "alifedk") {
-  var a = document.createElement("a");
-  a.innerText = "Indhold";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("content").appendChild(a);
+  // var a = document.createElement("a");
+  // a.innerText = "Indhold";
+  // a.style = "cursor: none; font-size: 20px";
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("a");
-  a.innerText = "Til toppen";
-  a.href = "#dex";
-  var b = a;
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("a");
+  // a.innerText = "Til toppen";
+  // a.href = "#dex";
+  // var b = a;
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("content").appendChild(a);
 
-  var a = document.createElement("a");
-  a.innerText = "Indhold";
-  a.style = "cursor: none; font-size: 16px";
-  document.getElementById("sidebarcontent").appendChild(a);
+  // var a = document.createElement("a");
+  // a.innerText = "Indhold";
+  // a.style = "cursor: none; font-size: 16px";
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("a");
-  a.innerText = "Til toppen";
-  a.href = "#dex";
-  a.setAttribute("onclick", "closeSidebar()");
-  document.getElementById("sidebarcontent").appendChild(a);
+  // a = document.createElement("a");
+  // a.innerText = "Til toppen";
+  // a.href = "#dex";
+  // a.setAttribute("onclick", "closeSidebar()");
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("sidebarcontent").appendChild(a);
 
+  SetContent(contentdanish);
   SetAlifeContent(alifeContentChapter, alifeContentDanish);
-
   SetAlifeBio(alifeBio, "DK");
 }
 
 if (path == "alifede") {
-  var a = document.createElement("a");
-  a.innerText = "Inhaltsverzeichnis";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("content").appendChild(a);
+  // var a = document.createElement("a");
+  // a.innerText = "Inhaltsverzeichnis";
+  // a.style = "cursor: none; font-size: 20px";
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("a");
-  a.innerText = "Zu Anfang";
-  a.href = "#dex";
-  var b = a;
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("a");
+  // a.innerText = "Zu Anfang";
+  // a.href = "#dex";
+  // var b = a;
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("content").appendChild(a);
 
-  var a = document.createElement("a");
-  a.innerText = "Inhaltsverzeichnis";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("sidebarcontent").appendChild(a);
+  // var a = document.createElement("a");
+  // a.innerText = "Inhaltsverzeichnis";
+  // a.style = "cursor: none; font-size: 20px";
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("a");
-  a.innerText = "Zu Anfang";
-  a.href = "#dex";
-  a.setAttribute("onclick", "closeSidebar()");
-  document.getElementById("sidebarcontent").appendChild(a);
+  // a = document.createElement("a");
+  // a.innerText = "Zu Anfang";
+  // a.href = "#dex";
+  // a.setAttribute("onclick", "closeSidebar()");
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
-
+  // a = document.createElement("br");
+  // document.getElementById("sidebarcontent").appendChild(a);
+  SetContent(contentgerman);
   SetAlifeContent(alifeContentChapter, alifeContentGerman);
   SetAlifeBio(alifeBio, "DE");
 }
 if (path == "alifeen") {
-  var a = document.createElement("a");
-  a.innerText = "ontent";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("content").appendChild(a);
+  // var a = document.createElement("a");
+  // a.innerText = "ontent";
+  // a.style = "cursor: none; font-size: 20px";
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("a");
-  a.innerText = "Page start";
-  a.href = "#dex";
-  var b = a;
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("a");
+  // a.innerText = "Page start";
+  // a.href = "#dex";
+  // var b = a;
+  // document.getElementById("content").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("content").appendChild(a);
 
-  var a = document.createElement("a");
-  a.innerText = "Content";
-  a.style = "cursor: none; font-size: 16px";
-  document.getElementById("sidebarcontent").appendChild(a);
+  // var a = document.createElement("a");
+  // a.innerText = "Content";
+  // a.style = "cursor: none; font-size: 16px";
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
+  // a = document.createElement("br");
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("a");
-  a.innerText = "Page start";
-  a.href = "#dex";
-  a.setAttribute("onclick", "closeSidebar()");
-  document.getElementById("sidebarcontent").appendChild(a);
+  // a = document.createElement("a");
+  // a.innerText = "Page start";
+  // a.href = "#dex";
+  // a.setAttribute("onclick", "closeSidebar()");
+  // document.getElementById("sidebarcontent").appendChild(a);
 
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
-
+  // a = document.createElement("br");
+  // document.getElementById("sidebarcontent").appendChild(a);
+  SetContent(contentenglish);
   SetAlifeContent(alifeContentChapter, alifeContentEnglish);
 
   SetAlifeBio(alifeBio, "EN");
 }
 //https://en.wikipedia.org/wiki/Complex_plane
-function SetAlifeBio(bio, language) {
-  for (let index = 0; index < bio.length; index++) {
-    document
-      .getElementById("bio" + (index + 1))
-      .setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
-  }
-}
-function SetAlifeImg(img) {
-  for (let index = 0; index < img.length; index++) {
-    document
-      .getElementById("img" + (index + 1))
-      .setAttribute("src", "./img/" + img[index]);
-    // document
-    //   .getElementById("img" + (index + 1))
-    //   .setAttribute("alt", alt[index]);
-  }
-}
-function SetAlifeContent(chapter, content) {
-  for (let index = 0; index < content.length; index++) {
-    a = document.createElement("a");
-    a.innerText = content[index];
-    a.href = chapter[index];
-    document.getElementById("content").appendChild(a);
+// function SetAlifeBio(bio, language) {
+//   for (let index = 0; index < bio.length; index++) {
+//     document
+//       .getElementById("bio" + (index + 1))
+//       .setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
+//   }
+// }
+// function SetAlifeImg(img, alt) {
+//   for (let index = 0; index < img.length; index++) {
+//     document
+//       .getElementById("img" + (index + 1))
+//       .setAttribute("src", "./img/" + img[index]);
+//     document
+//       .getElementById("img" + (index + 1))
+//       .setAttribute("alt", alt[index]);
+//   }
+// }
+// function SetAlifeContent(chapter, content) {
+//   for (let index = 0; index < content.length; index++) {
+//     a = document.createElement("a");
+//     a.innerText = content[index];
+//     a.href = chapter[index];
+//     document.getElementById("content").appendChild(a);
 
-    a = document.createElement("a");
-    a.innerText = content[index];
-    a.href = chapter[index];
-    a.setAttribute("onclick", "closeSidebar()");
-    document.getElementById("sidebarcontent").appendChild(a);
-  }
-}
+//     a = document.createElement("a");
+//     a.innerText = content[index];
+//     a.href = chapter[index];
+//     a.setAttribute("onclick", "closeSidebar()");
+//     document.getElementById("sidebarcontent").appendChild(a);
+//   }
+// }

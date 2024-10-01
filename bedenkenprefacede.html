@@ -14,7 +14,7 @@
             font-size: 0.5rem;
         }
     </style>
-    <title id="title">bedenkenprefacedk</title>
+    <title id="title">Georg Christian Oeder - Vorrede zu dem Bedenken über die Frage</title>
 </head>
 
 <body id="dex">
@@ -26,7 +26,7 @@
             <li id="chapname">
                 <p>chapname</p>
             </li>
-            <li class="listelement"><a id="home" href="">home</a></li>
+            <!-- <li class="listelement"><a id="home" href="">home</a></li>
             <li class="listelement"><a id="drop1">breve </a>
                 <ul class="drop1">
                     <li class="listelement"><a id="alife" href="">che</a></li>
@@ -49,7 +49,7 @@
             </li>
 
             <li class="listelement"><a id="software" href="">dev</a></li>
-            <li class="listelement"><a id="lang" href="index.html">lang</a></li>
+            <li class="listelement"><a id="lang" href="index.html">lang</a></li> -->
             <!-- <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
                         src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li> -->
 
@@ -59,7 +59,7 @@
         <ul class="sidebar" id="listm">
             <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
                     width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-            <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <!-- <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
             <li onclick="closeSidebar();"> <a id="drop1m"> home1 </a>
                 <ul class="drop11">
                     <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
@@ -81,7 +81,7 @@
             </li>
 
             <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
-            <li><a id="langm" href="index.html">home3</a></li>
+            <li><a id="langm" href="index.html">home3</a></li> -->
         </ul>
         <div id="sidebarcontent">
             <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
@@ -96,13 +96,15 @@
             <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
                     src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
         </aside>
-        <main onclick="closeSidebar();">
+        <main>
             <section>
 
                 <h2>
 
-                    Vorrede.
+                    Vorrede zu dem Bedenken
                 </h2>
+                <aside class="asideright"><img id="imgind" src="./img/bedenkenforside.png">
+                </aside>
                 Schon seit einiger Zeit habe ich darauf gedacht, gegenwärtiges Bedenken und Zusäße dazu, da die erste
                 Ausgabe vergriffen
                 ist, von neuem auflegen zu lassen, und kein Zeitpunkt könnte dazu gelegener feyn, als der gegenwärtige,
@@ -177,22 +179,29 @@
                 <br><br>
                 Ferner als Zulagen:
                 <br><br>
-                I. einige Betrachtungen über die Verfassung des Nationalmiliz in Dänemark.
-                <br>
-                II. Gründe der im Jahre 1771 in Dänemark durch die damalige General Landwesenscommission bewürkten
-                Verordnung zu
-                Bestimmung der Frohndienste.
-                <br>
-                III. Beyspiel einer mit einem Gute im Herzogthume Schleswig geschehenen, meinen Grundsäßen gemässen
-                Verordnung.
+                <ol type="I">
+                    <li>Einige Betrachtungen über die Verfassung des Nationalmiliz in Dänemark.
+                    </li> <br>
+                    <li> Gründe der im Jahre 1771 in Dänemark durch die damalige General Landwesenscommission
+                        bewürkten
+                        Verordnung zu
+                        Bestimmung der Frohndienste.
+                    </li> <br>
+                    <li>Beyspiel einer mit einem Gute im Herzogthume Schleswig geschehenen, meinen Grundsäßen
+                        gemässen
+                        Verordnung.
 
-                <br>
-                IV. Vorstellung der Königl. Dänischen General LandWesenscommission, an den König, d.d. 17ten August
-                1771.
-                <br>
-                V. eine nähere Erörterung des in Dänemark zwischen dem Gutsherrn und den auf seinem Gute wohnenden
-                Bauern obwaltenden
-                Verhältnisses, und Vorschläge.
+                    </li> <br>
+                    <li>Vorstellung der Königl. Dänischen General LandWesenscommission, an den König, d.d. 17ten
+                        August
+                        1771.
+                    </li> <br>
+                    <li>Eine nähere Erörterung des in Dänemark zwischen dem Gutsherrn und den auf seinem Gute
+                        wohnenden
+                        Bauern obwaltenden
+                        Verhältnisses, und Vorschläge.
+                    </li>
+                </ol>
                 <br><br>
                 Oldenburg,<br>
                 Den 21sten Nov. 1786. <br>
@@ -204,7 +213,7 @@
 
     <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
     </footer>
-    <script>
+    <!-- <script>
         function showSidebar() {
             document.querySelector(".sidebar").style.display = "flex";
 
@@ -218,7 +227,8 @@
             document.querySelector(".sidebar").style.display = "none";
             document.getElementById("sidebarcontent").style.display = "none"
         }
-    </script>
+    </script> -->
+    <script src="functionscript.js"></script>
     <script src="andenkenscript.js"></script>
     <script src="navbarscript.js"></script>
 

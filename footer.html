@@ -19,15 +19,17 @@
     </h4>
 </body>
 <script>
-    let danishHtml = ["andenkendk", "familynicodk", "indexdk", "letterbugdk", "letterlindk", "letterchedk", "alifedk", "Forside", "bedenkenprefacedk"];
-    let germanHtml = ["andenkende", "familynicode", "indexde", "letterbugde", "letterlinde", "letterchede", "alifede", "Home", "bedenkenprefacede"];
-    let englishHtml = ["andenkenen", "familynicoen", "indexen", "letterbugen", "letterlinen", "lettercheen", "alifeen", "startseite", "bedenkenprefaceen"];
+    let danishHtml = ["andenkendk", "familynicodk", "indexdk", "letterbugdk", "letterlindk", "letterchedk", "alifedk", "Forside", "bedenkenprefacedk", "bedenkendk", "bedenkenadditiondk", "bedenkensupplementdk", "botanicaljourney-dk"];
+    let germanHtml = ["andenkende", "familynicode", "indexde", "letterbugde", "letterlinde", "letterchede", "alifede", "startseite", "bedenkenprefacede", "bedenkende", "bedenkenadditionde", "bedenkensupplementde", "botanicaljourney-de"];
+    let englishHtml = ["andenkenen", "familynicoen", "indexen", "letterbugen", "letterlinen", "lettercheen", "alifeen", "Home", "bedenkenprefaceen", "bedenkenen", "bedenkenadditionen", "bedenkensupplementen", "botanicaljourney-en"];
     let langindex;
     function ChangeLanguage(lang) {
         console.log(parent.document.title)
         var path = parent.location.pathname;
         path = path.split("/").pop();
         path = path.split(".").shift();
+                console.log(path)
+
 
         for (let index = 0; index < germanHtml.length; index++) {
             if (germanHtml[index] == path) {

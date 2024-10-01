@@ -52,7 +52,7 @@ nav {
   background-color: darkblue;
   backdrop-filter: blur(10px);
   float: none;
-  align-items: center;
+  align-items: left;
   width: 100%;
 }
 .drop1 li a {
@@ -70,7 +70,7 @@ nav {
 
 nav ul li:hover > .drop1 {
   display: inline-block;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .list li a {
@@ -151,7 +151,11 @@ main {
 }
 #dropm:hover,
 #drop1m:hover,
-#drop2m:hover {
+#drop2m:hover,
+#bioam,
+#letteram,
+#treeam,
+#drop3m {
   background-color: rgba(241, 235, 209, 0.91);
   cursor: none;
 }
@@ -182,13 +186,13 @@ header {
   padding: 0px;
 }
 #content {
-  background-color: rgb(241, 235, 209);
+  background-color: rgb(242, 234, 197);
   padding: 5px;
   flex: 1 1 100px;
   display: flex;
   flex-direction: column;
   position: sticky;
-  height: fit-content;
+  height: 100vh;
   width: fit-content;
   z-index: 0;
 }
@@ -277,6 +281,7 @@ a {
   color: white;
 }
 
+
 @media (max-width: 800px) {
   #imgind {
     width: 200px;
@@ -284,10 +289,6 @@ a {
   .main {
     width: 100%;
   }
-  /*   .navbar {
-    position: sticky;
-  }
- */
 }
 @media all and (max-width: 670px) {
   .menubut,
@@ -357,3 +358,16 @@ a {
     max-width: 70%;
   }
 }
+        #pdf {
+            width: 800px;
+            height: 85vh;
+        }
+
+        @media(max-width: 800px) {
+            #pdf {
+                width: 400px;
+                height: 500px;
+            }
+
+        }
+
