@@ -46,13 +46,41 @@
 
         h1 {
             font-size: 1rem;
+        
         }
-                #langbut{
-            width: 20px;
+        .langbut{
+            width: 30px;
+                        font-size: 1rem;
+
+        }
+        table{
+            margin-top: 60px;
         }
     }
+        @media(max-width: 600px) {
+        #img1 {
+            width: 150px;
+        }
+
+        h1 {
+            font-size: 1rem;
+        
+        }
+        .langbut{
+            width: 15px;
+        }
+        .langtxt{
+            font-size: 0.7rem;
+            margin-right: 2px;
+            
+        }
+                table{
+            margin-top: 20px;
+            width: 15vw;
+        }
 
     }
+
 </style>
 
 <body class="body" id="dex">
@@ -80,11 +108,11 @@
         </tr>
         <tr>
             <td></td>
-            <td><a class="langbut" href="indexdk.html"><img src="./buttons/dk.png"
+            <td class="langtxt"><a href="indexdk.html"><img class="langbut" src="./buttons/dk.png"
                         style="float: none; margin-right: 5px; vertical-align:middle;"></a>Dansk</td>
-            <td><a class="langbut" href="indexen.html"><img src="./buttons/gb.png"
+            <td class="langtxt"><a href="indexen.html"><img class="langbut" src="./buttons/gb.png"
                         style="float: none; margin-right: 5px; vertical-align:middle;"></a>English</td>
-            <td><a class="langbut" href="indexde.html"><img src="./buttons/de.png"
+            <td class="langtxt"><a  href="indexde.html"><img class="langbut" src="./buttons/de.png"
                         style="float: none; margin-right: 5px; vertical-align:middle;"></a>Deutsch</td>
         </tr>
     </table>
