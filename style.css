@@ -342,7 +342,7 @@ a {
     position: sticky;
   }
   #chapname {
-    display: flex;
+    display: inline-block;
   }
 }
 @media (max-width: 500px) {
