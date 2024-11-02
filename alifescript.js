@@ -15,6 +15,7 @@ let alifeContentDanish = [
 let alifeContentEnglish = [
   "Through winding paths to a goal",
   "The Relationship Between Plant Growth and Agriculture",
+  "Consideration of the Question: How Freedom and Property Could Be Secured for the Peasantry in the Lands Where They Lack Both.",
   "The significance of population increase",
   " On the subdivision of manor farms",
   "Supplement to the Report",
