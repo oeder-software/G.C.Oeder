@@ -328,6 +328,17 @@ a {
     body, .navbar{
     width: 100%;
   }
+  #sidebarcontent {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 90vw;
+    z-index: 99;
+    margin: 0px;
+    padding-left: 0px;
+    float: right;
+  }
 
   .menubut,
   .contentbut {
