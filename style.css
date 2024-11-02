@@ -325,6 +325,10 @@ a {
   }
 }
 @media all and (max-width: 670px) {
+    body, .navbar{
+    width: 100%;
+  }
+
   .menubut,
   .contentbut {
     display: flex;
