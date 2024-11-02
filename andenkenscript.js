@@ -1,7 +1,7 @@
 let andenkenImg = [
   "Richardson.jpg",
   "jhebernstorff.png",
-  "Klopstock.jpg",
+  "klopstock.jpg",
   "moltkeorg.gif",
   "FDanicaFront.gif",
   "Rousseau.jpg",
