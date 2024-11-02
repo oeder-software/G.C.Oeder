@@ -2,43 +2,31 @@ let contentgerman = ["Inhaltsverzeichnis", "Zu Anfang"];
 let contentenglish = ["Content", "Page start"];
 let contentdanish = ["Indhold", "Til start"];
 
-// a = setAttribute("onclick", "closeSidebar()");
-// document.getElementsByTagName("main").appendChild(a);
-
 function SetContent(contentLang) {
   var a = document.createElement("p");
   a.innerText = contentLang[0];
+  a.style = "margin: 0; font-size: 20px;";
   document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
 
   a = document.createElement("a");
   a.innerText = contentLang[1];
   a.href = "#dex";
   document.getElementById("content").appendChild(a);
 
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  var a = document.createElement("p");
+  var a = document.createElement("a");
   a.innerText = contentLang[0];
   a.setAttribute("onclick", "closeSidebar()");
+  a.style = "margin: 0; padding: 0;";
   a.style = "cursor: none; font-size: 20px";
-
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("br");
+  a.setAttribute("id", "sidecontent");
   document.getElementById("sidebarcontent").appendChild(a);
 
   a = document.createElement("a");
   a.innerText = contentLang[1];
   a.href = "#dex";
   a.setAttribute("onclick", "closeSidebar()");
+  a.style = "margin: 0; padding: 0;";
   document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("sidebarcontent").appendChild(a);
 }
 
 function SetImage(list) {
@@ -90,11 +78,13 @@ function SetAlifeContent(chapter, content) {
     a = document.createElement("a");
     a.innerText = content[index];
     a.href = chapter[index];
+    a.setAttribute("id", index);
     document.getElementById("content").appendChild(a);
 
     a = document.createElement("a");
     a.innerText = content[index];
     a.href = chapter[index];
+    a.setAttribute("id", index + "m");
     a.setAttribute("onclick", "closeSidebar()");
     document.getElementById("sidebarcontent").appendChild(a);
   }
@@ -105,11 +95,30 @@ function SetLetterCheContent(chapter, content) {
     a = document.createElement("a");
     a.innerText = content[index];
     a.href = chapter[index];
+    a.setAttribute("id", index);
     document.getElementById("content").appendChild(a);
 
     a = document.createElement("a");
     a.innerText = content[index];
     a.href = chapter[index];
+    a.setAttribute("onclick", "closeSidebar()");
+    document.getElementById("sidebarcontent").appendChild(a);
+  }
+}
+function SetContentAndenken(chapter, content) {
+  for (let index = 0; index < content.length; index++) {
+    a = document.createElement("a");
+    a.innerText = content[index];
+    a.href = chapter[index];
+    a.setAttribute("id", index);
+
+    document.getElementById("content").appendChild(a);
+
+    a = document.createElement("a");
+    a.innerText = content[index];
+    a.href = chapter[index];
+    a.setAttribute("id", index + "m");
+
     a.setAttribute("onclick", "closeSidebar()");
     document.getElementById("sidebarcontent").appendChild(a);
   }
@@ -138,3 +147,114 @@ function SetALink(start, end) {
     document.getElementById("a" + index).setAttribute("target", "_blank");
   }
 }
+var danishHtml = [
+  "andenkendk",
+  "familynicodk",
+  "indexdk",
+  "letterbugdk",
+  "letterlindk",
+  "letterchedk",
+  "alifedk",
+  "Forside",
+  "bedenkenprefacedk",
+  "bedenkendk",
+  "bedenkenadditiondk",
+  "bedenkensupplementdk",
+  "botanicaljourney-dk",
+];
+var germanHtml = [
+  "andenkende",
+  "familynicode",
+  "indexde",
+  "letterbugde",
+  "letterlinde",
+  "letterchede",
+  "alifede",
+  "startseite",
+  "bedenkenprefacede",
+  "bedenkende",
+  "bedenkenadditionde",
+  "bedenkensupplementde",
+  "botanicaljourney-de",
+];
+var englishHtml = [
+  "andenkenen",
+  "familynicoen",
+  "indexen",
+  "letterbugen",
+  "letterlinen",
+  "lettercheen",
+  "alifeen",
+  "Home",
+  "bedenkenprefaceen",
+  "bedenkenen",
+  "bedenkenadditionen",
+  "bedenkensupplementen",
+  "botanicaljourney-en",
+];
+
+function ChangeLanguage(lang) {
+  console.log(parent.document.title);
+  var path = parent.location.pathname;
+  path = path.split("/").pop();
+  path = path.split(".").shift();
+  console.log(path);
+
+  for (let index = 0; index < germanHtml.length; index++) {
+    if (germanHtml[index] == path) {
+      langindex = index;
+    }
+  }
+  for (let index = 0; index < englishHtml.length; index++) {
+    if (englishHtml[index] == path) {
+      langindex = index;
+    }
+  }
+  for (let index = 0; index < danishHtml.length; index++) {
+    if (danishHtml[index] == path) {
+      langindex = index;
+    }
+  }
+  switch (lang) {
+    case "dk":
+      parent.location.href = danishHtml[langindex] + ".html";
+      break;
+    case "de":
+      parent.location.href = germanHtml[langindex] + ".html";
+      break;
+    case "en":
+      parent.location.href = englishHtml[langindex] + ".html";
+      break;
+  }
+}
+window.onscroll = function () {
+  let count = 0;
+  for (let index = 0; index < chapter.length; index++) {
+    document.getElementById(index).style.backgroundColor = "rgb(241, 235, 209)";
+    document.getElementById(index).style.color = "black";
+    document.getElementById(index + "m").style.backgroundColor =
+      "rgb(241, 235, 209)";
+    document.getElementById(index + "m").style.color = "black";
+  }
+  for (let index = chapter.length - 1; index > -1; index--) {
+    var chapString = chapter[index];
+    chapString = chapString.slice(1);
+    var chapterToHighlight = document.getElementById(chapString);
+    if (chapterToHighlight.getBoundingClientRect().top < 500 && count < 1) {
+      document.getElementById(index).style.backgroundColor = "steelblue";
+      document.getElementById(index).style.color = "white";
+      document.getElementById(index + "m").style.backgroundColor = "steelblue";
+      document.getElementById(index + "m").style.color = "white";
+
+      count++;
+    }
+    if (chapterToHighlight.getBoundingClientRect().top > 500) {
+      document.getElementById(index).style.backgroundColor =
+        "rgb(241, 235, 209)";
+      document.getElementById(index).style.color = "black";
+      document.getElementById(index + "m").style.backgroundColor =
+        "rgb(241, 235, 209)";
+      document.getElementById(index + "m").style.color = "black";
+    }
+  }
+};

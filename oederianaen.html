@@ -1,6 +1,6 @@
-<!DOCTYPE html>
 <html>
 <!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+<!DOCTYPE html>
 
 <head>
     <meta charset="utf-8">
@@ -17,33 +17,27 @@
 
         #content {
             background-color: rgb(241, 235, 209);
-
+            ;
         }
 
         .letter {
             display: block;
         }
 
-        /* hr {
+        hr {
             display: block;
-        } */
+        }
 
         button {
             background-color: darkblue;
             color: white;
-            width: 175px;
+            width: 200px;
             margin-left: auto;
             margin-right: auto;
-            height: 30px;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            transition-duration: 0.3s;
+            height: 50px;
+            font-size: 16px;
         }
 
-        button:hover {
-            background-color: lightskyblue !important;
-        }
 
         .row {
             display: flex;
@@ -56,14 +50,12 @@
         } */
 
         .column {
+            /* float: left; */
             width: 50%;
         }
 
         p {
-            padding-left: 10px;
-            padding-right: 10px;
-            margin-top: 0px;
-            margin-bottom: 0px;
+            padding: 10px;
         }
 
         #oederbut {
@@ -74,7 +66,6 @@
             display: none;
         }
 
-
         @media (max-width: 800px) {
             .row {
                 flex-direction: column;
@@ -83,7 +74,7 @@
             button {
                 width: 170px;
                 height: 25px;
-                font-size: 10px;
+                font-size: 12px;
             }
 
             #frontpage {
@@ -101,16 +92,12 @@
 
             hr {
                 display: block;
-                background-color: darkblue;
-                height: 2px;
-                margin-top: 15px;
-                margin-bottom: 15px;
             }
         }
     </style>
     <title id="title">Oederiana -
-        Oeder's forsvar mod bl.a. Johann Christian Fabricius anggreb, med noter af Johann Friedrich Camerer, hans
-        svoger.</title>
+        Oeder's defense against, among others, Johann Christian Fabricius' attacks,
+        with notes by Johann Friedrich Camerer, his brother-in-law.</title>
 </head>
 
 <body id="dex">
@@ -122,6 +109,30 @@
             <li id="chapname">
                 <p>chapname</p>
             </li>
+            <!-- <li class="listelement"><a id="home" href="">home</a></li>
+            <li class="listelement"><a id="drop1">breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="alife" href="">che</a></li>
+                    <li class="listelement"><a id="andenken" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="drop"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="che" href="">che</a></li>
+                    <li class="listelement"><a id="bug" href="">bug</a></li>
+                    <li class="listelement"><a id="lin" href="">lin</a></li>
+                </ul>
+            </li>
+            <li class="listelement"><a id="drop2"> breve </a>
+                <ul class="drop1">
+                    <li class="listelement"><a id="family" href="">che</a></li>
+                    <li class="listelement"><a id="gco" href="">bug</a></li>
+                </ul>
+            </li>
+
+            <li class="listelement"><a id="software" href="">dev</a></li>
+            <li class="listelement"><a id="lang" href="index.html">lang</a></li> -->
             <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
                         src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
 
@@ -131,48 +142,61 @@
         <ul class="sidebar" id="listm">
             <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
                     width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
+            <!-- <li onclick="closeSidebar();"><a id="homem" href="">home</a></li>
+            <li onclick="closeSidebar();"> <a id="drop1m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="alifem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="andenkenm" href="">home1</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="dropm"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="chem" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="linm" href="">home1</a></li>
+                    <li onclick="closeSidebar();"><a id="bugm" href="">home2</a></li>
+                </ul>
+            </li>
+            <li onclick="closeSidebar();"> <a id="drop2m"> home1 </a>
+                <ul class="drop11">
+                    <li onclick="closeSidebar();"><a id="familym" href="">home</a></li>
+                    <li onclick="closeSidebar();"><a id="gcom" href="">home1</a></li>
+                </ul>
+            </li>
 
-            <div id="oederbut" style="display: inline-flex">
-                <button id="cnotesm" onclick="oederiana('notes')"></button>
-                <button id="oletterm" onclick="oederiana('letters')"></button>
-            </div>
-
+            <li onclick="closeSidebar();"><a id="softwarem" href="">home2</a></li>
+            <li><a id="langm" href="index.html">home3</a></li> -->
         </ul>
         <div id="sidebarcontent">
             <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
                     alt="close menu" width="30px" height="30px" style="color: black;"></p>
-            <div id="oederbut" style="display: inline-flex">
-                <button id="cnotesm" onclick="oederiana('notes')">Skjul noter</button>
-                <button id="oletterm" onclick="oederiana('letters')">Skjul breve</button>
-            </div>
-
-
         </div>
+
     </nav>
     <div class="main">
 
         <aside id="content" class="left" style="position: sticky;">
+            <div id="oederbut" style="display: inline-flex"><button id="cnotes" onclick="oederiana('notes')">Noten
+                    verstecken</button><button id="oletter" onclick="oederiana('letters')">Oeders Briefe
+                    verstecken</button></div>
 
-            <div id="oederbut" style="display: inline-flex">
-                <button id="cnotes" onclick="oederiana('notes')">Skjul noter</button>
-                <button id="oletter" onclick="oederiana('letters')">Skjul breve</button>
-            </div>
         </aside>
         <aside id="contbut" class="left" style="position: sticky;">
             <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
                     src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
         </aside>
         <main>
-            <h2>
-                <section id="chap0">
+            <section id="chap0">
+                <h2>
 
                     Oederiana <br>
                     Oeders Verteidigung gegen u.a. Johann Christian Fabricius' Angriffe,
                     mit Anmerkungen von Johann Friedrich Camerer, seinem Schwager, verheiratet mit Marie Dorothea
-                    Ericius.
-            </h2>
-            <!-- <iframe id="pdf" type="application/pdf" src="https://www.kb.dk/e-mat/dod/130019453090.pdf"></iframe> -->
+                    Ericius. </h2>
+                <!-- <iframe id="pdf" type="application/pdf" src="https://www.kb.dk/e-mat/dod/130019453090.pdf"></iframe> -->
             </section>
+            <div id="oederbut" style="display: inline-flex"><button id="cnotes" onclick="oederiana('notes')">Noten
+                    verstecken</button><button id="oletter" onclick="oederiana('letters')">Oeders Briefe
+                    verstecken</button></div>
             <section class="row" id="frontpage">
                 <div>
                     2)
@@ -252,9 +276,9 @@
                 </div>
                 <div class="column">
                     <h3>
-                        Oversættelse: <br><br>
-                        Fjernt fra vores bøger er al hekseri, <br>
-                        Og musen svulmer ikke af vores vanvittige stof.<br><br>
+                        Translation: <br><br>
+                        Far from our books is all witchcraft, <br>
+                        Nor does the Muse swell with our mad substance.<br><br>
                     </h3>
                 </div>
 
@@ -3970,8 +3994,8 @@
                 </div>
                 <div class="column">
                     <hr>
-
                     <p class="notes"> <i>
+
                         </i> </p>
                 </div>
             </section>
@@ -4043,184 +4067,116 @@
     <!-- <script src="bedenkenscript.js"></script> -->
     <script src="navbarscript.js"></script>
 
-    <!-- <script>
-        var letterIsChecked = false
-        var notesIsChecked = false
-        var oed
-        var cam
-        function oederiana(showItem) {
-            cam = document.getElementsByClassName("notes")
-            oed = document.getElementsByClassName("letters")
+    <script>
+        // var letterIsChecked = false
+        // var notesIsChecked = false
+        // var oed
+        // var cam
+        // function oederiana(showItem) {
+        //     cam = document.getElementsByClassName("notes")
+        //     oed = document.getElementsByClassName("letters")
 
-            if (showItem == 'letters') {
-                switch (letterIsChecked) {
-                    case false:
-                        letterIsChecked = true;
-                        document.getElementById("oletter").innerText = "Oeders Brife zeigen";
-                        document.getElementById("oletter").style = "background-color: steelblue"
-                        break;
-                    case true:
-                        letterIsChecked = false;
-                        document.getElementById("oletter").innerText = "Oeders Brife verstecken";
-                        document.getElementById("oletter").style = "background-color:darkblue"
-                        break;
-                }
-                toggle('letterIsChecked', oed);
-            }
-            if (showItem == 'notes') {
-                switch (notesIsChecked) {
-                    case false:
-                        notesIsChecked = true;
-                        document.getElementById("cnotes").innerText = "Noten zeigen";
-                        document.getElementById("cnotes").style = "background-color: steelblue"
-                        break;
-                    case true:
-                        notesIsChecked = false;
-                        document.getElementById("cnotes").innerText = "Noten verstecken";
-                        document.getElementById("cnotes").style = "background-color:darkblue"
-                        break;
-                }
-                // page = document.getElementsByClassName("letter")
-                toggle('notesIsChecked', cam)
-            }
-            function toggle(isChecked, showhide) {
-                for (let index = 0; index < showhide.length; index++) {
-                    switch (eval(isChecked)) {
-                        case false:
-                            showhide[index].style = "display: block;"
-                            break;
-                        case true:
-                            showhide[index].style = "display: none;"
-                            break;
-                    }
-                }
-                if (letterIsChecked == true || notesIsChecked == true) {
-                    var line = document.getElementsByTagName('hr');
-                    for (let index = 0; index < line.length; index++) {
-                        line[index].style = "display: none;"
-                    }
-                }
-                if (letterIsChecked == false && notesIsChecked == false) {
-                    var line = document.getElementsByTagName('hr');
-                    for (let index = 0; index < line.length; index++) {
-                        line[index].style = "display: block;"
-                    }
-                }
+        //     if (showItem == 'letters') {
+        //         switch (letterIsChecked) {
+        //             case false:
+        //                 letterIsChecked = true;
+        //                 document.getElementById("oletter").innerText = buttontxt[0];
+        //                 document.getElementById("oletter").style = "background-color: steelblue"
+        //                 break;
+        //             case true:
+        //                 letterIsChecked = false;
+        //                 document.getElementById("oletter").innerText = "Oeders Brife verstecken";
+        //                 document.getElementById("oletter").style = "background-color:darkblue"
+        //                 break;
+        //         }
+        //         if (notesIsChecked == true) {
+        //             notesIsChecked = false;
+        //             document.getElementById("cnotes").innerText = "Noten verstecken";
+        //             document.getElementById("cnotes").style = "background-color:darkblue";
+        //             toggle("notesIsChecked", cam);
+        //         }
+        //         toggle('letterIsChecked', oed);
+        //     }
+        //     if (showItem == 'notes') {
+        //         switch (notesIsChecked) {
+        //             case false:
+        //                 notesIsChecked = true;
+        //                 document.getElementById("cnotes").innerText = "Noten zeigen";
+        //                 document.getElementById("cnotes").style = "background-color: steelblue"
+        //                 break;
+        //             case true:
+        //                 notesIsChecked = false;
+        //                 document.getElementById("cnotes").innerText = "Noten verstecken";
+        //                 document.getElementById("cnotes").style = "background-color:darkblue"
+        //                 break;
+        //         }
+        //         if (letterIsChecked == true) {
+        //             letterIsChecked = false;
+        //             document.getElementById("oletter").innerText = "Briefe verstecken";
+        //             document.getElementById("oletter").style = "background-color:darkblue";
+        //             toggle("letterIsChecked", oed);
+        //         }
 
-            }
-        }
-    </script> -->
-    <!-- <script>
-        var letterIsChecked = false;
-        var notesIsChecked = false;
-        var oed;
-        var cam;
-        function oederiana(showItem) {
-            cam = document.getElementsByClassName("notes");
-            oed = document.getElementsByClassName("letters");
-            var a = document.getElementsByTagName("hr");
+        //         // page = document.getElementsByClassName("letter")
+        //         toggle('notesIsChecked', cam)
+        //     }
+        //     function toggle(isChecked, showhide) {
+        //         var x = window.matchMedia("(max-width: 800px)");
+        //         for (let index = 0; index < showhide.length; index++) {
+        //             switch (eval(isChecked)) {
+        //                 case false:
+        //                     showhide[index].style = "display: block;";
+        //                     // showhide[index].parentElement.style = "width: 50%;"
+        //                     showhide[index].parentElement.style = "display: inline;";
+        //                     break;
+        //                 case true:
+        //                     showhide[index].style = "display: none;";
+        //                     showhide[index].parentElement.style = "display: none;";
+        //                     break;
+        //             }
+        //             if (showhide == cam && eval(isChecked) && !x.matches) {
+        //                 oed[index].parentElement.style = "width: 80%";
+        //             }
+        //             if (showhide == oed && eval(isChecked) && !x.matches) {
+        //                 cam[index].parentElement.style = "width: 80%";
+        //             }
+        //             // if (showhide == oed && !eval(isChecked)  && !x.matches) {
+        //             //     oed[index].parentElement.style = "width: 80%"
+        //             // }
+        //             // if (showhide == cam && !eval(isChecked)  && !x.matches) {
+        //             //     cam[index].parentElement.style = "width: 80%"
+        //             // }
 
-            // var a = document.getElementsByTagName("hr")
+        //             if (showhide == oed && !eval(isChecked) && !x.matches) {
+        //                 cam[index].parentElement.style = "width: 50%";
+        //             }
+        //             if (showhide == cam && !eval(isChecked) && !x.matches) {
+        //                 oed[index].parentElement.style = "width: 50%";
+        //             }
+        //             if (showhide == oed && eval(isChecked) == false && x.matches) {
+        //                 cam[index].parentElement.style = "width: 100%";
+        //             }
+        //             if (showhide == cam && eval(isChecked) == false && x.matches) {
+        //                 oed[index].parentElement.style = "width: 100%";
+        //             }
+        //         }
+        //         if (letterIsChecked == true || notesIsChecked == true) {
+        //             var line = document.getElementsByTagName("hr");
+        //             for (let index = 0; index < line.length; index++) {
+        //                 line[index].style = "display: none;";
+        //             }
+        //         }
+        //         if (letterIsChecked == false && notesIsChecked == false) {
+        //             var line = document.getElementsByTagName("hr");
+        //             for (let index = 0; index < line.length; index++) {
+        //                 line[index].style = "display: block;";
+        //             }
+        //         }
+        //     }
+        // }
 
-            if (showItem == "letters") {
-                switch (letterIsChecked) {
-                    case false:
-                        letterIsChecked = true;
-                        document.getElementById("oletter").innerText = buttontext[0];
-                        document.getElementById("oletter").style =
-                            "background-color: steelblue";
-                        break;
-                    case true:
-                        letterIsChecked = false;
-                        document.getElementById("oletter").innerText = buttontext[2];
-                        document.getElementById("oletter").style = "background-color:darkblue";
-                        break;
-                }
-                if (notesIsChecked == true) {
-                    notesIsChecked = false;
-                    document.getElementById("cnotes").innerText = buttontext[1];
-                    document.getElementById("cnotes").style = "background-color:darkblue";
-                    toggle("notesIsChecked", cam);
-                }
-                toggle("letterIsChecked", oed);
-            }
-            if (showItem == "notes") {
-                switch (notesIsChecked) {
-                    case false:
-                        notesIsChecked = true;
-                        document.getElementById("cnotes").innerText = buttontext[1];
-                        document.getElementById("cnotes").style = "background-color: steelblue";
-                        break;
-                    case true:
-                        notesIsChecked = false;
-                        document.getElementById("cnotes").innerText = buttontext[3];
-                        document.getElementById("cnotes").style = "background-color:darkblue";
-                        break;
-                }
-                if (letterIsChecked == true) {
-                    letterIsChecked = false;
-                    document.getElementById("oletter").innerText = buttontext[2];
-                    document.getElementById("oletter").style = "background-color:darkblue";
-                    toggle("letterIsChecked", oed);
-                }
-                toggle("notesIsChecked", cam);
-            }
-            function toggle(isChecked, showhide) {
-                var x = window.matchMedia("(max-width: 800px)");
-                for (let index = 0; index < showhide.length; index++) {
-                    switch (eval(isChecked)) {
-                        case false:
-                            showhide[index].style = "display: block;";
-                            // showhide[index].parentElement.style = "width: 50%;"
-                            showhide[index].parentElement.style = "display: inline;";
-                            break;
-                        case true:
-                            showhide[index].style = "display: none;";
-                            showhide[index].parentElement.style = "display: none;";
-                            break;
-                    }
-                    if (showhide == cam && eval(isChecked) && !x.matches) {
-                        oed[index].parentElement.style = "width: 80%";
-                    }
-                    if (showhide == oed && eval(isChecked) && !x.matches) {
-                        cam[index].parentElement.style = "width: 80%";
-                    }
-                    // if (showhide == oed && !eval(isChecked)  && !x.matches) {
-                    //     oed[index].parentElement.style = "width: 80%"
-                    // }
-                    // if (showhide == cam && !eval(isChecked)  && !x.matches) {
-                    //     cam[index].parentElement.style = "width: 80%"
-                    // }
 
-                    if (showhide == oed && !eval(isChecked) && !x.matches) {
-                        cam[index].parentElement.style = "width: 50%";
-                    }
-                    if (showhide == cam && !eval(isChecked) && !x.matches) {
-                        oed[index].parentElement.style = "width: 50%";
-                    }
-                    if (showhide == oed && eval(isChecked) == false && x.matches) {
-                        cam[index].parentElement.style = "width: 100%";
-                    }
-                    if (showhide == cam && eval(isChecked) == false && x.matches) {
-                        oed[index].parentElement.style = "width: 100%";
-                    }
-                }
-                if (letterIsChecked == true || notesIsChecked == true) {
-                    var line = document.getElementsByTagName("hr");
-                    for (let index = 0; index < line.length; index++) {
-                        line[index].style = "display: none;";
-                    }
-                }
-                if (letterIsChecked == false && notesIsChecked == false) {
-                    var line = document.getElementsByTagName("hr");
-                    for (let index = 0; index < line.length; index++) {
-                        line[index].style = "display: block;";
-                    }
-                }
-            }
-        }
-
-    </script> -->
+    </script>
 </body>
 
 </html>

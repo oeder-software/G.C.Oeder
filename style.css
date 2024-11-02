@@ -8,6 +8,18 @@ body {
 nav {
   font-size: 16px;
   width: 100%;
+
+  z-index: 1;
+}
+.navbar {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  /*     padding: 5px;
+ */
+  height: min-content;
+  backdrop-filter: blur(0px);
+  position: sticky;
 }
 
 .list {
@@ -31,6 +43,8 @@ nav {
   display: block;
   text-align: left;
   justify-content: center;
+  height: 20px;
+  transition-duration: 0.5s;
 }
 
 .navbar a:hover {
@@ -44,7 +58,7 @@ nav {
  */
 
 .drop1 li a:hover {
-  background: lightskyblue;
+  background: lightskyblue !important;
   align-items: center;
   justify-content: center;
 }
@@ -64,12 +78,12 @@ nav {
   position: absolute;
   background: darkblue;
   backdrop-filter: blur(10px);
-  top: 165px;
-  z-index: 1;
+  top: 35px;
 }
 
 nav ul li:hover > .drop1 {
   display: inline-block;
+
   /* width: fit-content; */
 }
 
@@ -131,12 +145,15 @@ main {
   cursor: pointer;
   margin: 2px;
 }
+#listm a {
+  transition-duration: 0.5s;
+}
 #sidebarcontent {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 350px;
   z-index: 99;
   background-color: rgba(241, 235, 209, 0.91);
   box-shadow: -10px 0px 30px darkblue;
@@ -149,6 +166,17 @@ main {
   margin: 2px;
   padding-left: 10px;
 }
+#sidebarcontent a:hover {
+  background-color: lightskyblue !important;
+  transition-duration: 0.5s;
+}
+#sidebarcontent a {
+  transition-duration: 0.5s;
+}
+
+/* #sidecontent:hover {
+  background-color: rgba(210, 209, 241, 0.91);
+} */
 #dropm:hover,
 #drop1m:hover,
 #drop2m:hover,
@@ -188,17 +216,21 @@ header {
 #content {
   background-color: rgb(242, 234, 197);
   padding: 5px;
-  flex: 1 1 100px;
+  flex: 0 0 400px;
   display: flex;
   flex-direction: column;
   position: sticky;
-  height: 100vh;
+  height: calc(100vh -35px);
   width: fit-content;
   z-index: 0;
+  top: 35px;
+}
+#content a {
+  transition-duration: 0.5s;
 }
 
 #content a:hover {
-  background-color: lightskyblue;
+  background-color: lightskyblue !important;
 }
 
 .right {
@@ -281,13 +313,15 @@ a {
   color: white;
 }
 
-
 @media (max-width: 800px) {
   #imgind {
     width: 200px;
   }
   .main {
     width: 100%;
+  }
+  #framefooter {
+    height: 60px;
   }
 }
 @media all and (max-width: 670px) {
@@ -344,7 +378,17 @@ a {
   #chapname {
     display: inline-block;
   }
+  #langdk,
+  #langde,
+  #langen {
+    display: none;
+  }
+  #pdf {
+    width: 400px;
+    height: 500px;
+  }
 }
+
 @media (max-width: 500px) {
   #img1 {
     width: 100px;
@@ -358,16 +402,14 @@ a {
     max-width: 70%;
   }
 }
-        #pdf {
-            width: 800px;
-            height: 85vh;
-        }
+#pdf {
+  width: 800px;
+  height: 85vh;
+}
 
-        @media(max-width: 800px) {
-            #pdf {
-                width: 400px;
-                height: 500px;
-            }
-
-        }
-
+@media (max-width: 800px) {
+  #pdf {
+    width: 400px;
+    height: 500px;
+  }
+}

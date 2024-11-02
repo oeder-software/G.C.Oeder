@@ -31,7 +31,7 @@ if (path == "andenkendk" || path == "andenkende" || path == "andenkenen") {
   document.querySelector("body").style =
     "background-image:  url(./img/logo.png), url(./img/halem1.jpg),url(./img/headerbg.png);";
 }
-if (path == "oederianadk" || path == "oederianadk" || path == "oederianadk") {
+if (path == "oederianadk" || path == "oederianade" || path == "oederianaen") {
   document.querySelector("body").style =
     "background-image:  url(./img/logo.png), url(./img/oederlogo.png),url(./img/headerbg.png);";
       document.getElementById("headerh2").innerText = "Oederiana";
@@ -67,7 +67,17 @@ if (path == "bedenkendk" || path == "bedenkende" || path == "bedenkenen") {
   document.querySelector("body").style =
     "background-image:  url(./img/logo.png), url(./img/bedenkenforside.png),url(./img/headerbg.png);";
 }
-
+switch (path) {
+  case "indexdk":
+    document.getElementById("headerh2").innerText = "Startside";
+    break;
+  case "indexde":
+    document.getElementById("headerh2").innerText = "Startseite";
+    break;
+  case "indexen":
+    document.getElementById("headerh2").innerText = "Home";
+    break;
+}
 switch (path) {
   case "andenkendk":
     document.getElementById("headerh2").innerText = "Til minde om Oeder";
@@ -106,7 +116,7 @@ switch (path) {
 switch (path) {
   case "bedenkenadditionen":
     document.getElementById("headerh2").innerText =
-      "Addition to the Reflections";
+      "Addition to the Consideration";
     break;
 
   case "bedenkenadditiondk":
@@ -119,7 +129,7 @@ switch (path) {
 switch (path) {
   case "bedenkensupplementen":
     document.getElementById("headerh2").innerText =
-      "Supplement to the Reflections";
+      "Supplement to the Consideration";
     break;
 
   case "bedenkensupplementdk":
@@ -133,7 +143,7 @@ switch (path) {
 switch (path) {
   case "bedenkenen":
     document.getElementById("headerh2").innerText =
-      "Reflections on the Question:";
+      "Consideration on the Question:";
     break;
 
   case "bedenkendk":

@@ -40,7 +40,7 @@ let alifeContentGerman = [
   "Nachschrift zu einer Grabinschrift",
 ];
 
-let alifeContentChapter = [
+let chapter = [
   "#chap2",
   "#chap3",
   "#chap15",
@@ -145,151 +145,19 @@ path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "alifedk") {
-  // var a = document.createElement("a");
-  // a.innerText = "Indhold";
-  // a.style = "cursor: none; font-size: 20px";
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("a");
-  // a.innerText = "Til toppen";
-  // a.href = "#dex";
-  // var b = a;
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  // var a = document.createElement("a");
-  // a.innerText = "Indhold";
-  // a.style = "cursor: none; font-size: 16px";
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("a");
-  // a.innerText = "Til toppen";
-  // a.href = "#dex";
-  // a.setAttribute("onclick", "closeSidebar()");
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("sidebarcontent").appendChild(a);
-
   SetContent(contentdanish);
-  SetAlifeContent(alifeContentChapter, alifeContentDanish);
+  SetAlifeContent(chapter, alifeContentDanish);
   SetAlifeBio(alifeBio, "DK");
 }
 
 if (path == "alifede") {
-  // var a = document.createElement("a");
-  // a.innerText = "Inhaltsverzeichnis";
-  // a.style = "cursor: none; font-size: 20px";
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("a");
-  // a.innerText = "Zu Anfang";
-  // a.href = "#dex";
-  // var b = a;
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  // var a = document.createElement("a");
-  // a.innerText = "Inhaltsverzeichnis";
-  // a.style = "cursor: none; font-size: 20px";
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("a");
-  // a.innerText = "Zu Anfang";
-  // a.href = "#dex";
-  // a.setAttribute("onclick", "closeSidebar()");
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("sidebarcontent").appendChild(a);
   SetContent(contentgerman);
-  SetAlifeContent(alifeContentChapter, alifeContentGerman);
+  SetAlifeContent(chapter, alifeContentGerman);
   SetAlifeBio(alifeBio, "DE");
 }
 if (path == "alifeen") {
-  // var a = document.createElement("a");
-  // a.innerText = "ontent";
-  // a.style = "cursor: none; font-size: 20px";
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("a");
-  // a.innerText = "Page start";
-  // a.href = "#dex";
-  // var b = a;
-  // document.getElementById("content").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("content").appendChild(a);
-
-  // var a = document.createElement("a");
-  // a.innerText = "Content";
-  // a.style = "cursor: none; font-size: 16px";
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("a");
-  // a.innerText = "Page start";
-  // a.href = "#dex";
-  // a.setAttribute("onclick", "closeSidebar()");
-  // document.getElementById("sidebarcontent").appendChild(a);
-
-  // a = document.createElement("br");
-  // document.getElementById("sidebarcontent").appendChild(a);
   SetContent(contentenglish);
-  SetAlifeContent(alifeContentChapter, alifeContentEnglish);
+  SetAlifeContent(chapter, alifeContentEnglish);
 
   SetAlifeBio(alifeBio, "EN");
 }
-//https://en.wikipedia.org/wiki/Complex_plane
-// function SetAlifeBio(bio, language) {
-//   for (let index = 0; index < bio.length; index++) {
-//     document
-//       .getElementById("bio" + (index + 1))
-//       .setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
-//   }
-// }
-// function SetAlifeImg(img, alt) {
-//   for (let index = 0; index < img.length; index++) {
-//     document
-//       .getElementById("img" + (index + 1))
-//       .setAttribute("src", "./img/" + img[index]);
-//     document
-//       .getElementById("img" + (index + 1))
-//       .setAttribute("alt", alt[index]);
-//   }
-// }
-// function SetAlifeContent(chapter, content) {
-//   for (let index = 0; index < content.length; index++) {
-//     a = document.createElement("a");
-//     a.innerText = content[index];
-//     a.href = chapter[index];
-//     document.getElementById("content").appendChild(a);
-
-//     a = document.createElement("a");
-//     a.innerText = content[index];
-//     a.href = chapter[index];
-//     a.setAttribute("onclick", "closeSidebar()");
-//     document.getElementById("sidebarcontent").appendChild(a);
-//   }
-// }

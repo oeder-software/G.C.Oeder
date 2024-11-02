@@ -126,7 +126,7 @@ let andenkenBio = [
   "stolberg",
   "troldurt",
 ];
-let andenkenContentChapter = [
+let chapter = [
   "#chap1",
   "#chap3",
   "#chap6",
@@ -224,7 +224,7 @@ document
   .getElementById("img8href")
   .setAttribute(
     "href",
-    "https://archive.org/details/florasuecicaenum01wahl/page/n2/mode/1up?ref=ol&view=theater"
+    "https://www.google.dk/books/edition/Flora_Svecica/iYZo29qSca0C?hl=da&gbpv=1&dq=flora+svecica&printsec=frontcover"
   );
 document.getElementById("img8href").setAttribute("target", "_blank");
 document.getElementById("img8href").style = "cursor: pointer";
@@ -301,7 +301,7 @@ if (path == "andenkendk") {
   a = document.createElement("br");
   document.getElementById("sidebarcontent").appendChild(a);
 
-  SetContentAndenken(andenkenContentChapter, andenkenContentDanish);
+  SetContentAndenken(chapter, andenkenContentDanish);
 
   SetAndenkenBio(andenkenBio, "DK");
 }
@@ -341,7 +341,7 @@ if (path == "andenkende") {
   a = document.createElement("br");
   document.getElementById("sidebarcontent").appendChild(a);
 
-  SetContentAndenken(andenkenContentChapter, andenkenContentGerman);
+  SetContentAndenken(chapter, andenkenContentGerman);
   SetAndenkenBio(andenkenBio, "DE");
 }
 if (path == "andenkenen") {
@@ -380,8 +380,7 @@ if (path == "andenkenen") {
   a = document.createElement("br");
   document.getElementById("sidebarcontent").appendChild(a);
 
-  SetContentAndenken(andenkenContentChapter, andenkenContentEnglish);
-
+  SetContentAndenken(chapter, andenkenContentEnglish);
   SetAndenkenBio(andenkenBio, "EN");
 }
 
@@ -402,17 +401,21 @@ function SetImgAndenken(img, alt) {
       .setAttribute("alt", alt[index]);
   }
 }
-function SetContentAndenken(chapter, content) {
-  for (let index = 0; index < content.length; index++) {
-    a = document.createElement("a");
-    a.innerText = content[index];
-    a.href = chapter[index];
-    document.getElementById("content").appendChild(a);
+// function SetContentAndenken(chapter, content) {
+//   for (let index = 0; index < content.length; index++) {
+//     a = document.createElement("a");
+//     a.innerText = content[index];
+//     a.href = chapter[index];
+//     a.setAttribute("id", index);
 
-    a = document.createElement("a");
-    a.innerText = content[index];
-    a.href = chapter[index];
-    a.setAttribute("onclick", "closeSidebar()");
-    document.getElementById("sidebarcontent").appendChild(a);
-  }
-}
+//     document.getElementById("content").appendChild(a);
+
+//     a = document.createElement("a");
+//     a.innerText = content[index];
+//     a.href = chapter[index];
+//     a.setAttribute("id", index + "m");
+
+//     a.setAttribute("onclick", "closeSidebar()");
+//     document.getElementById("sidebarcontent").appendChild(a);
+//   }
+// }
