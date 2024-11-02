@@ -2,66 +2,80 @@
 
 <head>
     <link rel="stylesheet" href="framestyle.css">
+    <style>
+        #flag{
+            display: inline-flexbox;
+              flex-direction: column;
+
+        }
+        #contact{
+            display: inline-flexbox;
+              flex-direction: column;
+
+        }
+    </style>
 </head>
 <html>
 
 <body>
-    <h4 id="footer" style="color: darkblue;" style="float: right;"><a href="mailto:oeder.software@gmail.com"><img
+    <div id="flag"><a style="float: right; cursor: pointer;" onclick="ChangeLanguage('de');" class="language"><img src="./buttons/de.png"
+             width="24px"></a>
+     <a onclick="ChangeLanguage('dk');" style="float: right; cursor: pointer;" class="language"><img src="./buttons/dk.png"
+             width="24px"></a>
+     <a style="float: right; cursor: pointer;" onclick="ChangeLanguage('en');" class="language"><img src="./buttons/gb.png"
+             width="24px"></a>
+     </a></h4></div>
+   <div id="contact"> <h4 id="footer" style="color: darkblue;" style="float: right;"><a href="mailto:oeder.software@gmail.com"><img
                 src="./buttons/mail.png" alt="mailto" width="24px" style="vertical-align:middle;"> Contact:
-            oeder.software@gmail.com </a>
-        <a style="float: right;" onclick="ChangeLanguage('de');" class="language"><img src="./buttons/de.png"
-                width="24px"></a>
-        <a onclick="ChangeLanguage('dk');" style="float: right;" class="language"><img src="./buttons/dk.png"
-                width="24px"></a>
-        <a style="float: right;" onclick="ChangeLanguage('en');" class="language"><img src="./buttons/gb.png"
-                width="24px"></a>
-        </a>
-    </h4>
+            oeder.software@gmail.com </a></h4></div>
+    
+        <script src="functionscript.js"></script>
+
 </body>
-<script>
-    let danishHtml = ["andenkendk", "familynicodk", "indexdk", "letterbugdk", "letterlindk", "letterchedk", "alifedk", "Forside", "bedenkenprefacedk", "bedenkendk", "bedenkenadditiondk", "bedenkensupplementdk", "botanicaljourney-dk"];
-    let germanHtml = ["andenkende", "familynicode", "indexde", "letterbugde", "letterlinde", "letterchede", "alifede", "startseite", "bedenkenprefacede", "bedenkende", "bedenkenadditionde", "bedenkensupplementde", "botanicaljourney-de"];
-    let englishHtml = ["andenkenen", "familynicoen", "indexen", "letterbugen", "letterlinen", "lettercheen", "alifeen", "Home", "bedenkenprefaceen", "bedenkenen", "bedenkenadditionen", "bedenkensupplementen", "botanicaljourney-en"];
-    let langindex;
-    function ChangeLanguage(lang) {
-        console.log(parent.document.title)
-        var path = parent.location.pathname;
-        path = path.split("/").pop();
-        path = path.split(".").shift();
-                console.log(path)
+<!-- <script scr="functionscript.js">
+    // let danishHtml = ["andenkendk", "familynicodk", "indexdk", "letterbugdk", "letterlindk", "letterchedk", "alifedk", "Forside", "bedenkenprefacedk", "bedenkendk", "bedenkenadditiondk", "bedenkensupplementdk", "botanicaljourney-dk"];
+    // let germanHtml = ["andenkende", "familynicode", "indexde", "letterbugde", "letterlinde", "letterchede", "alifede", "startseite", "bedenkenprefacede", "bedenkende", "bedenkenadditionde", "bedenkensupplementde", "botanicaljourney-de"];
+    // let englishHtml = ["andenkenen", "familynicoen", "indexen", "letterbugen", "letterlinen", "lettercheen", "alifeen", "Home", "bedenkenprefaceen", "bedenkenen", "bedenkenadditionen", "bedenkensupplementen", "botanicaljourney-en"];
+    // let langindex;
+    // function ChangeLanguage(lang) {
+    //     console.log(parent.document.title)
+    //     var path = parent.location.pathname;
+    //     path = path.split("/").pop();
+    //     path = path.split(".").shift();
+    //             console.log(path)
 
 
-        for (let index = 0; index < germanHtml.length; index++) {
-            if (germanHtml[index] == path) {
-                langindex = index;
-            }
-        }
-        for (let index = 0; index < englishHtml.length; index++) {
-            if (englishHtml[index] == path) {
-                langindex = index;
-            }
-        }
-        for (let index = 0; index < danishHtml.length; index++) {
-            if (danishHtml[index] == path) {
-                langindex = index;
-            }
+    //     for (let index = 0; index < germanHtml.length; index++) {
+    //         if (germanHtml[index] == path) {
+    //             langindex = index;
+    //         }
+    //     }
+    //     for (let index = 0; index < englishHtml.length; index++) {
+    //         if (englishHtml[index] == path) {
+    //             langindex = index;
+    //         }
+    //     }
+    //     for (let index = 0; index < danishHtml.length; index++) {
+    //         if (danishHtml[index] == path) {
+    //             langindex = index;
+    //         }
 
-        }
-        switch (lang) {
-            case "dk":
-                parent.location.href = danishHtml[langindex] + ".html"
-                break;
-            case "de":
-                parent.location.href = germanHtml[langindex] + ".html"
-                break;
-            case "en":
-                parent.location.href = englishHtml[langindex] + ".html"
-                break;
+    //     }
+    //     switch (lang) {
+    //         case "dk":
+    //             parent.location.href = danishHtml[langindex] + ".html"
+    //             break;
+    //         case "de":
+    //             parent.location.href = germanHtml[langindex] + ".html"
+    //             break;
+    //         case "en":
+    //             parent.location.href = englishHtml[langindex] + ".html"
+    //             break;
 
-        }
+    //     }
 
 
-    }
-</script>
+    // }
+</script> -->
 
 </html>
