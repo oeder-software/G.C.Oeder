@@ -1,21 +1,9 @@
 let bedenkenContentDanish = [
-  "Betænkning over spørgsmålet: Hvordan kan frihed og ejendom sikres for bondeklassen i de lande, hvor begge mangler?",
-  "Indhold.",
-  "Nærmere præcisering af min mening.",
-  "Befolkning.",
-  "Forholdet mellem landbrug og borgerligt erhverv",
-  "Fabrikker.",
-  "Udvidet total af nationalindkomsten.",
-  "Forsvarsstand",
-  "Mulighed for at opdele store godser uden at miste godsejernes privilegier og sikkerhed for fremtiden.",
-  "Mulighed for Opdeling Uden Tab af Godsejernes Indkomst.",
-  "Fremgangsmåde ved gennemførelsen af opsplitningen.",
-  "Spørgsmålet om, hvad der er retfærdigt?",
-  "Vanskeligheder, der skal overvejes ved gennemførelsen af forandringen i et helt land",
-  "Eksempel som fyrsten kan give på sine domæner.",
-  "Bestemmelse af hoveriarbejdet.",
-  "Afgifter skal fastsættes in natura, ikke i penge.",
-  "Betragtninger ved ændringer af de én gang oprettede skatteregistre over landejendomme og grunde til regulering af statens afgifter.",
+  "G. C. v. Oeders første irettesættelse af en indtrængen prydet med noter af en veteran.",
+  "Appel til det danske publikum af Herr Stiftsamtmand von Oeder i Oldenburg, med noter af en veteran.",
+  "Om en by, der skal etableres i Nordlanden Skrevet i juni 1763 og Med noter",
+  "Bemærkninger om tankerne vedrørende militærvæsenet i Danmark. Overgivet af forfatteren, som ikke var soldat, til en minister, der levede på det tidspunkt i året 1767.",
+  "Memoire fra den preussiske minister til Kong Christian VII, overleveret i år 1766 eller 1767.",
 ];
 
 let bedenkenContentEnglish = [
