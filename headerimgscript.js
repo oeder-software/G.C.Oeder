@@ -5,7 +5,8 @@ if (
   path == "indexdk" ||
   path == "indexen" ||
   path == "indexde" ||
-  path == "index"
+  path == "index" || 
+  "G.C.Oeder"
 ) {
   document.querySelector("body").style =
     "background-image:  url(./img/logo.png), url(./img/oederlogo.png),url(./img/headerbg.png);";
