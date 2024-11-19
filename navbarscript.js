@@ -656,10 +656,10 @@ if (
   document
     .getElementById("botanical")
     .setAttribute("href", "botanicaljourney-en.html");
-  document.getElementById("botanical").innerText = "Oeders botaniske rejse";
+  document.getElementById("botanical").innerText = "Oeders botanical journey";
 
   document.getElementById("oederiana").setAttribute("href", "oederianaen.html");
-  document.getElementById("oederiana").innerText = "Oeder's forsvar, Oderiana";
+  document.getElementById("oederiana").innerText = "Oeder's defence, Oderiana";
 
   document.getElementById("lettera").innerText = "Letters";
   document.getElementById("letter1a").innerText = "Charlotte Hedevig Ericius";
@@ -722,7 +722,7 @@ if (
   document
     .getElementById("oederianam")
     .setAttribute("href", "oederianaen.html");
-  document.getElementById("oederianam").innerText = "Oeder's forsvar, Oderiana";
+  document.getElementById("oederianam").innerText = "Oeder's defence, Oderiana";
 
   document.getElementById("bioam").innerText = "Biography";
   document.getElementById("bioam").style = "cursor:default;";
