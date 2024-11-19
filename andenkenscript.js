@@ -115,7 +115,7 @@ let andenkenBio = [
   "sturz",
   "schack",
   "Bernstorff",
-  "moltke",
+  "Moltke",
   "arveprins",
   "guldberg",
   "wessel",
