@@ -1,0 +1,13 @@
+@media (max-width: 1200px) {
+  #content {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 670px) {
+  #content {
+    display: none;
+  }
+}
