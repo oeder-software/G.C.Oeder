@@ -118,7 +118,7 @@ let andenkenBio = [
   "Moltke",
   "arveprins",
   "guldberg",
-  "wessel",
+  "Wessel",
   "frederik4",
   "wiedewelt",
   "grav",
