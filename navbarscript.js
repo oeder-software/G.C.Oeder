@@ -13,144 +13,55 @@ a.setAttribute("id", "bio");
 document.getElementById("list").appendChild(a);
 
 var a = document.createElement("a");
-a.setAttribute("id", "bioa");
+a.setAttribute("id", "biographyHeadName");
 document.getElementById("bio").appendChild(a);
 
 var a = document.createElement("ul");
 a.setAttribute("class", "drop1");
-a.setAttribute("id", "bioul");
+a.setAttribute("id", "biography");
 document.getElementById("bio").appendChild(a);
 
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "bio1");
-document.getElementById("bioul").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "bio1a");
-document.getElementById("bio1").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "bio2");
-document.getElementById("bioul").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "bio2a");
-document.getElementById("bio2").appendChild(a);
-//Manuscripts
 var a = document.createElement("li");
 a.setAttribute("class", "listelement");
 a.setAttribute("id", "manu");
 document.getElementById("list").appendChild(a);
 
 var a = document.createElement("a");
-a.setAttribute("id", "drop3");
-a.innerText = "Manuskripter";
+a.setAttribute("id", "manuscriptsHeadName");
 document.getElementById("manu").appendChild(a);
 
 var a = document.createElement("ul");
 a.setAttribute("class", "drop1");
-a.setAttribute("id", "manulist");
+a.setAttribute("id", "manuscripts");
 document.getElementById("manu").appendChild(a);
 
 var a = document.createElement("li");
 a.setAttribute("class", "listelement");
-a.setAttribute("id", "manulist1");
-document.getElementById("manulist").appendChild(a);
+a.setAttribute("id", "jour");
+document.getElementById("list").appendChild(a);
 
 var a = document.createElement("a");
-a.setAttribute("id", "preface");
-document.getElementById("manulist1").appendChild(a);
+a.setAttribute("id", "journalsHeadName");
+document.getElementById("jour").appendChild(a);
 
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "manulist2");
-document.getElementById("manulist").appendChild(a);
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1");
+a.setAttribute("id", "journals");
+document.getElementById("jour").appendChild(a);
 
-var a = document.createElement("a");
-a.setAttribute("id", "bedenken");
-document.getElementById("manulist2").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "manulist3");
-document.getElementById("manulist").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "addition");
-document.getElementById("manulist3").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "manulist4");
-document.getElementById("manulist").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "supplement");
-document.getElementById("manulist4").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "manulist5");
-document.getElementById("manulist").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "botanical");
-document.getElementById("manulist5").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "manulist6");
-document.getElementById("manulist").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "oederiana");
-document.getElementById("manulist6").appendChild(a);
-
-// letters
 var a = document.createElement("li");
 a.setAttribute("class", "listelement");
 a.setAttribute("id", "letter");
 document.getElementById("list").appendChild(a);
 
 var a = document.createElement("a");
-a.setAttribute("id", "lettera");
+a.setAttribute("id", "lettersHeadName");
 document.getElementById("letter").appendChild(a);
 
 var a = document.createElement("ul");
+a.setAttribute("id", "letters");
 a.setAttribute("class", "drop1");
-a.setAttribute("id", "letterul");
 document.getElementById("letter").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "letter1");
-document.getElementById("letterul").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "letter1a");
-document.getElementById("letter1").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "letter2");
-document.getElementById("letterul").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "letter2a");
-document.getElementById("letter2").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "letter3");
-document.getElementById("letterul").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "letter3a");
-document.getElementById("letter3").appendChild(a);
-
-// Familytree
 
 var a = document.createElement("li");
 a.setAttribute("class", "listelement");
@@ -158,42 +69,28 @@ a.setAttribute("id", "tree");
 document.getElementById("list").appendChild(a);
 
 var a = document.createElement("a");
-a.setAttribute("id", "treea");
+a.setAttribute("id", "familytreeHeadName");
 document.getElementById("tree").appendChild(a);
 
 var a = document.createElement("ul");
 a.setAttribute("class", "drop1");
-a.setAttribute("id", "treeul");
+a.setAttribute("id", "familytree");
 document.getElementById("tree").appendChild(a);
 
 var a = document.createElement("li");
 a.setAttribute("class", "listelement");
-a.setAttribute("id", "tree1");
-document.getElementById("treeul").appendChild(a);
+a.setAttribute("id", "doc");
+document.getElementById("list").appendChild(a);
 
 var a = document.createElement("a");
-a.setAttribute("id", "tree1a");
-document.getElementById("tree1").appendChild(a);
+a.setAttribute("id", "documentHeadName");
+document.getElementById("doc").appendChild(a);
 
-var a = document.createElement("li");
-a.setAttribute("class", "listelement");
-a.setAttribute("id", "tree2");
-document.getElementById("treeul").appendChild(a);
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1");
+a.setAttribute("id", "document");
+document.getElementById("doc").appendChild(a);
 
-var a = document.createElement("a");
-a.setAttribute("id", "tree2a");
-document.getElementById("tree2").appendChild(a);
-
-// Language
-// var a = document.createElement("li");
-// a.setAttribute("class", "listelement");
-// a.setAttribute("id", "language");
-// document.getElementById("list").appendChild(a);
-
-// var a = document.createElement("a");
-// a.setAttribute("id", "languagea");
-// document.getElementById("language").appendChild(a);
-// Oeder software
 var a = document.createElement("li");
 a.setAttribute("class", "listelement");
 a.setAttribute("id", "soft");
@@ -202,6 +99,691 @@ document.getElementById("list").appendChild(a);
 var a = document.createElement("a");
 a.setAttribute("id", "softa");
 document.getElementById("soft").appendChild(a);
+document.getElementById("softa").innerText = "Oeder Software";
+document
+  .getElementById("softa")
+  .setAttribute("href", "http://oeder-software.github.io/dev");
+
+var familytreeListElement = ["familynico", "familyoeder"];
+var familytreeNameDk = ["Famlien Oeder", "Georg Christian Oeder"];
+var familytreeNameDe = ["Famlie Oeder", "Georg Christian Oeder"];
+var familytreeNameEn = ["Family Oeder", "Georg Christian Oeder"];
+var familytreeHeadName = ["Stamtræ", "Stammbaum", "Family Tree"];
+let familytreeHeaderImgRight = ["crest", "crest"];
+var familytreeElements = [
+  familytreeListElement,
+  familytreeNameDk,
+  familytreeNameDe,
+  familytreeNameEn,
+  familytreeHeadName,
+  familytreeHeaderImgRight,
+];
+var linksListElement = ["links-"];
+var linksNameDk = ["Links til dokumenter"];
+var linksNameDe = ["Links zu Unterlagen"];
+var linksNameEn = ["Links to Documents"];
+var linksHeadName = ["Links", "Links", "Links"];
+let linksHeaderImgRight = ["crest"];
+var linksElements = [
+  linksListElement,
+  linksNameDk,
+  linksNameDe,
+  linksNameEn,
+  linksHeadName,
+  linksHeaderImgRight,
+];
+
+var lettersListElement = [
+  "letterche",
+  "letterbug",
+  "letterlin",
+  "letterbern-",
+  "lettersuhm-",
+  "lettergun-",
+  "letterherzog-",
+];
+var lettersNameDk = [
+  "Fra Charlotte Hedevig Ericius",
+  "Til Thomas Bugge",
+  "Til Carl von Linné",
+  "Til J. H. E. Bernstorff",
+  "Til Peter Fredrik Suhm",
+  "Til Johan Ernst Gunnerus",
+  "Til Herzog Peter Friedrich Ludwig",
+];
+var lettersNameDe = [
+  "Von Charlotte Hedevig Ericius",
+  "An Thomas Bugge",
+  "An Carl von Linné",
+  "An J. H. E. Bernstorff",
+  "An Peter Fredrik Suhm",
+  "An Johan Ernst Gunnerus",
+  "An Herzog Peter Friedrich Ludwig",
+];
+var lettersNameEn = [
+  "From Charlotte Hedevig Ericius",
+  "To Thomas Bugge",
+  "To Carl von Linné",
+  "To J. H. E. Bernstorff",
+  "To Peter Fredrik Suhm",
+  "To Johan Ernst Gunnerus",
+  "To Herzog Peter Friedrich Ludwig",
+];
+let lettersHeaderImgRight = [
+  "flora",
+  "flora",
+  "flora",
+  "flora",
+  "flora",
+  "flora",
+  "flora",
+];
+
+var lettersHeadName = ["Breve", "Briefe", "Letters"];
+var letterElements = [
+  lettersListElement,
+  lettersNameDk,
+  lettersNameDe,
+  lettersNameEn,
+  lettersHeadName,
+  lettersHeaderImgRight,
+];
+var biographyHeadName = ["Biografi", "Biographie", "Biography"];
+var biographyListElement = ["alife", "andenken", "175-"];
+var biographyNameDk = [
+  "Et liv -med mere end en indsats",
+  "Til minde om Oeder",
+  "Georg Christian von Oeders oldenborgske tid.",
+];
+var biographyNameDe = [
+  "Ein Leben - mit mehr als ein einsatz",
+  "Andenken an Oeder",
+  "Georg Christian von Oeders Oldenburger Zeit",
+];
+var biographyNameEn = [
+  "A life - with more than one effort",
+  "In memory of Oeder",
+  "Georg Christian von Oeder’s Oldenburg Period.",
+];
+let biographyHeaderImgRight = ["flora", "flora", "flora"];
+var biographyElements = [
+  biographyListElement,
+  biographyNameDk,
+  biographyNameDe,
+  biographyNameEn,
+  biographyHeadName,
+  biographyHeaderImgRight,
+];
+
+var journalsHeadName = ["Tidsskrifter", "Zeitschriften", "Journals"];
+var journalsListElement = [
+  "munzen-",
+  "ueberpapirgeld-",
+  "gedanken-",
+  "hamburg-",
+  "trondheim-",
+  "opmaaling-",
+  "bremen-",
+  "1769-",
+  "wittwen-etwas-",
+  "wittwen-mehreres-",
+  "wittwen-teori-",
+  "wittwen-erfahrung-",
+  "inokulation-1-",
+  "inokulation-2-",
+  "inokulation-3-",
+  "inokulation-4-",
+  "commission-",
+  "landes-vermessung1-",
+  "landes-vermessung2-",
+  "osnabruck-",
+];
+var journalsNameDk = [
+  "Om Banco, Courant, og Mønt.",
+  "Om Papirpenge.",
+  "Tanker over PapirPenge.",
+  "Hamburg forsørgelsesanstalt.",
+  "Om handlen i Trondheim",
+  "Bestemmelse af Landenes Areal.",
+  "Om den Bremiske Enkekasse.",
+  "Vedrørende Folketælling i året 1769",
+  "1. Noget om Enkekasser",
+  "2. Noget Mere om Enkekasser.",
+  "3. Teori om enkekasser",
+  "4. Enkekasser, endnu en Erfaring.",
+  "1. Om Inokulationen af hornkvægpesten.",
+  "2. Historien om Indpodningen paa Aunøe.",
+  "3. Oeders afhandlinger om inokulation",
+  "4. Mine tanker om inokulationen",
+  "Afhandling til Kommission af 1772.",
+  "Beretning om den hersteds Landmåling.",
+  "Fortsættelse af den lokale landopmåling.",
+  "Osnabrücks og Oldenburgs befolkning.",
+];
+var journalsNameDe = [
+  "Ueber Banco, Courant, and Münzen.",
+  "Ueber PapirGeld.",
+  "Gedanken über das PapirGeld.",
+  "Hamburg, Versorgungsanstalt.",
+  "Vom handel in Trondheim",
+  "Bestimmung des Areals der Länder.",
+  "Ueber die Bremiiche WittwenCasse.",
+  "Betreffend die Volkszählung im Jahre 1769;",
+  "1. Etwas von Wittwenkassen.",
+  "2. Ein Mehreres von Witwenkassen.",
+  "3. Theorie zu Witwenkassen",
+  "4. Witwenkassen, Noch eine Erfahrung.",
+  "1. Über die Inokulation der Hornviehseuche.",
+  "2. Geschichte der Einimpfung auf Aunøe.",
+  "3. Oeders Abhandlungen über die Inokulation",
+  "4. Meine izige Gedanken über die Inokulation.",
+  "Aufsatz zu diejenige Commission von 1772.",
+  "Nachricht von hiesiger Landes-Vermessung.",
+  "Fortsetzung der  hiesiger Landes-Vermessung.",
+  "Osnabrückische und Oldenburgische Bevõlkerung.",
+];
+var journalsNameEn = [
+  "On Banco, Courant, and Coinage.",
+  "On Paper Money.",
+  "Reflections on Paper Money.",
+  "Hamburg,  General Relief Institution.",
+  "Commerce in Trondheim",
+  "Determination of the Area of the Lands.",
+  "On the Bremen Widow's Fund.",
+  "Concerning the census in the year 1769",
+  "1. Something about Widow Funds",
+  "2. Further Considerations on Widow’s Funds.",
+  "3. Theory of Widow Funds",
+  "4. Widow Funds, another Observation.",
+  "1. On the Inoculation of the Cattle Plague.",
+  "2. History of the Inoculationon Aunø.",
+  "3. Oeder’s Treatises on Inoculation",
+  "4. My present thoughts on the inoculation.",
+  "Treatise to the Commission from 1772.",
+  "Report on the local Land Survey.",
+  "Continuation of the local land survey.",
+  "Population of Osnabrück and Oldenburg.",
+];
+let journalsHeaderImgRight = [
+  "crest",
+  "crest",
+  "crest",
+  "flora",
+  "flora",
+  "crest",
+  "crest",
+  "flora",
+  "crest",
+  "flora",
+  "flora",
+  "crest",
+  "flora",
+  "crest",
+  "crest",
+  "flora",
+  "flora",
+  "crest",
+  "crest",
+  "crest",
+];
+var journalsElements = [
+  journalsListElement,
+  journalsNameDk,
+  journalsNameDe,
+  journalsNameEn,
+  journalsHeadName,
+  journalsHeaderImgRight,
+];
+
+var manuscriptHeadName = ["Manuskripter", "Manuskripte", "Manuscripts"];
+var manuscriptsListElemnts = [
+  "bedenkenpreface",
+  "bedenken",
+  "bedenkenaddition",
+  "bedenkensupplement",
+  "botanicaljourney-",
+  "oederiana",
+  "krauter-1-",
+  "krauter-2-",
+  "efterretning-",
+  "dissertation-",
+  // "munzen-",
+  // "ueberpapirgeld-",
+  // "gedanken-",
+  // "hamburg-",
+  // "trondheim-",
+  // "opmaaling-",
+  "irrabilitate-",
+  "svar-",
+  // "bremen-",
+  // "1769-",
+  // "wittwen-etwas-",
+  // "testhtml-",
+];
+var manuscriptsNameDk = [
+  "Forord til betænkning",
+  "Betænkning over spørgsmålet:",
+  "Tillæg til betænkningen",
+  "Tilføjelse til betænkningen",
+  "Oeders botaniske rejse",
+  "Oeder's forsvar, Oederiana",
+  "Introduktion til Urtevidenskaben. 1",
+  "Introduktion til Urtevidenskaben. 2",
+  "Efterretning om et Verk.",
+  "Oeders Inauguralafhandling",
+  // "Om Banco, Courant, og Mønt.",
+  // "Om Papirpenge.",
+  // "Tanker over PapirPenge.",
+  // "Hamburg forsørgelsesanstalt.",
+  // "Om handlen i Trondheim",
+  // "Bestemmelse af Landenes Areal.",
+  "Oeder’s afhandling De irritabilitate.",
+  "Svar paa Recensionen.",
+  // "Om den Bremiske Enkekasse.",
+  // "Vedrørende Folketælling i året 1769",
+  // "test",
+];
+var manuscriptsNameDe = [
+  "Vorrede zu dem Bedenken",
+  "Bedenken über die Frage:",
+  "Zusätze Zu dem Bedenken",
+  "Zulage Zu dem Bedenken",
+  "Oeders botanische reise",
+  "Oeders Verteidigung, Oederiana",
+  "Kräuterkenntniß theil 1",
+  "Kräuterkenntniß theil 2",
+  "Nachricht von einem Werke",
+  "Oeder's Inaugural-Dissertation",
+  // "Ueber Banco, Courant, and Münzen.",
+  // "Ueber PapirGeld.",
+  // "Gedanken über das PapirGeld.",
+  // "Hamburg, Versorgungsanstalt.",
+  // "Vom handel in Trondheim",
+  // "Bestimmung des Areals der Länder.",
+  "Oeder’s afhandling De irritabilitate.",
+  "Antwort auf die Rezension.",
+  // "Ueber die Bremiiche WittwenCasse.",
+  // "Betreffend die Volkszählung im Jahre 1769;",
+  // "Etwas von Wittwenkassen.",
+
+  // "testhtml-",
+];
+var manuscriptsNameEn = [
+  "Preface to the Consideration",
+  "Consideration on the Question:",
+  "Addition to the Consideration",
+  "Supplement to the Consideration",
+  "Oeders botanical journey",
+  "Oeder's defence, Oederiana",
+  "Introduction to the Knowledge of Herbs. 1",
+  "Introduction to the Knowledge of Herbs. 2",
+  "An Account of a Work, Flora Danica",
+  "Inaugural Dissertation",
+  // "On Banco, Courant, and Coinage.",
+  // "On Paper Money.",
+  // "Reflections on Paper Money.",
+  // "Hamburg,  General Relief Institution.",
+  // "Commerce in Trondheim",
+  // "Determination of the Area of the Lands.",
+  "Oeder’s afhandling De irritabilitate.",
+  "Reply to the review.",
+  // "On the Bremen Widow's Fund.",
+  // "Concerning the census in the year 1769",
+  // "testhtml-",
+];
+let manuscriptsHederImgRight = [
+  "crest",
+  "flora",
+  "flora",
+  "flora",
+  "crest",
+  "flora",
+  "flora",
+  "flora",
+  "flora",
+  "flora",
+  // "crest",
+  // "crest",
+  // "crest",
+  // "flora",
+  // "flora",
+  // "crest",
+  "flora",
+  "crest",
+  // "crest",
+  // "flora",
+  // "crest",
+];
+var manuElements = [
+  manuscriptsListElemnts,
+  manuscriptsNameDk,
+  manuscriptsNameDe,
+  manuscriptsNameEn,
+  manuscriptHeadName,
+  manuscriptsHederImgRight,
+];
+var path = parent.location.pathname;
+path = path.split("/").pop();
+path = path.split(".").shift();
+
+// // home sidebar
+var a = document.createElement("li");
+a.setAttribute("id", "home1m");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "homeam");
+document.getElementById("home1m").appendChild(a);
+// Biogrphy Sidebar
+var a = document.createElement("li");
+a.setAttribute("id", "biom");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "biographyResponsiveHeadName");
+a.setAttribute("onclick", "HideMenuElements('biographyResponsive')");
+document.getElementById("biom").appendChild(a);
+
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1m");
+a.setAttribute("id", "biographyResponsive");
+a.style.display = "none";
+document.getElementById("biom").appendChild(a);
+
+// function HideMenuElements() {
+//   document.getElementById("biographyResponsive").style.display = "block";
+// }
+
+var a = document.createElement("li");
+// a.setAttribute("class", "listelement");
+a.setAttribute("id", "manum");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "manuscriptsResponsiveHeadName");
+a.setAttribute("onclick", "HideMenuElements('manuscriptsResponsive')");
+document.getElementById("manum").appendChild(a);
+
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1m");
+a.setAttribute("id", "manuscriptsResponsive");
+a.style.display = "none";
+document.getElementById("manum").appendChild(a);
+
+var a = document.createElement("li");
+// a.setAttribute("class", "listelement");
+a.setAttribute("id", "jourm");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "journalsResponsiveHeadName");
+a.setAttribute("onclick", "HideMenuElements('journalsResponsive')");
+document.getElementById("jourm").appendChild(a);
+
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1m");
+a.setAttribute("id", "journalsResponsive");
+a.style.display = "none";
+document.getElementById("jourm").appendChild(a);
+
+var a = document.createElement("li");
+a.setAttribute("id", "letterm");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "lettersResponsiveHeadName");
+a.setAttribute("onclick", "HideMenuElements('lettersResponsive')");
+document.getElementById("letterm").appendChild(a);
+
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1m");
+a.setAttribute("id", "lettersResponsive");
+a.style.display = "none";
+document.getElementById("letterm").appendChild(a);
+
+var a = document.createElement("li");
+a.setAttribute("id", "treem");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "familytreeResponsiveHeadName");
+a.setAttribute("onclick", "HideMenuElements('familytreeResponsive')");
+document.getElementById("treem").appendChild(a);
+
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1m");
+a.setAttribute("id", "familytreeResponsive");
+a.style.display = "none";
+document.getElementById("treem").appendChild(a);
+
+var a = document.createElement("li");
+a.setAttribute("id", "docm");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "documentResponsiveHeadName");
+a.setAttribute("onclick", "HideMenuElements('documentResponsive')");
+document.getElementById("docm").appendChild(a);
+
+var a = document.createElement("ul");
+a.setAttribute("class", "drop1m");
+a.setAttribute("id", "documentResponsive");
+a.style.display = "none";
+document.getElementById("docm").appendChild(a);
+
+var a = document.createElement("li");
+a.setAttribute("id", "softm");
+document.getElementById("listm").appendChild(a);
+
+var a = document.createElement("a");
+a.setAttribute("id", "softam");
+document.getElementById("softm").appendChild(a);
+document.getElementById("softam").innerText = "Oeder Software";
+document
+  .getElementById("softam")
+  .setAttribute("href", "http://oeder-software.github.io/dev");
+
+// document.getElementById("homea").innerText = "Home";
+// document.getElementById("homea").setAttribute("href", "indexdk.html");
+// document.getElementById("homeam").innerText = "Home";
+// document.getElementById("homeam").setAttribute("href", "indexdk.html");
+CreateManuscriptsInNavbar(biographyElements, "biography");
+// CreateManuscriptsInNavbar(homeElements, "index");
+CreateManuscriptsInNavbar(manuElements, "manuscripts");
+CreateManuscriptsInNavbar(journalsElements, "journals");
+CreateManuscriptsInNavbar(letterElements, "letters");
+CreateManuscriptsInNavbar(familytreeElements, "familytree");
+CreateManuscriptsInNavbar(linksElements, "document");
+
+function CreateManuscriptsInNavbar(elements, kategory) {
+  var elem = elements[0];
+  var elemNaDk = elements[1];
+  var elemNaDe = elements[2];
+  var elemNaEn = elements[3];
+  var headName = elements[4];
+  var headerImgRight = elements[5];
+  var lang = "";
+  var elemText = "";
+  let lastChar = path.charAt(path.length - 1);
+  for (let i = 0; i < elem.length; i++) {
+    let sideMenu = elem[i] + "m";
+    var page = elem[i];
+    var a = document.createElement("li");
+    a.setAttribute("class", "listelement");
+    a.setAttribute("id", kategory + i);
+    document.getElementById(kategory).appendChild(a);
+
+    var a = document.createElement("a");
+    a.setAttribute("id", elem[i]);
+    document.getElementById(kategory + i).appendChild(a);
+
+    var a = document.createElement("li");
+    a.setAttribute("onclick", "closeSidebar()");
+    a.setAttribute("id", kategory + "Responsive" + i);
+    document.getElementById(kategory + "Responsive").appendChild(a);
+
+    var a = document.createElement("a");
+    a.setAttribute("id", elem[i] + "m");
+    document.getElementById(kategory + "Responsive" + i).appendChild(a);
+
+    switch (lastChar) {
+      case "k":
+        lang = page + "dk";
+        elemText = elemNaDk[i];
+        document.getElementById(kategory + "HeadName").innerText = headName[0];
+        document.getElementById(kategory + "ResponsiveHeadName").innerText =
+          headName[0];
+
+        break;
+
+      case "e":
+        lang = page + "de";
+        elemText = elemNaDe[i];
+        document.getElementById(kategory + "HeadName").innerText = headName[1];
+        document.getElementById(kategory + "ResponsiveHeadName").innerText =
+          headName[1];
+
+        break;
+      case "n":
+        lang = page + "en";
+        elemText = elemNaEn[i];
+        document.getElementById(kategory + "HeadName").innerText = headName[2];
+        document.getElementById(kategory + "ResponsiveHeadName").innerText =
+          headName[2];
+
+        break;
+    }
+    document.getElementById(elem[i]).setAttribute("href", lang + ".html");
+    document.getElementById(elem[i]).innerText = elemText;
+    document.getElementById(sideMenu).setAttribute("href", lang + ".html");
+    document.getElementById(sideMenu).innerText = elemText;
+  }
+  if (path == "indexde" || path == "indexdk" || path == "indexen") {
+    switch (lastChar) {
+      case "k":
+        document.getElementById("chapname").innerHTML = "Hjem";
+
+        break;
+      case "e":
+        document.getElementById("chapname").innerHTML = "Startseite";
+        break;
+      case "n":
+        document.getElementById("chapname").innerHTML = "Home";
+        break;
+    }
+  }
+  var indexName;
+  var indexPageLanguage;
+  switch (lastChar) {
+    case "k":
+      indexName = "Hjem";
+      indexPageLanguage = "indexdk.html";
+
+      break;
+    case "e":
+      indexName = "Startseite";
+      indexPageLanguage = "indexde.html";
+      break;
+    case "n":
+      indexName = "Home";
+      indexPageLanguage = "indexen.html";
+      break;
+  }
+
+  document.getElementById("homea").innerText = indexName;
+  document.getElementById("homea").setAttribute("href", indexPageLanguage);
+  document.getElementById("homeam").innerText = indexName;
+  document.getElementById("homeam").setAttribute("href", indexPageLanguage);
+
+  for (let i = 0; i < elem.length; i++) {
+    var pageName = path.slice(0, -2);
+    if (elem[i] == pageName) {
+      document.getElementById(elem[i]).style = "background-color:steelblue;";
+      document.getElementById(kategory + "HeadName").style =
+        "background-color:steelblue;";
+      document.getElementById(kategory + "ResponsiveHeadName").style =
+        "background-color:steelblue; color:white;";
+      document.getElementById(kategory + "Responsive").style.display = "block";
+
+      document.getElementById(elem[i] + "m").style =
+        "background-color:steelblue; color: white;";
+      switch (lastChar) {
+        case "k":
+          document.getElementById("chapname").innerText = elemNaDk[i];
+          SetHeaderPageName(elemNaDk[i], headerImgRight[i]);
+          break;
+        case "e":
+          document.getElementById("chapname").innerText = elemNaDe[i];
+          SetHeaderPageName(elemNaDe[i], headerImgRight[i]);
+          break;
+        case "n":
+          document.getElementById("chapname").innerText = elemNaEn[i];
+          SetHeaderPageName(elemNaEn[i], headerImgRight[i]);
+
+          break;
+      }
+    }
+  }
+  if (
+    path == "indexdk" ||
+    path == "indexen" ||
+    path == "indexde" ||
+    path == "index"
+  ) {
+    document
+      .getElementById("frameindex")
+      .contentWindow.document.querySelector("body").style =
+      "background-image:  url(./img/logo.png), url(./img/oederlogo.png),url(./img/headerbg.png); background-size: 110px 120px, 120px 120px, cover;";
+  }
+}
+function SetHeaderPageName(headerpageName, img) {
+  var iframeHeader = document.getElementById("frameindex");
+  var headerH2 = iframeHeader.contentWindow.document.getElementById("headerh2");
+  headerH2.innerText = headerpageName;
+  if (img == "flora") {
+    var randomimg = Math.floor(Math.random() * 14);
+    iframeHeader.contentWindow.document.querySelector("body").style =
+      "background-image:  url(./img/logo.png)," +
+      "url(./img/flora" +
+      randomimg +
+      ".png)" +
+      ",url(./img/headerbg.png);";
+  }
+  if (img == "oeder") {
+    iframeHeader.contentWindow.document.querySelector("body").style =
+      "background-image:  url(./img/logo.png), url(./img/oederlogo.png)  ,url(./img/headerbg.png);";
+    iframeHeader.contentWindow.document.querySelector(
+      "body"
+    ).style.backgroundSize = "110px 120px, 120px 120px, cover";
+  }
+  if (img == "crest") {
+    iframeHeader.contentWindow.document.querySelector("body").style =
+      "background-image:  url(./img/logo.png), url(./img/vaaben3.png)  ,url(./img/headerbg.png);";
+    iframeHeader.contentWindow.document.querySelector(
+      "body"
+    ).style.backgroundSize = "110px 120px, 100px 120px, cover";
+  }
+}
+var a = document.getElementsByTagName("main")[0];
+a.setAttribute("onclick", "closeSidebar()");
+
+function showSidebar() {
+  document.querySelector(".sidebar").style.display = "flex";
+}
+function showSidebarContent() {
+  document.getElementById("sidebarcontent").style.display = "flex";
+}
+
+function closeSidebar() {
+  document.querySelector(".sidebar").style.display = "none";
+  document.getElementById("sidebarcontent").style.display = "none";
+}
+var a = document.createElement("div");
+a.setAttribute("id", "changelangcontainer");
+a.style = "display: inline-block;";
+// a.style =  "margin-right", "auto";
+// a.style = "margin-left", "auto";
+document.getElementById("listm").appendChild(a);
 
 var a = document.createElement("a");
 a.setAttribute("id", "langdk");
@@ -233,215 +815,6 @@ a.setAttribute("class", "lang");
 a.style = "width:20px;";
 document.getElementById("langen").appendChild(a);
 
-//sidebar
-
-// home sidebar
-var a = document.createElement("li");
-a.setAttribute("id", "home1m");
-document.getElementById("listm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "homeam");
-document.getElementById("home1m").appendChild(a);
-// Biogrphy Sidebar
-var a = document.createElement("li");
-a.setAttribute("id", "biom");
-document.getElementById("listm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "bioam");
-document.getElementById("biom").appendChild(a);
-
-var a = document.createElement("ul");
-a.setAttribute("class", "drop1m");
-a.setAttribute("id", "bioulm");
-document.getElementById("biom").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("id", "bio1m");
-document.getElementById("bioulm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "bio1am");
-document.getElementById("bio1m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("id", "bio2m");
-document.getElementById("bioulm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "bio2am");
-document.getElementById("bio2m").appendChild(a);
-
-//Manuscripts sidebar
-
-var a = document.createElement("li");
-// a.setAttribute("class", "listelement");
-a.setAttribute("id", "manum");
-document.getElementById("listm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "drop3m");
-a.innerText = "Manuskripter";
-document.getElementById("manum").appendChild(a);
-
-var a = document.createElement("ul");
-a.setAttribute("class", "drop11");
-a.setAttribute("id", "manulistm");
-document.getElementById("manum").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("onclick", "closeSidebar()");
-a.setAttribute("id", "manulist1m");
-document.getElementById("manulistm").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("onclick", "closeSidebar()");
-a.setAttribute("id", "manulist2m");
-document.getElementById("manulistm").appendChild(a);
-
-var a = document.createElement("a");
-// a.innerText = "Forord";
-a.setAttribute("id", "prefacem");
-document.getElementById("manulist1m").appendChild(a);
-
-var a = document.createElement("a");
-// a.innerText = "Betænkning";
-a.setAttribute("id", "bedenkenm");
-document.getElementById("manulist2m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("onclick", "closeSidebar()");
-a.setAttribute("id", "manulist3m");
-document.getElementById("manulistm").appendChild(a);
-
-var a = document.createElement("a");
-// a.innerText = "Tillæg til betænkningen";
-a.setAttribute("id", "additionm");
-document.getElementById("manulist3m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("onclick", "closeSidebar()");
-a.setAttribute("id", "manulist4m");
-document.getElementById("manulistm").appendChild(a);
-
-var a = document.createElement("a");
-// a.innerText = "Tilføjelse til betænkningen";
-a.setAttribute("id", "supplementm");
-document.getElementById("manulist4m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("onclick", "closeSidebar()");
-a.setAttribute("id", "manulist5m");
-document.getElementById("manulistm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "botanicalm");
-document.getElementById("manulist5m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("onclick", "closeSidebar()");
-a.setAttribute("id", "manulist6m");
-document.getElementById("manulistm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "oederianam");
-document.getElementById("manulist6m").appendChild(a);
-
-// Letters sidebar
-
-var a = document.createElement("li");
-a.setAttribute("id", "letterm");
-document.getElementById("listm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "letteram");
-document.getElementById("letterm").appendChild(a);
-
-var a = document.createElement("ul");
-a.setAttribute("class", "drop1m");
-a.setAttribute("id", "letterulm");
-document.getElementById("letterm").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("id", "letter1m");
-document.getElementById("letterulm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "letter1am");
-document.getElementById("letter1m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("id", "letter2m");
-document.getElementById("letterulm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "letter2am");
-document.getElementById("letter2m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("id", "letter3m");
-document.getElementById("letterulm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "letter3am");
-document.getElementById("letter3m").appendChild(a);
-
-// Familytree sidebar
-
-var a = document.createElement("li");
-a.setAttribute("id", "treem");
-document.getElementById("listm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "treeam");
-document.getElementById("treem").appendChild(a);
-
-var a = document.createElement("ul");
-a.setAttribute("class", "drop1m");
-a.setAttribute("id", "treeulm");
-document.getElementById("treem").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("id", "tree1m");
-document.getElementById("treeulm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "tree1am");
-document.getElementById("tree1m").appendChild(a);
-
-var a = document.createElement("li");
-a.setAttribute("id", "tree2m");
-document.getElementById("treeulm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "tree2am");
-document.getElementById("tree2m").appendChild(a);
-
-// Language sidebar
-// var a = document.createElement("li");
-// a.setAttribute("id", "languagem");
-// document.getElementById("listm").appendChild(a);
-
-// var a = document.createElement("a");
-// a.setAttribute("id", "languageam");
-// document.getElementById("languagem").appendChild(a);
-// Oeder software sidebar
-var a = document.createElement("li");
-a.setAttribute("id", "softm");
-document.getElementById("listm").appendChild(a);
-
-var a = document.createElement("a");
-a.setAttribute("id", "softam");
-document.getElementById("softm").appendChild(a);
-
-var a = document.createElement("div");
-a.setAttribute("id", "changelangcontainer");
-a.style = "display: inline-block;";
-// a.style =  "margin-right", "auto";
-// a.style = "margin-left", "auto";
-document.getElementById("listm").appendChild(a);
-
 var a = document.createElement("a");
 a.setAttribute("id", "langdkm");
 a.setAttribute("onclick", "ChangeLanguage('dk')");
@@ -472,761 +845,20 @@ a.setAttribute("src", "./buttons/gb.png");
 a.style = "width:20px;";
 document.getElementById("langenm").appendChild(a);
 
-var path = parent.location.pathname;
-path = path.split("/").pop();
-path = path.split(".").shift();
-
-if (
-  path == "indexdk" ||
-  path == "letterchedk" ||
-  path == "letterbugdk" ||
-  path == "letterlindk" ||
-  path == "familynicodk" ||
-  path == "andenkendk" ||
-  path == "alifedk" ||
-  path == "bedenkenprefacedk" ||
-  path == "bedenkendk" ||
-  path == "bedenkenadditiondk" ||
-  path == "bedenkensupplementdk" ||
-  path == "botanicaljourney-dk" ||
-  path == "familyoederdk" ||
-  path == "oederianadk"
-) {
-  document.getElementById("homea").innerText = "Hjem";
-  document.getElementById("homea").setAttribute("href", "indexdk.html");
-
-  document.getElementById("preface").innerText = "Forord til betænkning";
-  document
-    .getElementById("preface")
-    .setAttribute("href", "bedenkenprefacedk.html");
-
-  document.getElementById("bedenken").setAttribute("href", "bedenkendk.html");
-  document.getElementById("bedenken").innerText =
-    "Betænkning over spørgsmålet:";
-
-  document
-    .getElementById("addition")
-    .setAttribute("href", "bedenkenadditiondk.html");
-  document.getElementById("addition").innerText = "Tillæg til betænkningen";
-
-  document
-    .getElementById("supplement")
-    .setAttribute("href", "bedenkensupplementdk.html");
-  document.getElementById("supplement").innerText =
-    "Tilføjelse til betænkningen";
-
-  document
-    .getElementById("botanical")
-    .setAttribute("href", "botanicaljourney-dk.html");
-  document.getElementById("botanical").innerText = "Oeders botaniske rejse";
-
-  document.getElementById("oederiana").setAttribute("href", "oederianadk.html");
-  document.getElementById("oederiana").innerText = "Oeder's forsvar, Oderiana";
-
-  document.getElementById("lettera").innerText = "Breve";
-  document.getElementById("letter1a").innerText = "Charlotte Hedevig Ericius";
-  document.getElementById("letter1a").setAttribute("href", "letterchedk.html");
-  document.getElementById("letter2a").innerText = "Thomas Bugge";
-  document.getElementById("letter2a").setAttribute("href", "letterbugdk.html");
-  document.getElementById("letter3a").innerText = "Carl von Linné";
-  document.getElementById("letter3a").setAttribute("href", "letterlindk.html");
-
-  document.getElementById("bioa").innerText = "Biografi";
-  document.getElementById("bio1a").innerText = "Et liv med mere end en indsats";
-  document.getElementById("bio1a").setAttribute("href", "alifedk.html");
-  document.getElementById("bio2a").innerText = "Til minde om Oeder";
-  document.getElementById("bio2a").setAttribute("href", "andenkendk.html");
-
-  document.getElementById("treea").innerText = "Stamtræer";
-  document.getElementById("tree1a").innerText = "Familien Oeder";
-  document.getElementById("tree1a").setAttribute("href", "familynicodk.html");
-  document.getElementById("tree2a").innerText = "Georg Christian Oeder";
-  document.getElementById("tree2a").setAttribute("href", "familyoederdk.html");
-
-  document.getElementById("softa").innerText = "Oeder Software";
-  document
-    .getElementById("softa")
-    .setAttribute("href", "http://oeder-software.github.io/dev");
-
-  // document.getElementById("languagea").innerText = "Vælg sprog";
-  // document.getElementById("languagea").setAttribute("href", "index.html");
-
-  //Sidebar
-  document.getElementById("homeam").innerText = "Hjem";
-  document.getElementById("homeam").setAttribute("href", "indexdk.html");
-
-  document.getElementById("prefacem").innerText = "Forord til betænkning";
-  document
-    .getElementById("prefacem")
-    .setAttribute("href", "bedenkenprefacedk.html");
-
-  document.getElementById("bedenkenm").setAttribute("href", "bedenkendk.html");
-  document.getElementById("bedenkenm").innerText =
-    "Betænkning over spørgsmålet:";
-  document
-    .getElementById("additionm")
-    .setAttribute("href", "bedenkenadditiondk.html");
-  document.getElementById("additionm").innerText = "Tillæg til betænkningen";
-  document
-    .getElementById("supplementm")
-    .setAttribute("href", "bedenkensupplementdk.html");
-  document.getElementById("supplementm").innerText =
-    "Tilføjelse til betænkningen";
-
-  document
-    .getElementById("botanicalm")
-    .setAttribute("href", "botanicaljourney-dk.html");
-  document.getElementById("botanicalm").innerText = "Oders botaniske rejse";
-
-  document
-    .getElementById("oederianam")
-    .setAttribute("href", "oederianadk.html");
-  document.getElementById("oederianam").innerText = "Oeder's forsvar, Oderiana";
-
-  document.getElementById("bioam").innerText = "Biografi";
-  document.getElementById("bioam").style = "cursor:default;";
-  document.getElementById("bio1am").innerText =
-    "Et liv med mere end en indsats";
-  document.getElementById("bio1am").setAttribute("href", "alifedk.html");
-  document.getElementById("bio2am").innerText = "Til minde om Oeder";
-  document.getElementById("bio2am").setAttribute("href", "andenkendk.html");
-
-  document.getElementById("letteram").innerText = "Breve";
-  document.getElementById("letter1am").innerText = "Charlotte Hedevig Ericius";
-  document.getElementById("letter1am").setAttribute("href", "letterchedk.html");
-  document.getElementById("letter2am").innerText = "Thomas Bugge";
-  document.getElementById("letter2am").setAttribute("href", "letterbugdk.html");
-  document.getElementById("letter3am").innerText = "Carl von Linné";
-  document.getElementById("letter3am").setAttribute("href", "letterlindk.html");
-
-  document.getElementById("treeam").innerText = "Stamtræer";
-  document.getElementById("tree1am").innerText = "Familien Oeder";
-  document.getElementById("tree1am").setAttribute("href", "familynicodk.html");
-  document.getElementById("tree2am").innerText = "Georg Christian Oeder";
-  document.getElementById("tree2am").setAttribute("href", "familyoederdk.html");
-
-  document.getElementById("softam").innerText = "Oeder Software";
-  document
-    .getElementById("softam")
-    .setAttribute("href", "http://oeder-software.github.io/dev");
-
-  // document.getElementById("languageam").innerText = "Vælg sprog";
-  // document.getElementById("languageam").setAttribute("href", "index.html");
-}
-
-if (
-  path == "indexen" ||
-  path == "lettercheen" ||
-  path == "letterbugen" ||
-  path == "letterlinen" ||
-  path == "familynicoen" ||
-  path == "andenkenen" ||
-  path == "alifeen" ||
-  path == "bedenkenprefaceen" ||
-  path == "bedenkenen" ||
-  path == "bedenkenadditionen" ||
-  path == "bedenkensupplementen" ||
-  path == "oederianaen" ||
-  path == "botanicaljourney-en"
-) {
-  document.getElementById("homea").innerText = "Home";
-  document.getElementById("homea").setAttribute("href", "indexen.html");
-
-  document.getElementById("preface").innerText = "Preface to the Consideration";
-  document
-    .getElementById("preface")
-    .setAttribute("href", "bedenkenprefaceen.html");
-
-  document.getElementById("bedenken").setAttribute("href", "bedenkenen.html");
-  document.getElementById("bedenken").innerText =
-    "Consideration on the Question:";
-
-  document
-    .getElementById("addition")
-    .setAttribute("href", "bedenkenadditionen.html");
-  document.getElementById("addition").innerText =
-    "Addition to the Consideration";
-
-  document
-    .getElementById("supplement")
-    .setAttribute("href", "bedenkensupplementen.html");
-  document.getElementById("supplement").innerText =
-    "Supplement to the Consideration";
-
-  document
-    .getElementById("botanical")
-    .setAttribute("href", "botanicaljourney-en.html");
-  document.getElementById("botanical").innerText = "Oeders botanical journey";
-
-  document.getElementById("oederiana").setAttribute("href", "oederianaen.html");
-  document.getElementById("oederiana").innerText = "Oeder's defence, Oderiana";
-
-  document.getElementById("lettera").innerText = "Letters";
-  document.getElementById("letter1a").innerText = "Charlotte Hedevig Ericius";
-  document.getElementById("letter1a").setAttribute("href", "lettercheen.html");
-  document.getElementById("letter2a").innerText = "Thomas Bugge";
-  document.getElementById("letter2a").setAttribute("href", "letterbugen.html");
-  document.getElementById("letter3a").innerText = "Carl von Linné";
-  document.getElementById("letter3a").setAttribute("href", "letterlinen.html");
-
-  document.getElementById("bioa").innerText = "Biography";
-  document.getElementById("bio1a").innerText =
-    "A life - with more than one effort.";
-  document.getElementById("bio1a").setAttribute("href", "alifeen.html");
-  document.getElementById("bio2a").innerText = "In memory of Oeder.";
-  document.getElementById("bio2a").setAttribute("href", "andenkenen.html");
-
-  document.getElementById("treea").innerText = "Family Tree";
-  document.getElementById("tree1a").innerText = "Family Oeder";
-  document.getElementById("tree1a").setAttribute("href", "familynicoen.html");
-  document.getElementById("tree2a").innerText = "Georg Christian Oeder";
-  document.getElementById("tree2a").setAttribute("href", "familynicoen.html");
-
-  document.getElementById("softa").innerText = "Oeder Software";
-  document
-    .getElementById("softa")
-    .setAttribute("href", "http://oeder-software.github.io/dev");
-
-  // document.getElementById("languagea").innerText = "Choose Language";
-  // document.getElementById("languagea").setAttribute("href", "index.html");
-
-  //Sidebar
-  document.getElementById("homeam").innerText = "Home";
-  document.getElementById("homeam").setAttribute("href", "indexen.html");
-
-  document.getElementById("prefacem").innerText =
-    "Preface to the Consideration";
-  document
-    .getElementById("prefacem")
-    .setAttribute("href", "bedenkenprefaceen.html");
-
-  document.getElementById("bedenkenm").setAttribute("href", "bedenkenen.html");
-  document.getElementById("bedenkenm").innerText =
-    "Consideration on the Question:";
-  document
-    .getElementById("additionm")
-    .setAttribute("href", "bedenkenadditionen.html");
-  document.getElementById("additionm").innerText =
-    "Addition to the Consideration";
-  document
-    .getElementById("supplementm")
-    .setAttribute("href", "bedenkensupplementen.html");
-  document.getElementById("supplementm").innerText =
-    "Supplement to the Consideration";
-
-  document
-    .getElementById("botanicalm")
-    .setAttribute("href", "botanicaljourney-en.html");
-  document.getElementById("botanicalm").innerText = "Oeders botanical journey";
-
-  document
-    .getElementById("oederianam")
-    .setAttribute("href", "oederianaen.html");
-  document.getElementById("oederianam").innerText = "Oeder's defence, Oderiana";
-
-  document.getElementById("bioam").innerText = "Biography";
-  document.getElementById("bioam").style = "cursor:default;";
-  document.getElementById("bio1am").innerText =
-    "A life - with more than one effort.";
-  document.getElementById("bio1am").setAttribute("href", "alifeen.html");
-  document.getElementById("bio2am").innerText = "In memory of Oeder.";
-  document.getElementById("bio2am").setAttribute("href", "andenkenen.html");
-
-  document.getElementById("letteram").innerText = "Letters";
-  document.getElementById("letter1am").innerText = "Charlotte Hedevig Ericius";
-  document.getElementById("letter1am").setAttribute("href", "lettercheen.html");
-  document.getElementById("letter2am").innerText = "Thomas Bugge";
-  document.getElementById("letter2am").setAttribute("href", "letterbugen.html");
-  document.getElementById("letter3am").innerText = "Carl von Linné";
-  document.getElementById("letter3am").setAttribute("href", "letterlinen.html");
-
-  document.getElementById("treeam").innerText = "Family Tree";
-  document.getElementById("tree1am").innerText = "Family Oeder";
-  document.getElementById("tree1am").setAttribute("href", "familynicodk.html");
-  document.getElementById("tree2am").innerText = "Georg Christian Oeder";
-  document.getElementById("tree2am").setAttribute("href", "letterbugdk.html");
-
-  document.getElementById("softam").innerText = "Oeder Software";
-  document
-    .getElementById("softam")
-    .setAttribute("href", "http://oeder-software.github.io/dev");
-
-  // document.getElementById("languageam").innerText = "Choose Language";
-  // document.getElementById("languageam").setAttribute("href", "index.html");
-}
-
-if (
-  path == "indexde" ||
-  path == "letterchede" ||
-  path == "letterbugde" ||
-  path == "familynicode" ||
-  path == "letterlinde" ||
-  path == "andenkende" ||
-  path == "alifede" ||
-  path == "bedenkenprefacede" ||
-  path == "bedenkende" ||
-  path == "bedenkenadditionde" ||
-  path == "bedenkensupplementde" ||
-  path == "botanicaljourney-de" ||
-  path == "oederianade"
-) {
-  document.getElementById("homea").innerText = "Startseite";
-  document.getElementById("homea").setAttribute("href", "indexde.html");
-
-  document.getElementById("preface").innerText = "Vorrede zu dem Bedenken";
-  document
-    .getElementById("preface")
-    .setAttribute("href", "bedenkenprefacede.html");
-
-  document.getElementById("bedenken").setAttribute("href", "bedenkende.html");
-  document.getElementById("bedenken").innerText = "Bedenken über die Frage:";
-
-  document
-    .getElementById("addition")
-    .setAttribute("href", "bedenkenadditionde.html");
-  document.getElementById("addition").innerText = "Zusäße Zu dem Bedenken";
-
-  document
-    .getElementById("supplement")
-    .setAttribute("href", "bedenkensupplementde.html");
-  document.getElementById("supplement").innerText = "Zulage Zu dem Bedenken";
-
-  document
-    .getElementById("botanical")
-    .setAttribute("href", "botanicaljourney-de.html");
-  document.getElementById("botanical").innerText = "Oeders botanische reise";
-
-  document.getElementById("oederiana").setAttribute("href", "oederianade.html");
-  document.getElementById("oederiana").innerText =
-    "Oeders Verteidigung, Oderiana";
-
-  document.getElementById("lettera").innerText = "Briefe";
-  document.getElementById("letter1a").innerText =
-    "Von Charlotte Hedevig Ericius";
-  document.getElementById("letter1a").setAttribute("href", "letterchede.html");
-  document.getElementById("letter2a").innerText = "An Thomas Bugge";
-  document.getElementById("letter2a").setAttribute("href", "letterbugde.html");
-  document.getElementById("letter3a").innerText = "An Carl von Linné";
-  document.getElementById("letter3a").setAttribute("href", "letterlinde.html");
-
-  document.getElementById("bioa").innerText = "Biographie";
-  document.getElementById("bio1a").innerText =
-    "Ein Leben - mit mehr als ein einsatz.";
-  document.getElementById("bio1a").setAttribute("href", "alifede.html");
-  document.getElementById("bio2a").innerText = "Andenken an Oeder.";
-  document.getElementById("bio2a").setAttribute("href", "andenkende.html");
-
-  document.getElementById("treea").innerText = "Stambaum";
-  document.getElementById("tree1a").innerText = "Familie Oeder";
-  document.getElementById("tree1a").setAttribute("href", "familynicode.html");
-  document.getElementById("tree2a").innerText = "Georg Christian Oeder";
-  document.getElementById("tree2a").setAttribute("href", "familynicode.html");
-
-  document.getElementById("softa").innerText = "Oeder Software";
-  document
-    .getElementById("softa")
-    .setAttribute("href", "http://oeder-software.github.io/dev");
-
-  // document.getElementById("languagea").innerText = "Sparche whälen";
-  // document.getElementById("languagea").setAttribute("href", "index.html");
-
-  //Sidebar
-  document.getElementById("homeam").innerText = "Startseite";
-  document.getElementById("homeam").setAttribute("href", "indexen.html");
-
-  document.getElementById("prefacem").innerText = "Vorrede zu dem Bedenken";
-  document
-    .getElementById("prefacem")
-    .setAttribute("href", "bedenkenprefaceen.html");
-
-  document.getElementById("bedenkenm").setAttribute("href", "bedenkenen.html");
-  document.getElementById("bedenkenm").innerText = "Bedenken über die Frage:";
-  document
-    .getElementById("additionm")
-    .setAttribute("href", "bedenkenadditionen.html");
-  document.getElementById("additionm").innerText = "Zusäße Zu dem Bedenken";
-  document
-    .getElementById("supplementm")
-    .setAttribute("href", "bedenkensupplementen.html");
-  document.getElementById("supplementm").innerText = "Zulage Zu dem Bedenken";
-
-  document
-    .getElementById("botanicalm")
-    .setAttribute("href", "botanicaljourney-de.html");
-  document.getElementById("botanicalm").innerText = "Oeders botanische reise";
-
-  document
-    .getElementById("oederianam")
-    .setAttribute("href", "oederianade.html");
-  document.getElementById("oederianam").innerText =
-    "Oeders Verteidigung, Oderiana";
-
-  document.getElementById("bioam").innerText = "Biographie";
-  document.getElementById("bioam").style = "cursor:default;";
-  document.getElementById("bio1am").innerText =
-    "Ein Leben - mit mehr als ein einsatz.";
-  document.getElementById("bio1am").setAttribute("href", "alifeen.html");
-  document.getElementById("bio2am").innerText = "Andenken an Oeder.";
-  document.getElementById("bio2am").setAttribute("href", "andenkenen.html");
-
-  document.getElementById("letteram").innerText = "Briefe";
-  document.getElementById("letter1am").innerText =
-    "Von Charlotte Hedevig Ericius";
-  document.getElementById("letter1am").setAttribute("href", "letterchede.html");
-  document.getElementById("letter2am").innerText = "An Thomas Bugge";
-  document.getElementById("letter2am").setAttribute("href", "letterbude.html");
-  document.getElementById("letter3am").innerText = "An Carl von Linné";
-  document.getElementById("letter3am").setAttribute("href", "letterlinde.html");
-
-  document.getElementById("treeam").innerText = "Stambaum";
-  document.getElementById("tree1am").innerText = "Familie Oeder";
-  document.getElementById("tree1am").setAttribute("href", "familynicode.html");
-  document.getElementById("tree2am").innerText = "Georg Christian Oeder";
-  document.getElementById("tree2am").setAttribute("href", "familynicode.html");
-
-  document.getElementById("softam").innerText = "Oeder Software";
-  document
-    .getElementById("softam")
-    .setAttribute("href", "http://oeder-software.github.io/dev");
-
-  // document.getElementById("languageam").innerText = "Sprache whälen";
-  // document.getElementById("languageam").setAttribute("href", "index.html");
-}
-
-if (path == "indexde" || path == "indexen" || path == "indexdk") {
-  document.getElementById("homea").style = "background-color:steelblue;";
-  document.getElementById("homeam").style =
-    "background-color:steelblue; color: white;";
-}
-if (path == "letterchedk" || path == "lettercheen" || path == "letterchede") {
-  document.getElementById("lettera").style = "background-color:steelblue;";
-  document.getElementById("letter1a").style = "background-color:steelblue;";
-  document.getElementById("letter1am").style =
-    "background-color:steelblue; color: white;";
-  document.getElementById("chapname").innerText = "Charlotte Hedevig Ericius";
-}
-if (path == "letterbugdk" || path == "letterbugen" || path == "letterbugde") {
-  document.getElementById("lettera").style = "background-color:steelblue;";
-  document.getElementById("letter2a").style = "background-color:steelblue;";
-  document.getElementById("letter2am").style =
-    "background-color:steelblue; color: white;";
-  document.getElementById("chapname").innerText = "Thomas Bugge";
-}
-
-if (path == "letterlindk" || path == "letterlinen" || path == "letterlinde") {
-  document.getElementById("lettera").style = "background-color:steelblue;";
-  document.getElementById("letter3a").style = "background-color:steelblue;";
-  document.getElementById("letter2am").style =
-    "background-color:steelblue; color: white;";
-  document.getElementById("chapname").innerText = "Carl von Linné";
-}
-
-if (
-  path == "familynicodk" ||
-  path == "familynicoen" ||
-  path == "familynicode"
-) {
-  document.getElementById("treea").style = "background-color:steelblue;";
-  document.getElementById("tree1a").style = "background-color:steelblue;";
-  document.getElementById("tree1am").style =
-    "background-color:steelblue; color: white;";
-}
-if (path == "familyoederdk") {
-  document.getElementById("treea").style = "background-color:steelblue;";
-  document.getElementById("tree2a").style = "background-color:steelblue;";
-  document.getElementById("tree2am").style =
-    "background-color:steelblue; color: white;";
-}
-if (path == "andenkendk" || path == "andenkenen" || path == "andenkende") {
-  document.getElementById("bioa").style = "background-color:steelblue;";
-  document.getElementById("bio2a").style = "background-color:steelblue;";
-  document.getElementById("bio2am").style =
-    "background-color:steelblue; color: white;";
-}
-if (path == "alifedk" || path == "alifeen" || path == "alifede") {
-  document.getElementById("bioa").style = "background-color:steelblue;";
-  document.getElementById("bio1a").style = "background-color:steelblue;";
-  document.getElementById("bio1am").style =
-    "background-color:steelblue; color: white;";
-}
-
-if (
-  path == "bedenkenprefacedk" ||
-  path == "bedenkenprefacede" ||
-  path == "bedenkenprefaceen"
-) {
-  document.getElementById("manu").style = "background-color:steelblue;";
-  document.getElementById("preface").style = "background-color:steelblue;";
-  document.getElementById("prefacem").style =
-    "background-color:steelblue; color: white;";
-  document.getElementById("content").style = "display: none;";
-}
-if (path == "bedenkendk" || path == "bedenkende" || path == "bedenkenen") {
-  document.getElementById("manu").style = "background-color:steelblue;";
-  document.getElementById("bedenken").style = "background-color:steelblue;";
-  document.getElementById("bedenkenm").style =
-    "background-color:steelblue; color: white;";
-}
-if (
-  path == "bedenkenadditiondk" ||
-  path == "bedenkenadditionde" ||
-  path == "bedenkenadditionen"
-) {
-  document.getElementById("manu").style = "background-color:steelblue;";
-  document.getElementById("addition").style = "background-color:steelblue;";
-  document.getElementById("additionm").style =
-    "background-color:steelblue; color: white;";
-}
-if (
-  path == "bedenkensupplementdk" ||
-  path == "bedenkensupplementde" ||
-  path == "bedenkensupplementen"
-) {
-  document.getElementById("manu").style = "background-color:steelblue;";
-  document.getElementById("supplement").style = "background-color:steelblue;";
-  document.getElementById("supplementm").style =
-    "background-color:steelblue; color: white;";
-}
-if (
-  path == "botanicaljourney-dk" ||
-  path == "botanicaljourney-de" ||
-  path == "botanicaljourney-en"
-) {
-  document.getElementById("manu").style = "background-color:steelblue;";
-  document.getElementById("botanical").style = "background-color:steelblue;";
-  document.getElementById("botanicalm").style =
-    "background-color:steelblue; color: white;";
-}
-
-if (path == "oederianade") {
-  document.getElementById("manu").style = "background-color:steelblue;";
-  document.getElementById("oederiana").style = "background-color:steelblue;";
-  document.getElementById("oederianam").style =
-    "background-color:steelblue; color: white;";
-  document.getElementById("chapname").innerText = "Oederiana";
-}
-switch (path) {
-  case "indexdk":
-    document.getElementById("chapname").innerText = "Startside";
-
-    break;
-  case "indexde":
-    document.getElementById("chapname").innerText = "Startseite";
-    break;
-  case "indexen":
-    document.getElementById("chapname").innerText = "Home";
-    break;
-}
-
-switch (path) {
-  case "andenkendk":
-    document.getElementById("chapname").innerText = "Til minde om Oeder";
-    break;
-  case "andenkenen":
-    document.getElementById("chapname").innerText = "In Memory of Oeder";
-    break;
-  case "andenkende":
-    document.getElementById("chapname").innerText = "Andenken an Oeder";
-    break;
-}
-switch (path) {
-  case "alifedk":
-    document.getElementById("chapname").innerText = "Et liv";
-    break;
-  case "alifeen":
-    document.getElementById("chapname").innerText = "A Life";
-    break;
-  case "alifede":
-    document.getElementById("chapname").innerText = "Ein Leben";
-    break;
-}
-switch (path) {
-  case "bedenkenprefacedk":
-    document.getElementById("chapname").innerText = "Forord til betænkning";
-    break;
-  case "bedenkenprefacede":
-    document.getElementById("chapname").innerText = "Vorrede zu Bedenken";
-    break;
-  case "bedenkenprefaceen":
-    document.getElementById("chapname").innerText = "Preface to Consideration";
-    break;
-}
-switch (path) {
-  case "bedenkendk":
-    document.getElementById("chapname").innerText =
-      "Betænkning over spørgsmålet:";
-    break;
-  case "bedenkende":
-    document.getElementById("chapname").innerText = "Bedenken über die Frage:";
-    break;
-  case "bedenkenen":
-    document.getElementById("chapname").innerText =
-      "Consideration on the Question:";
-    break;
-}
-switch (path) {
-  case "bedenkenadditionen":
-    document.getElementById("chapname").innerText =
-      "Addition to the Consideration";
-    break;
-
-  case "bedenkenadditiondk":
-    document.getElementById("chapname").innerText = "Tillæg til betænkningen";
-    break;
-  case "bedenkenadditionde":
-    document.getElementById("chapname").innerText = "Zusäße Zu dem Bedenken";
-    break;
-}
-switch (path) {
-  case "bedenkensupplementen":
-    document.getElementById("chapname").innerText =
-      "Supplement to the Consideration";
-    break;
-
-  case "bedenkensupplementdk":
-    document.getElementById("chapname").innerText =
-      "Tilføjelser til betænkningen";
-    break;
-  case "bedenkensupplementde":
-    document.getElementById("chapname").innerText = "Zulage Zu dem Bedenken";
-    break;
-}
-
-switch (path) {
-  case "botanicaljourney-de":
-    document.getElementById("chapname").innerText = "Oeders Botanische reise";
-    break;
-
-  case "botanicaljourney-dk":
-    document.getElementById("chapname").innerText = "Oeders Botaniske rejse";
-    break;
-  case "botanicaljourney-en":
-    document.getElementById("chapname").innerText = "Oeders Botanical journey";
-    break;
-}
-if (path == "oederianadk" || path == "oederianade" || path == "oederianaen") {
-  document.getElementById("chapname").innerText = "Oederiana";
-}
-
-switch (path) {
-  case "familynicodk":
-    document.getElementById("chapname").innerText = "Stamtræ familie Oeder";
-    break;
-
-  case "familynicode":
-    document.getElementById("chapname").innerText = "Stambaum Familie Oeder";
-    break;
-  case "familynicoen":
-    document.getElementById("chapname").innerText = "Family Oeder";
-    break;
-}
-switch (path) {
-  case "familyoederdk":
-    document.getElementById("chapname").innerText = "Oeder's stamtræ";
-    break;
-
-  // case "familynicode":
-  //   document.getElementById("chapname").innerText = "Stambaum Familie Oeder";
-  //   break;
-  // case "familynicoen":
-  //   document.getElementById("chapname").innerText = "Family Oeder";
-  //   break;
-}
-
-var a = document.getElementsByTagName("main")[0];
-a.setAttribute("onclick", "closeSidebar()");
-
-function showSidebar() {
-  document.querySelector(".sidebar").style.display = "flex";
-}
-function showSidebarContent() {
-  document.getElementById("sidebarcontent").style.display = "flex";
-}
-
-function closeSidebar() {
-  document.querySelector(".sidebar").style.display = "none";
-  document.getElementById("sidebarcontent").style.display = "none";
-}
-var danishHtml = [
-  "andenkendk",
-  "familynicodk",
-  "indexdk",
-  "letterbugdk",
-  "letterlindk",
-  "letterchedk",
-  "alifedk",
-  "Forside",
-  "bedenkenprefacedk",
-  "bedenkendk",
-  "bedenkenadditiondk",
-  "bedenkensupplementdk",
-  "botanicaljourney-dk",
-  "oederianadk",
-];
-var germanHtml = [
-  "andenkende",
-  "familynicode",
-  "indexde",
-  "letterbugde",
-  "letterlinde",
-  "letterchede",
-  "alifede",
-  "startseite",
-  "bedenkenprefacede",
-  "bedenkende",
-  "bedenkenadditionde",
-  "bedenkensupplementde",
-  "botanicaljourney-de",
-  "oederianade",
-];
-var englishHtml = [
-  "andenkenen",
-  "familynicoen",
-  "indexen",
-  "letterbugen",
-  "letterlinen",
-  "lettercheen",
-  "alifeen",
-  "Home",
-  "bedenkenprefaceen",
-  "bedenkenen",
-  "bedenkenadditionen",
-  "bedenkensupplementen",
-  "botanicaljourney-en",
-  "oederianaen",
-];
-
 function ChangeLanguage(lang) {
-  console.log(parent.document.title);
   var path = parent.location.pathname;
   path = path.split("/").pop();
   path = path.split(".").shift();
-  console.log(path);
-
-  for (let index = 0; index < germanHtml.length; index++) {
-    if (germanHtml[index] == path) {
-      langindex = index;
-    }
+  path = path.slice(0, -2);
+  parent.location.href = path + lang + ".html";
+}
+function HideMenuElements(ulToShow) {
+  let menuToClose = document.getElementsByClassName("drop1m");
+  for (let i = 0; i < menuToClose.length; i++) {
+    menuToClose[i].style.display = "none";
   }
-  for (let index = 0; index < englishHtml.length; index++) {
-    if (englishHtml[index] == path) {
-      langindex = index;
-    }
-  }
-  for (let index = 0; index < danishHtml.length; index++) {
-    if (danishHtml[index] == path) {
-      langindex = index;
-    }
-  }
-  switch (lang) {
-    case "dk":
-      parent.location.href = danishHtml[langindex] + ".html";
-      break;
-    case "de":
-      parent.location.href = germanHtml[langindex] + ".html";
-      break;
-    case "en":
-      parent.location.href = englishHtml[langindex] + ".html";
-      break;
-  }
+  // var a = document.getElementById(ulToShow);
+  // a.style.display = "block";
+  document.getElementById(ulToShow).style.display = "block";
+  // document.getElementById("biographyResponsive").appendChild(a);
 }
