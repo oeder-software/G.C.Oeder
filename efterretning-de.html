@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Georg Christian Oeder. Nachricht von einem Werke, welches auf Königlichen Befehl herausgegeben werden soll, genannt, FLORA DANICA
+    " />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="letterstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    #sidebar {
+      font-size: 0.5rem;
+    }
+
+    #content {
+      background-color: rgb(241, 235, 209);
+    }
+
+    .letter {
+      display: block;
+    }
+
+    /* hr {
+            display: block;
+        } */
+
+    button {
+      background-color: darkblue;
+      color: white;
+      width: 175px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 30px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition-duration: 0.3s;
+    }
+
+    button:hover {
+      background-color: lightskyblue !important;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    /* .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+    .column {
+      width: 50%;
+    }
+
+    p {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    #oederbut {
+      z-index: 0;
+    }
+
+    hr {
+      display: none;
+    }
+
+    #multe {
+      width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column;
+      }
+
+      button {
+        width: 170px;
+        height: 25px;
+        font-size: 10px;
+      }
+
+      #frontpage {
+        flex-direction: column-reverse;
+      }
+
+      .column {
+        width: 100%;
+      }
+
+      #frontimg {
+        width: 150px;
+        padding: 5px;
+      }
+
+      hr {
+        display: block;
+        background-color: darkblue;
+        height: 2px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+  <title id="title">
+
+
+
+    Nachricht von einem Werke, welches auf Königlichen Befehl herausgegeben werden soll, genannt, FLORA DANICA
+
+
+
+
+  </title>
+
+</head>
+
+<body id="dex">
+  <header>
+    <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no">
+    </iframe>
+  </header>
+
+  <nav class="navbar">
+    <ul class="list" id="list">
+      <li id="chapname">
+        <p>chapname</p>
+      </li>
+      <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false">
+        <a href=""><img src="./buttons/content.png" alt="content" width="20px" height="20px" /></a>
+      </li>
+
+      <li class="menubut" id="menubut" onclick="showSidebar(); return false">
+        <a href=""><img src="./buttons/menubut1.png" alt="menu" width="20px" height="20px" /></a>
+      </li>
+    </ul>
+    <ul class="sidebar" id="listm">
+      <p onclick="closeSidebar();" id="closebut">
+        <img id="closebut" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
+          style="color: black; font-size: 0.5em" />
+      </p>
+    </ul>
+    <div id="sidebarcontent">
+      <p onclick="closeSidebar();" id="closebutcontent">
+        <img id="closebutcontent" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
+          style="color: black" />
+      </p>
+    </div>
+  </nav>
+
+  <div class="main">
+    <aside id="content" class="left" style="position: sticky"></aside>
+    <aside id="contbut" class="left" style="position: sticky">
+      <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img src="./buttons/contentbut.png"
+          alt="content" width="20px" height="20px" /></a>
+    </aside>
+    <main onclick="closeSidebar();">
+      <section id="chap0">
+        <br><br>
+        <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage" src="">
+          </a> </aside>
+        <h1>
+          Nachricht
+          <br>von
+          <br>einem Werke,
+          <br>welches auf Königlichen Befehl herausgegeben werden soll,
+          FLORA DANICA
+          <br>genannt,
+          <br> nebst einer Probe-Tafel der Moltebeeren-Pflanze
+          <br>(Rubus Chamæmorus.)
+
+        </h1>
+        Ein beträchtlicher Theil der allhier neuerlich errichteten Königlichen Botanischen Anstalt bestehet in der
+        Herausgabe eines Werks, welches von allen jenen Gewächsen handeln soll, die von der Natur und ohne menschliche
+        Hülfe wild wachsen in Sr. Majestät beyder Reichen und übrigen Landen in Europa. Der vollständige Titel der
+        Schrift wird nach beyder Reichen und Landen eingerichtet werden; wir aber wollen solches hier und sonsten nur
+        mit dem abgekürzten Titel Flora Danica benennen.
+        <br>
+        <br>Seine Majestätens Haupt-Ziel mit diesem Werke ist ein vaterländisches, und gehet dahin, in Seinen Landen die
+        Kenntniß der einheimischen Gewächse auszubreiten.
+        <br>Diese Verbreitung der Kräuter-Kunde unter den Einwohnern des Landes muß gesucht werden, sintemalen die
+        Botanik nicht zu allgemeinem Nutzen gereichen kann, solange sie nur eine Wissenschaft für einig wenige
+        Botanisten bleibet.
+        <br>Wenn aber jener Nutzen erreicht werden soll, welchen das Publicum mit Recht und Fug sich von der Erkenntniß
+        der Reiche der Natur versprechen darf – woraus der Mensch den größten Theil seines Nutzens schöpfet, welcher
+        Nutzen, aufrichtig gesprochen, noch lange nicht in seinem vollen Umfange erreicht ist, sondern vielmehr noch zu
+        erwarten stehet, und welcher nicht in allzu enge Schranken, wie etwa allein auf die Arzneikunst, eingeschränkt
+        werden darf – so kommt alles vornehmlich darauf an, daß die Kenntniß der Pflanzen und die Gelegenheit zu eigenen
+        Erfahrungen verbunden angetroffen werden.
+        <br><br>
+        Dergleichen Gelegenheiten fallen gemeiniglich denen zu, welche mit Pflanzen umzugehen haben, wenn dieselben zum
+        Nutzen des Menschen in verschiedenen Gewerben des bürgerlichen Lebens angewendet werden sollen, besonders aber
+        denen, die auf dem Lande wohnen, gleichsam im Schooße der Natur, und welche auf die Landwirthschaft ihr
+        Augenmerk richten.Unter dieser zahlreichen Classe nützlicher Bürger im Staate finden sich zwar nicht viele, die
+        eigentlich das sind, was man Gelehrte von Profession nennet; hingegen eine große Menge, welche, wenn man die
+        gelehrten und fremden Sprachen ausnimmt (und oft braucht man nicht einmal die letzteren auszunehmen), im Übrigen
+        alles besitzen, was zu einem Liebhaber der Wissenschaften gehöret: Verstand, Erziehung, Vermögen, Muße, Neigung
+        – nebst einer besondern Neigung zur Botanik vor andern Wissenschaften, welche ihre häuslichen und privaten
+        Umstände mit sich bringen.Demnach muß diese Wissenschaft, zum Besten solcher Liebhaber – und dazu, meine ich,
+        gehöret nichts als der Wille – so viel möglich, ohne Schaden für ihre Gründlichkeit, leicht gemacht werden; und
+        ich meine überdies, daß der Botanist den Liebhabern die Sache in der That viel leichter machen könnte, wenn sie
+        nur wollten.Endlich müssen die Mittel, welche den Liebhabern an die Hand gegeben werden, dem Zwecke hinreichend
+        sein, damit sie zu deren Gebrauch nicht unfehlbar ausländischer Schriften bedürfen.
+        <br><br>
+        Nach dieser Denkungsart wird die Einrichtung und Abfassung unserer Flora vorgenommen und fortgesetzt; und da
+        Seine Majestät seine vaterländische Absicht aufs kräftigste zur Ausführung zu bringen gesinnet ist, so wird Er
+        eine beträchtliche Anzahl Exemplare, als ein Königliches Geschenk, unter die Geistlichkeit Seiner Reiche und
+        Lande vertheilen lassen; dergestalt, daß die jedem Stifte zugetheilten Exemplare von des Stiftes Bischof oder
+        Superintendent auf eine gewisse Zeit ausgeliehen werden sollen an diejenigen aus dem Predigerstande des Stifts,
+        welche am besten wissen, sich des Werks zum Nutzen zu bedienen, und wiederum dem botanischen Institut und Garten
+        durch ihre Correspondenz zu dienen vermögen.
+        <br>
+        Außer dieser Hauptabsicht ist es auch des Königs Wille, welcher ein großer Freund und Beförderer aller
+        Wissenschaften ist, daß selbst Ausländer Nutzen von dem Werke haben mögen, welches unzweifelhaft geschehen kann,
+        da es Pflanzen aus einer beträchtlichen Landesstrecke enthält, von jener Seite des Elbstromes bis an das
+        Eismeer, in einer Breite von 53 bis 70 Graden, Berg- und Strand-Gewächse, neben vielen anderen Verschiedenheiten
+        des Bodens, und demnach in dem größten, besonders dem nördlichen Theile Europas, von Nutzen seyn kann. Flora
+        Danica soll demnach zugleich in lateinischer Sprache abgefaßt werden, und die Einwohner dieser Länder sollen die
+        Wahl haben, zwischen dem Lateinischen und ihrer Muttersprache zu wählen.
+
+
+        <br><br>
+        Ehe ich umständlich von der Einrichtung dieses Werks berichte, muß ich zuvor einige Betrachtungen über die
+        Beschaffenheit eines Unternehmens dieser Art anführen, insonderheit über die Sammlung der Kupferstücke, als den
+        kostbarsten Theil des Werks.
+        <br><br>
+        Ein Unternehmen dieser Art ist nicht das Werk eines Privatmannes; dessen Fortsetzung erfordert größere Kosten,
+        mehr Nachdruck und Unterstützung, insonderheit mehr Zeit, als aus den Kräften einer einzelnen Person zu erwarten
+        ist, oder womit die Gebrechlichkeit eines Menschenlebens und die Gaben des Glücks bestehen können; und die
+        Geschichte der Botanik zeigt uns mehr als ein Beispiel von der Vergänglichkeit solcher Anlagen.
+        <br>Flora Danica ist daher kein Privat-Unternehmen; ihre Herausgabe ist als ein Hauptstück in die Verfassung der
+        Königlichen Botanischen Anstalt aufgenommen worden, und ihre Ausarbeitung, ferneres Wachstum und Verbesserung
+        ist jedem Professor des Königlichen Botanischen Gartens als eine Amtspflicht anbefohlen.
+        <br>Demnach haben die Käufer dieses Werks nicht zu befürchten, daß es jemals zum Stillstand komme und so die
+        Zahl vieler anderer dergleichen Schriften vermehre, die in ihrer Unvollkommenheit verblieben sind; denn ich kann
+        – ohne Vermessenheit – versichern, daß diese Flora ein Werk werde, das seinesgleichen nicht finden kann, solange
+        nicht eine andere Regierung sich zu einem gleichen Unternehmen entschließt
+        <br><br>
+        Zwar ist es wahr, daß man mit Worten und Beschreibungen allein die Pflanzen hinlänglich kenntlich machen kann,
+        und daß Abbildungen derselben nicht durchaus unerläßlich sind; jedoch ist es nicht minder gewiß, daß selbst bei
+        den besten Abbildungen die mündliche oder schriftliche Unterweisung des Botanikers und der Beistand seiner
+        Wissenschaft erforderlich ist, um den Nutzen der Abbildungen vollends zu ziehen.
+        <br>Ich will damit keineswegs behaupten, daß, weil ein Botaniker vermag, durch Verweisung auf eine Abbildung
+        eine Pflanze anderen kenntlich zu machen, er darum nicht gleichwohl auch schuldig sei, dieselbe mit Worten
+        ebenso genau zu beschreiben und zu bestimmen, als ob es gar keine Abbildung davon gäbe.
+        <br>Nach solcher Erklärung wird selbst der strengste Botaniker mir nicht verdenken, wenn ich den Wert und Nutzen
+        der Zeichnungen erhebe; seine eigene Erfahrung wird ihm sagen, wie sehr seine Arbeit, insonderheit im Vergleich
+        botanischer Schriftsteller, erleichtert wurde bei jeder der Pflanzen, von welcher er eine gute Abbildung fand.
+        <br>Und die Zustimmung derer, die keine Botaniker von Profession sind, darf ich überdies mit Zuversicht
+        erwarten.
+        <br>Es ist unwiderlegbar, daß man weit leichter und geschwinder Pflanzen kennen zu lernen vermag, wenn man,
+        neben der wörtlichen Kenntniß, sich der Kupferstiche bedienen kann, als wenn dies lediglich durch Worte
+        geschehen soll.
+        <br>Und hätte man, seit der Kunst, Schrift und Kupfer zu drucken, erfunden ward, mehr – jedoch gute und
+        brauchbare – Zeichnungen geliefert, statt unvollständiger Beschreibungen, so wären die Botaniker zum größten
+        Teil des mühseligen Synonymen-Geschäftes überhoben worden; es wäre weniger Anlaß zur Klage über die Menge der
+        Namen entstanden; die erste Kenntniß und Wiedererkennung der Gewächse hätte sich weiter verbreitet, und man wäre
+        in der Erkenntniß vom Nutzen der Pflanzen weiter vorangeschritten.
+        <br><br>
+        Alle Einwürfe gegen den Gebrauch von Kupferstichen und die Vermehrung der mit Kupferstücken gezierten
+        botanischen Werke laufen auf die Behauptung hinaus, daß dergleichen Werke kostspielig seien.Dem gegenüber kann
+        man zunächst stets mit der Frage antworten: was ist wohl kostbarer – die Zeit und Mühe, welche durch ein solches
+        Werk dem Liebhaber der Botanik erspart wird, oder das Geld, welches er für dieses Hilfsmittel aufwendet?Eine
+        solche Frage kann ein jeder nach seinen eigenen Umständen beantworten, doch fordert die Billigkeit, einem jeden
+        so viele Hilfsmittel anzubieten, als er sich aneignen mag.Zum Zweiten liegt die eigentliche Beschwerlichkeit für
+        den botanischen Liebhaber, selbst in mäßigen Verhältnissen, nicht so sehr in dem natürlichen Preise guter
+        Kupferstiche an sich, sondern vielmehr in der Begebenheit, daß er sich keine einheitliche und in ihrer Art
+        vollständige Sammlung verschaffen kann, sondern genötigt ist, wenn er auch nur Abbildungen derjenigen Pflanzen
+        wünscht, die in einem Umkreis von einer Meile um ihn her wachsen, eine ganze Reihe von Büchern zu erwerben, in
+        welchen er Zeichnungen von ungleicher Güte und Beschaffenheit findet, vielfach dasselbe und wiederum dasselbe,
+        und dasjenige, was er eigentlich sucht und gebrauchen will, ist zerstreut unter einer weit größeren Menge
+        unnötiger Dinge.
+        <br><br>
+        Diese Umständlichkeit ist es, welche den Liebhaber der Botanik, wie auch die Wissenschaft selbst, bedrückt; und
+        der Wunsch, daß eine solche Beschwernis gehoben werde, ist wohl ein guter, doch vergeblicher Wunsch, solange
+        Regenten dieser nützlichen Wissenschaft nicht ihre helfende und mächtige Beihülfe angedeihen lassen.
+        <br>Wenn ein Potentat in dem südlichen Theil Europas ein solches Werk, wie die Flora Danica, über die Pflanzen
+        seines Landes veranstalten ließe, so würde zuerst sein eigenes Land die unmittelbarste Frucht davon ernten,
+        nämlich jenen Nutzen, welchen wir in diesen nördlichen Reichen von der Flora Danica erwarten dürfen; sodann
+        hätten alle Botanisten in allen Ländern und an allen Orten zwei Werke, welche den allergrößten Theil der
+        gesammten Pflanzenwelt Europas in sich fassen, worauf sie sich stützen könnten, und von Zeit zu Zeit dasjenige
+        hinzufügen, was in ihrem eigenen Umkreise besonders anzutreffen wäre; und dergleichen Lücken in jenen Werken
+        könnten vielleicht desto schneller durch Beihülfe eines dritten oder vierten Potentaten im Osten, Westen oder
+        Mittelpunkte Europas ausgefüllt werden.
+        <br>Auf diese Weise würde eine vollständige Sammlung von Abbildungen sämtlicher europäischen Pflanzen
+        hervorgebracht, ohne Unordnung, ohne Wiederholungen; es würde sodann ein allgemeines Fundament für die ganze
+        Wissenschaft gelegt, dieselbe dadurch unendlich erleichtert und ihre Ausbreitung gar sehr gefördert.
+        <br><br>
+        Nun schreite ich zur Einrichtung der Flora Danica. Es ist Seiner Majestät Wille, daß sowohl die einheimischen
+        Pflanzen an sich selbst kenntlich gemacht, als auch deren Nutzen den Einwohnern dieser Reiche und Lande bekannt
+        werde.Das ganze Werk wird demnach in zwei Haupttheile gesondert: in das, was die Botanik an sich selbst betrifft
+        (Botanica pura), und in das, was die Botanik in ihrer Anwendung auf den menschlichen Nutzen angeht (Botanica
+        applicata).In der gegenwärtigen Nachricht rede ich allein von der Botanica pura.Die Ausarbeitung jenes Theils
+        über den Nutzen der Pflanzen ist einem Kollegio anvertraut, welchem ich selbst angehöre und worin ich auch die
+        Feder führen soll, und über diesen Theil wird zu seiner Zeit eine eigene Nachricht herausgegeben werden.
+        <br><br>
+        Der Text wird von den Abbildungen abgesondert. Mancherlei Ursachen kommen hier zusammen und machen diese
+        Einrichtung nothwendig.
+        <br>Die Sammlung der Kupferstücke mußte in Heften vertheilt werden, und unter solchen Umständen konnte weder auf
+        Ordnung, Übereinstimmung noch System Rücksicht genommen werden; hingegen mußte in einem Buche, welches zur
+        Unterweisung in einer Wissenschaft dienen soll, deren Seele die Ordnung ist, eine systematische Verbindung
+        beobachtet werden.
+        <br>Ein bequemes Format mußte gewählt werden für die Einleitung zur Botanik und das Verzeichniß der Pflanzen,
+        welche zwei Theile des Textes ausmachen, so daß man das Buch mit sich führen könne, um in der Natur die Pflanzen
+        aufzusuchen.
+        <br>Endlich mußte auch auf die Bequemlichkeit der verschiedenen Arten von Liebhabern Rücksicht genommen werden,
+        da nicht alle geneigt sein möchten, sich alle Theile des Werks anzuschaffen, und man doch allen gern dienen
+        wollte.
+        <br><br>
+        Die Sammlung dieser Kupferstücke belieben die Käufer anzusehen als ein sogenanntes Herbarium vivum, welches man
+        sammelt und vermehrt, so wie die Gelegenheit sich darbietet, nach einiger Zeit in die gebührende Ordnung legt,
+        wenn eine Anzahl beisammen ist, und das ganze Herbarium als ein Hülfsmittel aufbewahret, um es bei vorkommenden
+        Gelegenheiten zu gebrauchen, und es nach Belieben mit den Schriften der Botanisten zusammenzuhalten, zur
+        Erläuterung derselben.
+        <br><br>
+        Die Tafeln werden mit der Überschrift Flora Danica und einer fortlaufenden Zahl bezeichnet, so, dass das erste
+        Fascicul sechzig Tafeln enthält und das zweite mit Tab. 61 anhebt. Die Größe der Tafeln richtet sich zwar nach
+        der Größe der Pflanzen, doch werden sie alle auf gleichgroßem Papier abgedruckt, wie aus dem Probedruck
+        ersichtlich ist. Auf jeder Tafel wird nur eine Pflanze abgebildet, mit Ausnahme der kleinen Gewächse der
+        Dillenius’schen Moos-Klasse, mit welchen man daher bis zum Schluss warten will, damit die Zeichnungen dazu
+        gesammelt und sodann mehrere, ihrer Ähnlichkeit nach, auf einer und derselben Tafel vereinigt werden können. Die
+        großen Pflanzen werden ihrer Gestalt nach in einer gewissen verkleinerten Größe dargestellt, ihre merkwürdigen
+        Teile jedoch daneben in natürlicher Größe; bei den kleinen Pflanzen bedient man sich eines Vergrößerungsglases,
+        nicht nur um das sichtbar zu machen, was das bloße Auge nicht zu erkennen vermag, sondern auch, um dem Zeichner
+        Gelegenheit zu geben, mit dem Pinsel deutlich auszudrücken, was ein gutes unbewaffnetes Auge immerhin noch zu
+        unterscheiden vermöchte. Durch das ganze Werk hindurch werden alle diejenigen Teile für sich selbst dargestellt,
+        worin das besondere Unterscheidungsmerkmal einer Art von den übrigen besteht, wenn dieses nicht durch die
+        Gesamtgestalt der Pflanze allein kenntlich gemacht werden kann. Sämtliche Zeichnungen werden nach der Natur und
+        frischen Pflanzen gefertigt, und ich hoffe, dass Kenner mit der Arbeit der von der königlichen botanischen
+        Anstalt angenommenen Künstler, nämlich Vater und Sohn MICHAEL und MARTIN RÖSLER, ersterer Kupferstecher,
+        letzterer Zeichner, zufrieden sein werden. Jedem Fascicul wird ein gedrucktes Blatt beigegeben, worauf die Namen
+        der in demselben enthaltenen Pflanzen verzeichnet sind.
+        <br><br>
+        Diese Fasciceln beginnen mit der Herausgabe vor dem Texte, ihre Veröffentlichung wird auch während der
+        Herausgabe des Textes fortgesetzt und dauert an, selbst nachdem der Text einst völlig an das Licht gebracht
+        worden ist, so lange, bis alle zur Flora gehörigen Pflanzen abgezeichnet worden sind. Jeder Besitzer dieser
+        Sammlung erhält vermöge dieser Einrichtung die freie Hand, sowohl die Fasciceln nach und nach sogleich binden zu
+        lassen, sobald sie erscheinen, als auch, wenn er es vorzieht, dieselben ungebunden zu lassen, bis seine Sammlung
+        so weit gediehen ist, daß er die Blätter in eine systematische Ordnung bringen kann.
+        <br><br>
+        Diese Sammlung wird demnach sowohl Abbildungen der gemeinen als auch der selteneren Pflanzen enthalten; unsere
+        Hauptabsicht, den Einwohnern dieser Reiche und Länder zu dienen, erforderte einen solchen Plan. Alle Pflanzen
+        verdienen überhaupt Aufmerksamkeit, und soll das Werk jenen nützlich sein, so muß es an sich selbst hinreichend
+        seyn, und andere Schriften dürfen nicht unerläßlich vonnöthen seyn. Aufgrund der zuvor angeführten Gründe hoffe
+        ich auch im Hinblick auf die Wissenschaft selbst, daß Ausländer und Botanisten vom Fach sich eine gleichmäßige
+        Sammlung von Zeichnungen selbst der gewöhnlichsten Pflanzen werden gefallen lassen.
+        <br><br>
+        Die Theile des Textes sind folgende:
+        <br>Eine Einleitung zur Botanik nebst einer besonderen Abhandlung über die Lehrart.
+        <br>Ein Verzeichnis der in den königlichen Landen gefundenen Pflanzen, worinnen nach den Regeln der Kennzeichen
+        für jede Art so viele, und nicht mehrere, ihrer Eigenschaften angegeben werden, als gerade nöthig sind, sie von
+        andern kenntlich zu machen, indem dieses Verzeichnis hauptsächlich dazu bestimmt ist, zum Handgebrauch zu
+        dienen.
+        <br>Eine Sammlung ausführlicher und umständlicher Merkmale oder Beschreibungen dieser Pflanzen.
+        <br><br>
+        Diese drei Theile des Textes machen wohl ein Ganzes aus, werden aber doch also abgefasst, dass jeder derselben
+        ein eigenes Buch für sich ist, welches in seiner besondern Absicht vollkommen genannt werden kann, so dass das
+        eine nicht unentbehrlich das andere erfordert. Diese Theile des Textes werden sowohl zusammen, als auch einzeln
+        verkauft, sowohl mit als ohne die Hefte, auf dass ein jeder Liebhaber, nach seinem Vermögen, bedienet werden
+        könne, und keinem verwehrt werde, was seine Umstände ihm zu verschaffen erlauben.
+        <br><br>
+        Der erste Theil des Textes soll den inländischen Liebhabern gegen das Ende des Jahres 1762 übergeben werden; die
+        ausländischen sollen ihn zugleich mit dem zweiten Fascicul erhalten.
+        <br><br>
+        Die Fortéignis und die Beschreibungen sollen ausgefertigt werden, sobald ich entweder völlig oder größtenteils
+        meine Reise durch Dänemark und die Deutschen Provinzen Seiner Majestät vollendet habe; und da die Reise durch
+        Norwegen bereits abgelegt ist, so werden die übrigen erforderlichen Reisen im Namen der Flora nicht viel Zeit in
+        Anspruch nehmen.
+        <br><br>
+        Es wird keine Präumeration verlangt, sondern nur Subskription, und zwar zu dem Zweck, dass die Anzahl der
+        Exemplare danach bestimmt werden kann. Besonders jene, die illuminierte Kupferstiche wünschen, mögen sich
+        rechtzeitig melden, da keine weiteren illuminierten Exemplare hergestellt werden, als diejenigen, die bestellt
+        werden. Die Abonnenten, die sich eintragen, erhalten einen Beweis dafür, und der Preis der Subskription für ein
+        nicht illuminierendes Exemplar des ersten Fascikels beträgt 4 Reichstaler dänisch cour. und 9 Reichstaler für
+        ein illuminiertes Exemplar; diejenigen, die sich nicht abonnieren, müssen später ein Viertel mehr bezahlen, und
+        nach Ablauf der Subskriptionszeit wird es keine illuminierten Exemplare mehr geben. Die Bezahlung erfolgt bar
+        gegen Entgegennahme der Exemplare, und die Subskription wird hier in Kopenhagen bei mir und den Buchhändlern
+        Frau PHILIBERT und ACKERMAN entgegengenommen. An anderen Orten mögen sich die Interessierten an denjenigen
+        wenden, denen diese Nachricht mitgeteilt wird.
+        <br><br>
+        Kopenhagen, den 1. Mai 1761.
+        <br>Dr. GEORG CHRISTIAN OEDER,
+        <br>Königlicher Professor der Botanik.
+        <br><br>
+      </section>
+      <section id="chap1">
+        Verzeichnis der 60 Pflanzen, die der erste Band auf ebenso vielen Tafeln enthalten wird.
+
+        <br><br>
+        <br>Tab. I. Rubus chamæmorus.
+        <br>II. Pedicularis lapponica.
+        <br>III. Linnæa borealis.
+        <br>IV. Silene rupeftris.
+        <br>V. Cornus Svecica.
+        <br>VI. Ceraftium alpinum.
+        <br>VII. Androface Snptentrionalis.
+        <br>VIII. Pyrola uniflora.
+        <br>IV. Azalea procumbens.
+        <br>X. Andromeda hypnoides.
+        <br>XI. Thaliêtrum alpinum.
+        <br>XII. Stellaria biflora.
+        <br>XIII Polygonum viviparum.
+        <br>XIV. Rumex digynus.
+        <br>XV. Zoftera mariua.
+        <br>XVI. Veronica alpina.
+        <br>XVII. Gentiana nivalis.
+        <br>XVIII. Ofmunda lunaria.
+        <br>XIX. Ranunculus glacialis.
+        <br>XX. Cardamine bellidifolia.
+        <br>XXI. Cucubalus acaulis.
+        <br>XXII. Saxifraga cernua.
+        <br>XXIII. Saxifraga ftellaris.
+        <br>XXIV. Sedum villofum.
+        <br>XXV. Pulmonaria maritina
+        <br>XXVI. Pedicularis Sceptrum Carolinum.
+        <br>XXVII. Hieracium alpinum.
+        <br>XXVIII. Saxifraga nivalis.
+        <br>XXIX. Anemone vernalis.
+        <br>ХХХ. Рedicularis Aammex.
+        <br>XXXI. Dryas octopetala.
+        <br>XXXII. Sibbaldia procumbens.
+        <br>XXXIII. Arbutus uva urfi.
+        <br>XXXIV. Saxifraga oppofitifolia.
+        <br>XXXV. Subularia aquatica.
+        <br>XXXVI. Anthericum calyculatum.
+        <br>XXXVII. Serratula alpina.
+        <br>XXXVIIIІ. Erica Cinerea.
+        <br>XXXIX. Lobelia Dortmanna.
+        <br>XL. Vaccinium Vitis idæa.
+        <br>XLI. Papaver nudicaule.
+        <br>XLII. Anthericum Oflifragum.
+        <br>XLIII. Bartfia alpina.
+        <br>XLIV. Buxbaumia aphyla.
+        <br>XLV. Blafia pufilla.
+        <br>XLVI. Viola biflora.
+        <br>XLVII. Diapenfia lapponica.
+        <br>XLVIII. Galium trifidum.
+        <br>XLIX. Alchimilla alpina.
+        <br>L. Gentiana lutea.
+        <br>LI. Aftragalus alpinus.
+        <br>LII. Veronica fpicata.
+        <br>LIII. Phallus efculentus.
+        <br>LIV. Andromeda polifolia.
+        <br>LV. Pyrola minor.
+        <br>LVI. Draba alpina.
+        <br>LVII. Andromeda cærulea.
+        <br>LVIII. Vicia lathyroides.
+        <br>LIX. Sedum rupeſtre.
+        <br>LX. Acroftichum Septentrionale.
+        <br><br>
+      </section>
+      <section id="chap2">
+        <img src="img/efterretning 1.png" id="multe" alt="Rubus Chamæmorus">
+        <br><br>
+        <img src="img/efterretning 2.png" id="multe" alt="Rubus Chamæmorus">
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no">
+    </iframe>
+  </footer>
+  <script src="functionscript.js"></script>
+  <script src="efter.js"></script>
+  <script src="navbarscript.js"></script>
+</body>
+
+</html>

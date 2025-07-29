@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Georg Christian Oeder. An Account of a Work, which by Royal Command is to be published, entituled FLORA DANICA.
+    " />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="letterstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    #sidebar {
+      font-size: 0.5rem;
+    }
+
+    #content {
+      background-color: rgb(241, 235, 209);
+    }
+
+    .letter {
+      display: block;
+    }
+
+    /* hr {
+            display: block;
+        } */
+
+    button {
+      background-color: darkblue;
+      color: white;
+      width: 175px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 30px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition-duration: 0.3s;
+    }
+
+    button:hover {
+      background-color: lightskyblue !important;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    /* .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+    .column {
+      width: 50%;
+    }
+
+    p {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    #oederbut {
+      z-index: 0;
+    }
+
+    hr {
+      display: none;
+    }
+
+    #multe {
+      width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column;
+      }
+
+      button {
+        width: 170px;
+        height: 25px;
+        font-size: 10px;
+      }
+
+      #frontpage {
+        flex-direction: column-reverse;
+      }
+
+      .column {
+        width: 100%;
+      }
+
+      #frontimg {
+        width: 150px;
+        padding: 5px;
+      }
+
+      hr {
+        display: block;
+        background-color: darkblue;
+        height: 2px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+  <title id="title">
+
+
+    An Account of a Work, which by Royal Command is to be published, entituled FLORA DANICA.
+
+
+
+
+  </title>
+
+</head>
+
+<body id="dex">
+  <header>
+    <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no">
+    </iframe>
+  </header>
+
+  <nav class="navbar">
+    <ul class="list" id="list">
+      <li id="chapname">
+        <p>chapname</p>
+      </li>
+      <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false">
+        <a href=""><img src="./buttons/content.png" alt="content" width="20px" height="20px" /></a>
+      </li>
+
+      <li class="menubut" id="menubut" onclick="showSidebar(); return false">
+        <a href=""><img src="./buttons/menubut1.png" alt="menu" width="20px" height="20px" /></a>
+      </li>
+    </ul>
+    <ul class="sidebar" id="listm">
+      <p onclick="closeSidebar();" id="closebut">
+        <img id="closebut" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
+          style="color: black; font-size: 0.5em" />
+      </p>
+    </ul>
+    <div id="sidebarcontent">
+      <p onclick="closeSidebar();" id="closebutcontent">
+        <img id="closebutcontent" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
+          style="color: black" />
+      </p>
+    </div>
+  </nav>
+
+  <div class="main">
+    <aside id="content" class="left" style="position: sticky"></aside>
+    <aside id="contbut" class="left" style="position: sticky">
+      <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img src="./buttons/contentbut.png"
+          alt="content" width="20px" height="20px" /></a>
+    </aside>
+    <main onclick="closeSidebar();">
+      <section id="chap0">
+        <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage" src="">
+          </a> </aside>
+        <h1>
+          An Account
+          <br>of
+          <br>a Work,
+          <br>which by Royal Command is to be published,
+          <br>entituled FLORA DANICA,
+          <br>together with a Specimen Plate of the Cloudberry Plant
+          <br>(Rubus Chamæmorus.)
+        </h1>
+        A considerable Part of the Royal Botanical Institution, which hath been but lately established here, consisteth
+        in the Publication of a Work, treating of all such Plants as grow wild by Nature, and without the Aid of Man,
+        within His Majesty’s two Realms and other Territories in Europe. The full Title of the Writing shall be framed
+        according to the said Realms and Territories; yet here and elsewhere we shall refer to it solely by the
+        abbreviated Title of Flora Danica.
+        <br><br>
+        His Majesty’s principal Aim with this Work is of a Paternal Nature, tending toward the Diffusion of Knowledge
+        concerning native Plants throughout His Realms.
+        This Diffusion of Herbal Learning among the Inhabitants of the Land is to be pursued, inasmuch as Botany cannot
+        be of general Benefit, so long as it remaineth a Science confined to a small Number of Botanists.
+        If that Benefit is to be attained, which the Publick with Right and Reason may promise itself from a Knowledge
+        of the Kingdoms of Nature—whence Mankind doth reap its greatest Advantages, yet which, if we are to speak
+        candidly, is far from being attained in its full Extent, but rather remaineth still to be hoped for, and must
+        not be limited within too narrow Bounds, as for Example to Medicine alone—then all doth chiefly depend upon the
+        Union of Plant-Knowledge with the Opportunity of making Experience thereof.
+        <br><br>
+        Such Opportunities commonly fall to the Lot of those who deal with Plants, when these are to be applied to the
+        Use of Mankind in the several Occupations of civil Life; yet especially to those whose Lot it is to dwell in the
+        Country, as it were in the Bosom of Nature, and who give their Attention to the Affairs of Husbandry.Amongst
+        this numerous Class of useful Citizens in the State, there are not indeed many who are, in the strictest Sense,
+        what one calleth Learned by Profession; but on the other hand a great Multitude who, if we except the Learned
+        and Foreign Tongues (and often there is not even Need to except the latter), do nevertheless possess all that
+        appertaineth to a true Lover of the Sciences: Understanding, Education, Means, Leisure, Inclination—and,
+        moreover, a peculiar Affection for Botany above other Sciences, which their domestic and private Circumstances
+        naturally foster.Therefore this Science, for the Benefit of such Lovers—and thereto, methinks, nought more is
+        required than Will—must, so far as possible without Prejudice to its Soundness, be rendered easy; and in this
+        regard, I believe likewise, that the Botanist might verily make the Matter much more accessible to the Curious,
+        if they did but will it.Lastly, the Instruments placed in the Hands of such Enquirers must be sufficient unto
+        the Purpose, so that they be not of Necessity obliged to resort unto foreign Writings in order to make Use of
+        them.
+        <br><br>
+        According to this Manner of Thinking, the Arrangement and Composition of our Flora is undertaken and carried
+        forward; and His Majesty, being firmly resolved to carry His Paternal Intention into effect, shall cause a
+        considerable Number of Copies to be distributed, as a Royal Gift, among the Clergy of His Realms and
+        Territories.These Copies, being allotted to each Diocese, shall be lent, for a certain Period of Time, by the
+        Bishop or Superintendent thereof, to those among the Clergy who best know how to apply the Work to Advantage,
+        and who may in turn serve the Botanical Institution and Garden by their Correspondence.
+        <br><br>
+        Besides this principal Aim, it is likewise the Will of the King—who is a great Patron and Promoter of all
+        Sciences—that even Foreigners may reap Benefit from the Work; which may assuredly come to pass, since it
+        containeth Plants from a vast Extent of Land, reaching from the further Side of the River Elbe unto the Frozen
+        Ocean, and in Latitude from the 53rd to the 70th Degree, including Mountain and Shore Flora, besides many other
+        Varieties of Soil; and thus may prove useful in the greater, and especially the northern, Part of Europe.
+        Flora Danica shall therefore likewise be composed in the Latin Tongue, and the Inhabitants of these Lands shall
+        have the Choice between the Latin and their native Language.
+        <br><br>
+        Before I proceed to give a detailed Account of the Arrangement of this Work, I must first set forth a few
+        Reflections concerning the Nature of an Undertaking of this Kind, especially touching the Collection of the
+        Copperplates, which form the most costly Part of the Work.
+        <br><br>
+        An Undertaking of this Kind is no Work for a Private Person; its Continuation requireth greater Expense, greater
+        Zeal and Support, and above all more Time, than may reasonably be expected from the Strength of a single
+        Individual, or than may consist with the Frailty of human Life and the Uncertainties of Fortune.The History of
+        Botany affordeth us more than one Example of the Perishableness of such Projects.Flora Danica is therefore no
+        private Enterprise; its Publication is incorporated, as a principal Part, into the Constitution of the Royal
+        Botanical Establishment, and its Preparation, further Enlargement and Improvement is committed to every
+        Professor of the Royal Botanic Garden as an Official Duty.Thus, the Purchasers of this Work have no Cause to
+        apprehend that it should at any Time come to a Standstill and augment the Number of those many other like
+        Writings that have remained in their Imperfection; for I can, without Boasting, assure that this Flora shall
+        become a Work without Equal—unless some other Government should engage in an Undertaking of like Nature.
+        <br><br>
+        It is indeed true that, by Words and Descriptions alone, Plants may be rendered sufficiently recognizable, and
+        that Drawings thereof are not in every Case absolutely necessary; yet it is likewise true, that even with the
+        best of Drawings, the oral or written Instruction of the Botanist, and the Aid of his Science, are still
+        required, in order to make profitable Use of such Figures.
+        Nor is it my Opinion that, because a Botanist is able, by referring to a Figure of a Plant, to teach others to
+        know the same, he is thereby absolved from the equal Obligation to describe and define it in Words, with the
+        same Exactness, as if no Drawing of it existed.
+        Upon such a Declaration, even the most rigorous Botanist will not, I trust, censure me for extolling the Value
+        and Use of Drawings; his own Experience will inform him how much lighter his Labour, especially in comparing
+        botanical Authors, hath proved in regard to such Plants as he hath found well-drawn.
+        And the Approbation of those who are not Botanists by Profession I likewise confidently anticipate.
+        It is undeniable, that one may much more easily and rapidly learn to know Plants when, in addition to literal
+        Knowledge, one hath Recourse to Engravings, than when it must be accomplished by Words alone.
+        And had more – yet good and serviceable – Drawings been furnished since the Invention of the Art of printing
+        Letters and Plates, instead of incomplete Descriptions, Botanists would, for the most part, have been spared the
+        toilsome Labour expended upon Synonymy, less Occasion would have been given for Complaint concerning the
+        Multiplicity of Names, the initial Knowledge and Recognition of Vegetables would have been more widely diffused,
+        and a greater Advance would have been made in the Knowledge of the Uses of Plants.
+        <br><br>
+        All objections raised against the use of engravings and the multiplication of botanical works adorned with
+        copperplates amount chiefly to this: that such works are deemed expensive.To this it may ever be replied, first
+        of all, with the question: which is of greater cost — the time and labour that such a work saves to the lover of
+        botany, or the sum of money he expends on this instrument of aid?This question each may answer according to his
+        own condition, yet equity demands that every man be offered as many aids as he may be able to
+        appropriate.Secondly, it is not, in truth, the natural price of good copper engravings in themselves that
+        renders such works burdensome, even to the botanical amateur of moderate means, but rather the circumstance that
+        he cannot obtain any uniform and, in its kind, complete collection, but is compelled, should he merely wish for
+        figures of the plants that grow within a single mile's circuit about his dwelling, to purchase a whole
+        assemblage of books, wherein he finds drawings of unequal quality and merit, repeated endlessly the same and
+        again the same, while that which he chiefly seeks and would make use of lies scattered among a far greater
+        quantity of superfluous matter.
+        <br><br>
+        This circumstance is that which weighs upon the lover of botany as well as upon the science itself; and the wish
+        that such a burden might be alleviated is indeed a good one, yet in vain so long as rulers do not extend to this
+        useful science their helpful and puissant support.
+        Should a potentate in the southern parts of Europe cause a work to be undertaken akin to Flora Danica, regarding
+        the plants of his own realm, then would his country first and foremost reap the nearest benefit thereof, to wit,
+        the same utility which we in these northern kingdoms promise ourselves from Flora Danica; thereafter, all
+        botanists in all lands and regions would possess two works which together contain the far greater portion of the
+        flora of all Europe, upon which they might found their labours, and from time to time append such peculiar
+        specimens as may be found within their circle; and such gaps in those works might then be the more swiftly
+        filled with the aid of a third or fourth potentate in the East, the West, or the heart of Europe.
+        Thus would a complete collection of engravings of the entire European plant world arise—without disorder,
+        without repetition; and thereby a common foundation would be laid for the whole science, which would be rendered
+        infinitely more accessible and its diffusion much advanced.
+        <br><br>
+        I now betake myself to the arrangement of the Flora Danica.It is His Majesty’s will that both the native plants
+        in themselves be rendered recognizable, and likewise that their utility be made known to the inhabitants of
+        these realms and lands.The whole work is accordingly divided into two principal parts: the one which treateth of
+        botany in itself (Botanica pura), and the other which concerneth the application of botany to human usefulness
+        (Botanica applicata).In the present communication I speak solely of the Botanica pura.The composition of that
+        part which regardeth the usefulness of plants is entrusted to a society, of which I am a member, and in which I
+        shall also wield the pen; and concerning that part a separate account shall in due time be published.
+        <br><br>
+        The text shall be separated from the drawings. Many diverse causes concur and render such an arrangement
+        necessary.
+        <br>The collection of copperplates was to be distributed in fascicles, and under such circumstances, regard
+        could not be had to order, concordance, or system; whereas, in a book designed to serve as instruction in a
+        science where order is the very soul, a systematic coherence must be maintained.
+        <br>A convenient format was therefore to be chosen for the introduction to botany and the catalogue of the
+        plants, which are the two parts of the text, in such wise that one might carry the book into the field and
+        therewith seek out the plants in nature.
+        <br>Lastly, consideration had to be given to the convenience of the various sorts of amateurs, since not all
+        would be disposed to procure every part of the work, though one would gladly serve them all.
+        <br><br>
+        The collection of these copperplates the purchasers shall be pleased to regard as a so-called Herbarium vivum,
+        which one gathereth and augmenteth as occasion permitteth, arrangeth in due order after some time, when a
+        sufficient number is assembled, and preserveth the whole herbarium as an auxiliary, to be employed upon sundry
+        occasions, and thence to be kept, as one seeth fit, alongside the writings of the botanists, to the illumination
+        thereof.
+        <br><br>
+        The plates shall be marked with the rubric Flora Danica, and each given a number in sequence, such that the
+        first fasciculus containeth sixty plates, and the second commenceth with Tab. 61. The size of the plates
+        correspondeth in some degree to the size of the plants, yet all shall be printed upon paper of equal dimensions,
+        as may be seen by the specimen. Upon each plate there shall appear but one plant, save for the small plants
+        belonging to the Dilleniæan class of mosses, which shall be reserved till the end, in order that the drawings
+        thereof may be gathered, and thereafter several of like kind may be brought together upon one and the same
+        plate. The larger plants shall be represented in a somewhat diminished scale, while their notable parts shall be
+        depicted alongside in full size; for the smaller plants, the magnifying glass shall be employed, not only to
+        show what the unaided eye cannot discern, but likewise to afford the painter opportunity to express with his
+        brush, with greater clarity, what a good natural eye might still distinguish. Throughout the whole work, all
+        parts wherein lieth the distinguishing mark of a species from others shall be separately represented, when the
+        same cannot be made apparent in the full depiction of the plant itself. All the drawings are made after Nature,
+        and from fresh specimens, and I trust that connoisseurs shall be pleased with the labour of the artists
+        appointed by the Royal Botanical Establishment, to wit, Father and Son, MICHAEL and MARTIN RÖSLER, the former
+        engraver, the latter painter. With each fasciculus shall be included a printed sheet, upon which the names of
+        the plants contained therein shall be set forth.
+        <br><br>
+        These fascicles begin to be published prior to the text, their publication likewise continuing whilst the text
+        is brought forth, and shall persist, even after the whole of the text hath in due time been revealed, until such
+        time as all the plants appertaining to the Flora shall have been delineated. Every proprietor of this collection
+        is thereby given full liberty, either to have the fascicles bound immediately as they appear, or, should he so
+        prefer, to keep them unbound until his collection hath progressed so far as to allow the parts to be arranged in
+        a systematic order.
+        <br><br>
+        This collection shall therefore comprise delineations of both the common and the rare plants; our principal
+        intent, namely to be of service to the inhabitants of these realms and lands, did require such a plan. All
+        plants in general do merit attention, and if the work is to serve them aright, it must be in itself sufficient,
+        and other writings ought not to be deemed absolutely necessary. Upon the aforecited grounds, I likewise trust
+        that, in regard to the science itself, foreigners and professional botanists will be pleased to receive an
+        uniform collection of drawings, even of the most common plants.
+        <br><br>
+        The parts of the text are as followeth:
+        <br>1. An Introduction to Botany, together with a separate Treatise concerning the Method of Instruction.
+        <br>2. A Catalogue of the Plants found in the Royal Dominions, in which, according to the rules of
+        distinguishing
+        marks, are set down for each species so many, and no more, of its properties as are strictly necessary to render
+        it discernible from others; this catalogue being chiefly designed for practical use.
+        <br>3. A Collection of full and circumstantial distinguishing marks or descriptions of these plants.
+        <br><br>
+        These three parts of the text do indeed constitute a whole, yet they shall be composed in such a manner, that
+        each of them shall be a book by itself, which in its particular intent may be deemed complete, so that the one
+        shall not necessarily require the other. These parts of the text shall be sold both collectively and separately,
+        as well with the fascicles as without them, in order that every lover of the subject may, according to his
+        means, be served; and that no one be debarred from obtaining what his circumstances may allow him to procure.
+        <br><br>
+        The first part of the text shall be delivered to the domestic lovers of the subject by the end of the year 1762;
+        the foreign ones shall receive it together with the second fascicle.
+        <br><br>
+        The description and the delineations shall be completed as soon as I have either entirely or chiefly concluded
+        my travels through Denmark and His Majesty’s German provinces; and as the journey through Norway is already
+        accomplished, the remaining necessary travels for the sake of Flora will not consume much time.
+        <br><br>
+        No pre-subscription is required, but only subscription, with the purpose of determining the number of copies
+        thereafter. Particularly those desiring illuminated copper plates must apply in good time, as no further
+        illuminated copies will be made than those which are ordered. Subscribers, who sign up, will receive a
+        certificate thereof, and the subscription price for an unilluminated copy of the first fascicle is 4 Danish
+        courant rixdollars, and 9 rixdollars for an illuminated copy; however, those who do not subscribe will have to
+        pay a fourth more later, and after the subscription period, no illuminated copies will be available. Payment is
+        to be made in cash upon receipt of the copies, and the subscription can be made here in Copenhagen with me and
+        the booksellers Mrs. PHILIBERT and ACKERMAN; elsewhere, the interested parties are kindly requested to contact
+        the person through whom this notice is communicated to them.
+        <br><br>
+        Copenhagen, the 1st of May, 1761.
+        <br>Dr. GEORG CHRISTIAN OEDER,
+        <br>Royal Professor of Botany.
+
+        <br><br>
+      </section>
+      <section id="chap1">
+        List of the 60 plants that the first fascicle will contain on as many plates.
+
+        <br><br>
+        <br>Tab. I. Rubus chamæmorus.
+        <br>II. Pedicularis lapponica.
+        <br>III. Linnæa borealis.
+        <br>IV. Silene rupeftris.
+        <br>V. Cornus Svecica.
+        <br>VI. Ceraftium alpinum.
+        <br>VII. Androface Snptentrionalis.
+        <br>VIII. Pyrola uniflora.
+        <br>IV. Azalea procumbens.
+        <br>X. Andromeda hypnoides.
+        <br>XI. Thaliêtrum alpinum.
+        <br>XII. Stellaria biflora.
+        <br>XIII Polygonum viviparum.
+        <br>XIV. Rumex digynus.
+        <br>XV. Zoftera mariua.
+        <br>XVI. Veronica alpina.
+        <br>XVII. Gentiana nivalis.
+        <br>XVIII. Ofmunda lunaria.
+        <br>XIX. Ranunculus glacialis.
+        <br>XX. Cardamine bellidifolia.
+        <br>XXI. Cucubalus acaulis.
+        <br>XXII. Saxifraga cernua.
+        <br>XXIII. Saxifraga ftellaris.
+        <br>XXIV. Sedum villofum.
+        <br>XXV. Pulmonaria maritina
+        <br>XXVI. Pedicularis Sceptrum Carolinum.
+        <br>XXVII. Hieracium alpinum.
+        <br>XXVIII. Saxifraga nivalis.
+        <br>XXIX. Anemone vernalis.
+        <br>ХХХ. Рedicularis Aammex.
+        <br>XXXI. Dryas octopetala.
+        <br>XXXII. Sibbaldia procumbens.
+        <br>XXXIII. Arbutus uva urfi.
+        <br>XXXIV. Saxifraga oppofitifolia.
+        <br>XXXV. Subularia aquatica.
+        <br>XXXVI. Anthericum calyculatum.
+        <br>XXXVII. Serratula alpina.
+        <br>XXXVIIIІ. Erica Cinerea.
+        <br>XXXIX. Lobelia Dortmanna.
+        <br>XL. Vaccinium Vitis idæa.
+        <br>XLI. Papaver nudicaule.
+        <br>XLII. Anthericum Oflifragum.
+        <br>XLIII. Bartfia alpina.
+        <br>XLIV. Buxbaumia aphyla.
+        <br>XLV. Blafia pufilla.
+        <br>XLVI. Viola biflora.
+        <br>XLVII. Diapenfia lapponica.
+        <br>XLVIII. Galium trifidum.
+        <br>XLIX. Alchimilla alpina.
+        <br>L. Gentiana lutea.
+        <br>LI. Aftragalus alpinus.
+        <br>LII. Veronica fpicata.
+        <br>LIII. Phallus efculentus.
+        <br>LIV. Andromeda polifolia.
+        <br>LV. Pyrola minor.
+        <br>LVI. Draba alpina.
+        <br>LVII. Andromeda cærulea.
+        <br>LVIII. Vicia lathyroides.
+        <br>LIX. Sedum rupeſtre.
+        <br>LX. Acroftichum Septentrionale.
+        <br><br>
+      </section>
+      <section id="chap2">
+        <img src="img/efterretning 1.png" id="multe" alt="Rubus Chamæmorus">
+        <br><br>
+        <img src="img/efterretning 2.png" id="multe" alt="Rubus Chamæmorus">
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no">
+    </iframe>
+  </footer>
+  <script src="functionscript.js"></script>
+  <script src="efter.js"></script>
+  <script src="navbarscript.js"></script>
+</body>
+
+</html>

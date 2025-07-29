@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description"
+    content="Georg Christian Oeder. Efterretning om et Verk, som paa Kongelig Befaling skal udgives, kaldet,  FLORA DANICA ." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="letterstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    #sidebar {
+      font-size: 0.5rem;
+    }
+
+    #content {
+      background-color: rgb(241, 235, 209);
+    }
+
+    .letter {
+      display: block;
+    }
+
+    /* hr {
+            display: block;
+        } */
+
+    button {
+      background-color: darkblue;
+      color: white;
+      width: 175px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 30px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition-duration: 0.3s;
+    }
+
+    button:hover {
+      background-color: lightskyblue !important;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    /* .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+    .column {
+      width: 50%;
+    }
+
+    p {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    #oederbut {
+      z-index: 0;
+    }
+
+    hr {
+      display: none;
+    }
+
+    #multe {
+      width: 100%;
+    }
+
+
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column;
+      }
+
+      button {
+        width: 170px;
+        height: 25px;
+        font-size: 10px;
+      }
+
+      #frontpage {
+        flex-direction: column-reverse;
+      }
+
+      .column {
+        width: 100%;
+      }
+
+      #frontimg {
+        width: 150px;
+        padding: 5px;
+      }
+
+      hr {
+        display: block;
+        background-color: darkblue;
+        height: 2px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+  <title id="title">Efterretning om et Verk, som paa Kongelig Befaling skal udgives, kaldet, FLORA DANICA .
+
+
+
+  </title>
+
+</head>
+
+<body id="dex">
+  <header>
+    <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no">
+    </iframe>
+  </header>
+
+  <nav class="navbar">
+    <ul class="list" id="list">
+      <li id="chapname">
+        <p>chapname</p>
+      </li>
+      <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false">
+        <a href=""><img src="./buttons/content.png" alt="content" width="20px" height="20px" /></a>
+      </li>
+
+      <li class="menubut" id="menubut" onclick="showSidebar(); return false">
+        <a href=""><img src="./buttons/menubut1.png" alt="menu" width="20px" height="20px" /></a>
+      </li>
+    </ul>
+    <ul class="sidebar" id="listm">
+      <p onclick="closeSidebar();" id="closebut">
+        <img id="closebut" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
+          style="color: black; font-size: 0.5em" />
+      </p>
+    </ul>
+    <div id="sidebarcontent">
+      <p onclick="closeSidebar();" id="closebutcontent">
+        <img id="closebutcontent" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
+          style="color: black" />
+      </p>
+    </div>
+  </nav>
+
+  <div class="main">
+    <aside id="content" class="left" style="position: sticky"></aside>
+    <aside id="valimg" style="border: 3px; color: red;" style="position: sticky"><img src=".img/oederval.png" alt="">
+    </aside>
+
+    <aside id="contbut" class="left" style="position: sticky">
+      <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img src="./buttons/contentbut.png"
+          alt="content" width="20px" height="20px" /></a>
+    </aside>
+    <main onclick="closeSidebar();">
+      <section id="chap0">
+        <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage" src="">
+          </a> </aside>
+        <h1>
+          Efterretning
+          <br>om
+          <br>et Verk,
+          <br>som paa Kongelig Befaling skal udgives,
+          <br>FLORA DANICA
+          <br>kaldet,
+          <br>tilligemed en Prøve- Plade af Multebaærs Planten
+          <br>(Rubus Chamæmorus.)
+
+        </h1>
+        En betydelig Deel af den nylig her oprettede Kongelige Botaniske Anstalt er Udgivelsen at et Verk, der skal
+        handle om alle de planter, som af Naturen og uden Menneskens hielp vore vildt i Hans Majestæts begge Riger og
+        øvrige Lande i Europa. Den fuldstændige Titel på Skriftet bliver indrettet efter begge Riger og øvrige Lande,
+        men her og ellers ville vi nævne det allene med den forkortede Titel af Flora Danica.
+        <br><br>
+        Hans Majestæts Hoved-Øjemærke med dette Verk er Landsfaderligt, og figter hen til at udbrede i fine Lande
+        Kundskab om indenlandske Værter.
+        <br> Denne Udbredelse af Urte-Læren blant Landets Indbyggere må søges saasom Botaniken ikke kan blive til
+        almindelig nytte, så længe den kun er en Videnskab for eendeel få Botanister. Naar den Nytte skal opnaaes, som
+        Publicum med Ret og Føje lobe sig af kiende at Rige i Naturen, hvoraf Menneskene høste deres meste Gode, men
+        som, naar vi skal tale oprigtigen, langt fra endda ikke er opnået i sin fulde Omfang, men står endnu at
+        forvente, og ikke må indskrænkes inden alt for snevre Grændser, som til Medicinen allene, så kommer alting
+        fornemmlig derpå an, at Kundskab om Planter og Lejlighed til Erfaringer at anstille findes sammenføjede.
+        <br><br>
+        Deslige Lejligheder falde gemeenlig i deres Lod, som have at gjøre med Planter, naar de skal anvendes til
+        Nytte
+        for Menneskene Udi adskillige Haanteringer i det borgerlige Liv men især i deres Lod, der Boe paa landet,
+        ligesom i Skiødet af Nuturen, og legge Vind paa Landshuusholdningen. I denne talrige Classe af nyttige Borgere
+        i
+        Staten findes ikke just mange, som egentligen ere hvad man kalder Lærde af Profession, men derimod en stor
+        Mængde, som naar mun undtager de lærde og fremmede Sprog, (og oftest har man ikke engang nødig de sidte at
+        undtage) besidde i det øvrige alt hvad der tilhører en Videnskabers Elsker, Forstand, Opdragelse, Velstand,
+        Tid,
+        Lyst, hvortil kommer den besynderlige Hu til Botaniken frem for andre Videnskaber, som deres Huus og private
+        Omstændigheder føre med dig. Altså maa denn Videnskab, til Hielp for saadanne Elskere, og dertil kan jeg ikke
+        finde, at der hører meer til end at ville; Videnskaben må, såvidt mueligt, uden Skade for dens Grundighed
+        giøres
+        let, og da mener jeg tillige, at Botanisten kunde giøre de Lysthavende Tingen i meget virkeligen lettere, naar
+        de kun villes;
+        <br>Endelig maa de Midler, som gives de Lysthavende i Hænde, være tilstræffelige til Øjemærket, paa det de
+        ikke
+        til at bruge dem skulle uomgiængeligen behøve fremmede Skrifter.
+        <br><br>
+        Efter denne Tænkemaade bliver Indretningen og Forfattelsen af vores Flora foretagen og fortsat, da og Hans
+        Majestæt, for paa det kraftigste at udføre sin Landsfaderlige Hensigt, vil lade uddele en anseelig Deel
+        Exemplarer, som en Kongelig Gave, blant Geistligheden i sine Riger og Lande, saaledes at de til ethvert Stift
+        uddeelte Exemplarer blive af ethvert Stifts Biskop eller Superintendent udlaanede i en vis Tid til dem af
+        Stiftets Præsteskab, der best vide at føre sig Verket til Nytte, og igien at tiene den botaniske Anstalt og
+        Have
+        med deres Correspondencе.
+        <br><br>
+        Foruden denne Hoved-Indsigt er det og den alle Videnskabers store Ynder og Befordrer Kongens Villie, at
+        endogsaa
+        Udlændinger skal have Nytte af Verket, som upaatvileligen kan skee, da det indeholder Planter af en anseelig
+        Landstrækning, fra hiin Side Elbftrømmen indtil Iishavet, i en Bredde fra 53. til 70. Grader, Bierg- og
+        Strand-Værter, foruden de mange andre Forskielligheder af Grunden, og altsaa kan føres til Nytte i den
+        største,
+        besynderlig den nordlige Deel, af Europa. Flora Danica skal altsaa tillige forfattes i det Latinske Sprog, og
+        disse Landes Indvaanere have Vall at giøre mellem det Latinske og deres Modersmaal.
+        <br><br>
+        Førend jeg omstændeligen melder om Indretningen af dette Verk, maa jeg forud anføre et par Betragtninger om
+        Beskaffenheden af et Foretagende afdenne Slags, især om Samlingen af Kobberstykkerne, som den kostbareste Deel
+        af Verket.
+        <br><br>
+        Et Foretagende af denme Slags er ingen Privat-Persons Gierning, dets Fortfættelse udfordrer meer Bekostning,
+        meer Eftertryk ogUnderstøtning,især meer Tid, end der kan ventes af en privat Persons Kræfter eller der kan
+        bestaae med et Menneskes Livs Skrøbelighed og Lykkes Gaver, og Historien af Botaniken viser os meer end eet
+        Exempel paa Forgiængeligheden af deslige Anlæg. Flora Danica er da intet Privat-Foretagende, dens Udgivetse er
+        som et Hoved- Stykke indlemnet i Forfatningen af den Kongel. Botaniske Anstalt, og dens Udarbejdelse, og
+        videre
+        Formerelse og Forbedring er anbefalet enhver Professor ved den Kongel. Botaniske Have, som en Embeds Pligt.
+        Altsaa have Kiøberne af dette Verk ikke at befrygte, at det nogen Tid skal komme til at standse, og formere
+        Tallet af saa mange andre deslige Skrifter, der ere blevne i deres Ufuldkommenhed, da jeg, foruden det jeg kan
+        være i Stand at giøre dertil, og altsaa uden Brouten, kan forsikre, at denne Flora vil blive et Verk, der ikke
+        kan faae sin Lige, saa længe ingen anden Regiering træder ind i et lige saadant Foretagende.
+        <br><br>
+        Vel er det sandt, at man med Ord og Beskrivelser allene kan giøre Planter noksom kiendelige, og Afteigninger
+        af
+        dem ere ikke uomgiængeligen fornødne, men at der derimod endog ved de beste Afteigninger behøves Botanistens
+        mundtlige eller skriftlige Underviisning og hans Videnskabs Hielp til at bruge Afteigningerne med Nytte; det
+        er
+        heller ikke min Mening, at fordi en Botanist kan, ved at beraabe sig paa en Afteigning af en Plante, lære
+        andre
+        at kiende samme, han derfor ikke skulle være lige skyldig til ogsaa med Ord saa nøje at beskrive og bestemne
+        den, som om der ingen Afteigning af den var at finde; Efter en saadan Erklæring, vil vel end ikke den
+        strængeste
+        Botanist fortænke mig for, at jeg ophøjer Tejgningers Værdi og Nytte; Hans egen Erfarenhed vil sige ham, hvor
+        let hans Arbejde, især med at conferere botaniske Skribentere, har faldet ham ved enhver af de Planter, som
+        han
+        har fundet en god Tejgning af; og deres Bifald, som ikke ere Botanister af Profession, er jeg desuden
+        forvisset
+        om. Det er uimodsigeligt, at man meget lettere og hastigere kan lære at kiende Planter, naar man foruden den
+        bogstavelige Kundskab kan betiene sig af Kobberstykker, end naar det skal skee ved Ord allene, og dersom man,
+        siden den Konst at trykke Skrift og Kobbere blev opfundet, havde leveret flere Tejgninger men gode brugelige
+        Tejgninger istæden for ufuldstændige Beskrivelser, saa vare Botanisterne mestendeels blevne sparede for det
+        paa
+        Synonomien anvendte sure Arbejde, mindre Anleedning var bleven given til at klage over Mængden af Navnene, den
+        første Kundskab om og Kiendelse af Værterne vilde videre være bleven udbredet, og man ville være kommen videre
+        i
+        at kiende Planternes Nytte.
+        <br><br>
+        Alle Indvendinger mod at brugge Kobbere og formere Antallet af de med Kobberstykker forfynede Botaniske
+        Verker,
+        gaae derpaa ud, at de Slags Verker ere kostbare. Derpaa kan man altid først svare med det Spørsmaal hvad der
+        er
+        mest kostbart enten den Tid og Møje, som ved et saadant Verk bliver sparet en Botanikens Elker, eller de
+        Penge,
+        han giver ud for dette Hielpe-Middel? Spørsmaalet kan enhver besvare sig efter sine egne Omstændigheder, men
+        Billighed udfordrer, at tilbyde enhver saa mange Hielpe-Midler, som han kan tillegge sig. For det andet, er
+        det
+        ikke just den naturlige Priis af gode Kobberftykker i sig selv, der egentligen falder en Botanikens Elsker
+        endog
+        i maadelige Omstændigheder besværlig, men den Omstændighed, at han ej kan faae sig nogen eensskikket og i fin
+        Art fuldftændig Samling tillagt, men er nødsaget til, naar han kun vil have Tejgninger over de Planter, som
+        kan
+        vore i hans Cirkel paa een Miil-Vejs Omkreds, at anskaffe en heel Samling af Bøger, hvor han finder Tejgninger
+        af uliig Godhed og Beskaffenhed, uendelige gange det samme og samme, og det han egentligen føger og vil bruge,
+        ligger omstrøed blant en langt større Mængde unødvendige Sager.
+        <br><br>
+        Denne Omstændighed er det der trykker en Elsker af Botaniken, samt Videnskaben selv, og det Ønske at en saadan
+        Ulejlighed maatte afhielpes, bliver vel et got men forgiæves Ønske, saalænge Regentere ikke forlene denne
+        nyttige Videnskab deres hielperige og mægtige Bistand. Dersom en Potentat i den sydlige Deel af Europa ville
+        lade foranstalte et saadant Verk, som Flora Danica, over sit Lands Planter, saa ville først hans Land selv
+        høste
+        den nærmeste Frugt deraf, nemlig den Nytte, som vi kan i disse nordlige Riger love os af Flora Danica; dernæst
+        havde alle Botanister i alle Lande og paa alle Stæder 2. Verke, som indholde den allerstørste Deel af hele
+        Europas Verter tilhobe, hvilke de kunde legge til Grund, og fra Tid til anden tilføje hvad besynderligt der i
+        deres Cirkel kunde findes, og deslige Luger i Verkerne kunde maaskee da saa meget hastigere blive stoppede ved
+        Hielp af en tredie eller fierde Potentat i Østen eller Vesten eller Midten af Europa. Paa denne Maade
+        fremvorede
+        der en fuldstændig Samlig af Tejntnger over de samtlige enropæiske Planter, og det uden Uorden, uden
+        Igientagelser, der blev da lagt en almindelig Grund til den hele Videnskab, og samme derved uendeligen lettet,
+        og dens Udbredelse befordret.
+        <br><br>
+        Nu begiver jeg mig til Indretningen af Flora Danica. Det er Hans Majestæts Villie, at baade de indenlandske
+        Planter i sig selv skal giøres kiendelige, saaog deres Nytte blive bekandt for Indbyggerne i disse Riger og
+        Lande. Det hele Verk deles altsaa i to Hoveddele, i det der angaaer Botaniken i sig selv (Botanica pura) og
+        hvad
+        Botaniken vedkommer i dens Anvendelse til den menneskelige Nytte (Botanica applicata). I nærværende
+        Efterretning
+        taler jeg allene om Botanica pura. Udarbejdelsen af den Deel om Planternes Nytte er overdragen et Selskab,
+        hvori
+        jeg er et Medlem, samt skal føre Pennen, og om den Deel bliver i sin Tid udgivet en Efterretning for sig selv.
+        <br><br>
+        Texten bliver adskilt fra Tejningerne. Mangehaande Aarsager løbe ind og giøre denne Indretning fornøden.
+        Sanlingen af Kobberstykkerne maatte fordeles i Fascicler og da tillade Omstædighederne ikke at see paa Orden,
+        Overeensstemnese eller Systema; derimod maatte en systematisk Sammenhæng bruges i en Bog, som skal tiene til
+        Underretning i en Videnskab, hvori Orden er Siælen; En beqvem Format maatte vælges for Indleedningen til
+        Botaniken og Fortejgnelsen paa Planterne, som ere tvende Dele af Texten, saadan at man kunde have Bogen med
+        sig
+        til at opsøge Planterne i Naturen efter; Endelig maatte de adskillige Slags Liebhaberes Beqvemmelighed haves
+        for
+        Øjne, da de ikke alle funde finde for got at anskaffe sig alle Verkets Dele, og man dog gierne ville tiene dem
+        alle.
+        <br><br>
+        Samlingen af disse Kobberstykker ville Kiøberne behage at ansee, som et saa kaldet Herbarium vivum, hvilket
+        man
+        samler og formeerer, alt som Lejligheden giver sig, legger i sin behørige Orden efter nogen Tid, naar et Antal
+        er samlet, og giemmmer det hele Herbarium, som et Hielpe-Middel at bruge ved forefaldende Lejligheder, for da
+        at
+        holde det efter Behag sammen med Botanisternes Skrifter til at oplyse samme.
+        <br><br>
+        Pladerne blive bemærkede med den Rubriqve Flora Danica, оg eet Numner efter Raden af Tallene, saaledes, at det
+        første Fascicul indeholder 60. Plader, det Andet begynder med Tab. 61. Pladernes Størrelse retter sig vel
+        efter
+        Planternes Størrelse, dog blive de alle aftrykkede paa lige stort Papir, som kan sees af Prøven. Paa hver
+        Plade
+        kommer allene een Plante, undtagen de smaae Planter af den Dillenianske Mosse-Classe, som man derfore vil bie
+        med til sidst, paa det Tejgningerne til dem kan samles, оg siden flere af dem bringes efter deres Liighed paa
+        een og samne Plade. De store Planter blive forestillede efter deres Gestalt i en vis formindsket Størrelse, og
+        deres mærkværdige Dele blive satte tæt ved i fuld Størrelse; Ved de smaa Planter bliver brugt Forstørrelses
+        Glas, ej allene for at vise hvad det blotte Øje ej kan see, men ogsaa for at give Skildreren Lejlighed til med
+        Penselen tydeligen at udtrykke, hvad et godt ubevæbnet Øje endda kunde være i Stand til at skielne. Hele
+        Verket
+        igiennem blive alle de Dele forestillede for sig selv, hvori der ligger en Arts besynderlige Forskiels - Mærke
+        fra de andre, naar samme ikke kan i den hele Plantes Forestilling blive af sig selv giort
+        <br> kiendeligt. Alle Tejgningerne blive giorte efter Naturen og efter friske Planter og haaber jeg at
+        Kiendere
+        skal blive fornøjede med de ved den botaniske Anstalt antagne Konstneres Arbejde, det er Fader og Søn MICHAEL
+        Og
+        MARTIN RÖSLER, den Første Kobberstikker, den Anden Skildrer. Ved ethvert Faseicul følger et trykt Ark, hvorpaa
+        Navnene paa de i Fasciculet værende Planter blive satte.
+        <br><br>
+        Disse Fascicler begynde, før Texten, at blive udgivne, deres Udgivelse fortfættes ogsaa, medens Terxen
+        udgives,
+        og vedvarer, efter at Texten i sin Tid gandske er kommen for Lyset, indtil saalænge alle de til Flora hørende
+        Planter ere blevne aftejgnede. Enhver Ejer af denne Samling faaer formedelst denne Indretning frie Hænder til
+        baade at binde Fasciclerne strax ind efterhaanden som de komme, ud, saa og, om de saa vil, at lade dem ligge
+        uindbundne, indtil deres Samling er kommen faavidt, at de kan legge Stykkerne i en Systematisk Orden.
+        <br><br>
+        Denne Samling vil altsaa indeholde Aftejgninger saavel paa de almindelige som rare Planter; Vores Hoved -
+        Hensigt, at tiene Indbyggerne i disse Riger og Lande, udfordrede saadan Plan, alle Planter i Almindelighed
+        fortiene Opmerksomhed, og naar Verket skulle tiene dem, maatte det allene være tilstraækkeligt, og andre
+        Skrifter ikke være uomgiængeligen fornødne. Paa de førhen anførte Grunde haaber jeg ogsaa i Henseende til
+        Videnskaben selv, at Udenlandske, og Botanister af Profession, vilde lade sig befalde en eensskikket Samling
+        af
+        Teigninger endogsaa over de almindeligste Planter.
+        <br><br>
+        Textens Dele ere følgende:
+        <br> 1. En Indleedning til Botaniken tilligemed en Afhandling for sig selv om Læremaaden.
+        <br>
+        2. En Forteignelse paa de i de Kongl. Lande fundne Planlter, hvori der efter Kiendemærks Regler bliver angivet
+        for hver Art saa mange og ikke flere af dens Egenstaber, end som just behøves til at giøre den kiendelig fra
+        andre, efterdi denne Forteignelse især forordnes til at blive haandbrugelig.
+        <br>
+        3. En Samling af udførlige og omstændelige Kiendetegn eller Beskrivelser over disse Planter.
+        <br><br>
+        Disse 3. Textens Dele udgiøre vel et heelt, dog blive de saa affattede, at enhver af dem bliver en Bog for
+        sig,
+        som i sin enkelte Hensigt kan kaldes fuldstændig, saa at den eene ikke uomgiængeligen behøver den anden. Disse
+        Dele af Texten blive soldte baade tilsammen, saa og hver for sig, saavel uden som med Fasciclerne, paa det
+        enhver af de Lysthavende kan efter sin Evne blive tient, og der ingen maa vorde formeent, hvad hans
+        Omstændigheder tillader ham at forskaffe sig.
+        <br><br>
+        Den første Deel af Texten skal blive de indenlandske Liebhabere leveret ved 1762. Aars Udgang, de udenlandske
+        skal faae den tillige med det andet Fascicul.
+        <br><br>
+        Forteignelsen og Beskrivelserne skal blive udfærdigede, saasnart jeg enten aldeles eller mestendeels har
+        fuldendet min Omrejse i Dannemark og og Hans Majestæts Tydske Provincer; og da Rejsen igiennem Norge er
+        aflagt,
+        saa vil de øvrige fornødne Rejser for Floræ Skyld ikke medtage ret lang Tid.
+        <br><br>
+        Der begieres ingen Præmumeration men kun Subcription, og det til den Ende, at Exemplarernes Antal derefter kan
+        bestemmes. I Særdeleshed maa de, der begiere illuminerede Kobberstykker, melde sig Betids, saasom ingen flere
+        blive illuminerede, end de der bestilles. Subscribenterne, som lade teigne sig, faae et Beviis derfor, og
+        Subscriptions Prisen for et uillumineret Exemplar af det første Fascicul er 4. Rdlr. Dansk cour. og 9. Rdlr.
+        for
+        et illumineret Exemplar; men de der ej subscribere, komme siden til at betale en fierde Deel meere, og af
+        illuminerede bliver der efter Subscriptions Tiden aldeles ingen at faae. Betalingen skeer contant imod
+        Exemplarernes Annammelse, og Subscriptionen her i Kiøbenhavn hos mig og Boghandlerne Mrs. PHILIBERT Og
+        ACKERMAN,
+        paa andre Steder ville de Lysthavende behage at holde sig til den, som nærværende Efterretning bliver dem
+        communiceret af.
+        <br><br>
+
+        Kiøbenhavn den I May 1761.
+        <br><br>
+        Dr. GEORG CHRISTIAN OEDER.
+        <br><br>
+        Kongel. Profefsor i Botaniken.
+        <br><br>
+      </section>
+
+      <section id="chap1">
+        Fortegnelse over de 60. Planter, som det første Fascicul skal indeholde paa ligesaa mange Plader.
+        <br><br>
+        <br>Tab. I. Rubus chamæmorus.
+        <br>II. Pedicularis lapponica.
+        <br>III. Linnæa borealis.
+        <br>IV. Silene rupeftris.
+        <br>V. Cornus Svecica.
+        <br>VI. Ceraftium alpinum.
+        <br>VII. Androface Snptentrionalis.
+        <br>VIII. Pyrola uniflora.
+        <br>IV. Azalea procumbens.
+        <br>X. Andromeda hypnoides.
+        <br>XI. Thaliêtrum alpinum.
+        <br>XII. Stellaria biflora.
+        <br>XIII Polygonum viviparum.
+        <br>XIV. Rumex digynus.
+        <br>XV. Zoftera mariua.
+        <br>XVI. Veronica alpina.
+        <br>XVII. Gentiana nivalis.
+        <br>XVIII. Ofmunda lunaria.
+        <br>XIX. Ranunculus glacialis.
+        <br>XX. Cardamine bellidifolia.
+        <br>XXI. Cucubalus acaulis.
+        <br>XXII. Saxifraga cernua.
+        <br>XXIII. Saxifraga ftellaris.
+        <br>XXIV. Sedum villofum.
+        <br>XXV. Pulmonaria maritina
+        <br>XXVI. Pedicularis Sceptrum Carolinum.
+        <br>XXVII. Hieracium alpinum.
+        <br>XXVIII. Saxifraga nivalis.
+        <br>XXIX. Anemone vernalis.
+        <br>ХХХ. Рedicularis Aammex.
+        <br>XXXI. Dryas octopetala.
+        <br>XXXII. Sibbaldia procumbens.
+        <br>XXXIII. Arbutus uva urfi.
+        <br>XXXIV. Saxifraga oppofitifolia.
+        <br>XXXV. Subularia aquatica.
+        <br>XXXVI. Anthericum calyculatum.
+        <br>XXXVII. Serratula alpina.
+        <br>XXXVIIIІ. Erica Cinerea.
+        <br>XXXIX. Lobelia Dortmanna.
+        <br>XL. Vaccinium Vitis idæa.
+        <br>XLI. Papaver nudicaule.
+        <br>XLII. Anthericum Oflifragum.
+        <br>XLIII. Bartfia alpina.
+        <br>XLIV. Buxbaumia aphyla.
+        <br>XLV. Blafia pufilla.
+        <br>XLVI. Viola biflora.
+        <br>XLVII. Diapenfia lapponica.
+        <br>XLVIII. Galium trifidum.
+        <br>XLIX. Alchimilla alpina.
+        <br>L. Gentiana lutea.
+        <br>LI. Aftragalus alpinus.
+        <br>LII. Veronica fpicata.
+        <br>LIII. Phallus efculentus.
+        <br>LIV. Andromeda polifolia.
+        <br>LV. Pyrola minor.
+        <br>LVI. Draba alpina.
+        <br>LVII. Andromeda cærulea.
+        <br>LVIII. Vicia lathyroides.
+        <br>LIX. Sedum rupeſtre.
+        <br>LX. Acroftichum Septentrionale.
+        <br><br>
+      </section>
+      <section id="chap2">
+        <img src="img/efterretning 1.png" id="multe" alt="Rubus Chamæmorus">
+        <br><br>
+        <img src="img/efterretning 2.png" id="multe" alt="Rubus Chamæmorus">
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no">
+    </iframe>
+  </footer>
+  <script src="functionscript.js"></script>
+  <script src="efter.js"></script>
+  <script src="navbarscript.js"></script>
+</body>
+
+</html>
