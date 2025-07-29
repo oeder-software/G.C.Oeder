@@ -123,11 +123,16 @@ let letterBugBio = [
   "niebuhr",
   "linnesystem",
 ];
+PrependBrBeforeChap(chapter);
 
 // document.getElementById("bio2").setAttribute("height", "fit-content");
 // document.getElementById("bio3").setAttribute("height", "fit-content");
 // document.getElementById("bio4").setAttribute("height", "fit-content");
 // document.getElementById("bio5").setAttribute("height", "fit-content");
+let img = "./img/letterlin.png";
+let link =
+  "https://www.alvin-portal.org/alvin/resultList.jsf?dswid=3548&af=%5B%22PER_PID%3Aalvin%5C%5C-person%5C%5C%3A57297%22%5D&p=1&fs=true&searchType=EXTENDED&sortString=relevance_sort_desc&noOfRows=10&query=oeder&aq=%5B%5B%7B%22A_FQ%22%3A%22oeder%22%7D%5D%5D&aqe=%5B%5D";
+SetLinkAndImgToFrontpage(link, img);
 
 var path = parent.location.pathname;
 path = path.split("/").pop();

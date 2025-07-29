@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Georg Christian Oeder. Methode zu Bestimmung des Areals der Länder. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="letterstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+
+    <style>
+        .card-container {
+            width: calc(100%);
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card-cat {
+            width: 200px;
+            /* margin-left: auto;
+            margin-right: auto; */
+            padding: 0px;
+            border: 3px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            height: 300px;
+            text-align: center;
+            background-color: rgb(243, 238, 215);
+            text-shadow: 5px 5px 5px grey;
+
+        }
+
+        .card,
+        .cardNoPic {
+            width: 200px;
+            position: relative;
+            /* margin-left: auto;
+            margin-right: auto; */
+            padding: 0px;
+            border: 3px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            height: 300px;
+            z-index: 0;
+            text-align: center;
+            overflow: hidden;
+            background-color: rgb(243, 238, 215);
+        }
+
+        .card:hover,
+        .cardNoPic:hover {
+            border-color: blue;
+            border-radius: 0%;
+            background-color: rgb(245, 244, 238);
+            box-shadow: 8px 8px grey;
+            transition: 0.5s;
+        }
+
+        .card:hover p {
+            /* color: darkblue; */
+            opacity: 0;
+            transition: 2s;
+            color: blue;
+        }
+
+        /* .card p:hover,
+        .card:hover>p {
+            color: darkblue;
+            transition: 1s;
+
+        } */
+
+        /* .card-category {
+            width: 150px;
+            padding: 10px;
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 25px;
+            margin: 5px;
+            height: 250px;
+            margin: auto;
+
+            text-align: center;
+            vertical-align: middle;
+            text-orientation: sideways-right;
+
+        } */
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 10%;
+            z-index: 0;
+
+        }
+
+        .card:hover .card-img {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 100%;
+            z-index: 0;
+            transition: 1s;
+
+        }
+
+        /* .card-txt {
+            display: none;
+        } */
+
+
+        /* h5 {
+            font-size: 14px;
+            margin: 0px;
+
+        } */
+
+        .cat {
+            writing-mode: sideways-rl;
+            text-orientation: upright;
+            margin: auto;
+            font-size: 40px;
+            height: 100%;
+
+        }
+
+        p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            z-index: 1;
+            font-size: 16px;
+        }
+
+        h3 {
+            top: 30%;
+        }
+
+        .flag {
+            width: 20px;
+            float: inline-start;
+            padding-left: 15px;
+
+            margin: 0;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            transform: translate(-5%, -5%);
+            z-index: 1;
+
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        /* .card-head {
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            left: 90%;
+            transform: translate(-10%, -90%);
+            z-index: 1;
+        } */
+    </style>
+    <title id="title">Georg Christian Oeder. Methode zu Bestimmung des Areals der Länder.</title>
+</head>
+
+<body id="dex">
+    <!-- <script src="test2.js"></script> -->
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+            <li id="chapname">
+                <p>chapname</p>
+            </li>
+            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
+                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <div onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black; font-size: 0.5em;"></div>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+        </div>
+
+    </nav>
+    <div class="main">
+
+        <aside id="content" class="left" style="position: sticky;"></aside>
+        <aside id="contbut" class="left" style="position: sticky;">
+            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
+                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+        </aside>
+        <main onclick="closeSidebar();">
+            <div id="bio" class="card-container">
+                <div class="card-cat">
+                    <div id="cat0" class="cat">Biographie</div>
+                </div>
+            </div>
+            <div id="manu" class="card-container">
+                <div class="card-cat">
+
+                    <div id="cat1" class="cat">Manuskripte</div>
+                </div>
+            </div>
+            <div id="art" class="card-container">
+                <div class="card-cat">
+
+                    <div id="cat2" class="cat">Artiklen</div>
+                </div>
+            </div>
+            <div id="letter" class="card-container">
+                <div class="card-cat">
+
+                    <div id="cat3" class="cat">Briefe</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script src="functionscript.js"></script>
+    <script src="linksscript.js"></script>
+    <script src="navbarscript.js"></script>
+
+
+</body>
+
+</html>
