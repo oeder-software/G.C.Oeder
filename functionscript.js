@@ -89,8 +89,17 @@ function SetAlifeContent(chapter, content) {
     document.getElementById("sidebarcontent").appendChild(a);
   }
 }
-
-function SetLetterCheContent(chapter, content) {
+function SetAlifeContent(chapter, content) {
+  // var img = Math.floor(Math.random() * 14);
+  // if (chapter.length == 0) {
+  //   var a = document.createElement("img");
+  //   a.setAttribute("width", "250px");
+  //   a.setAttribute("margin-left", "auto");
+  //   a.setAttribute("margin-right", "auto");
+  //   a.setAttribute("src", "./img/flora" + img + ".png");
+  //   document.getElementById("content").appendChild(a);
+  // }
+  // if (chapter.length > 0) {
   for (let index = 0; index < content.length; index++) {
     a = document.createElement("a");
     a.innerText = content[index];
@@ -101,8 +110,10 @@ function SetLetterCheContent(chapter, content) {
     a = document.createElement("a");
     a.innerText = content[index];
     a.href = chapter[index];
+    a.setAttribute("id", index + "m");
     a.setAttribute("onclick", "closeSidebar()");
     document.getElementById("sidebarcontent").appendChild(a);
+    // }
   }
 }
 function SetContentAndenken(chapter, content) {
@@ -161,6 +172,14 @@ var danishHtml = [
   "bedenkenadditiondk",
   "bedenkensupplementdk",
   "botanicaljourney-dk",
+  "krauter-1-dk",
+  "krauter-2-dk",
+  "dissertation-dk",
+  "efterretning-dk",
+  "letterbern-dk",
+  "munzen-dk",
+  "gedanken-en",
+  "hamburg-dk",
 ];
 var germanHtml = [
   "andenkende",
@@ -176,6 +195,15 @@ var germanHtml = [
   "bedenkenadditionde",
   "bedenkensupplementde",
   "botanicaljourney-de",
+  "krauter-1-de",
+  "krauter-2-de",
+  "dissertation-de",
+  "efterretning-de",
+  "letterbern-de",
+  "munzen-de",
+  "gedanken-de",
+  "hamburg-de",
+  "links-de",
 ];
 var englishHtml = [
   "andenkenen",
@@ -191,6 +219,14 @@ var englishHtml = [
   "bedenkenadditionen",
   "bedenkensupplementen",
   "botanicaljourney-en",
+  "krauter-1-en",
+  "krauter-2-en",
+  "dissertation-en",
+  "efterretning-en",
+  "letterbern-en",
+  "munzen-en",
+  "gedanken-en",
+  "hamburg-en",
 ];
 
 function ChangeLanguage(lang) {
@@ -258,3 +294,51 @@ window.onscroll = function () {
     }
   }
 };
+// setLinkToFrontpage(link);
+// function setLinkToFrontpage(link) {
+//   var a = document.createElement("aside");
+//   a.setAttribute("class", "asideright");
+//   a.setAttribute("id", "chap1-aside");
+//   document.getElementById("chap1").appendChild(a);
+//   var a = document.createElement("a");
+//   a.setAttribute("href", link);
+//   a.setAttribute("id", "aside-a");
+//   document.getElementById("chap1-aside").appendChild(a);
+//   var a = document.createElement("img");
+//   a.setAttribute("id", "imgind");
+//   a.setAttribute("src", "./img/stats-47-munzen.png");
+//   document.getElementById("aside-a").appendChild(a);
+// SetLinkAndImgToFrontpage(link, img);
+function SetLinkAndImgToFrontpage(link, img) {
+  document.getElementById("link").setAttribute("href", link);
+  document.getElementById("frontpage").setAttribute("src", img);
+  // document.getElementById("frontpageimg").style = "cursor: pointer;";
+}
+function SetFlora() {
+  if (chapter.length == 0) {
+    var floraImg = Math.floor(Math.random() * 62);
+    var a = document.createElement("img");
+    a.setAttribute("width", "300px");
+    a.setAttribute("margin-left", "auto");
+    a.setAttribute("margin-right", "auto");
+    a.setAttribute("src", "./img/flora" + floraImg + ".png");
+    document.getElementById("content").appendChild(a);
+
+    a = document.getElementById("contentbut");
+    a.remove();
+  }
+}
+function PrependBrBeforeChap(chapter) {
+  if (chapter.length > 0) {
+    for (let i = 0; i < chapter.length; i++) {
+      let chap = chapter[i].slice(1);
+      var a = document.createElement("br");
+      var a = document.createElement("br");
+      var b = document.getElementById(chap);
+      b.insertBefore(a, b.firstChild);
+    }
+  }
+}
+// function HideMenuElements() {
+//   document.getElementById("biographyResponsive").style.display = "block";
+// }
