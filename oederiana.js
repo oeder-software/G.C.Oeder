@@ -23,6 +23,7 @@ let bedenkenContentGerman = [
 
 let chapter = ["#chap7", "#chap49", "#chap89", "#chap141", "#chap225"];
 // let Chapter = ["chap7", "chap49", "chap89", "chap141", "chap225"];
+PrependBrBeforeChap(chapter);
 
 var path = parent.location.pathname;
 path = path.split("/").pop();
@@ -47,6 +48,7 @@ if (path == "oederianade") {
 }
 if (path == "oederianaen") {
   buttontext = ["Show Letters", "Show Notes", "Hide Letters", "Hide Notes"];
+  document.getElementById("oederbut").innerText = "";
 
   SetContent(contentenglish);
   SetAlifeContent(chapter, bedenkenContentEnglish);
@@ -58,6 +60,9 @@ if (path == "oederianadk") {
   SetContent(contentdanish);
   SetAlifeContent(chapter, bedenkenContentDanish);
 }
+let img = "./img/oederiana.png";
+let link = " https://www.kb.dk/e-mat/dod/130019453090.pdf";
+SetLinkAndImgToFrontpage(link, img);
 
 // var letterIsChecked = false;
 // var notesIsChecked = false;
@@ -261,9 +266,9 @@ function oederiana(showItem) {
     }
     if (letterIsChecked == true) {
       letterIsChecked = false;
-      document.getElementById("oletter").innerText = buttontext[0];
+      document.getElementById("oletter").innerText = buttontext[2];
       document.getElementById("oletter").style = "background-color:darkblue";
-      document.getElementById("oletterm").innerText = buttontext[0];
+      document.getElementById("oletterm").innerText = buttontext[2];
       document.getElementById("oletterm").style = "background-color:darkblue";
 
       toggle("letterIsChecked", oed);
