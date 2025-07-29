@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Oeder’s Treatises on Inoculation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="letterstyle.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #sidebar {
+            font-size: 0.5rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #caca9d;
+        }
+
+        .formcontainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form {
+            width: 350px;
+        }
+
+        @media (max-width: 900px) {
+            .form {
+                width: 250px;
+            }
+
+        }
+
+        .table1container {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
+        .table2container {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
+        .columtable1,
+        .columtable2 {
+            margin: 10px;
+        }
+
+
+        .table1>th,
+        td {
+            text-align: center;
+            padding: 0px 5px;
+        }
+    </style>
+    <title id="title">Oeder’s Treatises on Inoculation
+    </title>
+</head>
+
+<body id="dex">
+    <!-- <script src="test2.js"></script> -->
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+            <li id="chapname">
+                <p>chapname</p>
+            </li>
+            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
+                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+        </div>
+
+    </nav>
+    <div class="main">
+
+        <aside id="content" class="left" style="position: sticky;"></aside>
+        <aside id="contbut" class="left" style="position: sticky;">
+            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
+                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+        </aside>
+        <main onclick="closeSidebar();">
+            <section id="chap0">
+                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a> </aside>
+                <h2>
+                    Oeder’s Treatises on Inoculation
+
+
+                </h2>
+                <h3>Recollections concerning the account found in the previously printed writing of Mr. Court Physician
+                    Tode (for May, p. 411).
+
+                </h3>
+
+                1) At the words: “as well as for the precise recording of what was observed.” – Both Mr. Wither and I
+                noted down our observations, as I was present at all dissections, and likewise the journal for the year
+                1770 was kept by me.
+                <br>
+                <br>2) This small land, the little island of Aunøe – Aunøe belongs to the demesne fields of the royal
+                domain estate of Vordingborg, and the farmer dwelling there has been allotted but a small piece of land
+                for his subsistence; otherwise, the island is used at the king’s expense, as lord of the manor, and for
+                many years has been employed for haymaking. In the year 1770, it was not under lease, and thus could be
+                handed over by the Royal Directorate of Taxation – under whose administration the domain estates in the
+                districts of Vordingborg and Antvorskov stood – to the Royal College of Commerce for the conducting of
+                these experiments. Mr. Wither made do in the farmhouse on Aunøe with a poor chamber, the only one the
+                farmer could spare. I had my lodging in the parsonage in the church village of Kiøng, the inhabitants of
+                which, as well as those of the annexed villages Sallerup and Kostradebye, belong as labor-bound subjects
+                to the domain estate of Vordingborg. I drove over daily, at least once, to Aunøe via Svinøe, which also
+                is part of Kiøng parish, but otherwise belongs to the estate of Gaunøe, held by Count von Thott. I had
+                two routes to Svinøe: either by land across the isthmus, or first a stretch by water. The water between
+                Svinøe and Aunøe is at times very shallow, yet I never saw it so shallow that one could pass entirely
+                with dry feet; seldom is the water so high that one could not pass through in a chaise. Likewise, from
+                Sallerup one can most of the time drive across by carriage, though it is deeper there. On account of
+                these shallows, Quarter A is enclosed on the sides toward Svinøe and Sallerup with a fence; but in all
+                other directions, the island is only accessible by water. I remark in passing that the water in Quarter
+                A is called Purrmose.
+                <br>
+                <br>3) In the second quarter, B, were kept the just-inoculated cattle, until such time as they became
+                ill. In the first summer of 1770, this was not yet the case, for then Quarter B was solely designated
+                for the convalescents, whom one endeavoured carefully to keep separate from our own healthy cattle, that
+                these might not be infected, and likewise from the sick, in order to be securely assured that, when
+                these convalescents, after some time and after proper washing and cleansing, were to be removed from the
+                island, they might not carry infection to wherever they should be brought. In the year 1770, the cattle
+                that were to be inoculated were brought to the sick quarter, were there inoculated, and remained there.
+                But when I, as can be seen above from the notes of the 9th of November, was led to the thought that the
+                inoculated cattle ought rightly to remain separated from the sick from the time of the operation until
+                the manifestation of the illness, I advised that in future years this separation should be observed,
+                which was then indeed done by Mr. Wither.
+                <br>
+                <br>Properly, four distinct places are required: 1) for the healthy cattle, 2) for the sick, 3) for the
+                newly inoculated, and 4) for the convalescent.
+                <br>
+                <br>4) In that part of this quarter which lay furthest removed from the coast of Zealand, the
+                inoculation was performed. In the year 1770, it was done near the huts. The operation of inoculation
+                itself carries no danger of distant contagion, and thus it was altogether indifferent to Zealand in
+                which part of this quarter the inoculation was effected. A far more significant circumstance was the
+                dissection of the dead cattle. This was carried out opposite the land tongue stretching from Vordingborg
+                to Knudshoved, beside the huts, upon a slope descending toward the shore, where the cattle were also
+                buried deep into the ground. The vapours unavoidably arising from the dissected cattle, as well as from
+                the sick huts and the surrounding terrain, might, under winds blowing across, have caused infection in
+                Zealand. However, in such a case, our cattle, grazing freely in the open air in Quarter A, over whose
+                heads the wind from Quarter C passes toward Zealand, must of necessity have been the first, and within
+                ample time, to have been attacked — if the spread of cattle disease by way of vapours through the air
+                over distance were indeed possible and to be feared. Such would be a calamity too great, one which must
+                arouse fear for the complete extermination of the entire breed of horned cattle, and would render the
+                otherwise proven security through avoidance of communication entirely incomprehensible.
+                <br>
+                <br>Moreover, there lies a contradiction between this and the previously treated matter under No. 3; for
+                if the newly inoculated cattle remained in Quarter B until they fell ill, and only then were brought
+                into the sick quarter C, why then should one wish to bring them to Quarter C already for the operation
+                of inoculation, and not rather perform this act — quoad momentum actus, wholly innocent in itself —
+                likewise in Quarter B?
+                <br>
+                <br>5) The remainder were, because it was not desired to retain so many, sent to the estate of
+                Beltringe. The words because it was not desired to retain so many I do not quite understand; rather, I
+                refer to the notes from the 11th and 26th of October. The contents therein I submitted again separately
+                to the Royal College of Commerce under the date of October 15th, namely that, in case the then-expected
+                outcome of the camphor trials should not prove favorable (which unfavorable outcome I did indeed report
+                on October 26th), I would let matters rest for the time being and preserve the remaining cattle — 25
+                head in total — for experimentation in the spring, seeking to place them at one of the royal estates. I
+                therefore requested either permission to act at my own discretion and according to circumstances, or
+                else an express order to continue the inoculations.
+                <br>
+                <br>On November 4th I received a reply stating that, as an experiment was desired to ascertain the
+                effect of the cold, I could abandon my post so long as I knew where I could accommodate the cattle. Upon
+                receipt of this response, I was necessarily compelled to make an immediate decision — either to
+                inoculate all the cattle at once on November 4th, or else to send them immediately to a place where they
+                might be kept under a roof, for they could no longer be left in the open, and no stables were to be
+                found on Aunø. I therefore had them taken — in view of the most recent experience with 35 head, of which
+                28 were lost, and which could not but deter me from any further inoculations that year — to Beltringe;
+                and specifically to Beltringe, because there a completely new and clean stable, in which no cattle had
+                yet been kept, neither healthy nor diseased, could be allocated to this herd. Nevertheless, they were
+                infected with the disease; yet one fifth was preserved — exactly the same proportion as among the last
+                35 head that had been inoculated.
+                <br>
+                <br>6) Most of the cows and heifers inoculated in the year 1770 were pregnant, and those that survived
+                did calve — almost all at the proper time. The calves likewise mostly remained alive.
+                <br>
+                <br>Due to the commonly accepted and in itself plausible supposition that an animal which had been in
+                the womb at the time when the mother had endured the cattle plague would thereby be protected against
+                said disease, I requested that the calves expected from such infected mothers be carefully observed, and
+                that attention be paid to their future fate, in order to determine to what extent this presumed
+                privilege might be well-founded. Whether this was done, I do not know.
+
+            </section>
+            <section id="chap1">
+                <h3>
+                    Further Considerations.
+                </h3>
+                7) In the aforementioned account contained in the Copenhagen publication, not a single word is given
+                regarding the arrangement made for changing garments when going to and fro between the quarters A and B,
+                especially C, and the hut erected for that purpose; yet this very arrangement is a principal
+                circumstance to which we – as I am convinced – owe it that we were able to preserve our healthy cattle
+                in Quarter A until the very end, that is, at the beginning of November, when the remainder was brought
+                away to Beltringe, all still healthy, though they stood between our own sick quarter and the infected
+                places lying opposite in Zealand, without a single animal falling ill before being removed for
+                inoculation.
+                <br>
+                <br>Namely, along the path from A to C, within Quarter B near the barrier which separated B from A, a
+                hut was erected containing four chambers; and by means of an open passage running through the middle of
+                the hut, two of these chambers were separated from the other two. One chamber on each side was intended
+                for myself and the surgeon, the other for the attendants. Whoever came from A and intended to go to C
+                would remove his clean clothing in the first chamber, proceed in shirt and barefoot – at most only in
+                stockings without shoes – to the opposite chamber, and there put on garments set aside for visiting the
+                sick cattle. Upon returning from Quarter C, the reverse changing of clothes took place.
+                <br>
+                <br>Particular care was taken that no one might come from C to A with any footwear other than the clean
+                shoes kept in the hut, and likewise no one barefoot either, so as not to carry dung or urine from the
+                sick quarter onto the healthy pastures where the cattle of A were grazing. The actual caretakers of the
+                sick cattle remained, as long as possible, in A, and their needs were brought to them.
+                <br>
+                <br>8) Furthermore, a shepherd appointed expressly for that purpose had to be stationed at the barrier
+                between A and B, to keep watch and ensure that the cattle from A did not break through this barrier or
+                otherwise wade across the bay from A to C. Likewise, the fencing on the sides of the island facing Svinø
+                and Sallerup was diligently maintained—especially after the disease had broken out in the aforementioned
+                villages—in order to prevent it from being brought from there into our clean Quarter A.
+                <br>
+                <br>One may easily be convinced, when considering the small size of the island of Aunø, that all this
+                care could not have availed anything, had the disease found free passage through the air. But thus, the
+                success of our precautions proves to us that it is indeed possible, even amidst neighbours afflicted by
+                the disease, to keep it away from oneself.
+                <br>
+                <br>9) The inhabitants of Svinø, given their advantageous position, could—just as well as we on
+                Aunø—have kept the disease at bay with similar care. A man from Svinø, who had let a couple of head of
+                cattle graze in Kostrædeby, took them back again once the cattle plague had already broken out in
+                Kostrædeby.
+                <br>
+                <br>In general, the disease began and spread from Næstved, advancing southward and eastward. It was
+                present in the town of Næstved and in the surrounding villages before we began the inoculations on Aunø
+                and had received our cattle from Bornholm, from where we also took the first material for inoculation.
+                <br>
+                <br>It broke out sporadically, now here, now there on individual farms, as long as people kept their
+                cattle to themselves on their own enclosed fields. But it spread like wildfire and became general once
+                the harvest was over and the cattle mingled on the open stubble fields.
+                <br>
+                <br>Given this well-known spread of the disease in Zealand on the one hand, and the unnatural leap the
+                disease would have had to make—right over the heads of our healthy cattle—from Aunø to Zealand on the
+                other, it is a striking absurdity to impute the slightest blame for the spread of the disease to the
+                inoculation; and yet, there has been no lack of persons who have not hesitated to insinuate such things
+                to higher authorities.
+                <br>
+                <br>10) The island of Bornholm, situated between Zealand and Scania, has never yet experienced the
+                cattle plague, whereas both Zealand and Scania have more than once suffered its devastation. On such
+                occasions, Bornholm has come to Zealand’s aid with entire herds of its admittedly somewhat small-sized
+                cattle. For although Bornholm, owing to its considerable cattle breeding, does indeed export cattle, it
+                never imports any.
+                <br>
+                <br>In Scania, as I have been assured by its inhabitants, the disease has always halted at the
+                mountainous borders towards Småland whenever it approached them—presumably, among other reasons, because
+                in these mountainous regions each farmer keeps his cattle separate and gathered on his own, and the
+                farms themselves are scattered and lie far apart, rather than closely packed together in villages as on
+                the plain. Consequently, the opportunities for transmission of the disease are infinitely fewer than on
+                level ground.
+                <br>
+                <br>11) I am confirmed in the belief that our first inoculation in the year 1770 turned out so
+                successfully precisely because it was the first, by the observation that others who tried the operation
+                earlier, around the same time, or even later, experienced nearly the same outcome. Namely, when one
+                inoculates in a place where the disease has not previously occurred, the cattle contract the illness
+                solely through the inoculation, without the involvement of any other contributing infection—and thus
+                things go well. But during the second, and even more so the subsequent, inoculations, the inoculated
+                cattle come into an unclean environment, and then, quite naturally, things no longer proceed favorably.
+                <br>
+                <br>It is therefore a most essential precaution, which ought to be strongly impressed upon practice,
+                that—as noted above under No. 3—one must provide four distinct places. Yet it always remains a
+                considerable difficulty to prevent that the area where the cattle are to remain after inoculation, until
+                the visible outbreak of the illness—what may for brevity be termed the inoculated quarter—might not be
+                contaminated and rendered unusable, should the disease break out earlier and more severely in some
+                beast, with drooling and thin dung.
+                <br>
+                <br>This would indeed pose a great inconvenience, were one to allow the inoculated cattle to pass this
+                intermediate period in stalls or huts, for such structures are difficult to cleanse, and new ones cannot
+                be built so frequently. However, these difficulties are largely avoided if inoculation takes place at a
+                suitable time of year, such that stalls and huts may everywhere be dispensed with, and the inoculated
+                cattle left to pasture in the open air. And even if such a tract of unbuilt land, designated as an
+                inoculated quarter, should become soiled and unfit, a new location can usually be found—and if the
+                cattle are fed a bit sparingly, and with fresh grass by hand, the land will scarcely suffer so much
+                damage that one would, in the long run, lack unspoiled terrain.
+                <br>
+                <br>12) Note in reference to the Copenhagen memorandum.On the 20th of November 1770, I was appointed by
+                His Majesty to the General Commission of Agriculture, and by the end of May 1771, to the Financial
+                College; thus I could, of course, not be present at the inoculation on Aunø, which in any case (cf. the
+                conclusion of the remarks under 9 November) did not require my attendance. Yet, as a member of the
+                aforementioned Land Commission, to which His Majesty had in the meantime entrusted the administration of
+                the aforementioned domains in the counties of Antvorskov and Vordingborg, I brought about the
+                commission's resolution to continue the inoculation trials – all the more so (see the remark of 9
+                November), as the commencement the previous year had been somewhat delayed.
+                <br>
+                <br>At that time, Mr. Wither and I agreed upon the procedure to be observed. I particularly insisted
+                that the newly inoculated cattle be removed from the infected quarter until the outbreak of the illness,
+                and I specifically advised to use only young cattle for inoculation, excluding pregnant cows, of which I
+                had had so many the year before.
+                <br>
+                <br>In the same year, a house was also built in Quarter C on Aunø, on the initiative of the Land
+                Commission – among other purposes, with the intent that, should the efficacy of inoculation prove
+                itself, the island of Aunø would, in the first instance, remain designated for this purpose. The house
+                was to serve initially as the residence for the surgeon conducting the inoculations, and thereafter the
+                institution was to be opened for general use, so that any farmer, at his own risk and for a reasonable
+                fee, might send young cattle there for inoculation, and receive it back after the disease and quarantine
+                were overcome. In this way, the country might gradually be furnished with a stock of reliable cattle, so
+                that in the event of future outbreaks, it would not suffer excessively — suffering doubly, as it were:
+                not only through the immediate loss of the fallen cattle, but also indirectly through visibly diminished
+                harvests, due to lack of manure. This lack is all the more detrimental in Zealand, where the proportion
+                of land under plough is already too great, and of hayfields and pastures too little.
+                <br>
+                <br>13) It is certain that the disease, in and of itself, was already less virulent and deadly in the
+                year 1771, and even more so in 1772, than it had been in 1770. It is thus quite natural to suppose that,
+                in proportion as the constitutio epidemica (or, if one prefers, epizootica) became less malignant, so
+                too the poison introduced by inoculation may have shown itself to be less potent.
+                <br>
+                <br>From this, however, a mistrust might arise concerning the reliability of these inoculations, and an
+                apprehension as to whether the cattle inoculated in these later years would withstand a truly violent
+                epidemic.
+                <br>
+                <br>Yet the experience with the animals from our first trial in the year 1770 – who recovered lightly,
+                and yet in that very same year, when the disease unquestionably raged at its fiercest, endured the
+                severest trials – may serve to calm such concerns.
+                <br>
+                <br>Nevertheless, it would still be desirable that some of those animals, doubtless still alive from the
+                inoculations of the years 1771 and 1772, be subjected to new trials upon the return of the disease –
+                which, by report, is now again present in Holstein. For it is of great, indeed of utmost importance, to
+                attain certainty that an inoculated animal, even if only lightly affected during inoculation, and even
+                if the epidemic was mild at the time, remains protected against further contagion, even should a future
+                epidemic prove more malignant.
+            </section>
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script src="functionscript.js"></script>
+    <script src=inokulation-3script.js></script>
+    <script src="navbarscript.js"></script>
+
+
+</body>
+
+</html>
