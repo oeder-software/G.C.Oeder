@@ -75,6 +75,8 @@ let chapter = [
   "#chap17",
   "#chap18",
 ];
+PrependBrBeforeChap(chapter);
+
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
@@ -91,3 +93,7 @@ if (path == "bedenkendk") {
   SetContent(contentdanish);
   SetAlifeContent(chapter, bedenkenContentDanish);
 }
+let img = "./img/betaenkning.jpg";
+let link =
+  "https://www.google.dk/books/edition/Bedenken_%C3%BCber_die_Frage_Wie_dem_bauerns/-gluJmCBKOMC?hl=da&gbpv=1&dq=&pg=PA1&printsec=frontcover";
+SetLinkAndImgToFrontpage(link, img);
