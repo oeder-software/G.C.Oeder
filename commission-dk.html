@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Georg Christian Oeder.  Afhandling, indleveret i året 1772 i København til den Kommission, som udtrykkeligt var nedsat til undersøgelse af de forandringer, der siden oktober 1770 var indtruffet i og med kollegierne.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="letterstyle.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #sidebar {
+            font-size: 0.5rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #caca9d;
+        }
+
+        .formcontainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form {
+            width: 350px;
+        }
+
+        @media (max-width: 900px) {
+            .form {
+                width: 250px;
+            }
+        }
+
+
+        .table1container {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
+        .table2container {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
+        .columtable1,
+        .columtable2 {
+            margin: 10px;
+        }
+
+
+        .table1>th,
+        td {
+            text-align: center;
+            padding: 0px 5px;
+        }
+    </style>
+    <title id="title"> Afhandling, indleveret i året 1772 i København til den Kommission, som udtrykkeligt var nedsat
+        til undersøgelse af de forandringer, der siden oktober 1770 var indtruffet i og med kollegierne.
+    </title>
+</head>
+
+<body id="dex">
+    <!-- <script src="test2.js"></script> -->
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+            <li id="chapname">
+                <p>chapname</p>
+            </li>
+            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
+                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+        </div>
+
+    </nav>
+    <div class="main">
+
+        <aside id="content" class="left" style="position: sticky;"></aside>
+        <aside id="contbut" class="left" style="position: sticky;">
+            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
+                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+        </aside>
+        <main onclick="closeSidebar();">
+            <section id="chap0">
+                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a> </aside>
+                <h2>
+                    I.
+                    <br> Afhandling, indleveret i året 1772 i København
+                    <br>til den Kommission, som udtrykkeligt var nedsat
+                    <br>til undersøgelse af de forandringer, der siden
+                    <br>oktober 1770 var indtruffet i og med kollegierne.
+                </h2>
+            </section>
+            <section id="chap1">
+                <h2>
+                    Forberetning.
+
+                </h2>
+                Allerede ved udgivelsen af de i året 1786, uden angivelse af udgiverens navn og uden trykkestedets
+                benævnelse, fremkomne Aktstykker og Materialer til nærmere Kundskab om de nordiske Rigers Historie og
+                Statsforvaltning, følte jeg, på grund af de deri indeholdte stykker vedrørende det i året 1771 i
+                København oprettede Finanskollegium med tre underordnede kamre:
+                <br>
+                <br>nemlig under rubrikken „Finanssager“: stykkerne I, II, III, IV, V, fra s. 265 til s. 278 og
+                <br>
+                <br>under rubrikken „Bilag“, i stykket I, afsnit nr. 3, fra s. 529 til s. 536,
+                <br>
+                <br>følte jeg, da det som enhver i Danmark ved, er mig, der oprindelig har fremført idéen om nævnte
+                Finanskollegium, omend den ikke blev fuldstændig gennemført efter mit forslag, nødvendigheden af at
+                bringe mit andel i sagen, såvel som denne del af min tilværelse i Danmark, frem i det rette lys.
+                <br>
+                <br>Imidlertid har dog forskellige overvejelser hidtil bevæget mig til at udsætte den omtalte
+                offentliggørelse; men nu bortfalder disse.
+                <br>
+                <br>Offentliggørelsen består i fremlæggelsen for almenheden af en afhandling, som blev indleveret til en
+                kommission, der udtrykkeligt var nedsat til undersøgelse af de forandringer, som dengang var foregået i
+                og med departementerne.
+                <br>
+                <br>Jeg indgav den til denne kommission få dage efter, at dens oprettelse var blevet bekendt,
+                uopfordret, fordi jeg anså det for min pligt at erklære mig som ophavsmand til idéen om et sådant
+                finanskollegium med tre underordnede kamre, og idet jeg frivilligt rettede et forsvar for mig selv — for
+                så vidt som det i henhold til den virkelige gennemførelse kunne falde på mig — samtidig forelagde en
+                kommission, som var pålagt ikke at forkaste noget blot fordi det var nyt, så længe det i øvrigt var
+                godt, grundene til denne indretning. — Jeg indleverede den, som sagt, ud fra en følelse af pligt, ikke
+                af noget behov for et værn, som ikke fandtes.
+                <br>
+                <br>Endnu nu mener jeg, at jeg til den allerede anførte bevæggrund for offentliggørelsen af denne
+                afhandling — nemlig at bringe denne del af min tilværelse i Danmark frem i det rette lys, hvor den i den
+                omtalte trykte skrift ikke retmæssigt fremstår — også kan føje den grund, som vedrører staten, hvortil
+                jeg har stræbt at tjene redeligt. Det kan nemlig allerede nu være af ikke ringe betydning for mange
+                danske patrioter, og vil med sikkerhed ikke være uden interesse for den fremtidige historieskriver,
+                navnlig for den periode, hvori dette Finanskollegium med dets kamre falder, at kende grundene til denne
+                indretning. Thi det systematiske i dens plan vil man i det mindste ikke kunne overse, og — mange ting
+                vil genopstå, som nu er forsvundne, og ting vil forfalde, som nu står i ære.
+                <br>
+                <br>Jeg smigrer mig især med tanken, at den Norske Kammer, hvor kort dens eksistens end varede, vil stå
+                i godt minde hos nordmændene, og at navnlig indbyggerne i den sydlige del af dette rige, når de nyder
+                den frihed i kornhandelen, som i 1788 atter blev dem givet, vil erindre den lignende frihed, der blev
+                tilvejebragt af den Norske Kammer i året 1771 — ganske vist en frihed, der i første omgang kun gjaldt de
+                9 år frem til 1780, da denne kammer gennem erfaringerne fra disse år, og gennem den ved de kendte
+                modsigelser så nødvendige henvisning til sådan erfaring, ville bane vejen for en tilladelse til evig
+                tid.
+                <br>
+                <br>Også var jeg i året 1772, under andre forberedelser til tiltrædelsen af embedet som stiftamtmand i
+                Drontheim, netop beskæftiget med en plan for distriktsmagasiner i Drontheims amt (stiftamtmanden er som
+                bekendt altid samtidig amtmand over ét af stiftets amter) — magasiner, som er uundværlige for enhver
+                egn, hvis befolkning behøver tilførsel — da min bestemmelse, meget imod mit ønske og min tilbøjelighed,
+                uventet blev ændret.
+                <br>
+                <br>Oldenburg, den 13. juni 1790.
+                <br>
+                <br>G. C. von Oeder.
+
+
+            </section>
+
+            <section id="chap2">
+                <h2>
+                    I.
+                    <br>Afhandling indleveret i året 1772 i København
+                    <br>til den kommission, som udtrykkeligt var nedsat
+                    <br>til at undersøge de forandringer, der siden
+                    <br>oktober 1770 var indtruffet i og med kollegierne.
+
+                </h2>
+                Ved en kabinetsordre af 4. januar 1771 blev jeg bragt i en sådan stilling og forbindelse med kabinettet,
+                at det gav mig lejlighed til at udtale mine tanker om forskellige dele af statsforvaltningen; tanker,
+                som med eller uden min viden kan have haft indflydelse på det, som nu er overdraget den kongelige
+                kommission at undersøge. Jeg anser det derfor for lige så nyttigt som i overensstemmelse med min pligt
+                at forelægge den højomtalte kommission de memoranda, som vedrører finanskollegiet, kamrene og de sager,
+                der var henlagt til disse kollegier.
+                <br>
+                <br>Jeg har, over for den mand, til hvem kongen, ligesom så mange andre, henviste mig og satte over mig,
+                bistået med min rådgivning, efter bedste viden og samvittighed, og de papirer, som formodentlig er
+                fundet fra min hånd, må bevidne dette – ligesom min ven, konferensråd Schumacher, som har paraferet den
+                omtalte kabinetsordre, kan bevidne det.
+                <br>
+                <br>Indretningen af Finanskollegiet og dets kamre quoad formam (med hensyn til formen) er min idé; dog
+                har jeg ingen andel i den kabinetsordre, som gav dette kollegium dets eksistens, og jeg vidste intet om
+                dets oprettelse — ej heller, at jeg skulle udnævnes til det — førend om aftenen, hvor ordren, af den
+                person den var sendt til og blev åbnet af, blev mig bekendtgjort.
+                <br>
+                <br>Hvad altså, som sagt, angår Finanskollegiets indretning quoad formam, fastholder jeg fortsat, at den
+                er god, og at den fortjener at blive opretholdt, efter de grunde som er anført i bilag nr. 1. Men hvad
+                angår flere af de sager, som blev henvist til Finanskollegiet, har jeg altid haft en anden mening.
+                <br>
+                <br>Jeg har både mundtligt og skriftligt, ved lejligheder som min ovennævnte stilling gav mig, fremført,
+                at efter min mening burde administrationen af toldvæsenet ganske vist forenes med forvaltningen af de
+                øvrige kongelige indtægter; men at der derimod, hvad angår handels- og fabriksanliggender — eller mere
+                præcist sagt: statsøkonomien i sin helhed — og omsorgen for undersåtternes næringsveje, som påhviler
+                regeringen, måtte oprettes et særligt departement. En ansøgning underskrevet af mere end 30 handelsmænd
+                i Aggershus stift om oprettelse af et handelskollegium for Norge, bragte mig hovedsageligt på disse
+                tanker — en ansøgning, som var fremkaldt af et kongeligt cirkulære af 16. oktober 1770. Mit forslag,
+                hvorefter jeg mente, at nordmændenes ønsker i denne henseende kunne imødekommes, fremgår af bilag nr. 3.
+                <br>
+                <br>Efter min mening hører ganske vist blandt de politikersager, som ved forordningen af 19. august 1771
+                blev frataget Kancelliet og overdraget Finanskollegiet og kamrene, nogle i højere grad dertil end til
+                Kancelliet; men de fleste hører hjemme under et Økonomikollegium, og en del er igen af så blandet
+                karakter, at det er vanskeligt at afgøre, om de tilhører den økonomiske eller den juridiske politik. Det
+                bedste ville derfor være, at man lod enkelte medlemmer fra forskellige departementer træde sammen og
+                lade disse tvivlsomme sager varetages i fællesskab af dem. For at sammenfatte mine tanker kort: På den
+                ene side er det ganske vist, at den oeconomia publica, som vedrører undersåtternes næringsveje, og
+                politikken (den orden, ved hvilken disse næringsveje i vita sociali, det sociale liv, opretholdes),
+                egentlig ikke hører til kameralvæsenet, som fortrinsvis beskæftiger sig med fiscus principis, fyrstens
+                kasse; men på den anden side er det også lige så sikkert, at oeconomia publica og politikken i mange
+                henseender berører Finanskollegiet og dets kamre så nært, at disse to kollegier nødvendigvis må tage del
+                i deres forvaltning. Herpå grundes min idé om et Økonomikollegium, som tillige skulle varetage
+                politikersagerne, og jeg tillader mig herved under nr. 4 at forelægge mine grunde til velvillig
+                overvejelse.
+            </section>
+
+            <section id="chap3">
+                <h2>
+                    Første Memorandum.
+                </h2>
+                Grunde til indretningen af Finanskollegiet og de tre Kamre.
+                <br>
+                <br>For at kunne varetage de vidt forgrenede forretninger inden for finans- og kameralvæsenet er det
+                nødvendigt at adskille dem på en sådan måde, at deres uopløselige sammenhæng ikke forstyrres. Detaljen
+                må på ingen måde betragtes med ringeagt, for i sidste ende beror al forretnings succes på detaljen; men
+                man kan ikke forvente af dem, der har ansvaret for detaljen, at de samtidig skal kunne overskue helheden
+                i sammenhæng.
+                <br>
+                <br>Og af dem, som er betroet forvaltningen af helheden, må man ikke kræve, at de skal gå ind i detaljen
+                – undtagen i de vigtigste tilfælde.
+                <br>
+                <br>Man må altså skelne mellem finansforretninger og kammerforretninger. Finansforretninger er:
+                anvendelsen af statens indtægter; den overordnede tilsyn med indtægtskilderne; ændringer af de gældende
+                regler og forskrifter, samt indførelsen af nye. Kammerforretninger er: opkrævningen af indtægterne; den
+                konkrete forvaltning af hver enkelt indtægtskilde; anvendelsen af de eksisterende regler og forskrifter
+                på hver enkelt specifik sag.
+                <br>
+                <br>Idet der til hvert kammer sættes en deputeret som forstander, og deraf sammensættes et
+                finanskollegium, opnår man både den nødvendige adskillelse og sammenhæng; og ved overvejelsen af de
+                indstillinger, der indkommer fra kamrene til finanskollegiet, bliver de enkelte dele af statens
+                særinteresser vurderet i forhold til hele staten: alting forbliver i rette spor.
+                <br>
+                <br>Denne ovennævnte sammenhæng ville blive forstyrret, hvis man, som det har været på tale, ville
+                flytte det norske kammer til Christiania og det tyske til Rendsborg: man ville da være nødt til at give
+                disse kamre en udvidet myndighed og overdrage dem en del af finansforretningerne. Men hvor meget
+                myndighed og hvilke forretninger? Det ville være vanskeligt, og næppe muligt at bestemme andet end
+                vilkårligt. Den påståede og eneste fordel ved en sådan flytning, nemlig muligheden for bedre
+                lokalkendskab, hvis kamrene lå nærmere deres distrikt, er i sig selv uden betydning; for kammeret kan
+                ikke rejse, og dets medlemmer er i Christiania eller Rendsborg lige så bundet til deres bolig og
+                mødelokale som i København, og kollegierne må under alle omstændigheder støtte sig til rapporter fra de
+                underordnede myndigheder.
+                <br>
+                <br>Den store nytte af opsplitningen og opdelingen af den gamle kammer i tre særskilte kamre springer i
+                øjnene, når man betænker, at der nu i tre værelser på én dag kan udføres det samme, som tidligere, da
+                alle medlemmer af den eneste kammer sad ved ét bord, krævede tre dage — og det sker lige så godt, fordi
+                intet medlem af kammeret længere er nødt til at bruge sin tid og opmærksomhed på sager, der er ham
+                uvedkommende, og hvert af de tre adskilte kamre består af et antal medlemmer, der er tilstrækkeligt til
+                kollegial behandling.
+                <br>
+                <br>Endvidere har opdelingen af forretningerne i hvert kammer (en indretning, som altid er god i
+                regeringsdepartementer, dog ikke ved justitstribunaler) den store fordel, at hvert medlem tilskyndes til
+                at gå i dybden med sit område, eftersom han skal stå særligt inde for det.
+                <br>
+                <br>Da de kommitterede i hvert kammer selv forelægger sagerne, mens renteskriverne blot fungerer som
+                regnefolk, handler førstnævnte i overensstemmelse med værdigheden af deres embede, og kollegiet, som må
+                se med deres øjne, ser mere pålideligt; og renteskriverne, der ikke længere bliver distraheret af
+                revisionsarbejdet, kan gennemføre denne revision rettidigt, og den ulempe ved forældede regnskaber — den
+                største i kammerforretninger — bliver undgået.
+                <br>
+                <br>Ved sekretærerne, som er givet som uundværlig bistand både til deputerede i finanskollegiet i deres
+                egenskab af kammerchefer og til de kommitterede som bureauchefer, samt ved kopisterne — hvortil
+                hensigten er at anvende studerede personer — råder hele finans-kammer-departementet over en planteskole
+                af dygtige og veluddannede subjekter til embeder, som hører under dette departement.
+
+            </section>
+
+            <section id="chap4">
+                <h2>
+                    Memoire nr. 2.
+
+                </h2>
+                Status over den tidligere rentekammer ved begyndelsen af året 1770.
+                <br>
+                <br>A:
+                <br>Tre deputerede
+                <br>Den 1ste:    4000 rigsdaler
+                <br> 2den:    2000 rigsdaler
+                <br> 3die:    1500 rigsdaler
+                <br>  Sum: 7500 rigsdaler i løn
+                <br>Derudover tre gange 918 = 2754 rigsdaler i sportler (tillæg eller gebyrer)
+                <br>  Sum i alt: 10.254 rigsdaler
+                <br>
+                <br>B:
+                <br>Seks kommitterede
+                <br>3 à 1200 rigsdaler → 3600 rigsdaler
+                <br>3 à 1000 rigsdaler → 3000 rigsdaler
+                <br>Sum: 6600 rigsdaler i løn
+                <br>Tillæg for konferensråd H.: 400 rigsdaler
+                <br>Sum: 7000 rigsdaler
+                <br>Dertil 6 gange 545 rigsdaler = 3270 rigsdaler i sportler (tillæg eller gebyrer)
+                <br>I alt: 10.270 rigsdaler
+                <br>
+                <br>C:
+                <br>Underordnede
+                <br>Justitssekretær: 400 rigsdaler
+                <br>Arkivsekretær: 400 rigsdaler
+                <br>2 kammersekretærer à 800 rigsdaler = 1600 rigsdaler
+                <br>12 renteskrivere à 1000 rigsdaler = 12.000 rigsdaler
+                <br>19 befuldmægtigede à 200 rigsdaler = 3800 rigsdaler
+                <br>1 fyrbøder med medhjælper = 190 rigsdaler
+                <br>2 bude à 100 rigsdaler = 200 rigsdaler
+                <br>I alt: 18.590 rigsdaler
+                <br>
+                <br>D: Økonomiske udgifter
+                <br>Til belysning: 235 rigsdaler
+                <br>Til skriveredskaber/materialer: 665 rigsdaler
+                <br>I alt: 900 rigsdaler
+                <br>
+                <br>Sammenfatning.
+                <br>A: 10.254 rigsdaler (deputerede)
+                <br>B: 10.270 rigsdaler (kommitterede)
+                <br>C: 18.590 rigsdaler (underordnede embedsmænd og personale)
+                <br>D: 900 rigsdaler (økonomiske driftsudgifter)
+                <br>I alt: 40.014 rigsdaler
+                <br>
+                <br>Personalestatus for Toldkammeret og Generalhandelskollegiet
+                <br>E: Deputerede
+                <br>1ste 4000 Rdl.
+                <br>2den 400 Rdl.
+                <br>3die 1600 Rdl.
+                <br>Summa 6000 Rdl.
+                <br>
+                <br>F:
+                <br>Kommitterede og sekretærer ifølge en note fra justitsråd P.
+                <br>I løn 6430 Rdl.
+                <br>I sportler 2303 Rdl.
+                <br>Summa 8737 Rdl.
+                <br>
+                <br>G:
+                <br>Underordnede
+                <br>6 renteskrivere à 1000 Rdl. = 6000 Rdl.
+                <br>8 befuldmægtigede à 200 Rdl. = 1600 Rdl.
+                <br>1 ildbud = 160 Rdl.
+                <br>1 bud = 150 Rdl.
+                <br>1 Kommerce- og Fabriksintendant –– 300 Rdl.
+                <br>1 Kommercesecretair –– 400 Rdl.
+                <br>Summa: 7860 Rdl.
+                <br>
+                <br>H: Økonomiske udgifter
+                <br>Skriveartikler –– 380 Rdl.
+                <br>Lys –– 68 Rdl.
+                <br>Summa: 448 Rdl.
+                <br>Rekapitulation
+                <br>E: 6000 Rdl.
+                <br>F: 8737 Rdl.
+                <br>G: 7860 Rdl.
+                <br>H: 448 Rdl.
+                <br>Summa: 23,045 Rdl.
+                <br>
+                <br>A–D: 40,014
+                <br>Summa: 63,059 Rdl.
+                <br>
+                <br>Etat for Finanskollegiet og de derunder hørende Kollegier
+                <br>
+                <br>A. Finanskollegiet
+                <br>4 deputerede –– 12,000 Rdl.
+                <br>3 sekretærer à 500 –– 1500 Rdl.
+                <br>1 sekretær à 800 –– 800 Rdl.
+                <br>67 kopister –– 900 Rdl.
+                <br>1 ildbud med arbejdsmand –– 246 Rdl.
+                <br>Skriveartikler og lys –– 100 Rdl.
+                <br>Summa: 15,546 Rdl.
+                <br>2 revisorer = 250 Rdl.
+                <br>
+                <br>B. Det Danske Kammer
+                <br>5 kommitterede –– 6600 Rdl.
+                <br>Tillæg for 2 uden for ordinær tjeneste –– 700 Rdl.
+                <br>Kontorsekretærer à 500 Rdl. –– 2500 Rdl.
+                <br>Renteskrivere –– 5400 Rdl.
+                <br>7 befuldmægtigede –– 1400 Rdl.
+                <br>13 kopister –– 240 Rdl.
+                <br>Summa: 19,690 Rdl.
+                <br>
+                <br>C. Det Norske Kammer
+                <br>4 kommitterede –– 5400 Rdl.
+                <br>Ekspeditions- og arkivsekretær –– 1600 Rdl.
+                <br>4 kontorsekretærer –– 2000 Rdl.
+                <br>4 renteskrivere –– 3400 Rdl.
+                <br>5 befuldmægtigede –– 1000 Rdl.
+                <br>10 kopister –– 1500 Rdl.
+                <br>2 bud –– 240 Rdl.
+                <br>Summa: 15,140 Rdl.
+                <br>
+                <br>D. Det Tyske Kammer
+                <br>4 kommitterede –– 5400 Rdl.
+                <br>Ekspeditions- og arkivsekretær –– 1600 Rdl.
+                <br>4 kontorsekretærer –– 2000 Rdl.
+                <br>5 renteskrivere –– 4500 Rdl.
+                <br>5 befuldmægtigede –– 1000 Rdl.
+                <br>12 kopister –– 1800 Rdl.
+                <br>2 bud –– 240 Rdl.
+                <br>Summa: 15,540 Rdl.
+                <br>
+                <br>E. Skriveartikler og lys til hvert kammer, ca. 300–900 Rdl.
+                <br>Sammenfatning:
+                <br>A. 155.546 Rdl.
+                <br>B. 19.690 Rdl.
+                <br>C. 15.140 Rdl.
+                <br>D. 15.540 Rdl.
+                <br>E. 900 Rdl.
+                <br>Summa: 66.816 Rdl.
+                <br>
+                <br>Efter den tidligere ordning var der: / Efter den nye er der:
+                <br>6 deputerede / 4
+                <br>11 kommitterede / 13
+                <br>18 renteskrivere / 14
+                <br>1 arkivar / 3
+                <br>3 sekretærer / 20
+                <br>27 befuldmægtigede / 18
+                <br>Ingen kopister / 40
+                <br>4 bud / 6
+                <br>72 personer / 121
+                <br>
+                Den indretning, som var nødvendig ved forandringen, kostede en del, omtrent 2100 Rdl., men det meste
+                heraf blev brugt til at anskaffe inventarstykker eller til udgifter, som kun forekommer én gang og ikke
+                snart bliver nødvendige igen; det mindste beløb gik til skriveartikler. Derfor kan denne udgift ikke med
+                rimelighed belastes den nye ordning.
+                <br>
+                <br>Lige så lidt bør de personer, som blev tilkaldt ved forandringen, tages med, da de blot var en res
+                temporaria (midlertidig foranstaltning), og delvist allerede er udtrådt; for sådanne ændringer i
+                departementer sker sjældent uden pensionister.
+                <br>
+                <br>Man kan altså med rimelighed ikke beregne, at merudgiften ved den nye ordning i forhold til den
+                gamle overstiger 4000 Rdl.
+                <br>
+                <br>Til gengæld har man nu 121 personer i tjeneste og vedvarende arbejde i stedet for tidligere 72, uden
+                at regne kontorerne og deres betjente, som slet ikke er blevet ændret.
+                <br>
+                <br>Med et så meget større antal arbejdere — ikke så meget ledende hoveder som arbejdende hænder — og
+                ved at begrænse hovedpersonerne i hver kammer udelukkende til deres egne anliggender, uden at blive
+                distraheret af de andre kamres sager, opnås en langt hurtigere og mere ordentlig behandling af alle
+                sager. Alt bliver grundigere og mere nøjagtigt overvejet og gennemarbejdet. At dette virkelig er sket,
+                og på kort tid har vist sig tydeligt, vil ingen kunne benægte. Jeg tror heller ikke, at de, som også
+                tjente under den tidligere ordning — som Etatsrådene B. og C., Justitsrådene O. og P. med flere — vil
+                sige noget andet.
+                <br>
+                <br>[Tacitus siger: Staten har brug for mange hænder, men kun få hoveder er nok.]
+
+            </section>
+
+            <section id="chap5">
+                <h2>
+                    Memoire Nro. 3.
+
+                </h2>
+                <h3>§. 1.</h3>
+                Man kan med rimelighed forvente af velmenende statstjenere og velmenende undersåtter, at de aldrig vil
+                glemme, i hvilken grad regeringens og undersåtternes interesser er uadskillelige; men det er også
+                sikkert, at menneskets indsigt er begrænset, og deres lidenskaber stærke. Ofte kan ministre blive
+                forledt til bevidst at vende blikket bort fra undersåtternes velstand, når ødselhed og forfængelige
+                hensigter eller planer, som ikke stemmer med statens kræfter, kræver større udgifter, end disse kræfters
+                kilder — næringsvejene — kan bære; ofte — og jeg vil håbe, at dette sker oftere end det første — begår
+                ministre fejl i god tro og pålægger i bedste mening, idet de søger at hjælpe ét erhverv og fremme en
+                næringsvej, samtidig mange andre nidkære flittige folk hindringer.
+                <h3>§. 2.</h3>
+
+                Det er derfor aldrig klogt, at de statstjenere, som er sat til at overvåge statens indtægter, samtidig
+                og ensidigt også skal have ledelsen af undersåtternes handel og næring; og allerede den blotte mistillid
+                fra undersåtterne, som de i så fald må forvente rettet imod sig, burde alene afholde dem fra at påtage
+                sig en sådan ensidig kontrol.
+
+                <h3>§. 3.</h3>
+
+                På den anden side lærer erfaringen, i hvor høj grad undersåtterne i deres handel og næring altid søger
+                at unddrage sig den pligt, som påhviler dem, nemlig at lade staten få en rimelig andel af frugterne af
+                deres arbejde, og i hvor høj grad de altid er rede til at komme med forslag, som udelukkende sigter på
+                deres egen fordel; næringsstanden har desuden ikke blot behov for statens beskyttelse, men også ved
+                daglige lejligheder støtte fra det offentlige statskammer (aerarium publicum): således må de, som har
+                forvaltningen af aerarium publicum betroet, nødvendigvis også deltage i tilsynet med næringsstanden.
+
+                <h3>§. 4.</h3>
+
+                Man hører og læser så ofte, at handel og fabrikker i monarkiske stater ikke kan bringes til nogen
+                betydelig blomstring, fordi friheden mangler, og fordi der mangler vedholdenhed i ministeriets planer,
+                hvilket fravær uophørligt forstyrrer alle de handlendes spekulationer og investeringer, og fordi det
+                styrende ministerium mangler tilstrækkelig kendskab til næringsvejenes detaljer — en mangel, som ikke
+                afhjælpes ved, at ministeriet har nogle få handlende eller fabrikanter som favoritter ved hånden.
+
+                <h3>§. 5.</h3>
+
+                Det er også sikkert, at forvaltningen af næringsstanden kræver detaljeret kendskab, mere end andre
+                områder af statsadministrationen. Et kollegium kan ikke forvente at opnå dette kendskab blot gennem
+                rapporter og betænkninger fra underordnede embedsmænd, for den ene undersåts næringsvej er på mange
+                måder forbundet med hans medborgeres næringsveje, og disse må derfor også høres hver gang. Ved sådanne
+                drøftelser er et kollegium dårligt stillet og ikke lidt besværet, hvis det allerede i første instans
+                skal modtage alle de ansøgninger og projekter, af hvilke der forekommer overordentligt mange i intet
+                andet departement. Men hvis der indsættes melleminstanser, hvor alle ansøgninger og forslag først skal
+                gøres afhængige og underkastes drøftelse, og kun de vigtige derfra, korrekt forberedte, må forelægges
+                højere sted, da kan et Økonomikollegium først da betragte sig som i stand til at styre hele den
+                komplicerede maskine. På disse overvejelser, § 1–5 samlet, grundes idéen om et almindeligt
+                Økonomikollegium her i residensen og om et særligt kollegium for Norge i Christiania, som jeg har
+                fremsat i anledning af det ovenfor nævnte andragende fra de handlende i Aggershus Stift.
+
+                <h3>§. 6.</h3>
+
+                I hvert af de fire stifter skulle der oprettes en økonomisk deputation, som skulle bestå af et par af de
+                fornemste kongelige embedsmænd samt nogle af de mest velhavende og ansete borgere, købmænd, fabrikanter,
+                bjergværksejere, proprietærer og lignende, foruden en sekretær. Sekretæren er også en kongelig
+                tjenestemand og lønnes af kongen, og både han og de kongelige embedsmænd har faste pladser i
+                kommissionen. De repræsenterer i den kongens sted, som Gens du Roy; men de personer, der indtræder i
+                kommissionen fra undersåtternes side, udskiftes enkeltvis, og nye vælges i deres sted af dem selv.
+                Udførelsen af beslutningerne forbliver i hænderne på Gens du Roy, men de private medlemmer — eller, hvis
+                man må sige det således, delegati subditorum — er ikke blot rådgivere, men har også ret til ikke alene
+                at fremsætte forslag uopfordret, men også til at fremføre indsigelser (remonstrationer) og til, alt
+                efter omstændighederne i den givne situation, at kræve, at disse bliver forelagt en højere instans —
+                ligesom de også har ret til at have kendskab og indsigt i alt, hvad der foretages i deputationen.
+                <br>
+                <br>Endvidere skal der i Christiania nedsættes og samles et økonomisk kollegium for hele kongeriget
+                Norge, hvori en repræsentant fra hvert stift indgår fra undersåtternes side. Denne vælges af stiftets
+                egen deputation, dvs. af de medlemmer, der i denne sidder på undersåtternes vegne, og han aflønnes af
+                sine vælgere og er underlagt dem. Til sidst har hele Norge også sin repræsentant i
+                Generalhandelskollegiet i København, og denne udpeges af det norske økonomiske kollegium.
+                <br>
+                <br>Kongen pålægges ingen yderligere udgifter end lønnen til fem sekretærer, og disse udgifter bør man
+                ikke tillægge for stor vægt, for qui vult finem, vult media – den, der ønsker målet, må også ønske
+                midlerne! Disse sekretærer kan samtidig fungere som regeringssekretærer hos stiftsamtmændene, og derved
+                vil man samtidig give disse i sandhed anselige embedsmænd en lettelse, som de ganske givet har hårdt
+                brug for.
+                <br>
+                <br>Til de membra delegata a subditis (de delegerede medlemmer udgået fra undersåtterne) vil der måske
+                kunne findes personer, som vil påtage sig denne post uden vederlag – især hvis det behager kongen at
+                gøre det til en poste d’honneur (ærepost). Skulle der imidlertid ikke findes sådanne personer, må
+                indbyggerne i hvert distrikt selv slå pengene sammen til dette formål; og de vil formodentlig ikke være
+                så skræmte af denne udgift, når de betænker betydningen af det privilegium, som kongen skænker dem, idet
+                han indrømmer dem deltagelse i rådslagningen (ad consilia admittit) om så vigtige anliggender som deres
+                egne næringsveje.
+            </section>
+            <section id="chap6">
+
+                <h2>
+                    Memoire Nro. 4.
+
+                </h2>
+
+                <br> Det kollegium, som jeg i tankerne danner mig en forestilling om, er ikke blot et handelskollegium,
+                men et økonomi- og politi-kollegium. Ordet økonomi omfatter handelen såvel som alle øvrige grene af
+                næringsstanden. Dette kollegiums formål er, som økonomi-kollegium, at beskytte og støtte næringsstanden,
+                og som politi-kollegium, at opretholde den rette orden inden for samme.
+                <br>Det ville bestå...
+                <br>1. Af en deputeret, som skulle være kollegiets referent i statsrådet og deputeret i finanskollegiet,
+                og i denne egenskab ville han oppebære løn.
+                <br>
+                <br>2. Af en kommitteret til at varetage alle generalia, der vedrører fremskaffelsen af naturprodukter
+                fra land og vand, såvel som handelen.
+                <br>
+                <br>3. Af en kommitteret til at varetage alle generalia vedrørende fabriksvirksomhed, og disse to
+                kommitterede ville modtage løn som medlemmer af dette kollegium.
+                <br>
+                <br>4. 5. 6. Af en kommitteret fra hver af kamrene til behandling af de i disses distrikter forekommende
+                specialia og individualia, og disse kommitterede ville hver især aflønnes som medlemmer i deres
+                respektive kamre.
+                <br>
+                <br>Til behandlingen af politisager skulle der afsættes særlige dage, og da skulle to medlemmer fra det
+                danske kancelli og ét medlem fra det tyske kancelli tiltræde, uden anden løn end den, de i forvejen
+                modtager som deputerede i kancellierne.
+                <br>
+                <br>Den deputerede nr. 1 benytter den departementssekretær og kopist, som er ham tildelt i
+                finanskollegiet.
+                <br>
+                <br>Den deputerede nr. 2 får tildelt en bureau-sekretær og en kopist; til hans bureau hører
+                kompagnihandel og konsulatforretninger.
+                <br>
+                <br>Den kommitterede nr. 3 får ligeledes tildelt en bureau-sekretær og kopist, og til hans bureau hører
+                fabriksvæsenet i almindelighed og det københavnske i særdeleshed.
+                <br>
+                <br>Fra disse to bureauer udgår alle kollegiets ekspeditioner.
+                <br>
+                <br>De kommitterede nr. 4, 5 og 6 benytter hver den bureau-sekretær og kopist, som er dem tildelt i
+                deres respektive kamre.
+                <br>
+                <br>I deres bureauer behandles alle casus speciales, som forekommer i hver kammerdistrikts område, og
+                herfra bringes de frem til forelæggelse i kollegiet; desuden behandles her navnlig politisager, f.eks.
+                lavsstridigheder og lignende.
+                <br>
+                <br>Det er navnlig til disse kommitterede, at de førnævnte delegati provinciarum forholder sig.
+                <br>
+                <br>Disse delegerede gives sæde og stemme i kollegiet i de sager, som berører deres kommitteredes
+                interesser.
+                <br>
+                <br>På denne måde behøver man ikke at flytte nogen fra deres post. Jeg anser det for bedre at lade de
+                kommitterede nr. 4, 5 og 6 blive i deres respektive kamre frem for at fjerne dem helt, da de kan være
+                bindeleddet til at bevare den så nyttige og nødvendige forbindelse og det gode samarbejde mellem
+                kollegierne.
+                <br>
+                <br>To nye kommitterede-lønninger og endnu en sekretærløn bliver nødvendige, det er sandt; men så sandt
+                som det er, at den kongelige kasse må skånes for unødvendige udgifter, så mener jeg dog samtidig, at man
+                ikke bør regne en sådan udgift for unødvendig — en udgift, som anvendes for at give dette kollegium dets
+                rette forfatning, et kollegium, som, hvis der ved siden af formen også antages gode grundsætninger, i
+                særlig grad kan fremme statens velstand og forøge de kongelige indtægter ved at forbedre kilderne,
+                hvorfra de strømmer.
+
+            </section>
+            <section id="chap7">
+
+                <h2>
+                    Memorandum Nr. 5.
+
+                </h2>
+                <h3>
+                    Besvarelse af nogle indvendinger imod den nuværende forfatning af Finanskollegiet og Kamrene.
+
+                </h3>
+                <h4 id="chap8">
+                    I. Vedrørende arkiverne
+
+                </h4>
+
+                Indvending. Tre arkiver og tre arkivarer med en fuldmægtig og kopist kaldes en multiplicatio entium.
+                <br>
+                <br>Svar. Hvis kamrene skal være delte, så må arkiverne også være det; spørgsmålet bliver da, om
+                opdelingen af kamrene er gavnlig? Imidlertid vil jeg end ikke påberåbe mig dette bevægelsesmotiv, for at
+                ingen skal kunne beskylde mig for petitio principii.
+                <br>
+                <br>Men hvad enten man antager ét samlet kammer eller tre særskilte kamre, så hævder jeg, at en reform
+                af kammerarkivet under alle omstændigheder er lige nødvendig.
+                <br>
+                <br>Det er vel enhver i frisk erindring, hvor meget alle renteskriverkontorerne i det tidligere
+                rentekammer var overfyldte med papirer. Hvert kontor havde nemlig sit eget arkiv, og adgangen til det
+                egentlige, fælles kammerarkiv var derfor sjældent nødvendig, eftersom kontorerne selv opbevaret deres
+                sager gennem lange tidsrum, i mange tilfælde helt fra begyndelsen af dette århundrede, ja endog nogle
+                fra det forrige århundrede. På den måde var det altså nogenlunde overkommeligt for én enkelt arkivar,
+                med hjælp fra en fuldmægtig og to skrivere, at bestyre det fælles arkiv i nogen grad.
+                <br>
+                <br>Men hvordan så det så ud i kontorerne? Kan man kalde det orden? Og har man nogensinde tænkt på at
+                bringe arkivet i orden og kassere overflødige dokumenter? Har man nogen sinde opstillet faste principper
+                for, hvad der bør bevares i arkivet, og hvad der bør kasseres?
+                <br>
+                <br>Det er umuligt, at nogen kunne finde på at mene, at alle papirer for fremtiden skulle opbevares; for
+                i så fald ville der med tiden til kammerarkivet kræves mere end ét bygningsværk af samme størrelse som
+                kancellibygningen. Hvor overfyldt denne bygning er, viste sig, da arkiverne skulle fjernes fra
+                kontorerne, og man ikke kunne finde nogen plads til at lægge noget fra sig.
+                <br>
+                <br>Skal kammerarkivet bringes i rigtig stand, må der først skabes plads i kældrene, og de pakker, som
+                allerede befinder sig der – og som blev flyttet fra kontorerne sidste sommer – må også gennemgås, for at
+                skelne mellem det unødvendige og det nødvendige. En lignende udskillelse må indføres for fremtiden.
+                Denne udskillelse, denne sortering af det nyttige og det unyttige, må udføres med moden kritik og stor
+                forsigtighed, og det efter grundige principper, god metode og systematisk klassifikation. Der må føres
+                meget nøjagtige registre både over det, der skal bevares, og det, der kan kasseres, så hvert kammer kan
+                træffe beslutning om, hvad der skal opbevares og hvad der skal kasseres, og arbejdet må fordeles på
+                flere personer, hvis det nogensinde skal kunne fuldføres.
+                <br>
+                <br>Følgelig vil vores tre arkivarer, hvis vi forstår og ønsker at sætte dem rigtigt i arbejde, have
+                rigeligt at bestille i mange år sammen med deres tildelte hjælpere. Og skulle disse arkivarer med tiden
+                blive overflødige, når arkiverne er bragt i orden, kunne man måske lade hver kammersekretærs
+                ekspeditionssekretær overtage arkivarbejdet med hjælp fra den fuldmægtige og kopist, som er tilknyttet
+                hvert arkiv.
+                <br>
+                <br>Jeg kan ikke tro, at man vil henvise mig til kancelliekontorerne som eksempel – at én arkivar er nok
+                for hver af disse, og at derfor også Finanskollegiet og kamrene kunne nøjes med ét arkiv; for forskellen
+                mellem disse departementer med hensyn til omfanget af deres forretninger og mængden af de dermed
+                forbundne papirer er alt for åbenlys, og i denne henseende kan hvert af de tre kamre meget vel
+                sammenlignes med én af kancellierne.
+
+                <h4 id="chap9">
+                    II. Om renteskrivernes korrespondance.
+
+                </h4>
+                Indvending. Man siger, at renteskriverne har fået frataget korrespondancen og dermed også de
+                oplysninger, som er nødvendige – ja uundværlige – for dem i forbindelse med regnskaberne.
+                <br>
+                <br>Svar. Man må blot danne sig et korrekt begreb om, hvad en renteskriver var under den tidligere
+                forfatning, og hvad han er efter den nuværende indretning.
+                <br>
+                <br>Under den tidligere forfatning var en renteskriver både revisor af regnskaberne og samtidig
+                kollegiets sekretær i alle de kammeranliggender, der ikke vedrørte regnskabsvæsenet. I den nuværende
+                ordning er han alene revisor og regnefører – eller, hvis man vil kalde det sådan, sekretær i
+                regnskabssager – mens de nuværende kammerekspeditionssekretærer er kollegiets sekretærer i alle øvrige
+                kammeranliggender.
+                <br>
+                <br>Hvad angår den korrespondance, der hører til regnskabsafgørelserne, så har renteskriverne stadig i
+                dag denne korrespondance, og de fungerer på dette område fuldstændig som kollegiets sekretærer, ligesom
+                de gjorde i den tidligere rentekammer. I hvert fald er det tilfældet i den norske kammer, og hvem der
+                end påstår, at de har fået denne korrespondance frataget, taler usandt.
+                <br>
+                <br>Hvis der i de øvrige dele af kammerforretningerne opstår noget, som har indflydelse på regnskabet,
+                bliver dette straks meddelt renteskriveren til orientering af bureauets sekretærer; for ikke at nævne,
+                at enhver kommitteret, som er afgørelsemyndighed, og under hvem såvel renteskriveren som sekretæren
+                sorterer, har kendskab til alt, hvad der foregår inden for hans hele kammerkreds – og han har brug for
+                renteskriver og sekretær, ligesom et menneske har brug for begge sine hænder.
+                <br>
+                <br>Hvis altså den indvending, jeg her afviser, skal forstås derhen, at renteskriveren slet ingen
+                korrespondance har: så er den faktuelt forkert og usand. Går indvendingen derimod på, at renteskriveren
+                ikke længere er den eneste sekretær, der er knyttet til sin kommitterede, så falder den sammen med
+                følgende indvending, som jeg vil overveje særskilt.
+                <h4 id="chap10">
+                    III. Om sekretæren
+
+                </h4>
+                Indvending. Hvorfor er der brug for så mange kammersekretærer i de nuværende kamre?
+
+                <br>Svar. Svaret herpå er i det store og hele kort og godt dette: de bruges til alt det øvrige, som
+                renteskriverne nu ikke længere anvendes til. Men jeg vil dog uddybe dette svar en smule.
+
+                <br>Bevogtningen af de kongelige indtægter ved indtægter og udgifter og berigtigelsen af de dertil
+                hørende regnskaber udgør en betydelig del af kameralvæsenet; men en anden lige så betydelig del er
+                tilsynet med kilderne til de kongelige indtægter, opretholdelsen af god orden efter ret og rimelighed i
+                alle de utallige daglige tilfælde, hvor kammerets område berører de øvrige grene af regeringen – hvor
+                fiscus principis står i forbindelse med eller ofte i konflikt med undersåtternes rettigheder og goder,
+                hvor kongens interesser står i forbindelse med undersåtternes interesser. Hver dag skal der svares på
+                undersåtternes anmodninger og krav; hver dag skal der træffes og gennemføres foranstaltninger; konstant
+                skal der koordineres med andre kongelige kollegier og deres underordnede embedsmænd; uophørligt skal der
+                af denne grund indgives forestillinger til Hans Majestæt Kongen. For kortheds skyld vil jeg kalde denne
+                del af kammeralforretningerne for regeringssager, og den anden del regnskabssager. Af de breve og
+                ekspeditioner, der afgår på postdage og andre dage, vedrører kun en ringe del regnskabssagerne; den
+                langt største del vedrører regeringssager, og til dette bruges kammersekretæren i hvert kammerkontor.
+
+                <br>Dette forudsat, hævder jeg nu:
+
+                <br>1.At ingen kan på forsvarlig vis bestride revisionen og sekretariatet samtidig.
+
+                <br>2. At man generelt ikke kan forvente, at renteskrivere besidder de nødvendige kvalifikationer til
+                regeringssager, som er krævet af en sekretær, eftersom renteskrivere som regel er ustuderede.
+
+                <br>3. At en kommitteret ikke kan varetage sit i begge hoveddele ganske vigtige embede, som han bør,
+                medmindre han har en særskilt sekretær til hver hovedopgave.
+
+                <br>En af de største misligheder i kameralvæsenet er, når regnskaber forbliver uafgjorte i lang tid og
+                bliver forældede; ved en sådan udsættelse vokser hindringerne sig stadig større og større; efter nogen
+                tid mangler forklaringerne helt og kan til sidst slet ikke længere fremskaffes. De, det vedkommer, lider
+                derved, får anledning til berettigede klager, og ofte lider også den kongelige kasse under det. Hertil
+                kommer, at revision ikke er et springende arbejde; den tager skade, når revisoren konstant forstyrres i
+                sit arbejde og kaldes væk fra det, hvilket dog sker, når renteskriveren samtidig skal være kollegiets
+                sekretær i regeringssager — ja, endda referent i kollegiet; revisionen overlades da gerne til en
+                befuldmægtiget, trækker dermed i langdrag, og når sådanne henliggende regnskaber til sidst hober sig op,
+                er man nødt til at oprette ekstraordinære revisionskontorer. Den fordel, at renteskriverne ifølge den
+                nuværende indretning udelukkende beskæftiger sig med revision, vil sikkert vise sig i år, hvis man
+                ellers vil give denne indretning nogen varig gyldighed. At denne fordel endnu ikke viste sig i fuldt mål
+                i det forgangne år skyldes udelukkende den lokale forandring af kontorerne, for herved blev alle, der
+                arbejdede dér, i nogen tid stærkt hæmmede i deres arbejde — især i de norske kontorer, så det snarere er
+                forunderligt, at der trods alt kunne udrettes så meget, som det fremgår af rapporten til kongen.
+
+                <br>Uden at ville fornærme renteskriverne må man dog vel sige, hvad enhver til sidst ved: nemlig, at de
+                almindeligvis er ustuderede og rutinerede embedsmænd, hos hvem teorien — hvis den da nogensinde kommer —
+                altid først indfinder sig bagefter, og det kun hos dem, der med gode naturlige evner og stor flid til
+                sidst abstraherer en teori eller almene indsigter og begreber ud fra lang øvelse i detaljen.
+
+                <br>Jeg ved, at der blandt dem har været og stadig findes sådanne, som har været og stadig er
+                kommitterede med ære og hæder; men jeg ved også, at deres dygtighed ville have nået en langt højere
+                grad, hvis de havde nydt godt af den opdragelse og teori, som følger med videnskaberne og bygger på dem
+                — hvilket disse hæderlige mænd heller ikke selv vil kunne benægte. For at kunne bestride kameralvæsenet
+                på en frugtbar måde kræves der megen viden om de beslægtede videnskaber, hvorfra det nødvendige
+                oplysende lys må hentes; stor viden om historien, som lærer os, hvad andre stater har gjort i tidligere
+                tider, og hvad civiliserede og blomstrende nationer stadig gør i lignende tilfælde; det er så
+                nødvendigt, så meget i overensstemmelse med velstanden og værdigheden af et kollegium, at tale med den
+                præcision og grundighed, som kun følger med modne indsigter og en øvet tænkemåde, at kameralvæsenet med
+                rette fortjener at blive behandlet på grundlag af en videnskab, og at den fordom, som går ud på, at
+                lærde skulle være mindre egnede til embedsførelse end rutinerede embedsmænd, med rette bør forkastes —
+                som både skadelig for staten og nedbrydende for videnskaberne.
+                <i>
+                    *) Måtte dog alle dem, som stadig er af den vildfarelse, at det kun er praksis, der former dygtige
+                    mænd, tage denne rette vurdering af teoriens værdi til sig — skrevet af en af vores fædrelands
+                    første praktiske finansfolk og kameralister! Men desværre forsømmes teorien hos os endnu næsten
+                    overalt, og i stedet studerer man Institutioner og Pandekter.
+
+                    <br></i>
+                Det, jeg har sagt om kameral-forretningerne i det hele taget – nemlig at regnskabssager kun udgør en del
+                af dem – gælder i endnu højere grad og med endnu større vægt for embedet som kommitteret, for for ham er
+                det på ingen måde den vigtigste opgave blot at være decisor (beslutningstager). Nej! Det er i
+                regeringssagerne, at han især skal vise sig som en dygtig tjener og rådgiver for kongen. Det er ham, der
+                i sit område skal undersøge undersåtternes begæringer, overvåge kongens interesse i dets rette forhold
+                til statens interesse; han må gøre hver enkelt sag tydelig for sine kolleger, først fremlægge sine
+                tanker og sin rådgivning, overveje sagerne med kollegerne og vinde deres tilslutning.
+                <br>
+                <br>Han skal affatte resolutionerne og indstillingerne til kongen, og skrivelserne til undersåtterne.
+                Derfor må det være hans væsentligste pligt, hans værdigste forret, selv at referere de sager, der opstår
+                i hans kreds; en pligt, som han ikke må vige fra, og et forret, han ikke må lade sig tage. Til
+                opfyldelsen af denne pligt har han brug for al den bistand, han kan få af den sekretær, der er ham
+                tilknyttet – én, der skal kunne udtrække akterne og udfolde og nedskrive de tanker, som hans
+                committerede har dikteret; og det kan ikke med rimelighed forventes af en renteskriver, som i forvejen
+                er fuldt optaget af regnskabsrevision. Det er umuligt at behandle sagerne ordentligt, hvis den
+                committerede overlader referatet til renteskriveren, og denne igen overlader revisionen til den
+                befuldmægtigede.
+
+
+            </section>
+
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script src="functionscript.js"></script>
+    <script src=commissionscript.js></script>
+    <script src="navbarscript.js"></script>
+
+
+</body>
+
+</html>
