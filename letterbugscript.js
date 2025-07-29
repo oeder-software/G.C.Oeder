@@ -47,6 +47,7 @@ let letterBugContentGerman = [
   "Januar 2 1785",
   "Februar 18 1785",
 ];
+PrependBrBeforeChap(chapter);
 
 SetLetterBugImg(letterBugImg, letterBugAlt);
 let letterBugBio = ["ryberg", "Moltke", "Wessel", "jupiter"];
@@ -94,17 +95,3 @@ function SetLetterBugImg(img, alt) {
       .setAttribute("alt", alt[index]);
   }
 }
-// function SetLetterBugContent(chapter, content) {
-//   for (let index = 0; index < content.length; index++) {
-//     a = document.createElement("a");
-//     a.innerText = content[index];
-//     a.href = chapter[index];
-//     document.getElementById("content").appendChild(a);
-
-//     a = document.createElement("a");
-//     a.innerText = content[index];
-//     a.href = chapter[index];
-//     a.setAttribute("onclick", "closeSidebar()");
-//     document.getElementById("sidebarcontent").appendChild(a);
-//   }
-// }

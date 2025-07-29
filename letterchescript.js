@@ -26,6 +26,13 @@ let letterCheContentGerman = [
   "Mai 27 1755",
   "Juni 21 1755",
 ];
+PrependBrBeforeChap(chapter);
+
+let img = "./img/letterche.png";
+let link =
+  "https://digital.slub-dresden.de/werkansicht/dlf/124154/35?tx_dlf_navigation%5Bcontroller%5D=Navigation&cHash=2b7eef6229ba85ff2b6ec7ffb9f4c277";
+SetLinkAndImgToFrontpage(link, img);
+
 let image = ["./img/laurvig.jpg"];
 let letterCheBio = ["laurvig"];
 SetImage(image);
