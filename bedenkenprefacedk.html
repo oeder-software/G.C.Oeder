@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="breve fra Georg Christian Oeder til Thomas Bugge. ">
+    <meta name="description" content="Georg Christian Oeder - Forord til betænkning over spørgsmålet:
+    Hvordan kan frihed og ejendom sikres for bondeklassen i de lande, hvor begge mangler? ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
@@ -50,15 +51,18 @@
             <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
                     src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
         </aside>
-        <main>
+        <main onclick="closeSidebar();">
             <section>
 
                 <h2>
 
                     Forord til betænkning
                 </h2>
-                <aside class="asideright"><img id="imgind" src="./img/bedenkenforside.png">
-                </aside>
+                <!-- <aside class="asideright"><img id="imgind" src="./img/bedenkenforside.png">
+                </aside> -->
+                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a> </aside>
 
                 I nogen tid har jeg overvejet at genoptrykke de nuværende overvejelser og tilføjelser,
                 da den første udgave er udsolgt, og intet tidspunkt kunne være mere passende end det nuværende,
@@ -152,6 +156,7 @@
     <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
     </footer>
     <script src="functionscript.js"></script>
+    <script src="bedenkenprefacescript.js"></script>
     <script src="navbarscript.js"></script>
 
 
