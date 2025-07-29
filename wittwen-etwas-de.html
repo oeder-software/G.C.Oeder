@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Georg Christian Oeder. Etwas von Wittwenkassen.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="letterstyle.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #sidebar {
+            font-size: 0.5rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #caca9d;
+        }
+
+        .formcontainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form {
+            width: 350px;
+        }
+
+        @media (max-width: 900px) {
+            .form {
+                width: 250px;
+            }
+
+        }
+    </style>
+    <title id="title">Etwas von Wittwenkassen,
+        von
+        Georg Christian Oeder. </title>
+</head>
+
+<body id="dex">
+    <!-- <script src="test2.js"></script> -->
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list" id="list">
+            <li id="chapname">
+                <p>chapname</p>
+            </li>
+            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
+                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar" id="listm">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
+        </ul>
+        <div id="sidebarcontent">
+            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
+                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+        </div>
+
+    </nav>
+    <div class="main">
+
+        <aside id="content" class="left" style="position: sticky;"></aside>
+        <aside id="contbut" class="left" style="position: sticky;">
+            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
+                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+        </aside>
+        <main onclick="closeSidebar();">
+            <section id="chap0">
+                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a> </aside>
+                <h2>
+                    Etwas von Wittwenkassen,
+                    <br>von
+                    <br>Georg Christian Oeder.
+                </h2>
+                Es ist eine misliche Sache um Wittwenkasen: und doch sind sie nicht nur eine nüzliche, sondern eine
+                nöthige Anstalt in jedem wohl eingerichteten Staate.
+                <br>
+                <br>Ich verstehe aber unter Wittwenkassen solche Anstalten, wo die den Ehefrauen bestimmten eventuellen
+                Pensionen auf einen förmlichen Kontrakt zwischen der Anstalt und jedem Interessenten, der gegen das von
+                der Anstalt zu übernehmende Onus seiner Seits die vorgeschriebenen Bedingungen und Prästationen
+                übernimmt, sich gründen, folglich die Frau im vorkommenden Fall ihre Pension nicht als eine Gnade,
+                sondern als ein für bestimmten Preis erkauftes Recht gewärtiget und geniest. Alle andre den Namen von
+                Wittwenkassen führende Anstalten, wo die Pensionistinnen nicht im Gefolge geleisteter zureichender mit
+                der Erwartung, nach den Regeln des Hazard, ins Gleichgewicht gestellter praeſtandorum, sondern in totum
+                oder in tantum aus Gunst und Gnade einen Wittwengehalt geniessen, gehören zu Armenanstalten, und ihr
+                Gehalt ist mehr oder weniger Almosen.
+                <br>
+                <br>Solchen Wittwenfassen, lezterer Art, so wie überhaupt den Armenanstalten jeder Art, sezen die Kräfte
+                und Vermögen eines Staates sowohl, als die natürliche Billigfeit ihre nahe bestimmte Grenze. Kein Staat
+                ist zu unbegränzter Mildthätigkeit reich genug, und kein Hülfsbedürfiger ist zur Unterstüzung des
+                Staates weiter berechtiget, als in so fern er wirklich hülfsbedürfig ist, und sein eigenes äusserstes
+                Vermögen, welches er aufbieten und mit anstrengen muß, nichttt zureicht; aber zu solchen Veranstaltungen
+                der Regierung, mittelst derer sein anzustrengendes Vermögen am besten zweckmässig angewendet wird, ist
+                er berechtigt. Der Arme, der willig ist zu arbeiten, hat ein Recht zu fordern, daß ihm die Gelegenheit
+                zu Arbeit und billigem Verdienst verschafft werde, wenn er sie selbst nicht zu finden weis, und der
+                Verforger und Wohlthäter einer hülfsbedürfigen Person, deren Stüze er im Leben ist, und für die er auch
+                auf den Fall seines frühern Absterbens sorgen wolte, hat ein Recht, und die hülfsbedürfige Person noch
+                mehr hat ein Recht zu fordern, daß es an einer Anstalt, die eine solche Fürsorge erleichtert, oder ohne
+                welche die Fürsorge wohl gar überall unmöglich bliebe, im Staate. nicht ermangeln möge. Wenn eine solche
+                Anstalt, das ist, eine Wittwenkasse auf den Fuß eines freyen Einkaufs und Vertrags, im Staate vorhanden
+                ist, so werden jene Wittwenkasen auf Allmosenfuß in grossem Maasse überflüssig, denn die Regierung kann
+                solche Personen, deren eventuelle Versorgung im Wittwenstande sie aus Barmherzigkeit übernehmen will,
+                oder muß, allemal leichter in die allgemeine Wittwenkasse auf den Fuß eines Vertrags, ein für allemal
+                einkaufen, oder ihnen die Einkaufssumme ganz oder zum Theil schenken, als sich mit ihrem lebenslangen
+                Unterhalt, und mit einer zu dem Ende erforderlichen besondern Anstalt beladen.
+                <br>
+                <br>Aber, wie gesagt, es ist mit diesen Wittwenkassen, in dem festgesezten eigentlichen Verstande des
+                Worts, eine misliche Sache. Die Grundsäze, wornach bey den neuen Anstalten zu Werke gegangen wird,
+                scheinen noch unbestimmt und schwankend zu seyn, und die wahre Theorie, die doch am Ende nur Eine seyn
+                kann, noch nicht genug berichtiget. Auch selbst das Fundament der Theorie und alles und jeden Kalkuls,,
+                die Tabellen über das allmälige Absterben einer gegebenen Anzahl solcher Menschen, die zugleich auf die
+                Welt gekommen sind, braucht noch Berichtigung, wovon man sich leicht überzeugt, wenn man die
+                verschiedenen Tabellen verschiedener Schriftsteller bey verschiedenen Nationen, auch selbst von
+                verschiedenen Oertern unter einer und derselben Nation, gegen einander hält. Auch sind überhaupt unsre
+                gegenwärtigen. Wittwenkassen noch zu neu und jung, als daß man, nach dem, was die Erfahrung an denselben
+                bis diesen Tag hat lehren können, für oder wider ihre Einrichtungen entscheidende Urtheile fällen
+                könnte, wozu wenigstens der Zeitraum eines Menschenalters gehöret.
+                <br>
+                <br>Dieses Alter hat eine (durch die am Ende vorigen Jahres geschehene Errichtung der neuen königl.
+                dänischen allgemeinen Wittwenkasse aufgehobene) Anstalt, welche in Kopenhagen unter der Benennung der
+                Wittwenpensionskasse des Landmilitäretats seit 1739 vorhanden gewesen war, erreicht. Ihre Einrichtung
+                taugte nicht, weswegen sie denn auch aufgehoben worden, obschon man ihren Verfall erst 1769 zu fühlen
+                angefangen hat, sie vorher für ungemein sicher und gründlich geachtet wurde, und 1771. 72. 73. die
+                Ueberzeugung von ihrem gleichwohl handgreiflichen Verfalle nicht ohne gewaltigen und hartnäckigen
+                Widerspruch ihrer Vertheidiger bewirket werden konnte. Es ist nummehr an ihrer Einrichtung wenig
+                gelegen, wenigstens ist es hier meine Sache nicht davon zu sprechen, aber als eine Anstalt, die ins
+                36ste Jahr existiret hat, und in welche in dieser Zeit über vierteHalbtausend Ehepaare aufgenommen
+                worden sind, ist sie der ganzen Welt wenigstens der nördlichen Hälfte von Europa, in Absicht auf die
+                Einrichtung solcher Anstalten, für unser Zeitalter äusserst wichtig. Gleich im Jahre 1739 wurden 401
+                Ehepaare, und von 1 739 bis 1745 incl. in allem 1035 Paare aufgenommen. Das Schicksal dieser 1035 Paare
+                war schon 1771 meistens entschieden, und hat am Ende 1775 noch weiter entschieden seyn müssen; nämlich
+                es können nunmehr wenige ungetrennte Paare annoch übrig seyn, auch können der aus den getrennten Paaren
+                entstandenen Wittwen und Wittwer nicht viele mehr seyn. Ich will, ehe ich weiter gehe, folgenden Auszug
+                aus dem Receptionsprotokoll einschalten.
+
+                <section id="chap1">
+                    <table>
+                        <tr>
+                            <th>Im Jahr</th>
+                            <th>wurden eingeschrieben Ehepaare</th>
+                            <th>davon waren Ao. 1770 zu pensioniren Wittwen-</th>
+                            <th>zusammen mit</th>
+                            <th>rthlr</th>
+                        </tr>
+                        <tr>
+                            <td>1739</td>
+                            <td>401</td>
+                            <td>101</td>
+                            <td>14430</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1740</td>
+                            <td>244</td>
+                            <td>53</td>
+                            <td>8720</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1741</td>
+                            <td>88</td>
+                            <td>23</td>
+                            <td>3560</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1742</td>
+                            <td>57</td>
+                            <td>23</td>
+                            <td>2300</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1743</td>
+                            <td>66</td>
+                            <td>18</td>
+                            <td>2500</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1744</td>
+                            <td>86</td>
+                            <td>29</td>
+                            <td>4980</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1745</td>
+                            <td>93</td>
+                            <td>24</td>
+                            <td>2620</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1746</td>
+                            <td>77</td>
+                            <td>22</td>
+                            <td>2300</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1747</td>
+                            <td>52</td>
+                            <td>10</td>
+                            <td>920</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1748</td>
+                            <td>76</td>
+                            <td>19</td>
+                            <td>2140</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1749</td>
+                            <td>73</td>
+                            <td>16</td>
+                            <td>2415</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1750</td>
+                            <td>68</td>
+                            <td>15</td>
+                            <td>2020</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1751</td>
+                            <td>87</td>
+                            <td>16</td>
+                            <td>2280</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1752</td>
+                            <td>96</td>
+                            <td>18</td>
+                            <td>1540</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1753</td>
+                            <td>110</td>
+                            <td>26</td>
+                            <td>2880</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1754</td>
+                            <td>101</td>
+                            <td>12</td>
+                            <td>1280</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1755</td>
+                            <td>120</td>
+                            <td>17</td>
+                            <td>2560</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1756</td>
+                            <td>107</td>
+                            <td>17</td>
+                            <td>2720</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1757</td>
+                            <td>127</td>
+                            <td>23</td>
+                            <td>3000</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1758</td>
+                            <td>118</td>
+                            <td>16</td>
+                            <td>1720</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1759</td>
+                            <td>97</td>
+                            <td>20</td>
+                            <td>3440</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1760</td>
+                            <td>106</td>
+                            <td>12</td>
+                            <td>1720</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1761</td>
+                            <td>97</td>
+                            <td>15</td>
+                            <td>2780</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1762</td>
+                            <td>108</td>
+                            <td>8</td>
+                            <td>1140</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1763</td>
+                            <td>135</td>
+                            <td>20</td>
+                            <td>2490</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1764</td>
+                            <td>113</td>
+                            <td>9</td>
+                            <td>840</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1765</td>
+                            <td>88</td>
+                            <td>4</td>
+                            <td>680</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1766</td>
+                            <td>108</td>
+                            <td>3</td>
+                            <td>360</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1767</td>
+                            <td>102</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1768</td>
+                            <td>92</td>
+                            <td>3</td>
+                            <td>200</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1769</td>
+                            <td>94</td>
+                            <td>2</td>
+                            <td>280</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>1770</td>
+                            <td>114</td>
+                            <td>1</td>
+                            <td>200</td>
+                            <td>Rthlr.</td>
+                        </tr>
+                        <tr>
+                            <td>In 31 Jahren</td>
+                            <td>sind also eingeschrieben worden 3501 Ehepaare</td>
+                            <td>davon sind zu Anfang 1770 vorhanden gewesen 595 Wittwen</td>
+                            <td>diese hätten wenn sie alle bis 31 Dez. 1770 gelebet hätten zusammen genossen 81015
+                                Rthlr.</td>
+                            <td>Rthlr.</td>
+                        </tr>
+
+                    </table>
+                </section>
+                <section id="chap2">
+                    <br>
+                    <br>Ich kehre nun zurück, wo ich oben abgebrochen habe, und sage, daß wenn man von allen inseriptis
+                    von 1739 bis 1775, besonders von 1739 bis 1745 incl. wüste,
+                    <br>1. wie alt jeder Mann und jede Frau bey der Aufnahme gewesen?
+                    <br>2. wann jede der verstorbenen Personen, Mann oder Frau, in der Ehe oder im Wittwenstande
+                    gestorben?
+                    <br>3. wer von diesen Personen, Mann oder Frau, in der Ehe, oder im Wittwenstande, noch lebt?
+                    <br>4. und wie stark die einer jeden Frau versicherte jährliche Pension gewesen?
+                    <br>so könnte man einen jeden beliebigen Plan zu einer Wittwenkasse nach dieser Erfahrung prüfen,
+                    nämlich man könnte sich mit jedem solchen Plan in die seit 1739 verlaufene Zeit zurücksezen und
+                    kalkuliren, was die Folge würde gewesen seyn, wenn ein solcher Plan auf die Interessenten der
+                    Kopenhagener Militärwittwenkasse wäre angewandt worden, und man hätte nicht nöthig, erst noch
+                    abermalige 36 Jahre abzuwarten, um alsdann erst aus der Erfahrung, die nach einem solchen Zeitraum
+                    bey einem etwa nicht wohl abgepaßten Plan fünest werden, oder doch sehr theuer zu stehen kommen
+                    könnte, ein entscheidendes Urtheil über einen solchen zu prüfenden Plan zu fällen. Auch würden diese
+                    Nachrichten überhaupt ein wichtiger Beytrag zu Süßmilchs und ähnlichen Büchern seyn, und zu
+                    Berichtigung der Schlüsse von eines Menschen zurückgelegtem Alter auf sein wahrscheinliches ferneres
+                    Alter dienen.
+                    <br>
+                    <br>Unglücklicher Weise ist von 1739 bis 1771, bey der Aufnahme der Ehepaare niemals nach dem Alter
+                    der Personen, so wenig der Männer als der Frauen, da doch beydes zu wissen gleich nöthig ist,
+                    gefragt worden, indem ohne Unterschied des Alters, 40 Rthl. eventuelle Pension gegen I00 Einschuß an
+                    die Interessenten Militärstandes, und gegen 110 Rthl. an die Interessenten der andern Stände
+                    ausgelobet wurden, und es findet sich also deßfalls nichts in den Büchern angezeichnet, auch sind
+                    die Männer nicht gehörig angehalten worden, den Tod ihrer Frauen anzuzeigen, so daß man nicht
+                    zuverlässig genug aus den Büchern sehen kann, welche Ehen durch den Tod der Frauen getrennt worden,
+                    und welche Ehen auch von den erstern entfernten Jahren etwa noch ungetrennt bestehen mögen. Als ich
+                    1771 und 72, zufolge königl. Auftrages den Zustand dieser Militärwittwenkasse (die, beyläufig zu
+                    erinnern, den Namen vom Militare deswegen führte, weil sie ursprünglich für den Militärstand
+                    bestimmt war, auch immer unter Direktion der Kriegskanzley blieb, übrigens aber nach früh
+                    verstattetem Beytritte der andern Stände, bald eben so viel und zulezt mehr Interesenten dieser
+                    Stände, als des Militärstandes hatte) als ich, sage ich, den Zustand dieser Kasse untersuchte, so
+                    veranlaste ich 1772, um das Risiko mit den bereits vorhandenen Wittwen, und das Risiko mit denen
+                    Wittewen, welche aus den damals noch ungetrennten Ehen bey deren allmäligen Trennung zu erwarten
+                    waren, evalviren, und dieses doppelte Risikoquantum mit dem wirtlichen statu bonorum, die
+                    bevorstehende Ausgabe mit dem Ueberrest der völlig bezogenen Einnahme vergleichen zu können, daß
+                    wenigstens vorerst eine Nachfrage nach dem Alter dieser аnnoch lebenden Interessenten angestellt
+                    wurde. In der leztern Hälfte des Jahres 1772 war ich von Kopenhagen abwesend. Im Jahr 1773, dessen
+                    erstere Hälfte ich wieder in Kopenhagen zubrachte, war noch die Rede von der Frage, ob die
+                    Militärwittwenkasse bleiben könne, oder aufgehoben werden müsse? und ich konnte zu der Frage, was in
+                    lezterm Falle an deren Stelle zu sezen wäre? und also zu dieser andern Hälfte meines Auftrages,
+                    vorläufig einen neuen Plan vorzulegen, nicht kommen. Am Ende des Junius 1773 verließ ich Kopenhagen.
+                    Am Ende des Jahres ward ich aus dem königl. Dienst versezt und habe mit dieser Sache weiter nichts
+                    zu thun gehabt, folglich auch an der Einrichtung der neuen allgemeinen Wittwenkasse keinen Antheil,
+                    folglich auch die weitere Nachfrage nach dem Alter der Interessenten der Militärwittwenkasse, und
+                    deren Ausdehnung auf die verstorbenen Personen nicht veranlassen noch betreiben können, wie ich
+                    würde gethan haben, wenn ich zu Ausrichtung des zweyten Theils meines Auftrages gelangt wäre. Es ist
+                    aber zu wünschen, und wie ich nicht zweifeln will, zu hoffen, daß diese erweiterte Nachfrage nach
+                    ihrem ganzen Umfange noch geschehen werde, und zwar je eher je lieber, ehe die Nachfrage nach den
+                    Interessenten der erstern Jahre durch die Länge der Zeit und das Absterben der Personen, welche
+                    Nachricht geben können, mehr und mehr erschweret und endlich unmöglich wird, und daß man sodann
+                    diese erwünschten Nachrichten, wovon zunächst die Dänischen Staaten Nuzen haben, indem sie zur
+                    Prüfung der neuen Kasse dienen, andern Staaten, die auch neu errichtete Wittwenkassen haben, oder zu
+                    errichten gesonnen seyn möchten, ja ich darf wohl sagen, dem menschlichen Geschlechte, als eine
+                    Erfahrung, die sonst vorerst nicht zu haben ist, und wornach man ein Menschenalter lang wieder
+                    warten müste, nicht vorenthalten, sondern solche öffentlich werde bekannt werden lassen. Indem ich
+                    diesen Wunsch und Bitte öffentlich vortrage, so bin ich gewiß, daß ich auch den Wunsch aller
+                    dererjenigen, welchen die Berichtigung und Erweiterung dieses Theils menschlicher Erkenntnisse am
+                    Herzen liegt, ja gewiß den Wunsch mehr als einer Regierung, der an der Zuverlässigkeit solcher
+                    Anstalten, getroffener und etwa zu verbessernder, oder erst noch zu treffender Anstalten, gelegen
+                    ist, vortrage, also gewiß keine unbescheidene Bitte thun, um so viel weniger unbescheiden, da bey
+                    öffentlicher Bekanntmachung dieser gewünschten Nachrichten (ohne Benennung der Personen, blos
+                    mittelst der in einer Reihe weglaufenden Rumern des Receptionsprotokolles) keine Bedenklichkeit zu
+                    erdenken ist, so wenig als bey Bekanntmachung der jährlichen Listen von Gestorbenen, Gebornen und
+                    Getraueten.
+                    <br>
+                    <br>So wie die erwähnten Nachrichten vom Alter der damaligen Wittwen, oder Pensionistinnen, und vom
+                    Alter der damals (1772) in noch ungetrennter Ehe lebender Männer und Frauen einliesen und mir
+                    mitgetheilt wurden, machte ich sogleich die einzelnen Berechnungen des Risiko mit jeder Wittwe und
+                    mit jedem Ehepaare, nach dreyerley Zinsfuß, 5 Proc. 4 Proc. 3 3/4 Proc. Ob die Nachrichten von allen
+                    und jeden Wittwen und Paaren eingekommen sind, weis ich nicht, und vielleicht sind sie bis diese
+                    Stunde noch nicht komplet; іch konnte aber darnach damals nicht warten, auch kam es darauf bey
+                    meinem damaligen Zweck nicht an, sondern, nachdem ich einige hunderte dergleichen Berechnungen,
+                    Wittwen, und einige hundert Ehepaare betreffend, beysammen hatte, konnte ich einen sichern Schluß
+                    aufs Ganze ziehen, und schliessen: das Risiko bey einigen hundert Wittwen, deren Pensionen zusammen
+                    so viel ausmachen, beläuft sich so hoch, also kann und muß das Risiko mit sämmtlichen Wittwen, die
+                    zusammen ein Ganzes von 79000 Rthl. jährlicher Pension geniessen, so oder so hoch, nach dem oder
+                    jenem Zinsfusse angeschlagen werden, und weil das berechnete Risiko mit so viel Ehepaaren, die so
+                    viel eventuelle Pension erkauft haben, so hoch läuft, so macht das Risiko mit allen Ehepaaren, denen
+                    zusammen das Ganze von 257000 Rthl. ewentueller Pensionen versichert ist, so viel; denn die Wittwen
+                    und Ehepaare, über deren Alter die einzelne Berechnungen angestellet worden, waren blos so wie der
+                    Zufall und das allmälige Einlaufen der Nachrichten mit sich brachte, ohne Auswahl aus ihrer gesamten
+                    Zaht, vorgenommen; es war also keine Ursache zu glauben, daß ihr Alter höher oder geringer seyn
+                    könnte als das Alter der übrigen, und daß nicht vielmehr unter den zur Rechnung genommenen Personen,
+                    alt und jung, eben so gemischt seyn sollten, als unter den übrigen Personen. Das Risiko bey 79000
+                    Rthl. Totalquanto der wirklich zahlbaren Pensionen fand ich 866032 Rthl. und das Risiko bey 257000
+                    Rthl. Totalquanto der eventuellen Pensionen fand ich 1308500 Rthl. beydes bey Zinsfuß 4 Proc.
+                    <br>
+                    <br>Nachdem ich die einzelnen Berechnungen gemacht hatte, nahm ich die Summe der Jahre derjenigen
+                    Wittwen auf, über welche die besondere Berechnung war angestellt worden, theilte diese Summe mit der
+                    Zahl dieser Wittwen, und stellte mir dabey statt dieser vielen Wittwen eine einzige Wittwe vor, die
+                    das gefundene Mittelafter hätte, und das ganze Pensionsquantum 79000 Rthl. genösse, eben so summirte
+                    ich die Jahre der Ehemänner und die Jahre der Ehefrauen, theilte jede dieser Summen mit der Zahl der
+                    Paare, und stellte mir gleichfalls ein einzelnes Ehepaar vor, dem das ganze quantum 257000 Rthl.
+                    versichert wäre, um zu sehen, in wie fern eine darnach überhäuft gemachte Evalvation mit jenen
+                    Evalvationen nach einzelnen Berechnungen übereinstimmen würde. Das Alter der Wittwen war im
+                    Durchschnitte 54 Jahre, der Ehemänner 47 Jahre, der Ehefrauen 37 Jahre. Das Risiko für das Quantum
+                    79000 Rthl. ward 874654 Rthl. und das Risiko für das Quantum 257000 Rthl. ward 1288470 Rthl. Der
+                    Unterschied zwischen 866031 Rthl. und 874654 ist 1 55/100 Proc. und zwischen 1308500 und 1288470 ist
+                    er nur 1 Proc. In beyden Fällen war also der Unterschid unbeträchtlich, nur war in dem einen Falle
+                    das durch einzelne Berechnung gefundene Risikoquantum das kleinere, und das Risikoquantum nach der
+                    Berechnung Überhaupt das grössere, in dem andern Falle aber umgekehrt. Diese Bemerkung hat,
+                    beyläufig zu erinnern, den Nuzen, daraus zu ersehen, wasmassen man bedürfenden Falles mit einer
+                    solchen überhaupt gemachten Evalvation, statt der mühsamen umständlichen einzelnen Evalvationen, so
+                    ziemlich zurecht kömmt, wenn man etwan eine summarische Prüfung des Zustandes einer Wittwenkasse in
+                    der Geschwindigkeit anstellen will.
+                    <br>
+                    <br>Dabey aber muß ich bitten, wohl zu bedenken, daß diese media, 54, 47, und 37 Jahre, von einer
+                    ansehnlichen Anzahl Interessenten einer Wittwenanstalt, die schon ihr 33stes Jahr erreicht hatte,
+                    abstrahiret worden, und daß man nicht erwarten muß, eben diese media, zumal das medium für die
+                    Wittwen, unter den Interessenten einer noch jungen Anstalt zu finden. Man muß überhaupt sich
+                    erinnern, daß die Krisis einer noch jungen Wirtwenkasse sich allmälig formirt, und zurecht zieht,
+                    auch erst nach Verlauf wenigstens eines Menschenalters zur Reife kömmt, und mit dieser Warnung
+                    empfehle ich den oben vorgelegten Auszug aus dem Receptionsprotokoll der Kopenhagener
+                    Militärwittwenkasseasse, zu geflissentlicher Erwägung, als woraus schon sich so ziemlich im Ganzen
+                    ermessen läst, was einer jeden erst sich bildenden neuen Wittwenkasse mit den Jahren bevorstehet.
+                    <br>
+                    <br>Bey diesen 1772 gemachten Evalvationen hatte ich folgende Theorie angenommen. Das bevorstehende
+                    wahrscheinliche Alter des Mannes (nach Süßmilchs Tabellen Th. II. S. 319 und S. 342, wetche leztere
+                    nichts anders ist, als ein aus der ersten fliessendes Korolarium) ward auch als die Dauer der Ehe
+                    angenommen; dieses stadium matrimonii ward zu dem zurückgelegten Alter der Frau zugerechnet, und das
+                    bey der Summe dieser Jahre in der Süßmilchischen Tabelle stehende fernere Alter ward als die Dauer
+                    des Wittwenstandes angesehen. Also in dem Falle Mannesalter 47, Frauenalter 37 Jahre, war stadium
+                    matrimonii 19, stadium viduitatis 14 Jahre. Das Diskonto einer 28mal fälligen halbjährigen Pension I
+                    ist 21,8443 und diese Summe auf 19 ganze oder 38 halbe Jahre zurück, diskontirt giebt (oder auch,
+                    welches auf eins hinausläuft, das Diskonto einer 38maligen Pension abgezogen von dem Diskonto einer
+                    66maligen Pension, läst) 10,027 als den Werth oder Preis der eventuellen halbjährigeh Pension, so
+                    wie selbiger bey der Reception des Ehepaares zu bestimmen ist, oder 5,0135, wenn die volljährige
+                    Pension I; die Halbjahrige aber nur 1/2 oder 0,5. ist. Da also für jeden einzelnen Thaler jährlicher
+                    Pension 5,0135 Risiko oder Einsaz gerechnet wird, so macht dieses Risiko fûr 257000 Rthl. Pension
+                    1288470 Rthl.
+                    <br>
+                    <br>Statt dieser Theorie habe ich 1773. eine bessere angenommen, und darnach einen Plan zu einer
+                    Wittwenkasse ausgearbeitet, der bey mir fertig liegt. Es hat mir, die Wahrheit zu sagen, jene
+                    Theorie, wornach ich 1771 und 1772 arbeitete, und die auch bey der Kalenbergischen Anstalt das
+                    Fundament der Bestimmung von Simplis ist, niemals ein Genüge geleistet, und ich konnte nicht,
+                    verlangte auch nicht mir ihre Mängel zu verheelen, daß nämlich, in der dabey angenommenen
+                    Voraussezung, jede Frau den Mann überleben soll, daß überhaupt der Alter der Frauen zu weit
+                    hinausgesezt wird, und daß Dauer der Ehe und ferneres Leben des Mannes nicht nothwendig einerley
+                    sind. Unterdessen geht doch der darnach angestellte Kalkul nicht so weit von den Resultaten einer
+                    bessern Theorie ab, als man beym ersten Anblicke denken möchte, denn wenn gleich die stadia
+                    viduitatis über die Gebühr erweitert werden, so geschieht doch auch ein Gleiches mit den stadiis
+                    matrimonii und beyderley Fehler gehen mit einander so ziemlich auf. Auch läst sich zur
+                    Entschuldigung eine Begünstigung der Anstalt, der man, wie dem Banquier beym Hazardspiel, gern einen
+                    Vortheil zuwendet, anführen. Jedoch unrichtig ist und bleibt jene Theorie, und ich habe sie deswegen
+                    1773 aufgegeben. Nach meiner jezigen Theorie wird in casu substrato, stadium matrimonii 17 1/4
+                    Jahre, und stadium viduitatis 8 1/4 Jahre, und darnach der Einschuß für jeden einzelnen Thaler
+                    jährlicher Pension 3,5186 Rthl. und eine mit diesem Einschuß gleichmäßige halbjährige Kontribution
+                    wird 0,14218 Rthl. Das Risiko für eine Pension von 257000Rthl. wird 904280 Rthl, der halbjährige
+                    Beytrag für ein solches Pensionstotal wird 36543 Rthl.
+                    <br>
+                    <br>Nach Richard Price (in dem Buche on reversionary payments Lond, 1771, P.320.324.342) wird der
+                    Einschuß 4,303 für jeden einzelnen Thaler jährlicher Pension, also fur 257000 Rthl. Pension 1105771
+                    Einschuß oder Risiko.
+                    <br>
+                    <br>Ausserdem, daß meine Theorie von der Theorie des Hr. Price verschieden ist, so ist auch unsre
+                    Basis calculi et theoriae verschieden. Ich lege die Süßmilchische Tabelle zum Grunde, Hr. Price aber
+                    bey seinen Tabellen VI aund VII. p. 319. bis 325. die Beobachtungen von Breßlau (nach Halley)
+                    Norwich und Northampton (die er in den Tabellen III. IV. V. vorlegt) zusammengenommen. Nach meiner
+                    Theorie ergiebt sich aus der breßlauischen Tabelle stadium matrimonii 16 Jahre, stadium viduitatis 7
+                    1/2 Jahre; aus der Northamptonschen Tabelle stad. matrim, 16 1/2 Jahre . stad. vid. 7 1/4 Jahre; aus
+                    der Norwichischen Tabelle stad. matrim. 17 Jahre, stad, vid. 8 jahre. Diesen stadiis zufolge wird
+                    der Einschuß gegen jeden einzelnen Thaler jährlicher Pension.
+                    <br>
+                    <br>nach der Breßl. Tab. 3,4141.
+                    <br> Northampt. T. 3,3422.
+                    <br> Norwich. T. 3,4626.
+                    <br>und nach einem medio aus allen dreyen 3,4063.
+                    <br>
+                    <br>Das fernere medium zwischen diesem medio 3,4063 und 3,5186, meiner obigen Bestimnung nach der
+                    Süßmilchischen Tabelle, ist 3,4625, und wenn man dazwischen und zwischen 4,303, dem Einschusse nach
+                    Hr. Price das medium nehmen will, so ist es 38828 Rthl. Einschluß für jeden einzelnen Rthl.
+                    jährliche Pension, und darnach wird das Risiko für 257000 Rthl. Total assurirter jährlicher
+                    eventueller Pensionen, 997880 Rthl. und diese Summe wollen wir nun zur Vergleichung mit
+                    Wittwenkassen disseits des Meeves, beybehalten.
+                    <br>
+                    <br>Nach der Tabelle der neuen königl. dänischen allgemeinen Wittwenkasse zahlt ein 47 jähriger
+                    Ehemann, dessen Frau 37 Jahre alt ist, 37 4/6 Rthl. gegen 10 Rthl. Pension, mit einer Dreingabe von
+                    10 Proc. wenn er nicht im königl. Dienste stehet, gegen welche Dreingabe, wenn er ein königl.
+                    Bedienter ist, eines Monats Gehalt zu rechnen. Er zahlt also 41,4333 Einschuß gegen 10 Rthl. Pension
+                    oder 4,1433 gegen 1 Rthl. Pension. Also kommen gegen 257000 Rthl. Pension 1064300 Einschuß oder
+                    Risiko. Es hat sich also diese Kasse hinlänglich vorgesehen.
+                    <br>
+                    <br>Nach der Tabelle der ihren Anfang nehmenden königl. preußischen Wittwenkasse erlegt ein solcher
+                    Mann 37 Rthl. Antrittsgeld, und trägt jährlich bey 4 Proc. gegen 25 Rthl. Pension, also gegen 257000
+                    Rthl. Pension werden er legt 380360 Rthl. Antrittsgeld und jährlich 41120 Rthl. Beytrag. Die Zinsen
+                    zu 4 Proc. von 380360 Rthl. machen 15214 4/10 Rthl. Es wird also die ganze Zahlung an Zinsen und
+                    Beytrag 56334 Rthl. jährlich, oder 28167 Rthl. halbjährlich. Soll nun aus dem halbjährlichen
+                    periodischen Gefälle 28167 Rthl. die Gleichheit einer gegenwärtigen baaren Summe von 997880 Rthl.
+                    erwachsen, so wird erfordert, daß man dieses Gefälle 62 bis 63mal erheben könne, das ist mit andern
+                    Worten, daß die Ehe dieses Paares 31 Jahre lang und etwas darüber bestehen werde. Kann man das
+                    erwarten? Man lasse die Ehe 17 Jahre dauern, so macht das periodische Gefälle 28167 Rthl. 34 mal zu
+                    erheben, par Diskonto 690050 Rthl. und also gegen 997880 Rthl. gerechnet, 307830 Rthl. d. i. 30
+                    85/100 Proc. zu wenig. Kann man denn hoffen, mit den Zinsen von 37 Rthl. Antrittsgeld, und 4 Rthl.
+                    jährlichen Beytrag, das Risiko einer eventuellen Pension von 25 Rthl. bey einem solchen Ehepaare
+                    abzuhalten, und kann man es mehr hoffen in jedem andern Falle?
+                    <br>
+                    <br>Nach der Einrichtung der Kalenbergischen Wittwenkaffe erlegt ein solcher Ehemann 10 Rthl.
+                    Antrittsgeld, und übernimmt 59 Simpla gegen 10 Rthl. Pension, wobey angenommen wird, daß auf eine 19
+                    jährige Ehe ein I 4jähriger Wittwenstand folgen soll; wenigstens ist der Kontributionsfuß, d. i.
+                    bemeldete Zahl der Simplorum nach einer solchen Voraussezung berechnet, nämlich 14 dilatirt mit 80,
+                    und dividirt mit 19. Für 257000 Rthl. Pension ist das Antrittsgeld auch 257000 Rthl, wovon die
+                    Zinsen zu 4 Prос. 10280 Rthl. jährlich, oder 5140 Rthl. halbjähelich machen, und die Zahl der
+                    Simplorum ist 1516300. Die halbjähhrliche Zinsennuzung von 5140 Rthl. währender 19 Jahre 38mal zu
+                    gewärtigen, ist par Diskonto 135904 Rthl. werth, und in sofern diese Nuzung zu Ahhaltung des Risiko
+                    bestimmt ist, gehen von 997880 Rthl. diese 135904 Rthl. ab, und bleiben 861976 Rthl. mittelst der
+                    Simplorum zu bestreiten. Zum Aequivalent dieser Summe 861976 Rthl. wenn es in einem 38mal zu
+                    erhebenden halbjährlichen Gefälle bestehen soll, wird erfordert, daß dieses Gefälle 32606 Rthl.
+                    ausmache, und diese 32606 Rthl. auf 1516300 Simpla vertheilt, geben 61 9/100 Pf. Werth eines Simpli.
+                    Wenn die Zinsennuzung zu Abhaltung des Risiko nicht mitgenommen wird, sondern die ganze Summe 997880
+                    Rthl. aus den simplis erfolgen soll, so wird ein hatbjährliches Gefälle von 37741 Rthl. erfordert,
+                    und der Werth eines Simpli wird 7 168/1000 Pfennige. Wie möchte es wohl gehen, wenn es dazu kommen
+                    sollte, daß ein Simplum, melches jezo 2 3/4 Pfennige halbjährlich gilt, mit 6 1/5 oder 6 1/4 oder
+                    gar mit 7 1/5 oder 7 1/4 Pfennigen halbjährlich berichtiget werden müßte? Und da 2 3/4 Pfennige aufs
+                    einfache offenbar viel zu wenig ist, im Verhältniß gegen das Risiko, wie soll wohl dereinst
+                    dasjenige nachgeholt werden, was bey den gegenwärtigen Interessenten versäumt wird, und noch mehr,
+                    was bereits in der verflossenen Zeit, unzumal an den verstorbenen Interessenten, gegen deren
+                    unbedeutende Beyträge die Kasse nun mit ihren Wittwen beladen ist, versäumt worden?
+                    <br>
+                    <br>Die Bremer Wittwenkafse oder Plegeschaft nimmt nach einem durch ihre blos nach der Grösse der
+                    Pension verschiedene Klassen durchaus gleichgeltenden Verhältnisse gegen 40 Rthl. jährlicher Pension
+                    7 1/2 Rthl. jährlichen Beytrag, und eben soviel zum Antritt, oder gegen 1 Pension 0,1875 zum Antritt
+                    und 0,1875. jährlichen oder 0,09375 Halbjährlichen Beytrag. Gegen 257000 Rthl. Pension ist also das
+                    Antrittsgeld 48187 Rthl, und der halbjähhrliche Beytrag ist 24094 Rthl. Nach Abzug der 48187 von
+                    997880 bleibt die Summe 949693 durch die halbjährliche Einnahme 24094 zu berichtigen, die zu dem
+                    Ende 79 mal erhoben werden müßte, welches sich nicht erwarten läst. Wenn sie 34 mal genossen wird,
+                    so macht ihr Werth par Diskonto nur 590260.
+                    <br>
+                    <br>Die mehrbemeldte ehemalige Kopenhagener MilitärWittwenkasse nahm 11 Rthl. gegen 4 Rthl. Pension,
+                    und also gegen 257000 Rthl. Pension 706750 Rthl. Einschuß. Die Erfahrung, eine dem Kõnige als
+                    Gewährsmann sehr Lästige kostbare Erfahrung hat gezeigt, daß es nicht angehe, allen Interessenten
+                    durch die Banck, ohne Unterschied des Alters 4 Rthl. Pension gegen 11 Rthl. Einkauf, oder 1 Rthl.
+                    Pension gegen 2, 75 Rthl. Einschuß zu versprechen, nicht bey einer Zinsennuzung zu 5 Proc. als
+                    welche die Kopenhagener M. W. Kasse bis 1766. genossen hat, und also um so viel weniger bey 4 Proc.
+                    Wenn von 2, 75, Einschuß in der Kop. M. W. Kasse abgezogen wird 0,1875 Antrittsgeld in der Bremer,
+                    so bleibt 2,5625, wogegen der halbjährliche Beytrag 0,09375, 40 mal gerechnet werden muß. Aus 2,75
+                    Kapital wird nach 40 halbjährLichen Terminen 6 0722, und damit hält man die halbjährliche Pension
+                    1/2, nicht mehr als 14 mal ab. Die Bremer Kasse muß also durch die Bank auf Ehen rechnen können,
+                    welche 20 Jahre bestehen, und worauf ein Wittwenstand von 7 Jahren folget, um es der Kop. M. W.
+                    Kasse, die sich nicht hat erhalten können, gleich zu thun.
+                    <br>
+                    <br>Es hat die Bremer Wittwenpflegeschaft den erkannten Hauptfehler der ofthemeldeten Kopenhagener
+                    M. W. Kasse, daß keine Nückficht auf das Alter der Intereffenten genommen wird, denn wenn gleich in
+                    der Bremischen dis Männer ihr Alter bescheinigen mussen, so macht das доф keinen Unterschied in
+                    ihren Beyträgen, und nach dem ter der Frauen wird gar nicht gefragt. Es sist aber ausfallend
+                    begreifklich, daß von zween Männern ungleichen Alters, deven Frauen gleiches Alter haben, der
+                    ältere, und von zween andern Männern gleichen Alters, deren Frauen ungleiches Alter haben, der Mann
+                    dessen Frau die junge re ist, und überhaupt nach der Maaße als der Mann aft und die Frau jung ist,
+                    der Mann mehr, und im umges kehrten Falle weniger in eine Wittwenkafsse bentragen muss se, weil das
+                    von der Kasse zu übernehmende Risiko in eben solchem Maasse ungleich ist, und daß man eben sowohl
+                    gegen die natärliche Billigkeit handelt als gegen den Lauf der Natur, wenn man keine Rücksicht auf
+                    das Atter der Personen, der Frauen sowohl als der Männer nimmt.
+                    <br>
+                    <br>Unterdessen da die Bremer Wittwenkasse seit 1753 gestanden hat, so wäre zu wünschen, daß annoch
+                    auch nach dent Alter der Frauen Nachfrage geschehen möchte, welches nicht schwer zu seyn scheint,
+                    und daß die Direktion dieser Anstalt sich möchte gefallen lassen, solche Nachrichten, als oben von
+                    der Kopenhagener Milit. W. Kasse gewünschet worden, ebenfalls als gemeinnüzige Thatsachen und
+                    Erfahrung bekannt zu machen.
+                    <br>
+                    <br>Um das Nachrechnen denenjenigen Lesern, welche dazu Lust haben, zu erleichtern, dient
+                    nebenstehende Tabelle über das Diskonto eines halbjährlichen Gefälles 1, bey Zinsfuß 4 Proc. oder 2
+                    Proc. halbjährlich:.
+                    <br>
+                    <br><i>Die Tabellen auf S. 620 und 621 fehlen.</i>
+                    <br>
+                    <br>Aller Kalkul bey Wittwenkassen, alle Bestimmungen der Beyträge der Interessenten und des
+                    vermuthlichen Aufwandes, sezen eine unfehlbare genaue Nuzung nicht nur der Zinsen, sondern auch des
+                    Interufurii voraus, und eben darinn besteht auch einer der Vortheile, welche viele Personen, die
+                    sich zu einem gemeinschaftlichen Zwecke vereinigen, durch ihren Zusammentritt gewinnen, daß ihre
+                    Beyträge, indem sie zusammen genommen in ein Kapital erwachsen, solche Zinsen tragen können,
+                    Früchte, die von jeder solcher kleinen Summe einzeln genommen nicht erhalten werden können, zu
+                    grosser Erleichterung der Last eines jeden Interessenten. Schlägt diese Voraussezung in der Ausübung
+                    fehl und ist eine solche Anstalt vielleicht selbst gegen den Verlust ganzer Kapitalien bey
+                    Hypotheken u. d. nicht gesichert, wovon mir Beyspiele bekannt sind, so kann die beste Theorie und
+                    alle menschliche Vorsicht nichts nüzen, noch dem Verfalle einer Wittwenkasse vorbauen. Aber wer kann
+                    die sichere Gewähr leisten, wer kann einer solchen Anstalt nicht nur die Erhaltung ihrer Kapitalien
+                    sondern auch eine nie fehlschlagende ununterbrochene Zinsennuzung nach einem beständigen Zinsfuße
+                    versichern, und überhaupt eine solche Anstalt über alle Misßlichkeiten einer überdem auch
+                    höchstbeschwerlichen Verwaltung, wenn der erste Grund und Schaz der Anstalt hin und wieder umher bey
+                    Privatpersonen in kleine Summen zerstückelt belegt werden muß, hinaussezen, wer kann dies anders als
+                    eine Regierung? Es ist also in meinen Augen ein zum Bestande einer Wittwenkasse beynahe nothwendiges
+                    Postulatum, das die Regierung des Landes ihren Schaz zu treuen Händen annehme. Ich verlange keine
+                    Gewährsleistung von der Regierung, namlich keine Gewährsleistung, die auf das Gleichgewicht zwischen
+                    Mittel und Zweck, auf die Hinlänglichkeit der Einmahme zur Ausgabe, und mit einem Worte weiter als
+                    auf die Sicherheit; des Vermögens, welches die Kasse sammlen wird, und auf die Aufrechthaltung der
+                    Ordnung gehen sollte, ich verlange keine lästige Beyträge und Zuschüsse, indem nach einem
+                    wohlangelegten Plan nichts weiter zu vertragsmäßiger Versorgung der eventuellen Wittwen nöthig seyn
+                    muß, als was lediglich aus den Einschüssen und Beyträgen ihrer Männer erwachsen kann, sondern ich
+                    rathe vielmehr den Königen und Fürsten, ihre Mildthätigkeit, die bey einer allgemeinen Wittwenkasse
+                    sich nicht zweckmäßig über das Ganze vertheilen und verbreiten lässet, auf die hülfsbedurftige
+                    einzelne Personen einzuschränken, aber diese Wohlthat, der Uebernehmung des Schazes zu treuen
+                    Händen, läst sich, wie ich glaube, für das gemeine Beste verlangen, und es kann keiner Regierung
+                    schwer seyn, den Schaz einer solchen Anstalt so zu belegen und anzuwenden, daß er die Quelle einer
+                    neuen sichern Einkunft wird, und also die Berichtigung der Zinsen an die Anstalt (denn das Kapital
+                    selbsten wird sie, es wäre denn daß sie in Verfall geriethe, niemals, wenigstens nicht mehr davon,
+                    als etwan bey einer ausserordentlichen Ereigniß einen kleinen Theil, nöthig haben) zu seiner Zeit in
+                    der Zukunft dem Staate lästig werden kann. Der Ausdruck zu treuen Händen annehmen, begreift alles
+                    was sich von einer weisen, das ist gütigen und gerechten Regierung, ermarten läst, und in
+                    ehrfurchtsvollem Zutrauen erwartet werden muß, begreift auch alle Bedenklichkeiten, die einem
+                    besorgsamen Gemüthe dabey einfallen mögen, und alles das, was nur irgend ein Biedermann wünschen
+                    mag, daß es nicht geschehen möge, und ich enthalte mich billig der Entwickelung aller hierunter
+                    begriffenen Gedanken.
+                    <br>
+                    <br>Wittwenkassen in dem erklärten eigentlichen Verstande des Wortes sind nüzlich und nöthig
+                    überall, wo es hülfbedürftige Personen giebt, das ist, in jedem Staate, und es ist nicht daran zu
+                    zweifeln, daß nicht ihrer bald mehrere in mehrern Staaten entstehen sollten, sobald nur die Theorie
+                    derselben mehr berichtiget und erkannt, und bey den Regierungen eine Ueberzeugung von der
+                    Möglichkeit, zuverlässige Anstalten dieser Art zu machen, mehr und mehr bewirket werden wird. Die
+                    Wittrwenkassen auf Almosenfuß, woran es wohl kaum in einem europhischen Staate mangelt, beweisen,
+                    daß es überhaupt nicht an dem Willen der Regierungen und an deren Aufmerksamkeit auf diesen Zweig
+                    der Polizey fehlt, sondern es liegt wohl mur daran, daß bis jezo noch selten ein Plan zu einer
+                    wahren Wittwenkasse Eingang und Glauben verdient oder gefunden hat. Es kann aber gar bald die Zeit
+                    kommen, daß, jeder Staat seine Anstalt dieser Art für sich errichten, und nicht nur dadurch seinen
+                    Unterthanen die Zuflucht zu Anstalten fremder Staaten wird entbehrlich machen, sondern sie auch von
+                    solchem Beytritt in fremde Kassen wird abhalten wollen. Und dahin wird namentlich auch die so eben
+                    vorgetragene Betrachtung führen, daß es zu dem bessern Bestande einer Wittwenkasse dient, wenn die
+                    Regierung den Schaz derselben zu treuen Händen ninimt, und sich zum Glaubiger derselben macht. Jede
+                    Regierung wird immer am liebsten sehen, daß ihre Unterthanen ihr Geld dem Staate anvertrauen, und es
+                    läst sich immer vermuthen, und um soviel mehr vermuthen, je weniger Zwang sich einmischt, daß auch
+                    die Unterthanen ihrerseits ein vorzügliches Zutrauen zu ihrer eignen Regierung hegen werden.
+                    <br>
+                    <br>Auch sind solche Wittwenkassen, von denen die Rede ist, keine Anstalten, die nur in großen
+                    Staaten statt hätten, die Millionen von Bewohnern zählen, sondern ich halte eine Volkzahl von etwan
+                    100000 Menschen schon hinlänglich, um dem Hazard freyes Spiel zu verschaffen, daß die Regeln
+                    desselben gelten können. Wenn von den 16000 Ehepaaren, die man unter 100000 Menschen sicher annehmen
+                    kann, auch nur ein Paar von funfzigen bey Errichtung einer solchen Anstalt eintritt, so ist das
+                    schon ein beträchtlicher Anfang, und es braucht der jährliche Zutritt neuer Ehepaare nicht viel
+                    zahlreicher ju seyn, als der Abgang der jährlich durch den Tod des einen oder andern Gatten sich
+                    auflösenden Paare, um bald eine Interessentsschaft zusammen zu bringen, die zahlreich genug ist, daß
+                    die für die Anstalt widrige und günstige Fälle einander das Gleichgewicht halten können. Nur muß man
+                    in einem kleinen Staate der höchsten Pension, worauf die Anstalt sich einlassen will, eine
+                    gebührende Grenze sezen, weil es allerdings mißlich seyn könnte, eine hohe Pension auszulosden, die
+                    nur wenige Ehepaare sich zu erkaufen im Stansde sind, bey welchen wenigen Paaren also widrige Fälle
+                    eintreffen könnten, ohne Anschein gegenseitiger günftiger Fälle. Jedoch die Umstände eines solchen
+                    kleinern Staats bringen eine solche gebührende Grenze der höchsten Pension von selbsten mit sich.
+                    <br>
+                    <br>Die Erfahrung hat nichts, wenigstens bis jezo nichts Bestimmtes gelehrt, was zwischen ehelosen
+                    oder in die Ehe tretenden Frauenspersonen einen Unterschied in calculo machen könnte, und sie zeigt
+                    uns überhaupt keinen wenigstens bis jezt bestimmt bemerkten Unterscheid in den Gesetzen und in der
+                    Ordnung des Lebens und Absterbens des einen oder andern Geschlechts und die wahrscheinliche fernere
+                    Dauer des Lebens von einem zurückgelegten Termin ab, muß bey Mannspersonen und bey Frauenspersonen
+                    nach einerley Tabelle ermessen werden. Es ist also keine Ursache vorhanden, warum nicht die Fürsorge
+                    für Hülfsbedürftige auch auf Frauenspersonen, die nicht just unter eheslicher Verbindung stehen,
+                    erweitert werden könnte, wie bey der neuen königl. preußischen Wittwenverpflegungsanstalt geschehen,
+                    so daß ein Vater seiner unverehelichten Tochter, ein Bruder seiner Schwester, eine jede Mannsperson,
+                    verwandt oder nicht, eine Frauensperson eine Versorgung auf seinen Todesfall versichern könnte, ja
+                    es ist keine Ursache vorhanden, warum man nicht noch einen Schritt weiter, als die königl.
+                    preußische Anstalt gehet, gehen, und die Fürsorge auch auf Mannspersonen erstrecken könnte, welche
+                    beym Absterben ihrer Wohilhäter und Versorger in der Gefahr Noth zu leiden sich befinden, deren
+                    gewiß auch nicht wenige sind, und, um uns allgemein auszudrucken, dа alles nur auf das Alter des
+                    eventuellen Pensionisten oder der eventuellen Pensionistin ankömmt, und auf das Alter, auch
+                    Gesundheit zur Zeit der Kontraktserrichtung, der Person, Manns- oder Frauensperson, von dessen oder
+                    deren Leben oder Tod die Pension abhängt, so ist keine Ursache vorhanden, warum es nicht überhaupt
+                    heissen könnte: A gelangt zur Pension wenn B stirbt, A und B seyen welchen Geschlechts sie wollen.
+                    <br>
+                    <br>Derjenigen wegen, welchen überall für Misbräuchen allzusehr grauet, und die des Spruches propter
+                    abufum non eft tollendus ufus uneingedenk immer geneigt sind, lieber eine gute Veranstaltung der
+                    möglichen Misbräuche wegen, ganz abzuwenden, als darauf bedacht ju seyn, wie zugleich bey der
+                    Veranstaltung den Misbräuchen vorgebauet werden könne, wie es denn nicht an gedruckten Warnungen
+                    gegen Wittwenkassen fehlt, aus dem Grunde, weil die Wittwen sorglos, faul, üppig, zur Unabhängigkeit
+                    geneigt, gegen neue Heirathen abgeneigt werden könnten, u. d. m. solcher sorgenvoller Personen
+                    wegen, um sie wo möglich zu beruhigen, muß ich wohl nur auch erinnern, daß der Obrigkeit gleich auch
+                    hier überlassen und anheim gestellt bleibt, die Misbräuche und die Mittel dagegen zu ermessen, und
+                    daß in allen denen Fällen, wo die durch eine eventuelle Pension zu begünstigende Person nicht just
+                    eine Ehefrau ist, demjenigen, der einer solchen Person die Pension verschaffen will, und von dessen
+                    Leben oder Tod der Genuß der Pension abhängt, Maaß und Ziel entweder in allgemeinen Vorschriften
+                    gesezt werden, oder er gar verbunden werden kann, von der Obrigkeit besondre Erlaubniß zu seinem
+                    Vorhaben zu erlangen, ehe er und sein Klient bey einer solchen erweiterten Wittwenkasse, oder wie es
+                    füglich heissen könnte, der allgemeinen Versorgungskasse zugelassen werden dürften.
+
+
+                </section>
+
+                <section id="chap3">
+
+                </section>
+
+                <section id="chap4">
+
+
+                </section>
+
+                <section id="chap5">
+
+
+                </section>
+
+                <section id="chap6">
+
+
+                </section>
+
+
+                <section id="chap7">
+                </section>
+
+        </main>
+    </div>
+
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script src="functionscript.js"></script>
+    <script src=wittwen-etwasscript.js></script>
+    <script src="navbarscript.js"></script>
+
+
+</body>
+
+</html>
