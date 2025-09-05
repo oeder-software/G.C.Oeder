@@ -18,31 +18,27 @@ let inokulation1ContentGerman = [
 ];
 
 let chapter = ["#chap0", "#chap1", "#chap2", "#chap3"];
-let img = "./img/inokulation-1.png";
+let img = "./img/covers/inokulation-1.png";
 let link =
   "https://www.digitale-sammlungen.de/en/view/bsb10614670?q=%28Deutsches+Museum%29&page=446";
 SetLinkAndImgToFrontpage(link, img);
 PrependBrBeforeChap(chapter);
+SetFlora();
 
-// SetLetterCheContent(chapter, content);
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "inokulation-2-dk") {
-  SetContent(contentdanish);
-  //   SetLetterBugBio(letterBugBio, "DK");
-  SetAlifeContent(chapter, inokulation1ContentDanish);
+  SetContent(chapter, inokulation1ContentDanish);
+  infoTxt="Oversat fra tysk."
 }
-
 if (path == "inokulation-2-en") {
-  SetContent(contentenglish);
-  //   SetLetterBugBio(letterBugBio, "EN");
-  SetAlifeContent(chapter, inokulation1ContentEnglish);
+  infoTxt= "Translated from German."
+  SetContent(chapter, inokulation1ContentEnglish);
 }
-
 if (path == "inokulation-2-de") {
-  SetContent(contentgerman);
-  //   SetLetterBugBio(letterBugBio, "DE");
-  SetAlifeContent(chapter, inokulation1ContentGerman);
+infoTxt=" Deutsch Original."
+  SetContent(chapter, inokulation1ContentGerman);
 }
+document.getElementById("info").innerHTML=infoTxt;

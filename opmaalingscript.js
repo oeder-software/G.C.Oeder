@@ -3,13 +3,19 @@ let bedenkenContentEnglish = [];
 let bedenkenContentGerman = [];
 
 let chapter = [];
-let img = "./img/opmaaling.png";
+let img = "./img/covers/opmaaling.png";
 let link =
   "https://www.digitale-sammlungen.de/en/view/bsb10614673?q=%28Deutsches+Museum%29&page=225";
-SetLinkAndImgToFrontpage(link, img);
-// SetLetterCheContent(chapter, content);
+if (path == "opmaaling-en") {
+    infoTxt = "Translated from German.";
+}
+if (path == "opmaaling-de") {
+    infoTxt = "Deutsch original.";
+}
+if (path == "opmaaling-dk") {
+    infoTxt = "Oversat fra tysk.";
+}
+document.getElementById("info").innerHTML=infoTxt;
+
+  SetLinkAndImgToFrontpage(link, img);
 SetFlora();
-// function SetLinkAndImgToFrontpage(link, img) {
-//   document.getElementById("link").setAttribute("href", link);
-//   document.getElementById("imgind").setAttribute("src", img);
-// }

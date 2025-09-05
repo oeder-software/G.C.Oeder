@@ -63,40 +63,34 @@ let chapter = [
   "#chap13",
   "#chap14",
 ];
+let img = "./img/covers/1769.png";
+let link =
+  "https://www.digitale-sammlungen.de/en/view/bsb10451859?q=oeder&page=15";
+// export{chapter};
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
-
-PrependBrBeforeChap(chapter);
-
+let infotxt= "";
 if (path == "1769-en") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, ContentEnglish);
-  // SetKap(ContentEnglish);
+  SetContent(chapter, ContentEnglish);
+  infoTxt= "Translated from German."
 }
 if (path == "1769-de") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, ContentGerman);
-  // SetKap(ContentGerman);
+  SetContent(chapter, ContentGerman);
+  infoTxt=" Deutsch Original."
 }
 if (path == "1769-dk") {
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, ContentDanish);
-  // SetKap(ContentDanish);
+  SetContent(chapter, ContentDanish);
+  infoTxt="Oversat fra tysk."
 }
-let img = "./img/1769.png";
-let link =
-  "https://www.digitale-sammlungen.de/en/view/bsb10451859?q=oeder&page=15";
 SetLinkAndImgToFrontpage(link, img);
+SetFlora();
+PrependBrBeforeChap(chapter)
 
-// function SetKap(kap) {
-//   for (let i = 0; i < kap.length; i++) {
-//     var txt = kap[i];
-//     var kapx = "kap" + (i + 1);
-//     var chap = "chap" + (i + 1);
-//     var a = document.getElementById(kapx);
-//     a.innerHTML = txt;
-//     var a = document.createElement("br");
-//     document.getElementById(chap).prepend(a);
-//   }
+document.getElementById("info").innerHTML=infoTxt;
+
+// var h3 = document.querySelectorAll("h3");
+// for (let i = 0; i < h3.length; i++) {
+//   var a = document.createElement("br");
+//   h3[i].append(a)
 // }

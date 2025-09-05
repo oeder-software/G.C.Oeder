@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeder. Betreffend die Volkszählung im Jahre 1769 ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
+    <meta id="meta" name="description" content="">
 
+    <title></title>
     <style>
-        #sidebar {
-            font-size: 0.5rem;
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
-
-        tr:nth-child(even) {
-            background-color: #caca9d;
-        }
-
-        .formcontainer {
+                .formcontainer {
             display: flex;
             flex-direction: row;
         }
@@ -34,53 +27,27 @@
             }
 
         }
+
     </style>
-    <title id="title">Georg Christian Oeder. Aufsätze,
-        betreffend die im Jahre 1769
-        in den
-        Königlichen Dänischen Staaten in Europa
-        vorgenommene
-        Volkszählung;
-        von dem Herrn Stiftsamtmann von Oeder
-        zu Oldenburg. </title>
 </head>
 
-<body id="dex">
-    <!-- <script src="test2.js"></script> -->
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main onclick="closeSidebar();">
+        <article id="article" onclick="CloseSidebarMenu()">
             <section id="chap0">
-                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
                 <h2>
@@ -3866,7 +3833,7 @@
                             <th>Zahl der Einwohner</th>
                         </tr>
                         <tr>
-                            <td>Aakirkeye</td>
+                            <td>Aakirkbye</td>
                             <td>357</td>
                         </tr>
                         <tr>
@@ -6569,10 +6536,10 @@
                     <h4> Formular für Hauswirthe und Partheien.</h4>
                     <div class="formcontainer">
                         <div>
-                            <img class="form" src="./img/1769-forma1.png" alt="formular">
+                            <img class="form" src="./img/1769/1769-forma1.png" alt="formular">
                         </div>
                         <div>
-                            <img class="form" src="./img/1769-forma2.png" alt="formular">
+                            <img class="form" src="./img/1769/1769-forma2.png" alt="formular">
                         </div>
 
                     </div>
@@ -6605,10 +6572,10 @@
                     <h4>Formular für die Collecteure.</h4>
                     <div class="formcontainer">
                         <div>
-                            <img class="form" src="./img/1769-formb1.png" alt="formular">
+                            <img class="form" src="./img/1769/1769-formb1.png" alt="formular">
                         </div>
                         <div>
-                            <img class="form" src="./img/1769-formb2.png" alt="formular">
+                            <img class="form" src="./img/1769/1769-formb2.png" alt="formular">
                         </div>
 
                     </div>
@@ -6680,16 +6647,25 @@
                     der Rubrik gehörigen Fragen, und zur rechten ein verticaler Strich, hinter welchem die Zahlen
                     geschrieben werden.
                 </section>
-        </main>
-    </div>
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+        </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
-    <script src="functionscript.js"></script>
-    <script src="1769script.js"></script>
     <script src="navbarscript.js"></script>
-
-
+    <script src="1769script.js"></script>
 </body>
 
 </html>

@@ -6,9 +6,9 @@ let inokulation1ContentDanish = [
   "Memoire nr. 3.",
   "Memoire nr. 4.",
   "Memoire nr. 5.",
-  "I. Concerning the Archives",
-  "II. Regarding the correspondence of the Rente-Schreiber (Revenue Clerks).",
-  "III. Regarding the secretary",
+    "I. Vedrørende arkiverne",
+  "II. Om renteskrivernes korrespondance.",
+  "III. Om sekretæren",
 ];
 let inokulation1ContentEnglish = [
   "Preliminary Report.",
@@ -18,9 +18,9 @@ let inokulation1ContentEnglish = [
   "Memoire No. 3.",
   "Memoire No. 4.",
   "Memoir No. 5",
-  "I. Vedrørende arkiverne",
-  "II. Om renteskrivernes korrespondance.",
-  "III. Om sekretæren",
+  "I. Concerning the Archives",
+  "II. Regarding the correspondence of the Rente-Schreiber (Revenue Clerks).",
+  "III. Regarding the secretary",
 ];
 let inokulation1ContentGerman = [
   "Vorbericht.",
@@ -47,31 +47,28 @@ let chapter = [
   "#chap9",
   "#chap10",
 ];
-let img = "./img/commission.png";
+let img = "./img/covers/commission.png";
 let link =
   "https://www.digitale-sammlungen.de/en/view/bsb10451860?q=oeder&page=9";
 PrependBrBeforeChap(chapter);
-SetLinkAndImgToFrontpage(link, img);
 
-// SetLetterCheContent(chapter, content);
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "commission-dk") {
-  SetContent(contentdanish);
-  //   SetLetterBugBio(letterBugBio, "DK");
-  SetAlifeContent(chapter, inokulation1ContentDanish);
+  SetContent(chapter, inokulation1ContentDanish);
+  infoTxt = "Oversat fra tysk.";
 }
-
 if (path == "commission-en") {
-  SetContent(contentenglish);
-  //   SetLetterBugBio(letterBugBio, "EN");
-  SetAlifeContent(chapter, inokulation1ContentEnglish);
+      infoTxt = "Translated from German.";
+      SetContent(chapter, inokulation1ContentEnglish);
+    }
+    if (path == "commission-de") {
+    infoTxt = "Deutsch original.";
+  SetContent(chapter, inokulation1ContentGerman);
 }
+document.getElementById("info").innerHTML=infoTxt;
 
-if (path == "commission-de") {
-  SetContent(contentgerman);
-  //   SetLetterBugBio(letterBugBio, "DE");
-  SetAlifeContent(chapter, inokulation1ContentGerman);
-}
+SetLinkAndImgToFrontpage(link, img);
+SetFlora();
