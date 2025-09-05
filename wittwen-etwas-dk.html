@@ -1,79 +1,60 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeder. Noget om Enkekasser af Georg Christian Oeder.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
+    <meta id="meta" name="description" content="">
 
+    <title></title>
     <style>
-        #sidebar {
-            font-size: 0.5rem;
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
 
-        tr:nth-child(even) {
-            background-color: #caca9d;
+        .table1container {
+            display: inline-flex;
+            flex-wrap: wrap;
         }
 
-        .formcontainer {
-            display: flex;
-            flex-direction: row;
+        .table2container {
+            display: inline-flex;
+            flex-wrap: wrap;
         }
 
-        .form {
-            width: 350px;
+        .columtable1,
+        .columtable2 {
+            margin: 10px;
         }
 
-        @media (max-width: 900px) {
-            .form {
-                width: 250px;
-            }
 
+        .table1>th,
+        td {
+            text-align: center;
+            padding: 0px 5px;
         }
+
     </style>
-    <title id="title">Noget om Enkekasser af Georg Christian Oeder. </title>
 </head>
 
-<body id="dex">
-    <!-- <script src="test2.js"></script> -->
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main onclick="closeSidebar();">
+        <article id="article" onclick="CloseSidebarMenu()">
             <section id="chap0">
-                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
                 <h2>
@@ -387,9 +368,10 @@
                         </tr>
 
                     </table>
+                    <br><br>
                     I løbet af 31 år er der altså blevet indskrevet 3501 Ægtepar, hvoraf der ved begyndelsen af 1770
                     fandtes 595 Enker; disse ville, dersom de alle havde levet til 31. December 1770, tilsammen have
-                    oppebåret 81,015 Rdlr.
+                    oppebåret 81,015 Rdlr. <br> <br>
                     Jeg vender nu tilbage, hvor jeg ovenfor afbrød, og siger, at dersom man fra alle de inscripti fra
                     1739 til 1775, især fra 1739 til og med 1745, vidste:
                     hvor gamle hver Mand og hver Kvinde var ved optagelsen?
@@ -401,10 +383,10 @@
                     sådan plan var blevet anvendt på interessenterne i den københavnske militær-enkekasse, og man
                     behøvede ikke at afvente endnu 36 år, for først da, ud fra erfaringen, der i mellemtiden ved en ikke
                     vel afpasset plan kunne blive skæbnesvanger eller i det mindste meget kostbar, at fælde en afgørende
-                    dom over en sådan plan, som ønskes prøvet.
+                    dom over en sådan plan, som ønskes prøvet. <br> <br>
                     Disse oplysninger ville desuden i det hele udgøre et vigtigt bidrag til Süßmilchs og lignende værker
                     og tjene til berigtigelse af de slutninger, man drager fra en persons allerede tilbagelagte alder
-                    til hans sandsynlige fremtidige alder.
+                    til hans sandsynlige fremtidige alder. <br> <br>
                     Uheldigvis blev der fra 1739 til 1771 aldrig ved optagelsen af ægteparrene spurgt til personernes
                     alder, hverken mændenes eller kvindernes, skønt det dog var lige nødvendigt at vide begge dele; thi
                     uden hensyn til alder blev 40 Rdl. i eventualpension lovet imod 100 Rdl. indskud for interesserede
@@ -412,7 +394,7 @@
                     heller intet anført herom i bøgerne. Mændene blev heller ikke påbudt behørigt at anmelde deres
                     hustruers død, så man kan ikke med tilstrækkelig pålidelighed udlede af bøgerne, hvilke ægteskaber
                     er blevet ophævet ved kvindens død, og hvilke af de tidligere årganges ægteskaber der måske endnu
-                    består uopløste.
+                    består uopløste. <br> <br>
                     Da jeg i 1771 og 1772, i følge kongelig befaling, undersøgte tilstanden for denne militær-enkekasse
                     (som, i parentes bemærket, bar navnet »militær«, fordi den oprindelig var bestemt for
                     militærstanden, og også forblev under krigskancelliets direktion, men som dog efter tidligt tilladt
@@ -422,7 +404,7 @@
                     endnu bestående ægteskabers gradvise ophævelse, og for at kunne sammenholde denne dobbelte
                     risikomasse med den faktiske status bonorum, og den forestående udgift med den fuldt oppebårne
                     indtægts rest – at der i det mindste foreløbigt blev gjort en forespørgsel om alderen på de endnu
-                    levende interessenter.
+                    levende interessenter. <br> <br>
                     I den sidste halvdel af 1772 var jeg fraværende fra København. I året 1773, hvis første halvdel jeg
                     igen tilbragte i København, var spørgsmålet endnu aktuelt: om militær-enkekassen kunne bestå eller
                     måtte ophæves? – og jeg kunne ikke nå til spørgsmålet, hvad der i så fald skulle sættes i dens sted,
@@ -432,7 +414,7 @@
                     enkekasse, og har derfor heller ikke kunnet foranledige eller fremme den videre forespørgsel om
                     alderen på interessenterne i militær-enkekassen og dens udvidelse til også at omfatte de afdøde,
                     sådan som jeg ville have gjort, hvis jeg havde fået lejlighed til at udføre den anden del af mit
-                    hverv.
+                    hverv. <br> <br>
                     Det er dog ønskeligt – og, som jeg ikke vil tvivle på, forhåbningsfuldt – at denne udvidede
                     forespørgsel i sin fulde udstrækning endnu vil blive foretaget, og jo før, jo bedre, før spørgsmålet
                     om de ældste interessenter, ved tidens gang og ved de personer, der kan afgive oplysningers
@@ -441,7 +423,7 @@
                     stater, i det de kan tjene til prøvelse af den nye kasse, men også for andre stater, som enten
                     allerede har oprettet, eller agter at oprette nye enkekasser – ja, jeg tør endda sige: for
                     menneskeslægten, som en erfaring, der ellers ikke kan fås med det første, og som man ellers måtte
-                    vente et helt menneskealder på igen at få.
+                    vente et helt menneskealder på igen at få. <br> <br>
                     Idet jeg her offentligt fremsætter dette ønske og denne bøn, er jeg vis på, at jeg samtidig
                     fremfører ønsket hos alle dem, for hvem berigtigelsen og udvidelsen af denne del af menneskelig
                     indsigt ligger på sinde – ja uden tvivl også hos flere regeringer, der har interesse i
@@ -449,7 +431,7 @@
                     fastlagte. Jeg fremsætter altså ingen ubeskeden bøn – så meget desto mindre ubeskeden, eftersom der
                     ved offentliggørelsen af disse ønskede oplysninger (uden navns nævnelse, blot ved fortløbende numre
                     i optagelsesprotokollen) ingen betænkelighed kan være – lige så lidt som ved offentliggørelse af de
-                    årlige lister over døde, fødte og viede.
+                    årlige lister over døde, fødte og viede. <br> <br>
                     Så snart de omtalte oplysninger om alderen på de daværende enker, eller pensionistinder, og om
                     alderen på de mænd og kvinder, der i 1772 endnu levede i uopløst ægteskab, blev indhentet og meddelt
                     mig, foretog jeg straks de enkelte beregninger af risikoen ved hver enkeperson og hvert ægtepar,
@@ -469,7 +451,7 @@
                     blot efter tilfældighed og som oplysningerne gradvist indløb – uden udvælgelse fra deres samlede
                     antal. Der var derfor ingen grund til at antage, at deres alder skulle være højere eller lavere end
                     de øvriges, og at ikke snarere unge og gamle blandt de beregnede personer skulle være ligeså
-                    blandede som blandt resten.
+                    blandede som blandt resten. <br> <br>
                     Risikoen ved 79.000 Rdl. som samlet mængde af de faktisk udbetalte pensioner fandt jeg til 866.032
                     Rdl., og risikoen ved 257.000 Rdl. som samlet mængde af de eventualpensioner, der var sikrede, fandt
                     jeg til 1.308.500 Rdl. – begge ved en rentesats på 4 procent.
@@ -480,7 +462,7 @@
                     årene for ægtemændene og for hustruerne, delte hver af disse summer med antallet af ægtepar og
                     forestillede mig på samme måde et enkelt ægtepar, for hvem hele kvantummet på 257.000 Rdl. var
                     forsikret, for at se i hvilken grad en sådan samlet beregnet evaluering ville stemme overens med de
-                    evalueringer, som var udledt af de enkelte beregninger.
+                    evalueringer, som var udledt af de enkelte beregninger. <br> <br>
                     Enkernes gennemsnitsalder var 54 år, ægtemændenes 47 år, hustruernes 37 år. Risikoen for kvantummet
                     79.000 Rdl. udgjorde 874.654 Rdl., og risikoen for kvantummet 257.000 Rdl. udgjorde 1.288.470 Rdl.
                     Forskellen mellem 866.031 Rdl. og 874.654 Rdl. er 1 55/100 procent, og mellem 1.308.500 Rdl. og
@@ -491,13 +473,13 @@
                     Denne bemærkning har – for at erindre det i forbifarten – den nytte, at man deraf kan se, i hvilken
                     grad man i fornødent fald kan klare sig ganske godt med en sådan samlet beregnet evaluering i stedet
                     for de besværlige og omstændelige enkeltberegninger, hvis man for eksempel ønsker at foretage en
-                    summarisk vurdering af tilstanden i en enkekasse i hast.
+                    summarisk vurdering af tilstanden i en enkekasse i hast. <br> <br>
                     I den forbindelse må jeg dog bede om, at man nøje betænker, at disse gennemsnit – 54, 47 og 37 år –
                     er abstraheret fra et betydeligt antal interessenter i en enkekasse, der allerede havde nået sit 33.
                     år, og at man derfor ikke må forvente at finde netop disse gennemsnit – især ikke gennemsnittet for
-                    enkerne – blandt interessenterne i en endnu ung anstalt.
+                    enkerne – blandt interessenterne i en endnu ung anstalt. <br> <br>
                     Man må i det hele taget erindre, at krisen i en endnu ung enkekasse gradvist former sig og finder
-                    sin ligevægt, og først efter mindst et menneskealders forløb modnes.
+                    sin ligevægt, og først efter mindst et menneskealders forløb modnes. <br> <br>
                     Og med denne advarsel anbefaler jeg den ovenfor forelagte uddrag af receptionsprotokollen fra den
                     københavnske militær-enkekasse til alvorlig overvejelse – hvoraf man allerede ret tydeligt i det
                     store og hele kan skønne, hvad enhver nyligt oprettet enkekasse med tiden vil have i vente.
@@ -506,7 +488,7 @@
                     hvilken sidste ikke er andet end en konsekvens af den første) blev betragtet som ægteskabets
                     varighed. Dette stadium matrimonii blev lagt til kvindens allerede passerede alder, og den
                     yderligere levetid, som da fremgår af Süßmilchs tabel ud for summen af disse år, blev betragtet som
-                    varigheden af enketilstanden (stadium viduitatis).
+                    varigheden af enketilstanden (stadium viduitatis). <br> <br>
                     Altså, i det tilfælde hvor mandens alder er 47 år og kvindens 37 år, var ægteskabets varighed
                     beregnet til 19 år, og enkestandens varighed til 14 år.
                     Diskontoen (nutidsværdien) for en halvårlig pension, der udbetales 28 gange, er 21,8443; og hvis
@@ -816,16 +798,24 @@
 
                 </section>
 
-        </main>
-    </div>
+        </article>
+        <aside id="asiderightimg">
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
-    <script src="functionscript.js"></script>
-    <script src="wittwen-etwasscript.js"></script>
     <script src="navbarscript.js"></script>
-
-
+    <script src="wittwen-etwasscript.js"></script>
 </body>
 
 </html>

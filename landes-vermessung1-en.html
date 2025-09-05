@@ -1,85 +1,42 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeder.Report on the local Land Survey.
-">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        #sidebar {
-            font-size: 0.5rem;
-        }
-
-        tr:nth-child(even) {
-            background-color: #caca9d;
-        }
-
-        .formcontainer {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .form {
-            width: 350px;
-        }
-
-        @media (max-width: 900px) {
-            .form {
-                width: 250px;
-            }
-
-        }
-    </style>
-    <title id="title">Report on the local Land Survey
+    <meta  id="meta" name="description" content="Report on the local Land Survey
         ,
         von
-        Georg Christian Oeder. </title>
+        Georg Christian Oeder.">
+
+    <title>Report on the local Land Survey
+        ,
+        von
+        Georg Christian Oeder.</title>
+    <style>
+    </style>
 </head>
 
-<body id="dex">
-    <!-- <script src="test2.js"></script> -->
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main onclick="closeSidebar();">
-            <section id="chap0">
-                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap1">
+                                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
+
                 <h2>
                     Report on the local Land Survey. </h2>
                 <h3>
@@ -405,7 +362,7 @@
                 locations.
                 <br>
                 <br>Let us take, for example, Oldenburg – that is, the point where the sundial stands upon the rampart –
-                as well as Rastede and Varel. Rastede lies 2,980 Rhenish feet west of Oldenburg and 38,498 feet to the
+                as well as Rastede and Varel.Rastede lies 2,980 Rhenish feet west of Oldenburg and 38,498 feet to the
                 north; Varel lies 16,120 feet west and 92,568 feet north of Oldenburg; and Varel lies 13,140 feet west
                 and 54,070 feet north of Rastede.
                 <br>
@@ -1461,16 +1418,25 @@
                 Continuation to follow.
             </section>
 
-        </main>
-    </div>
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+        </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
-    <script src="functionscript.js"></script>
-    <script src=landes-vermessung1script.js></script>
     <script src="navbarscript.js"></script>
-
-
+    <script src="landes-vermessung1script.js"></script>
 </body>
 
 </html>
