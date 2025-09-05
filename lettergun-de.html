@@ -1,53 +1,40 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeder's breve til Carl von Linné">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contentwidth.css">
+    <meta id="meta" name="description" content="Georg Christian Oeders's Briefe an Johan Ernst Gunnerus.">
 
-
-    <title id="title">Georg Christian Oeder's breve til Carl von Linné</title>
+    <title>Georg Christian Oeders's Briefe an Johan Ernst Gunnerus.</title>
+    <style>
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .asideright, .asideleft{
+            cursor: none;
+        }
+    </style>
 </head>
 
-<body id="dex">
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main>
-            <section>
-                <aside class="asideleft"><img id="imgind" src="./img/gunnerus.jpg">
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap0">
+                <aside class="asideleft"><img id="imgind" src="./img/persons/gunnerus.jpg">
                 </aside>
                 <h2>
                     Breve til Johan Ernst Gunnerus.
@@ -67,17 +54,14 @@
                     </p>
                 </h3>
             </section>
+            </section>
             <section id="chap1">
-                <p>
-                    <br><br>
-                <h2> 27. März 1763, Kopenhagen
-                </h2>
-
                 <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
-                    </a> </aside>
+                    </a></aside>
 
-
+                <p>
+                <h2>27. März 1763, Kopenhagen. </h2>
                 <br>
                 <br> Hochehrwürdiger etc. Herr Bischof!
                 <br>
@@ -210,9 +194,9 @@
                 </h2>
 
 
-                <aside class="asideright" id="frontpageimg2"><a id="link"
+                <aside class="asideright" id="frontpageimg1"><a id="link"
                         href="https://www.ntnu.no/ojs/index.php/DKNVS_skrifter/article/view/1045" target="_blank"><img
-                            id="frontpage2" src="./img/gunnerus2.png">
+                            id="frontpage1" src="./img/covers/gunnerus2.png">
                     </a> </aside>
                 <br>
                 <br> Hochehrwürdiger etc. Herr Bischof, Hochgeschätzter Gönner und Freund!Da das Adresskontor keine
@@ -287,9 +271,9 @@
                 <h2>
                     5. marts 1768, Kopenhagen
                 </h2>
-                <aside class="asideright" id="frontpageimg3"><a id="link"
+                <aside class="asideright" id="frontpageimg2"><a id="link"
                         href="https://www.ntnu.no/ojs/index.php/DKNVS_skrifter/article/view/1020" target="_blank"><img
-                            id="frontpage3" src="./img/gunnerus3.png">
+                            id="frontpage2" src="./img/covers/gunnerus3.png">
                     </a> </aside>
 
                 <br>
@@ -556,14 +540,26 @@
                 </p>
             </section>
 
-        </main>
-    </div>
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+        </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
+    <script src="navbarscript.js"></script>
     <script src="functionscript.js"></script>
     <script src="lettergunscript.js"></script>
-    <script src="navbarscript.js"></script>
 </body>
 
 </html>

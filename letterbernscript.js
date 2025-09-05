@@ -20,8 +20,12 @@ let letterBernContentGerman = [
   " Kopenhagen 23. november 1770.",
 ];
 PrependBrBeforeChap(chapter);
-let img = "./img/letterbern.png";
+let img = "./img/covers/letterbern.png";
 let link = "https://slaegtsbibliotek.dk/924457.pdf#page=593";
+let bioimage = ["avnoe.jpg"];
+let bio = ["kiong"];
+SetBioImage(bioimage);
+
 SetLinkAndImgToFrontpage(link, img);
 
 var path = parent.location.pathname;
@@ -29,16 +33,27 @@ path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "letterbern-dk") {
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, letterBernContentDanish);
+  SetContent(chapter, letterBernContentDanish);
+  SetBio(bio, "DK")
+    infoTxt="Oversat fra tysk."
+
 }
 
 if (path == "letterbern-en") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, letterBernContentEnglish);
+  SetContent(chapter, letterBernContentEnglish);
+    SetBio(bio, "EN")
+    infoTxt= "Translated from German."
+
 }
 
 if (path == "letterbern-de") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, letterBernContentGerman);
+  SetContent(chapter, letterBernContentGerman);
+    SetBio(bio, "DE")
+    infoTxt=" Deutsch Original."
+
+
 }
+
+SetFlora();
+
+document.getElementById("info").innerHTML=infoTxt;

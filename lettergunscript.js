@@ -1,3 +1,7 @@
+let ContentDanish = [];
+let ContentEnglish = [];
+let ContentGerman = [];
+
 let chapter = ["#chap1", "#chap2", "#chap3", "#chap4", "#chap5", "#chap6"];
 let letterBernContentDanish = [
   "1762 27. Marts Kbhvn.",
@@ -23,7 +27,7 @@ let letterBernContentGerman = [
   "1768, 3. Dezember, Kopenhagen  ",
   "1769, 8. Juli, Kopenhagen",
 ];
-let img = "./img/gunnerus1.png";
+let img = "./img/covers/gunnerus1.png";
 let link = "https://www.ntnu.no/ojs/index.php/DKNVS_skrifter/article/view/1019";
 SetLinkAndImgToFrontpage(link, img);
 
@@ -34,16 +38,19 @@ path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "lettergun-dk") {
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, letterBernContentDanish);
+  SetContent(chapter, letterBernContentDanish);
+  infoTxt="Dansk original."
 }
 
 if (path == "lettergun-en") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, letterBernContentEnglish);
+  SetContent(chapter, letterBernContentEnglish);
+  infoTxt="Translated from Danish."
 }
 
 if (path == "lettergun-de") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, letterBernContentGerman);
+  SetContent(chapter, letterBernContentGerman);
+  infoTxt="Von Dänish übersetz"
 }
+SetFlora();
+
+document.getElementById("info").innerHTML=infoTxt;

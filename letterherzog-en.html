@@ -1,54 +1,40 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeders's Letterse to Herzog Peter Friedrich Ludwig">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contentwidth.css">
+    <meta id="meta" name="description" content="Georg Christian Oeders's Letters to Herzog Peter Friedrich Ludwig">
 
-
-
-    <title id="title">Georg Christian Oeders's Letterse to Herzog Peter Friedrich Ludwig</title>
+    <title>Georg Christian Oeders's Letters to Herzog Peter Friedrich Ludwig</title>
+    <style>
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .asideright, .asideleft{
+            cursor: none;
+        }
+    </style>
 </head>
 
-<body id="dex">
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main id="sections">
-            <section>
-                <aside class="asideleft"><img id="imgind" src="./img/Ludwig.jpg">
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap0">
+                <aside class="asideleft"><img id="imgind" src="./img/persons/ludwig.jpg">
                 </aside>
                 <h2>
                     Letters to Peter Friedrich Ludwig , Herzog von Oldenburg.
@@ -62,13 +48,24 @@
                     </p>
                 </h3>
             </section>
+            </section>
             <section id="chap1">
+                <!-- <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a></aside> -->
+                <p>
+
+                    <br><br>
+                <h2>
+                </h2>
+
                 <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
 
+
                 <p>
-                <h2></h2>
+                <h2>Oldenburg, 2nd May 1787.</h2>
                 Serenissimo.
                 Most Gracious Lord!
                 <br>
@@ -109,7 +106,7 @@
                 continue to be enlivened by the grace of his Lord — grant me joy through the most gracious fulfillment
                 of my petition.
                 <br>
-                <br>Oldenburg, 2nd May 1787
+                <br>Oldenburg, 2nd May 1787.
                 <br>In deepest humility,
                 <br>Georg Christian Oeder
                 </p>
@@ -118,7 +115,7 @@
             <section id="chap2">
                 <p>
                 <h2>
-
+Oldenburg, 18 January 1788.
                 </h2>
 
                 P. M.
@@ -165,7 +162,7 @@
                 the instruction of our native public (which, indeed, is truly in need of instruction in many things,
                 especially regarding the mathematical part of the matter), would be lost.
                 <br>
-                <br>Oldenburg, 18 January 1788
+                <br>Oldenburg, 18 January 1788.
                 <br>Most humbly,
                 <br>G. C. Oeder
                 </p>
@@ -174,7 +171,7 @@
             <section id="chap3">
                 <p>
                 <h2>
-
+Oldenburg, 20 January 1788.
                 </h2>
                 <br>P. M.
                 <br>If, in the passage marked B, which currently reads:
@@ -194,7 +191,7 @@
                 <br>
                 <br>With deep gratitude, I acknowledge the gracious attention that has been given to my essay.
                 <br>
-                <br>Oldenburg, 20 January 1788
+                <br>Oldenburg, 20 January 1788.
                 <br>Most humbly,
                 <br>G. C. Oeder
                 </p>
@@ -202,7 +199,7 @@
             <br><br>
             <section id="chap4">
                 <h2>
-
+Oldenburg, January 22nd, 1788
                 </h2>
 
                 <p>
@@ -239,7 +236,7 @@
                     <br>Your High Princely Serene Highness is requested to retain the printed copy.The map was sent to
                     me from Altona.
                     <br>
-                    <br>Oldenburg, the morning of January 22nd, 1788
+                    <br>Oldenburg, the morning of January 22nd, 1788.
                     <br>Most humbly,
                     <br>G. C. Oeder
                 </p>
@@ -247,7 +244,7 @@
             <br><br>
             <section id="chap5">
                 <h2>
-
+18th November 1788.
                 </h2>
                 <p>
                     Most Gracious Sir!Encouraged by the approval with which Your Most Serene Highness has honored my
@@ -294,7 +291,7 @@
                     Mr. Krüdtner has indeed spoken as reported, then it was very premature.
                     <br>
                     <br>With hope for the pardon of my reasoning
-                    <br>18th November 1788
+                    <br>18th November 1788.
                     <br>and with deepest humility,
                     <br>G. C. Oeder
                 </p>
@@ -302,7 +299,7 @@
             <br><br>
             <section id="chap6">
                 <h2>
-
+Oldenburg, 18 February 1790.
                 </h2>
                 <p>
                     Most Reverend and Most SereneBishop and Duke!Gracious Lord!
@@ -335,7 +332,7 @@
                     <br>
                     <br>Gracious Lord!
                     <br>To Your Most Serene Highness
-                    <br>Oldenburg, 18 February 1790
+                    <br>Oldenburg, 18 February 1790.
                     <br>Your most humble servant
                     <br>G. C. v. Oeder
                 </p>
@@ -344,7 +341,7 @@
             </section>
             <section id="chap7">
                 <h2>
-
+3rd November 1790.
                 </h2>
                 <p>
                     Most Gracious Lord,
@@ -381,20 +378,32 @@
                     one who is, in equal measure, both exalted and well-versed – and who, from the outset, may bestow
                     upon it the attention necessary for a thorough perusal to the end.
                     <br>
-                    <br>3rd November 1790
+                    <br>3rd November 1790.
                     <br>Evening, 6 o’clock
                     <br>In deepest humility,
                     <br>GC v. Oeder
                 </p>
             </section>
 
-        </main>
-    </div>
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+        </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
+    <script src="navbarscript.js"></script>
     <script src="functionscript.js"></script>
     <script src="letterherzogscript.js"></script>
-    <script src="navbarscript.js"></script>
 </body>
 
 </html>

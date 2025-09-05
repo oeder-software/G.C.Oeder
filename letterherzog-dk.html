@@ -1,55 +1,40 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"
-        content="Georg Christian Oeders's Breve til Peter Friedrich Ludwig , Herzog von Oldenburg.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contentwidth.css">
+    <meta id="meta" name="description" content="Georg Christian Oeders's Breve til Peter Friedrich Ludwig , Herzog von Oldenburg.">
 
-
-
-    <title id="title">Georg Christian Oeders's Breve til Peter Friedrich Ludwig , Herzog von Oldenburg.</title>
+    <title>Georg Christian Oeders's Breve til Peter Friedrich Ludwig , Herzog von Oldenburg.</title>
+    <style>
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .asideright, .asideleft{
+            cursor: none;
+        }
+    </style>
 </head>
 
-<body id="dex">
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main id="sections">
-            <section>
-                <aside class="asideleft"><img id="imgind" src="./img/Ludwig.jpg">
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap0">
+                <aside class="asideleft"><img id="imgind" src="./img/persons/ludwig.jpg">
                 </aside>
                 <h2>
                     Breve til Peter Friedrich Ludwig , Herzog von Oldenburg.
@@ -63,13 +48,24 @@
                     </p>
                 </h3>
             </section>
+            </section>
             <section id="chap1">
+                <!-- <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a></aside> -->
+                <p>
+
+                    <br><br>
+                <h2>
+                </h2>
+
                 <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
 
+
                 <p>
-                <h2></h2>
+                <h2>Oldenburg, den 2. maj 1787.</h2>
                 <br>
                 <br> Serenissime.Allernådigste Herre!
                 <br>
@@ -118,7 +114,7 @@
             <section id="chap2">
                 <p>
                 <h2>
-
+Oldenburg, den 18. januar 1788.
                 </h2>
 
                 <br>
@@ -166,7 +162,7 @@
                 oplysningen af vores hjemlige publikum, som virkelig i mange henseender, og navnlig hvad angår den
                 matematiske del af sagen, trænger til oplysning – gå tabt.
                 <br>
-                <br>Oldenburg, den 18. januar 1788
+                <br>Oldenburg, den 18. januar 1788.
                 <br>Underdanigst,
                 <br>G. C. Oeder
                 </p>
@@ -175,8 +171,7 @@
             <section id="chap3">
                 <p>
                 <h2>
-
-                </h2>
+Oldenburg, den 20. januar 1788.                </h2>
                 <br>P. M.
                 <br>
                 <br>Hvis man i det med B betegnede sted, som nu lyder:
@@ -196,7 +191,7 @@
                 <br>
                 <br>Med dyb tak anerkender jeg den opmærksomhed, som min afhandling nådigt er blevet skænket.
                 <br>
-                <br>Oldenburg, den 20. januar 1788
+                <br>Oldenburg, den 20. januar 1788.
                 <br>Underdanigst
                 <br>G. C. Oeder
 
@@ -205,7 +200,7 @@
             <br><br>
             <section id="chap4">
                 <h2>
-
+Oldenburg, den 22. januar 1788,
                 </h2>
 
                 <p>
@@ -253,7 +248,7 @@
             <br><br>
             <section id="chap5">
                 <h2>
-
+18. november 1788.
                 </h2>
                 <p>
                     <br>Nådigste Herre!
@@ -299,7 +294,7 @@
                     meget forhastet.
                     <br>
                     <br>I håb om tilgivelse for min ræsonnering
-                    <br>den 18. november 1788
+                    <br>den 18. november 1788.
                     <br>og med dybeste ærbødighed,
                     <br>G. C. Oeder
                 </p>
@@ -307,7 +302,7 @@
             <br><br>
             <section id="chap6">
                 <h2>
-
+Oldenburg, den 18. februar 1790.
                 </h2>
                 <p>
                     <br>
@@ -339,7 +334,7 @@
                     tælling måtte blive et mønster for såvel det udenlandske som det indenlandske publikum.
                     <br>
                     <br>Nådigste Herre!Deres Højvelbårenhed
-                    <br>Oldenburg, den 18. februar 1790
+                    <br>Oldenburg, den 18. februar 1790.
                     <br>Deres underdanigste tjener
                     <br>G. C. v. Oeder
                 </p>
@@ -348,7 +343,7 @@
             </section>
             <section id="chap7">
                 <h2>
-
+3. november 1790.
                 </h2>
                 <p>
                     <br>
@@ -393,13 +388,26 @@
                 </p>
             </section>
 
-        </main>
-    </div>
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+
+        </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
+    <script src="navbarscript.js"></script>
     <script src="functionscript.js"></script>
     <script src="letterherzogscript.js"></script>
-    <script src="navbarscript.js"></script>
 </body>
 
 </html>

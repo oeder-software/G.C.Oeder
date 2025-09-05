@@ -37,7 +37,7 @@ let letterherzogContentGerman = [
   " 3. Nov. 1790.",
 ];
 PrependBrBeforeChap(chapter);
-let img = "./img/175.png";
+let img = "./img/covers/175.png";
 let link = "https://slaegtsbibliotek.dk/2023/935997.pdf#page=41";
 SetLinkAndImgToFrontpage(link, img);
 
@@ -46,16 +46,20 @@ path = path.split("/").pop();
 path = path.split(".").shift();
 
 if (path == "letterherzog-dk") {
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, letterherzogContentDanish);
+  SetContent(chapter, letterherzogContentDanish);
+  infoTxt="Oversat fra tysk."
 }
 
 if (path == "letterherzog-en") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, letterherzogContentEnglish);
+  SetContent(chapter, letterherzogContentEnglish);
+  infoTxt= "Translated from German."
 }
 
 if (path == "letterherzog-de") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, letterherzogContentGerman);
+  SetContent(chapter, letterherzogContentGerman);
+  infoTxt=" Deutsch Original."
 }
+
+SetFlora();
+
+document.getElementById("info").innerHTML=infoTxt;

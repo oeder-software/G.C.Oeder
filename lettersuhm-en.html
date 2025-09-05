@@ -1,54 +1,40 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeders's Letters to Peter Frederik Suhm ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contentwidth.css">
+    <meta id="meta" name="description" content="Georg Christian Oeders's Letters to Peter Frederik Suhm">
 
-
-
-    <title id="title">Georg Christian Oeders's Letters to Peter Frederik Suhm</title>
+    <title>Georg Christian Oeders's Letters to Peter Frederik Suhm</title>
+    <style>
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .asideright, .asideleft{
+            cursor: none;
+        }
+    </style>
 </head>
 
-<body id="dex">
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main id="sections">
-            <section>
-                <aside class="asideleft"><img id="imgind" src="./img/suhm.jpg">
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap0">
+                <aside class="asideleft"><img id="imgind" src="./img/persons/suhm.jpg">
                 </aside>
                 <h2>
                     Letters to Peter Frederik Suhm.
@@ -62,13 +48,14 @@
                     </p>
                 </h3>
             </section>
+            </section>
             <section id="chap1">
                 <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a></aside>
-
-                <p>
-                <h2></h2>
+                <h2>
+                   Copenhagen, the 2nd of January, 1762. 
+                </h2>
 
                 <br>
                 Long since ought I to have waited upon Your Well-born Honour with a Letter, had I thought I might fulfil
@@ -135,7 +122,7 @@
             <section id="chap2">
                 <p>
                 <h2>
-
+7th of August 1762.
                 </h2>
 
                 <br>
@@ -234,7 +221,7 @@
             <section id="chap3">
                 <p>
                 <h2>
-
+Copenhagen, 26 November 1763
                 </h2>
                 I must without delay respond to Your Honour’s much esteemed letter of the 12th instant, with regard to
                 the matter concerning the pamphlet against the farming of customs in the Œconomical Magazine, and have
@@ -331,7 +318,7 @@
             <br><br>
             <section id="chap5">
                 <h2>
-
+17th of April, 1772.
                 </h2>
                 <p>
                     Enclosed with the following promemoria is the aforementioned mémoire. Once my most honoured friend
@@ -346,13 +333,27 @@
                     <br>Oeder
                 </p>
             </section>
-        </main>
-    </div>
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+
+
+        </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
+    <script src="navbarscript.js"></script>
     <script src="functionscript.js"></script>
     <script src="lettersuhmscript.js"></script>
-    <script src="navbarscript.js"></script>
 </body>
 
 </html>

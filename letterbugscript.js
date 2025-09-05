@@ -1,6 +1,6 @@
 document.getElementById("sidebarcontent").style = "cursor: pointer;";
 
-let letterBugImg = ["ryberg.jpg", "moltke1.png", "Wessel.jpg", "jupiter.jpg"];
+let letterBugImg = ["ryberg.jpg", "moltke1.png", "wessel.jpg", "jupiter.jpg"];
 let letterBugAlt = [
   "Niels Ryberg",
   "Adam Gotlob Moltke",
@@ -49,49 +49,52 @@ let letterBugContentGerman = [
 ];
 PrependBrBeforeChap(chapter);
 
-SetLetterBugImg(letterBugImg, letterBugAlt);
+SetBioImage(letterBugImg);
 let letterBugBio = ["ryberg", "Moltke", "Wessel", "jupiter"];
-document.getElementById("bio2").setAttribute("height", "fit-content");
-document.getElementById("bio3").setAttribute("height", "fit-content");
-document.getElementById("bio4").setAttribute("height", "fit-content");
-document.getElementById("bio5").setAttribute("height", "fit-content");
+// document.getElementById("bio2").setAttribute("height", "fit-content");
+// document.getElementById("bio3").setAttribute("height", "fit-content");
+// document.getElementById("bio4").setAttribute("height", "fit-content");
+// document.getElementById("bio5").setAttribute("height", "fit-content");
 
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 
-if (path == "letterbugdk") {
-  SetContent(contentdanish);
-  SetLetterBugBio(letterBugBio, "DK");
-  SetAlifeContent(chapter, letterBugContentDanish);
+if (path == "letterbug-dk") {
+  SetBio(letterBugBio, "DK");
+  SetContent(chapter, letterBugContentDanish);
+  infoTxt="Oversat fra tysk."
 }
 
-if (path == "letterbugen") {
-  SetContent(contentenglish);
-  SetLetterBugBio(letterBugBio, "EN");
-  SetAlifeContent(chapter, letterBugContentEnglish);
+if (path == "letterbug-en") {
+  SetBio(letterBugBio, "EN");
+  SetContent(chapter, letterBugContentEnglish);
+  infoTxt= "Translated from German."
 }
 
-if (path == "letterbugde") {
-  SetContent(contentgerman);
-  SetLetterBugBio(letterBugBio, "DE");
-  SetAlifeContent(chapter, letterBugContentGerman);
+if (path == "letterbug-de") {
+  SetBio(letterBugBio, "DE");
+  SetContent(chapter, letterBugContentGerman);
+  infoTxt=" Deutsch Original."
 }
 
-function SetLetterBugBio(bio, language) {
-  for (let index = 0; index < bio.length; index++) {
-    document
-      .getElementById("bio" + (index + 2))
-      .setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
-  }
-}
-function SetLetterBugImg(img, alt) {
-  for (let index = 0; index < img.length; index++) {
-    document
-      .getElementById("img" + (index + 2))
-      .setAttribute("src", "./img/" + img[index]);
-    document
-      .getElementById("img" + (index + 2))
-      .setAttribute("alt", alt[index]);
-  }
-}
+// function SetLetterBugBio(bio, language) {
+//   for (let index = 0; index < bio.length; index++) {
+//     document
+//       .getElementById("bio" + (index + 2))
+//       .setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
+//   }
+// }
+// function SetLetterBugImg(img, alt) {
+//   for (let index = 0; index < img.length; index++) {
+//     document
+//       .getElementById("img" + (index + 2))
+//       .setAttribute("src", "./img/persons/" + img[index]);
+//     document
+//       .getElementById("img" + (index + 2))
+//       .setAttribute("alt", alt[index]);
+//   }
+// }
+
+document.getElementById("info").innerHTML=infoTxt;
+SetFlora();
