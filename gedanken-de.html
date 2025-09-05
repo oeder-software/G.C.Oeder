@@ -1,75 +1,42 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeder. Gedanken über das PapirGeld. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
+    <meta  id="meta" name="description" content="Georg Christian Oeder - Gedanken über das PapirGeld.">
 
+    <title>Georg Christian Oeder - Gedanken über das PapirGeld.</title>
     <style>
-        #sidebar {
-            font-size: 0.5rem;
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
     </style>
-    <title id="title">Georg Christian Oeder. Gedanken über das PapirGeld.</title>
 </head>
 
-<body id="dex">
-    <!-- <script src="test2.js"></script> -->
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main onclick="closeSidebar();">
+        <article id="article" onclick="CloseSidebarMenu()">
+                        <section id="chap0"></section>
+
             <section id="chap1">
-                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
-                <!-- <script>var a = document.createElement("aside");
-                    a.setAttribute("class", "asideright");
-                    a.setAttribute("id", "chap1-aside");
-                    document.getElementById("chap1").appendChild(a);
-                    var a = document.createElement("a");
-                    a.setAttribute("href", "google.dk");
-                    a.setAttribute("id", "aside-a");
-                    document.getElementById("chap1-aside").appendChild(a);
-                    var a = document.createElement("img");
-                    a.setAttribute("id", "imgind");
-                    a.setAttribute("src", "./img/stats-47-munzen.png");
-                    document.getElementById("aside-a").appendChild(a);
-                </script> -->
-                <!-- <script src="munzenscript.js"></script> -->
+
                 <h2>
 
 
@@ -148,7 +115,7 @@
                     Zettel Inhaber, daß man die Stats Bank nicht gleich einem PrivatManne zwingen kan, ist dann die
                     nämliche; man zwingt eine solche Bank, welche den Stat zum Debitor und Rückhalt hat, eben wenig.
 
-                    <h3>10</h3>.
+                    <h3>10.</h3>
                     Ein anderer zu bedenkender Umstand ist die Aechtheit der Zettel. Ohne Zweifel kann alles, was
                     MenschenHände machen, von MenschenHänden auch nachgemacht werden; die Beispiele von Hammond in
                     Dänemark, und von Charles Price in England, haben gezelget, daß falsche Zettel waren so änlich seyn
@@ -164,7 +131,7 @@
                     beruhigen, hat der geschickte und vorsichtige Betrüger gewonnen Spiel. Dies möchten die Staten,
                     welche PapirGeld zulassen, wol etwas mer beherzigen.
 
-                    <h3>11</h3>.
+                    <h3>11.</h3>
                     Zur völlig befriedigenden Zuverlässigkeit des Wertes der Zettel wird erfodert, daß für jeden Zettel
                     bie Sache, deren Zeichen er ist, wirklich in der Natur, nicht in der Idee, bei seiner Ausfertigung
                     vothanden gewesen ist, und wenn es gefodert wird, so fort an die Stelle des Zeichens tretten kann;
@@ -174,7 +141,7 @@
                     Umlaufe der Zettel, und der ihnen entsprechenden Valute, beruhet, und sich sonst kein Grund für die
                     Aussteller der Zettel zu Errichtung einer folchen Bank, gedenken låßt.
 
-                    <h3>12</h3>.
+                    <h3>12.</h3>
                     Das Wesen der neuern ZettelBanken bestehet, eingestandener masen, darinn, daß ein Fond von
                     klingender Münze niedergelegt, dagegen aber ein ZettelQuantum, einigemal so groß als der Fond,
                     ausgegeben, und in Umlauf gebracht wird. Der Ueberschuß des ZettelQuanti über den Fond ist ein
@@ -182,7 +149,7 @@
                     solchen Bank, welche zu diesem Ueberschusse gehören, haben von ihrem Ursprunge an, keine ihnen
                     entsprechende wirkliche, sondern blos eine idealische Valuta.
 
-                    <h3>13</h3>.
+                    <h3>13.</h3>
                     Die Englische Bank, von welcher, als älteren, der Existenz nach, besagte neuere den Gebrauch des
                     PapirGeldes gelernt haben, gibt so viel man weiß, keinen Zettel anderst aus, als für erhaltene
                     Valuta, und ist in so fern von den so ebengenannten neuern ZettelBanken, in Absicht auf die Umstände
@@ -191,7 +158,7 @@
                     Valuta, andrerseits der ZettelInhaber sein für prästirte Valuta empfangenes Papir, in Umlauf
                     bringen, und aiso immer Sache und Zeichen zugleich in Umlauf geraten.
 
-                    <h3>14</h3>.
+                    <h3>14.</h3>
                     Es wird, sage ich, und wiederhole es, well dieses der Houptsatz ist, von welchem alle Betrachtungen
                     über PapirGeld ausgehen müssen, es wird zur völlig befriedigenden Zuverlässigkeit des Wertes des
                     PapirGeldes erfodert, daß die Sache jedesmal, wenn es verlanget wird, sofort an die Stelle des
@@ -204,7 +171,7 @@
                     besorgen, daß er doch einmal unabhilflich eintreten wird: und Staten, welche nicht die HilfsMittel
                     haben, welche England hat, möchten sich wol bedenken, ehe sie Englands Beispiel folgen.
 
-                    <h3>15</h3>.
+                    <h3>15.</h3>
                     Wenig schadet freilich wenig, und dle Substitutionon des Zeichens statt der Sache, ist bis auf eine
                     gewisse Weite tunlich, ja selbst mit einigem anscheinenden Vorteile; aber der Reiz dieses
                     anscheinenden Vorteils ist so verfürerisch, daß nur allzusehr, wie auch die Erfarung zeiget, immer
@@ -215,7 +182,7 @@
                     daß Regirungen, bei den mancheriei Verlegenheiten, worein Regirungen mit und one ihre Schuld so oft
                     kommen, zu diesem HilfsMittel greifen?
 
-                    <h3>16</h3>.
+                    <h3>16.</h3>
                     Besonders ist die Kostbarkeit des KriegsWesens neuerer Zeiten, eine Ursache des immer mer zunemenden
                     Gebrauches des PapirGeldes. Die Weise Krieg zu füren in neuern Zeiten, erfodert einen Aufwand, der
                     sich bei den onehin in den meisten Ländern schon in FriedensZeiten hochgespannten Auflagen, so
@@ -236,7 +203,7 @@
                     England macht es die Bank, spielt sich durch dessen Substitution reicher Leute Barschaften in die
                     Hände, und hilft damit, und auch mit einem Teile des PapirGeldes, der Regirung aus.
 
-                    <h3>17</h3>.
+                    <h3>17.</h3>
                     One mich auf umständliche Beleuchtung der, enblich auch genug erkannten, Unzuträglichkeiten des im
                     Umlaufe angehäuften PapirGeldes, einzulassen, will ich nur einige Betrachtungen hersetzen, die
                     besonders den weg zu Masregeln zu Abhelfung des Uebels banen. Iste Betrachtung. Nur das ist Geld,
@@ -560,16 +527,25 @@
                         <br></i>
                     <br>Den 30 Oсt. 1790. G. C. von Oeder
                 </section>
-        </main>
-    </div>
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+        </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
-    <script src="functionscript.js"></script>
-    <script src="gedankscript.js"></script>
     <script src="navbarscript.js"></script>
-
-
+    <script src="gedankenscript.js"></script>
 </body>
 
 </html>

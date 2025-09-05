@@ -1,4 +1,4 @@
-let bedenkenContentDanish = [
+let ContentDanish = [
   "Om titlen: Frihed og Ejendom.",
   " Spørgsmålet, som jeg vover at drøfte, er et sandt stridsspørgsmål.",
   "Jeg undlader bevidst de moralske argumenter.",
@@ -26,7 +26,7 @@ let bedenkenContentDanish = [
   "Et overskud af arbejdskraft fra bøndernes stand.",
   "At forfatningen af bondeklassen måtte stemme overens med dette store formål.",
 ];
-let bedenkenContentEnglish = [
+let ContentEnglish = [
   "On the Title: Freedom and Property.",
   "The question, which I dare to discuss, is a true matter of controversy.",
   "I deliberately refrain from moral arguments.",
@@ -54,7 +54,7 @@ let bedenkenContentEnglish = [
   "An Excess of Labor from the Peasant Class.",
   "That the constitution of the peasantry may align with this great purpose.",
 ];
-let bedenkenContentGerman = [
+let ContentGerman = [
   "Auf dem Titel: Freyheit und Eigenthum.",
   "Die Frage, an deren Erörterung ich mich wage, ist eine wahre Streitfrage.",
   "Ich enthalte mich geflissentlich der moralischen Gründe.",
@@ -110,41 +110,29 @@ let chapter = [
   "#chap27",
   "#chap28",
 ];
+
 PrependBrBeforeChap(chapter);
 
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
-
-if (path == "bedenkenadditiondk") {
-  SetALink(3, 68);
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, bedenkenContentDanish);
+let infoTxt= "";
+if (path == "bedenkenaddition-en") {
+  infoTxt= "Translated from German."
+  SetContent(chapter, ContentEnglish);
 }
-if (path == "bedenkenadditionen") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, bedenkenContentEnglish);
-  SetALink(3, 68);
+if (path == "bedenkenaddition-de") {
+  infoTxt=" Deutsch Original."
+  SetContent(chapter, ContentGerman);
 }
-if (path == "bedenkenadditionde") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, bedenkenContentGerman);
-  SetALink(3, 68);
+if (path == "bedenkenaddition-dk") {
+  infoTxt="Oversat fra tysk."
+  SetContent(chapter, ContentDanish);
 }
-let img = "./img/bedenkenzusats.png";
+let img = "./img/covers/bedenkenzusats.png";
 let link =
   "https://www.google.dk/books/edition/Bedenken_%C3%BCber_die_Frage_Wie_dem_bauerns/-gluJmCBKOMC?hl=da&gbpv=1&dq=&pg=PA75&printsec=frontcover";
 SetLinkAndImgToFrontpage(link, img);
 
-function SetALink(start, end) {
-  for (let index = start; index < end; index++) {
-    document
-      .getElementById("a" + index)
-      .setAttribute(
-        "href",
-        "https://www.google.dk/books/edition/Zus%C3%A4tze_zu_dem_Bedenken_%C3%BCber_die_Frage/2EalGGmOXRMC?hl=da&gbpv=1&dq=Zus%C3%A4tze+zu+dem+bedenken+%C3%BCber&pg=PA" +
-          index
-      );
-    document.getElementById("a" + index).setAttribute("target", "_blank");
-  }
-}
+document.getElementById("info").innerHTML=infoTxt;
+SetFlora();

@@ -1,57 +1,31 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian von Oeders Oldenburger Zeit">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
+    <meta id="meta" name="description" content="Georg Christian von Oeders Oldenburger Zeit. Zur Erinnerung an seinen Todestag vor 175 Jahren.">
 
+    <title>Georg Christian von Oeders oldenborgske tid. Til minde om hans dødsdag for 175 år siden.</title>
     <style>
-        #sidebar {
-            font-size: 0.5rem;
-        }
     </style>
-    <title id="title">Georg Christian von Oeders Oldenburger Zeit</title>
-</head>
-
-<body id="dex">
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+        </head>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
-        </div>
-
-    </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
-        </aside>
-        <main onclick="closeSidebar();">
-            <section id="chap1">
+    <nav class="navbar" id="navbar">
+    <div class="sidebar">
+        <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+    <img src="./img/buttons/menubut1.png" alt="menu" class="side" ></a>
+    <a id="sidebarcontent"  onclick="CloseSidebarMenu(); OpenSidebarContent()">
+        <img src="./img/buttons/content.png" alt="content" class="side"></a>
+</div>
+</nav>
+    <main >
+        <aside  id="asideleftimg" onclick="CloseSidebarMenu()">
+    </aside>
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap0">
                 <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
@@ -111,9 +85,9 @@
             <section id="chap1">
                 <h3 id="kap1"></h3>
                 Im Jahre 1793 veröffentlichte der oldenburgische Schriftsteller und Jurist Gerhard Anton v. Halem
-                ein heute fast verschollenes Büchlein, das den Titel trägt: Andenken an Oeder1). Das Buch ist seinem
-                langjährigen Freunde und Hausgenossen Georg Christian von Oeder gewidmet, einem Manne, dessenGestalt
-                der dänischenGeschichtsforschung höchst lebendig ist, den die allgemeine deutsche Geschichte aber
+                ein heute fast verschollenes Büchlein, das den Titel trägt: Andenken an Oeder. Das Buch ist seinem
+                langjährigen Freunde und Hausgenossen Georg Christian von Oeder gewidmet, einem Manne, dessen Gestalt
+                der dänischen Geschichtsforschung höchst lebendig ist, den die allgemeine deutsche Geschichte aber
                 fast vergessen hat, obwohl er den gebildeteren unter seinen deutschen Zeitgenossen ein fester
                 Begriff war und mit vielen von ihnen in enger Verbindung stand. Im Oldenburgischen hat man seiner
                 noch gelegentlich gedacht, sogar eine Straße nach ihm benannt. Aber seine Bedeutung auch für die
@@ -151,7 +125,7 @@
                 gerecht werden konnte, einen Aufsatz, der auch ein kurzes Lebensbild brachte. Und nach dem 2.
                 Weltkriege hat die große neue Geschichte Schleswig-Holsteins sich mit ihm beschäftigt. Auch die
                 Geschichte des Sparkassenwesens konnte nicht an ihm vorübergehen, und die Geschichte des
-                Vermessungswesens nennt seinen Namen*). Die letzte Würdigung aber seiner wohl bedeutendsten
+                Vermessungswesens nennt seinen Namen. Die letzte Würdigung aber seiner wohl bedeutendsten
                 Tätigkeit, nämlich seines Einflusses auf die Bauernbefreiung in Dänemark, stammt doch wieder aus
                 dänischer Feder1.
 
@@ -180,7 +154,7 @@
                 Begegnungen aus allen Lebensgebieten, in denen ihm etwas auffiel, besonders aber aus den Gebieten
                 der Staats- und Finanzverwaltung, der Kameralistik, der Statistik und des Wirtschaftslebens zu
                 schicken; nur ein Bruchteil dieser Berichte ist jemals gedruckt worden, es scheint, daß in dem heute
-                verschollenen Nachlaß Oeders sich manches erhalten hatte“).
+                verschollenen Nachlaß Oeders sich manches erhalten hatte.
                 <br>
                 <br>Auch der Zoologie wandte sich Oeder in diesen Jahren zu, wenn er sich auch weiter vorwiegend als
                 Botaniker fühlte. So schrieb er 1762 an seinen Freund Peter Friedrich von Suhrn in Drontheim1: „Als
@@ -193,8 +167,8 @@
                 als von der allgemeinen Naturlehre, einige Kenntniß. Ausserdem bin ich mit Norwegens Lage und
                 Naturvermögen, als weitbereister Mann, ziemlich bekannt . . .“
                 <br>
-                <br>Wie weit damals sein Interessenkreis ging, ergibt sich auch aus einem anderen Briefe an Suhrn
-                aus dem Jahre 17631*), in dem er sich dagegen wehrt, als der Verfasser eines anonymen Aufsatzes über
+                <br>Wie weit damals sein Interessenkreis ging, ergibt sich auch aus einem anderen Briefe an Suhm
+                aus dem Jahre 1763, in dem er sich dagegen wehrt, als der Verfasser eines anonymen Aufsatzes über
                 die Zollverpachtung in Drontheim angesehen zu werden. Das Zollpachtsystem war damals noch
                 allenthalben üblich. Oeder aber vertritt klar den Standpunkt, „daß sowol Zölle, als andre
                 Staats-Einkünfte, vortheilhafter durch Staatsbedienstete eingehoben, als verpachtet werden“. Er
@@ -381,9 +355,9 @@
                 anvertraute. Zwei davon gehören zu den berühmtesten ihrer Zeit, die dritte wurde von seinem Freunde
                 Gerhard Anton von Halem betreut, die vierte erschien erst kurz vor seinem Tode zum ersten Male. Es
                 sind: das .Deutsche Museum“ von Heinrich Christian Boie und Christian Wilhelm Konrad von Dohm,
-                dessen ausgesprochenes Ziel es war, .die Deutschen mit sich selbst bekannter“ zu machen“), und das
+                dessen ausgesprochenes Ziel es war, .die Deutschen mit sich selbst bekannter“ zu machen“, und das
                 einen so großen Erfolg hatte, daß es in kurzer Zeit zahlreiche Nachahmer fand; ferner August Ludwig
-                von Schlözers .Staatsanzeigen“44), jene in ganz Europa gelesene kritische, staatspolitische und
+                von Schlözers "Staatsanzeigen“, jene in ganz Europa gelesene kritische, staatspolitische und
                 staatswirtschaftliche Zeitschrift, welche die größte Auflage in ihrer Zeit hatte und welche
                 nachzuahmen im Deutschland des ancien régime niemand imstande war, da nur in Göttingen die dafür
                 notwendige Zensurfreiheit und die überragende Persönlichkeit eines Herausgebers wie Schlözer
@@ -404,7 +378,7 @@
                 Oeder während seiner Oldenburger Zeit veröffentlichte und die den Viehseuchen gewidmet waren, mit
                 denen er sich im Auftrage der dänischen Regierung hatte beschäftigen müssen. 1776 erschienen seine
                 Arbeiten „Über die Inokulation der Hornviehseuche und „Erinnerungen bey der in vorgedrukter Schrift
-                des Firn. Hofmedikus Tode stehenden Geschichte“48). Beide sind Reminiszenzen seiner dänischen Zeit,
+                des Hrn. Hofmedikus Tode stehenden Geschichte. Beide sind Reminiszenzen seiner dänischen Zeit,
                 in beiden steckt auch ein großes Stück Bestreben, sich zu rechtfertigen und die eigene Leistung in
                 das rechte Licht zu setzen. Nichtsdestoweniger sind sie Beispiele streng methodischen Denkens in
                 einer Zeit, in der das noch keineswegs selbstverständlich war, in der vielmehr, wie etwa die
@@ -530,7 +504,7 @@
                 jemand anders die Erhebung fortführe, „als eine Erfahrung, die sonst vorerst nicht zu haben ist.
                 <br>
                 <br>Oeder hat dann verschiedene Witwenkassen, so die Calenbergische, die Bremer, die neue dänische
-                und die preußische untersucht") und bei vielen festgestellt, daß ihre Grundlagen nicht richtig
+                und die preußische untersucht und bei vielen festgestellt, daß ihre Grundlagen nicht richtig
                 berechnet waren. Er hat auch immer wieder Ansätze gemacht, die Süßmilchschen Mortalitätstabellen,
                 die Grundlage aller Versicherungsmathematik der Zeit, zu verbessern. Er erarbeitete sich dabei
                 Grundeinsichten, die im 19. Jahrhundert Gemeingut jeder Versicherung wurden. So stellte er fest,
@@ -546,7 +520,7 @@
                 <br>
                 <br>Für die Witwenkassen fordert Oeder, der Anhänger der freien Wirtschaft und des freien Handels,
                 die Gewährleistung des Staates, nicht in bezug auf das „Gleichgewicht zwischen Mittel und Zweck, auf
-                die Hinlänglichkeit der Einnahme zur Ausgabe“08), wohl aber für die Sicherheit des Vermögens und die
+                die Hinlänglichkeit der Einnahme zur Ausgabe, wohl aber für die Sicherheit des Vermögens und die
                 .Aufrechterhaltung der Ordnung“. Andererseits erwartet er aber auch vom Staat, daß er das gesammelte
                 Vermögen wirklich treuhänderisch verwalte und nicht etwa selbst daraus Nutzen zu ziehen suche.
                 <br>
@@ -587,7 +561,7 @@
                 Feststellung über die Bevölkerungszahlen, die der Boden vor der Industrialisierung zu nähren und zu
                 tragen imstande war.
                 <br>
-                <br> Eine andere kleine Arbeit, über die Methode, die Fläche von Staaten zu berechnen71), wurde
+                <br> Eine andere kleine Arbeit, über die Methode, die Fläche von Staaten zu berechnen, wurde
                 schon von v. Halem als nicht ganz stichhaltig empfunden. Oeders Idee bestand darin, die Landkarten
                 aus gleichmäßig dickem und schwerem Papier auszuschneiden und dann zu wiegen, nachdem man vorher ein
                 Quadrat des Grundmaßes genau ausgewogen hat. So wäre es möglich, die gezackten und unregelmäßigen
@@ -670,7 +644,7 @@
                 isländischen, farroeischen und finnmarkischen eigenthümlichen Handels wäre, und der Sitz eines
                 Entrepots-Handels nach Archangel werden könnte“. Das Vorhandensein von Bürgertum, Handel und Gewerbe
                 belebe auch das Bauerntum, „wo erst eine beträchtliche Bransche des bürgerlichen Gewerbes seinen
-                Sitz genommen hat, da werden auch Wüsten fruchtbar“88). Tausch sei wichtig, sdineller Tausch erspare
+                Sitz genommen hat, da werden auch Wüsten fruchtbar. Tausch sei wichtig, sdineller Tausch erspare
                 Zeit, „dieses unerkannte, so wenig nach Würden geschätzte Gut“. An Freiheit, Eigentum und Zeit
                 mangele es aber vor allem den Bauern — hier werden Gedanken des Vorkämpfers für die Bauernbefreiung
                 sichtbar. Zeitverlust trete aber auch durch die langen Reisen beim Vertrieb der Erzeugnisse ein, so
@@ -834,12 +808,12 @@
                 diesmal nach der zweiten Auflage, in der die Tabellen verbessert worden waren.
                 <br>
                 <br> Aus dem Jahre 1785 schließlich liegt uns ein ungedrucktes Manuskript über die Frage des
-                Kanalbaues durch Schleswig-Holstein, die seit Anfang der 70er Jahre die Gemüter heftig bewegte117),
+                Kanalbaues durch Schleswig-Holstein, die seit Anfang der 70er Jahre die Gemüter heftig bewegte,
                 vor. Auch die „Patriotische Gesellschaft“ in Hamburg, der Oeder ja, wie wir sahen, nahestand,
                 befaßte sich mit der Frage eines Alster-Trave-Kanals, also einer Schiffsverbindung zwischen Nordsee
                 und Ostsee. Oeders Schrift stimmt inhaltlich überein mit einem Gutachten, das er schon im Sommer
                 1776, also als mit dem Kanalbau noch nicht begonnen worden war, dem Statthalter Prinz Karl von
-                Holstein11*) überreicht hatte. Auch hier sieht man wieder, daß die gleichen Ideen Oeder über viele
+                Holstein überreicht hatte. Auch hier sieht man wieder, daß die gleichen Ideen Oeder über viele
                 Jahre hinweg verfolgten.
                 <br>
                 <br> Grundsätzlich steht Oeder der Idee einer Kanalverbindung zwischen Nordsee und Ostsee ablehnend
@@ -964,7 +938,7 @@
                 <br>
                 <br> Den Nutzen der Kartierung sieht Oeder für den Fürsten darin, daß er sein Land überschauen
                 könne. Man solle sich keine Sorgen machen, „als wenn diese Unternehmung andere als wohlthätige
-                Absichten haben könnte'1"). Es ist dieses der Hauptpunkt des Briefwechsels zwischen Oeder und dem
+                Absichten haben könnte. Es ist dieses der Hauptpunkt des Briefwechsels zwischen Oeder und dem
                 Herzog da die Einwohner gegenüber der neuen Maßnahme offenbar doch recht mißtrauisch sind.
                 <br>
                 <br> Oeder gibt auch einige Erläuterungen über seine Vorstellungen von der weiteren inneren
@@ -1005,7 +979,7 @@
                 <br>
                 <br> Im ganzen hat Oeder mit der oldenburgischen Landesvermessung eine sehr nützliche Arbeit
                 geleistet, und das im Staatsarchiv beruhende Exemplar der Vogteikarte, nach dem gerade ein Neudruck
-                im Maßstab 1:25 000 im Erscheinen begriffen ist104), ist eine schöne Leistung oldenburgischer
+                im Maßstab 1:25 000 im Erscheinen begriffen ist, ist eine schöne Leistung oldenburgischer
                 Kartographie im ausgehenden 18. Jahrhundert — eine Leistung, die freilich ohne Oeder vor der Epoche
                 der französischen Revolution und Napoleons kaum zustande gekommen sein dürfte.
 
@@ -1024,7 +998,7 @@
                 Stiftsamtmannsstelle, einer gewiß ansehnlichen, beygelegt worden.“
                 <br>
                 <br> Der Dirigierende Minister Graf Holmer hebt denn auch in einem Pro Memoria an Herzog Peter
-                Friedrich Ludwig vom 7. Februar 17891“) diese Seite von Oeders Wesen deutlich heraus: „Das
+                Friedrich Ludwig vom 7. Februar 1789 diese Seite von Oeders Wesen deutlich heraus: „Das
                 auffallend einseitige der Grundsäzze in dieser Vorstellung bedarf gewiß SrH.D. Menschenkennender
                 Nachsicht: aber mit solcher werden Sie auch nur die übertriebne ängstliche Besorgniß des Verfassers
                 zu beurtheilen geruhen, daß ihm etwas von demjenigen Einkommen entzogen werden möge, welches ihm
@@ -1040,7 +1014,7 @@
                 die Gerichtszimmer stellen. Noch einmal wehrt er sich am 15. März 1789 gegen angebliche
                 Schlechterstellung. In einem wiederum sieben Seiten langen Schreiben beklagt er sich darüber, daß
                 die Pension der Witwe seines Amtsvorgängers Günther in Höhe von 100 Rtl. nach deren Tode nicht an
-                ihn zurückfallen soll1*8). Aber die Resolution, die er am 27. März darauf erhält, ist nur sehr kurz
+                ihn zurückfallen soll. Aber die Resolution, die er am 27. März darauf erhält, ist nur sehr kurz
                 und knapp und lautet dahingehend, „daß bey der für ihn ausgesetzten so sehr beträchtlichen stehenden
                 Besoldung“ es nunmehr dabei bleibt.
                 <br>
@@ -1089,14 +1063,14 @@
                 Hindernisse in den Weg legt, ich fordere sie auf, zu zeigen, ob ihre ängstlichen Künsteleien
                 irgendwo das ausrichten, was die allmächtige Freiheit überall von Altona bis Canton ungezwungen und
                 richtig bewirket; und ich bleibe bei meinem Grundsätze: Wenig Zuthun der Regierung beim Gewerbe der
-                Unterthanen, äusser Schutz und Gerechtigkeit, und desto mehr Freiheit“148). Also, auf einen Satz
+                Unterthanen, äusser Schutz und Gerechtigkeit, und desto mehr Freiheit. Also, auf einen Satz
                 gebracht: Volle Freiheit in Handel und Gewerbe, beschränkte Freiheit in der Publizistik. Man wüßte
                 gern, ob diese Sätze auch schon in den Manuskripten von 1769 gestanden haben oder ob sie erst bei
                 der Überarbeitung für den Druck aufgenommen wurden.
                 <br>
                 <br> Dieser größeren Freiheit in der Wirtschaft steht aber bei Oeder durchaus ein Ausbau gewisser
                 Planungen in anderen Bereichen des Staatslebens gegenüber, wie auch andernorts schon gezeigt werden
-                konnte148). So entwickelt Oeder einen „Plan zur Zählung der Menschen im Staate“, der recht modern
+                konnte. So entwickelt Oeder einen „Plan zur Zählung der Menschen im Staate“, der recht modern
                 anmutet. Die Volkszählungen sollen planmäßig alle 5 oder 10 Jahre wiederholt werden. Formulare
                 sollen für die Hauswirte und für die Parteien ausgegeben werden; Oeder entwickelt Muster dazu.
                 Ebenso sollen die „Collecteure“ besondere Formulare zum Zusammenfassen der Ergebnisse ihres
@@ -1142,12 +1116,12 @@
                 <h3 id="kap14"></h3>
 
                 Auch der 1790 erschienene Aufsatz über das Militärwesen in Dänemark, 1767 entstanden, jetzt erst
-                veröffentlicht117), behandelte grundsätzliche Probleme, diesmal nicht des Wirtschaftslebens, sondern
+                veröffentlicht, behandelte grundsätzliche Probleme, diesmal nicht des Wirtschaftslebens, sondern
                 der Außen- und Innenpolitik. Und wiederum fällt auf, wie modern dieser Mann dachte. Schon die
                 Bestimmung des Staatszwedtes wird in einer Weise definiert, die zumindest bis an den Rand des ersten
                 Weltkrieges Geltung besaß: „Die erste Sorge eines Staats und eines Königs muß seyn, seine
                 independente Existenz, in Ansehung der Weltläufte und Nachbarn, zuverläßig zu machen, und auf
-                eigenthümliche innere Kräfte des Staates zu gründen“118). Um diese inneren Kräfte geht es nun. Ein
+                eigenthümliche innere Kräfte des Staates zu gründen. Um diese inneren Kräfte geht es nun. Ein
                 Berufsheer lehnt Oeder ab. Mit geworbenen Kräften könne die Existenzsicherung des Staates nicht
                 erreicht werden. „Also müssen wir die nöthige Kräfte bey der Nation in ihrem Innern aufsuchen. Die
                 National-Truppen müssen das Hauptwerk, die geworbenen eine Nebensache seyn“. Er weist auf das
@@ -1211,7 +1185,7 @@
                 Nahrungs-Wege der Unterthanen, welche der Regierung obliegt, ein besonderes Departement vorhanden
                 seyn müsse“ . Also Abtrennung der „Oeconomica publica“ und der „Polizei“ vom eigentlichen
                 Kameralwesen wird angestrebt, eine Entwicklung, die mit der Errichtung von Kommerzkollegien in
-                dieser Zeit an vielen Stellen eingeleitet wurde170). Oeder will aber auch die Finanzgeschäfte und
+                dieser Zeit an vielen Stellen eingeleitet wurde. Oeder will aber auch die Finanzgeschäfte und
                 die Kammergeschäfte voneinander trennen und definiert dazu sehr genau: „Finanz-Geschäfte sind: die
                 Anwendung der Einkünfte des Staates; die allgemeine Aufsicht über die Quellen der Einkünfte; die
                 Modificationen der vorhandenen Regeln und Vorschriften, und die Einführung neuer. Kammer-Geschäfte
@@ -1325,7 +1299,7 @@
                 des Siebenjährigen Krieges zu diesem Mittel nicht gegriffen hat. Auf keinen Fall dürfe man
                 Papiergeld ausgeben, um eine Differenz zwischen höheren Ausgaben und niedrigeren Einnahmen
                 auszugleichen, „sondern es ist in dieser Hinsicht die Erfindung des PapierGeldes die bedenklichste
-                und mißlichste Erfindung, auf die man je im Finanzwesen fallen konnte“1“). Denn Papiergeld
+                und mißlichste Erfindung, auf die man je im Finanzwesen fallen konnte. Denn Papiergeld
                 emittieren sei Schuldenmachen. Es sei ein so bequemer Ausweg, wenn Geld zu beschaffen nötig scheine.
                 Die Vorstellung, daß diese Art von Schuld keine Zinsen trage, bringe es mit sich, „daß sie, mit
                 Einschläferung des Gedankens an die Zukunft, zu einer Bereitwilligkeit zu Ausgaben füret, — zu
@@ -1367,7 +1341,7 @@
                 denn „Der Wert des Zeichens beruhet in der Gewißheit der Erfüllung der Zusage“. Im Gegensatz zum
                 Papiergeld aber seien die Edelmetalle in der ganzen zivilisierten Welt als Wertmesser anerkannt,
                 „und durch die Unnachahmbarkeit ihrer Substanz, sind sie gegen unentdeckbare Verfälschungen
-                gesichert“. Der Wert des Papiergeldes aber, „an dem die Substanz nichts, die Form alles ist“m),
+                gesichert“. Der Wert des Papiergeldes aber, „an dem die Substanz nichts, die Form alles ist,
                 beruhe nur auf der „Opinion“, dem Vertrauen. Durch Zwangseinführung werde er sofort untergraben.
                 <br>
                 <br>Die Frage, ob Privatbanken oder Staatsbanken besser seien, erscheint ihm nicht mehr so
@@ -1390,7 +1364,7 @@
                 Zahlungsmittel umgewandelt worden waren: Papiergeld als ungedeckte Zwangswährung. Oeders Tod
                 verhinderte eine weitere Auseinandersetzung mit der Finanzpolitik in Frankreich. Er erlebte nicht
                 mehr die Richtigkeit seiner Theorien, die Inflation, die 1793 dadurch unausweichlich wurde, daß man
-                zur Kriegsfinanzierung die Notenpresse in Bewegung setzte1*8). Es ist aber doch nicht ohne
+                zur Kriegsfinanzierung die Notenpresse in Bewegung setzte. Es ist aber doch nicht ohne
                 Interesse, wie der alte Mann in seinen letzten Lebensmonaten diese Entwicklung beurteilte. Er
                 schreibt u. a.: „Von der Circulation einer Menge von Verbriefungen, die ein, vielleicht allem in der
                 Welt existirenden Golde und Silber gleich kommendes Total ausmachen, und die zur Realisation alle
@@ -1402,7 +1376,7 @@
                 one MetallGeld füren, seinen politischen Verhältnissen mit der ganzen Welt one MetallGeldGenüge tun
                 will: denn es bleibt doch wol war, wenigstens weiß ich von diesem altväterlichen Glauben mich nicht
                 los zu machen, daß nur das wares Geld ist, was in der ganzen weiten Welt dafür anerkannt wird, nur
-                wares Geld nervus rerum gerendarum ist“1**). Er fährt fort, indem er die ganze prekäre Situation der
+                wares Geld nervus rerum gerendarum ist. Er fährt fort, indem er die ganze prekäre Situation der
                 französischen Nationalversammlung in wenigen Sätzen zusammenfaßt: „Überhaupt ist es mir noch zur
                 Zeit nicht möglich, Zutrauen zu den Operationen einer Versammlung von Männern (seien es immerhin die
                 Weisesten der Nation) zu fassen, der es noch nicht gelungen ist, eine über Widerspruch und
@@ -1432,7 +1406,7 @@
                 Papiere geblieben sind und welches Oeders Ideen waren, konnte nicht festgestellt werden.
                 <br>
                 <br>Ein letztes Mal hören wir seine Stimme in einem Schreiben vom 18. Dezember 1790, wohl an
-                Schlözer gerichtet und dann von diesem veröffentlicht*“). Oeder zeigt, wie er sich den Ausweg aus
+                Schlözer gerichtet und dann von diesem veröffentlicht. Oeder zeigt, wie er sich den Ausweg aus
                 der französischen Finanzmisere denkt. Alles käme darauf an, „daß der contrahirten Schuld [d. h. den
                 Assignaten, die ursprünglich verzinsliche Schuldscheine waren] die Natur des Geldes genommen“ werde.
                 Er schildert dann die Geschichte einer dänischen Geldfälschergruppe, wie sie sich auch in unseren
@@ -1526,8 +1500,8 @@
                 <br>
                 <br> Im 18. Jahrhundert, längst vor der Französischen Revolution, bahnen sich Entwicklungen an, die
                 sich großenteils erst im 19. Jahrhundert voll entfalten, und die bei wiederum völlig veränderten
-                Großbetriebe) heute schon wieder rückläufig sind. Im Sinne des 18. Jahrhunderts haben wir in Oeder
                 Wirtschafts- und Sozialstrukturen zum Teil (wie etwa die Parzellierung der landwirtschaftlichen
+                Großbetriebe) heute schon wieder rückläufig sind. Im Sinne des 18. Jahrhunderts haben wir in Oeder
                 einer der großen, Impulse gebenden, die Entwicklung vorantreibenden schöpferischen Gestalten vor
                 uns, die den Weg ins 19. Jahrhundert bereiten helfen. Ein Rationalist gewiß, in dessen Denken und
                 Trachten, soWeit es uns erkennbar ist, weder Gott noch Teufel, in dessen Denk- und Wertwelt weder
@@ -1541,16 +1515,23 @@
                 einem Manne, welcher den Werth des Lebens und des Daseyns fühlt, vor allen der angenehmste und
                 befriedigendste ist: nicht ohne Nutzen in der Welt gewesen zu seyn“.
             </section>
-        </main>
-    </div>
+</article>
+                <aside   id="asiderightimg">
+   
+    
+    </aside>
+<div id="responsivemenu" class="responsive">
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
-    </footer>
-    <script src="functionscript.js"></script>
-    <script src="175script.js"></script>
-    <script src="navbarscript.js"></script>
+</div>
+<div id="responsivecontent" class="responsive">
 
+</div>
 
+    </main>
+    <footer id="footer">
+        
+        </footer>
+        <script src="navbarscript.js"></script>
+        <script src="175script.js"></script>
 </body>
-
 </html>

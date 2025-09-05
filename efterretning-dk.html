@@ -1,171 +1,37 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description"
-    content="Georg Christian Oeder. Efterretning om et Verk, som paa Kongelig Befaling skal udgives, kaldet,  FLORA DANICA ." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="letterstyle.css" />
-  <link rel="stylesheet" href="style.css" />
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="magnifyerstyle.css">
+    <meta id="meta"  name="description" content="Georg Christian Oeder -Efterretning om et Verk, som paa Kongelig Befaling skal udgives, kaldet, FLORA DANICA.">
 
-  <style>
-    #sidebar {
-      font-size: 0.5rem;
-    }
+    <title>Georg Christian Oeder -     Nachricht von einem Werke, welches auf Königlichen Befehl herausgegeben werden soll, genannt, FLORA DANICA
+</title>
+    <style>
+    </style>
+        </head>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
+    </header>
+    <nav class="navbar" id="navbar">
+    <div class="sidebar">
+        <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+    <img src="./img/buttons/menubut1.png" alt="menu" class="side" ></a>
+    <a id="sidebarcontent"  onclick="CloseSidebarMenu(); OpenSidebarContent()">
+        <img src="./img/buttons/content.png" alt="content" class="side"></a>
+</div>
+</nav>
+    <main id="main">
 
-    #content {
-      background-color: rgb(241, 235, 209);
-    }
-
-    .letter {
-      display: block;
-    }
-
-    /* hr {
-            display: block;
-        } */
-
-    button {
-      background-color: darkblue;
-      color: white;
-      width: 175px;
-      margin-left: auto;
-      margin-right: auto;
-      height: 30px;
-      font-size: 14px;
-      border: none;
-      cursor: pointer;
-      transition-duration: 0.3s;
-    }
-
-    button:hover {
-      background-color: lightskyblue !important;
-    }
-
-    .row {
-      display: flex;
-    }
-
-    /* .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        } */
-
-    .column {
-      width: 50%;
-    }
-
-    p {
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    #oederbut {
-      z-index: 0;
-    }
-
-    hr {
-      display: none;
-    }
-
-    #multe {
-      width: 100%;
-    }
-
-
-    @media (max-width: 800px) {
-      .row {
-        flex-direction: column;
-      }
-
-      button {
-        width: 170px;
-        height: 25px;
-        font-size: 10px;
-      }
-
-      #frontpage {
-        flex-direction: column-reverse;
-      }
-
-      .column {
-        width: 100%;
-      }
-
-      #frontimg {
-        width: 150px;
-        padding: 5px;
-      }
-
-      hr {
-        display: block;
-        background-color: darkblue;
-        height: 2px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-      }
-    }
-  </style>
-  <title id="title">Efterretning om et Verk, som paa Kongelig Befaling skal udgives, kaldet, FLORA DANICA .
-
-
-
-  </title>
-
-</head>
-
-<body id="dex">
-  <header>
-    <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no">
-    </iframe>
-  </header>
-
-  <nav class="navbar">
-    <ul class="list" id="list">
-      <li id="chapname">
-        <p>chapname</p>
-      </li>
-      <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false">
-        <a href=""><img src="./buttons/content.png" alt="content" width="20px" height="20px" /></a>
-      </li>
-
-      <li class="menubut" id="menubut" onclick="showSidebar(); return false">
-        <a href=""><img src="./buttons/menubut1.png" alt="menu" width="20px" height="20px" /></a>
-      </li>
-    </ul>
-    <ul class="sidebar" id="listm">
-      <p onclick="closeSidebar();" id="closebut">
-        <img id="closebut" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
-          style="color: black; font-size: 0.5em" />
-      </p>
-    </ul>
-    <div id="sidebarcontent">
-      <p onclick="closeSidebar();" id="closebutcontent">
-        <img id="closebutcontent" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
-          style="color: black" />
-      </p>
-    </div>
-  </nav>
-
-  <div class="main">
-    <aside id="content" class="left" style="position: sticky"></aside>
-    <aside id="valimg" style="border: 3px; color: red;" style="position: sticky"><img src=".img/oederval.png" alt="">
+        <aside  id="asideleftimg" onclick="CloseSidebarMenu()">
     </aside>
-
-    <aside id="contbut" class="left" style="position: sticky">
-      <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img src="./buttons/contentbut.png"
-          alt="content" width="20px" height="20px" /></a>
-    </aside>
-    <main onclick="closeSidebar();">
-      <section id="chap0">
-        <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage" src="">
-          </a> </aside>
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap0">
+                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a> </aside>
         <h1>
           Efterretning
           <br>om
@@ -475,23 +341,29 @@
         <br>LX. Acroftichum Septentrionale.
         <br><br>
       </section>
-      <section id="chap2">
-        <img src="img/efterretning 1.png" id="multe" alt="Rubus Chamæmorus">
-        <br><br>
-        <img src="img/efterretning 2.png" id="multe" alt="Rubus Chamæmorus">
+      <section id="chapimg">
 
-      </section>
+
+      
+
+</article>
+                <aside   id="asiderightimg">
+   
+    
+    </aside>
+<div id="responsivemenu" class="responsive">
+
+</div>
+<div id="responsivecontent" class="responsive">
+
+</div>
 
     </main>
-  </div>
-
-  <footer>
-    <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no">
-    </iframe>
-  </footer>
-  <script src="functionscript.js"></script>
-  <script src="efter.js"></script>
-  <script src="navbarscript.js"></script>
+    <footer id="footer">
+        
+        </footer>
+        <script src="navbarscript.js"></script>
+        <script src="magifyerscript.js"></script></script>
+        <script src="efterretningscript.js"></script>
 </body>
-
 </html>

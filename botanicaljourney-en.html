@@ -1,61 +1,41 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Report
-    Of My Foreign Journey
-    In the Year 1754-55. Most Humbly Submitted and Sent from Schleswig, April 2, 1755.
-    GEORG CHRISTIAN OEDER.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
+    <meta  id="meta" name="description" content="Georg Christian Oeder - Report
+    Of My Foreign Journey
+    In the Year 1754-55.">
 
-    <style>
-        #sidebar {
-            font-size: 0.5rem;
-        }
-    </style>
-    <title id="title">Report
+    <title>Georg Christian Oeder - Report
         Of My Foreign Journey
         In the Year 1754-55. Most Humbly Submitted and Sent from Schleswig, April 2, 1755.
         GEORG CHRISTIAN OEDER.</title>
+    <style>
+    </style>
 </head>
 
-<body id="dex">
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main>
+        <article id="article" onclick="CloseSidebarMenu()">
             <section id="chap1">
+                                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                            src="">
+                    </a> </aside>
+
                 <h2>
                     Report of My Foreign Journey in the Year 1754-55.
                     <br> Most Humble Submission,
@@ -64,12 +44,9 @@
                     1755. <br>
                     Georg Christian Oeder.
                 </h2>
-
+   <br><br>
             </section>
             <section id="chap2">
-                <h2>
-
-                </h2>
                 I will divide the report of my journey, undertaken by order of His Royal Majesty, through Holland to
                 England and France,
                 and through Germany to inspect foreign botanical institutions and to compare them with the plan for the
@@ -93,14 +70,14 @@
                 Royal Court Architect, General Major von Thurah. I therefore most humbly request the necessary
                 postponement and
                 corresponding instruction for arranging such a conversation.
-
+   <br><br>
             </section>
             <section id="chap3">
                 <h2>
                     FIRST PART - On Holland
 
                 </h2>
-
+   <br><br>
                 In Holland, I have visited the academic gardens in Utrecht and Leyden, as well as the medicinal gardens
                 in Amsterdam and
                 The Hague.<br><br>
@@ -197,10 +174,12 @@
                 conditions are
                 mostly the same.
             </section>
+               <br><br>
             <section id="chap4">
                 <h2>
                     On England
                 </h2>
+                   <br><br>
                 In England, public institutions have not contributed much to the advancement of botany, but the wealth
                 of the
                 inhabitants, combined with the natural charm and appeal of country life, has made botany more widespread
@@ -280,14 +259,14 @@
                 likely be finished
                 with his book that he intended to write on this subject. On my part, I will keep these matters in mind
                 while in Norway.
-
+   <br><br>
             </section>
             <section id="chap5">
                 <h2>
                     On France.
                 </h2>
 
-
+   <br><br>
                 The Royal Botanical Garden in Paris is, according to its original foundation, also known as a garden for
                 medicinal
                 plants. It was established under Louis XIII, and Gui de la Brosse, who made the initial
@@ -382,11 +361,12 @@
                 and personal initiative.
 
             </section>
+               <br><br>
             <section id="chap6">
                 <h2>
                     On Germany
                 </h2>
-
+   <br><br>
                 I have visited three gardens in Germany. In the Margrave's garden
 
 
@@ -479,17 +459,24 @@
             </section>
 
 
-        </main>
-    </div>
+        </article>
+        <aside id="asiderightimg">
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
 
     </footer>
-    <script src="functionscript.js"></script>
-    <script src="botanicaljourneyscript.js"></script>
     <script src="navbarscript.js"></script>
-
-
+    <script src="botanicaljourneyscript.js"></script>
 </body>
 
 </html>

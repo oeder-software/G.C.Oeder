@@ -1,4 +1,4 @@
-let bedenkenContentDanish = [
+let ContentDanish = [
   "Betænkning over spørgsmålet: Hvordan kan frihed og ejendom sikres for bondeklassen i de lande, hvor begge mangler?",
   "Indhold.",
   "Nærmere præcisering af min mening.",
@@ -17,7 +17,7 @@ let bedenkenContentDanish = [
   "Afgifter skal fastsættes in natura, ikke i penge.",
   "Betragtninger ved ændringer af de én gang oprettede skatteregistre over landejendomme og grunde til regulering af statens afgifter.",
 ];
-let bedenkenContentEnglish = [
+let ContentEnglish = [
   "Considerations on the Question: How can freedom and property be secured for the peasantry in those countries where both are lacking?",
   "Content.",
   "Further clarification of my opinion. ",
@@ -36,7 +36,7 @@ let bedenkenContentEnglish = [
   "Taxes must be assessed in kind, not in money",
   "Considerations regarding changes to the tax registers of estates and properties, once established for the adjustment of sovereign dues.",
 ];
-let bedenkenContentGerman = [
+let ContentGerman = [
   "Bedenken über die Frage: Wie dem Bauernstande Freyheit und Eigenthum in den Ländern, wo ihm beydes fehlet, verschaffet werden könne?",
   "Inhalt.",
   "Nähere Bestimmung meiner Meynung. ",
@@ -81,19 +81,30 @@ var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 
-if (path == "bedenkenen") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, bedenkenContentEnglish);
+if (path == "bedenken-en") {
+//   SetContent(contentenglish);
+  SetContent(chapter, ContentEnglish);
 }
-if (path == "bedenkende") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, bedenkenContentGerman);
+if (path == "bedenken-de") {
+//   SetContent(contentgerman);
+  SetContent(chapter, ContentGerman);
 }
-if (path == "bedenkendk") {
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, bedenkenContentDanish);
+if (path == "bedenken-dk") {
+//   SetContent(contentdanish);
+  SetContent(chapter, ContentDanish);
 }
-let img = "./img/betaenkning.jpg";
+let img = "./img/covers/betaenkning.jpg";
 let link =
   "https://www.google.dk/books/edition/Bedenken_%C3%BCber_die_Frage_Wie_dem_bauerns/-gluJmCBKOMC?hl=da&gbpv=1&dq=&pg=PA1&printsec=frontcover";
 SetLinkAndImgToFrontpage(link, img);
+  if (path == "bedenken-en") {
+  infoTxt= "Translated from German."
+}
+if (path == "bedenken-de") {
+  infoTxt=" Deutsch Original."
+}
+if (path == "bedenken-dk") {
+  infoTxt="Oversat fra tysk."
+}
+document.getElementById("info").innerHTML=infoTxt;
+SetFlora();

@@ -1,4 +1,4 @@
-let bedenkenContentDanish = [
+let ContentDanish = [
   "I. Nogle overvejelser om oprettelsen af den nationale milits i Danmark.",
   "II. Grunde til den i 1771 i Danmark udstedte forordning af den daværende General Landwesenkommission til fastlæggelse af Frohndienste..",
   "III. Eksempel på en ændring med godset Düttebüll i Hertugdømmet Slesvig ved hjælp af opdeling i parceller.",
@@ -14,7 +14,7 @@ let bedenkenContentDanish = [
   "Fjerde Forslag:",
   "Femte Forslag:",
 ];
-let bedenkenContentEnglish = [
+let ContentEnglish = [
   "I. Some considerations about the constitution of the National Militia in Denmark.",
   "II. Reasons for the Decree Issued in Denmark in 1771 by the General Landwesen Commission to Determine the Feudal Services.",
   "III. Example of a transformation involving the estate of Düttebüll in the Duchy of Schleswig by means of subdivision into parcels.",
@@ -30,7 +30,7 @@ let bedenkenContentEnglish = [
   "Fourth Proposal",
   "Fifth Proposal",
 ];
-let bedenkenContentGerman = [
+let ContentGerman = [
   "I. Einige Betrachtungen über die Verfassung der National Miliz in Dänemark.",
   "II. Gründe der im Jahre 1771 in Dänemark durch die damalige General Landwesenscommission bewürkten Verordnung, zu Bestimmung der Frohndienste.",
   "III. Beyspiel einer mit dem Gute Düttebüll im Herzogthume Schleswig geschehenen Weränderung mittelst Auflösung in Parcellen.",
@@ -62,26 +62,30 @@ let chapter = [
   "#chap14",
   "#chap15",
 ];
+
+
 PrependBrBeforeChap(chapter);
 
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
-
-if (path == "bedenkensupplementdk") {
-  // SetALink(118,161);
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, bedenkenContentDanish);
+let infoTxt= "";
+if (path == "bedenkensupplement-en") {
+  infoTxt= "Translated from German."
+  SetContent(chapter, ContentEnglish);
 }
-if (path == "bedenkensupplementen") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, bedenkenContentEnglish);
+if (path == "bedenkensupplement-de") {
+  infoTxt=" Deutsch Original."
+  SetContent(chapter, ContentGerman);
 }
-if (path == "bedenkensupplementde") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, bedenkenContentGerman);
+if (path == "bedenkensupplement-dk") {
+  infoTxt="Oversat fra tysk."
+  SetContent(chapter, ContentDanish);
 }
-let img = "./img/bedenkensup.png";
+let img = "./img/covers/bedenkensup.png";
 let link =
   "https://www.google.dk/books/edition/Bedenken_%C3%BCber_die_Frage_Wie_dem_bauerns/-gluJmCBKOMC?hl=da&gbpv=1&dq=&pg=PA118&printsec=frontcover";
 SetLinkAndImgToFrontpage(link, img);
+
+document.getElementById("info").innerHTML=infoTxt;
+SetFlora();

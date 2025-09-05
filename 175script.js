@@ -79,28 +79,37 @@ let chapter = [
   "#chap17",
   "#chap18",
 ];
+// export{chapter};
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
-
+let infotxt= "";
 if (path == "175-en") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, ContentEnglish);
+  // SetContent(contentenglish);
+  SetContent(chapter, ContentEnglish);
   SetKap(ContentEnglish);
+  infoTxt= "Translated from German."
 }
 if (path == "175-de") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, ContentGerman);
+  // SetContent(contentgerman);
+  SetContent(chapter, ContentGerman);
   SetKap(ContentGerman);
+  infoTxt=" Deutsch Original."
 }
 if (path == "175-dk") {
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, ContentDanish);
+  // SetContent(contentdanish);
+  SetContent(chapter, ContentDanish);
   SetKap(ContentDanish);
+  infoTxt="Oversat fra tysk."
 }
-let img = "./img/175.png";
+let img = "./img/covers/175.png";
 let link = "https://slaegtsbibliotek.dk/2023/935997.pdf";
 SetLinkAndImgToFrontpage(link, img);
+
+SetFlora();
+PrependBrBeforeChap(chapter)
+
+document.getElementById("info").innerHTML=infoTxt;
 
 function SetKap(kap) {
   for (let i = 0; i < kap.length; i++) {
@@ -113,3 +122,5 @@ function SetKap(kap) {
     document.getElementById(chap).prepend(a);
   }
 }
+  //  var a = document.getElementById("chap3").getBoundingClientRect().top.toFixed();
+  // document.getElementById("navbarchapname").innerHTML=a;
