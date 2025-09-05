@@ -21,3 +21,4 @@ if (path == "wittwen-etwas-de") {
 if (path == "wittwen-etwas-dk") {
     infoTxt = "Oversat fra tysk.";
 }
+document.getElementById("info").innerHTML=infoTxt;
