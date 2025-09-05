@@ -20,3 +20,4 @@ if (path == "wittwen-erfahrung-de") {
 if (path == "wittwen-erfahrung-dk") {
     infoTxt = "Oversat fra tysk.";
 }
+document.getElementById("info").innerHTML=infoTxt;
