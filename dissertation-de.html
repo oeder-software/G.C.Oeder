@@ -1,166 +1,41 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description"
-        content=" Georg Christian Oeder. Inaugural-Dissertation über die Ableitung und den Rückfluss durch den Aderlass." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="letterstyle.css" />
-    <link rel="stylesheet" href="style.css" />
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta id="meta" name="description"
+        content="Georg Christian Oeder - Method for the Determination of the Area of the Lands. ">
 
+    <title>Georg Christian Oeder - Method for the Determination of the Area of the Lands. </title>
     <style>
-        #sidebar {
-            font-size: 0.5rem;
-        }
-
-        #content {
-            background-color: rgb(241, 235, 209);
-        }
-
-        .letter {
-            display: block;
-        }
-
-        /* hr {
-            display: block;
-        } */
-
-        button {
-            background-color: darkblue;
-            color: white;
-            width: 175px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 30px;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            transition-duration: 0.3s;
-        }
-
-        button:hover {
-            background-color: lightskyblue !important;
-        }
-
-        .row {
-            display: flex;
-        }
-
-        /* .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        } */
-
-        .column {
-            width: 50%;
-        }
-
-        p {
-            padding-left: 10px;
-            padding-right: 10px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-
-        /* #chap0 {
-            margin-left: auto;
-            margin-right: auto;
-            align-self: center;
-        } */
-
-        #oederbut {
-            z-index: 0;
-        }
-
-        hr {
-            display: none;
-        }
-
-        @media (max-width: 800px) {
-            .row {
-                flex-direction: column;
-            }
-
-            button {
-                width: 170px;
-                height: 25px;
-                font-size: 10px;
-            }
-
-            #frontpage {
-                flex-direction: column-reverse;
-            }
-
-            .column {
-                width: 100%;
-            }
-
-            #frontimg {
-                width: 150px;
-                padding: 5px;
-            }
-
-            hr {
-                display: block;
-                background-color: darkblue;
-                height: 2px;
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
     </style>
-    <title id="title"> Inaugural-Dissertation über die Ableitung und den Rückfluss durch den Aderlass.</title>
 </head>
 
-<body id="dex">
-    <header>
-        <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no">
-        </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false">
-                <a href=""><img src="./buttons/content.png" alt="content" width="20px" height="20px" /></a>
-            </li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false">
-                <a href=""><img src="./buttons/menubut1.png" alt="menu" width="20px" height="20px" /></a>
-            </li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut">
-                <img id="closebut" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
-                    style="color: black; font-size: 0.5em" />
-            </p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent">
-                <img id="closebutcontent" src="./buttons/closebut.png" alt="close menu" width="30px" height="30px"
-                    style="color: black" />
-            </p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
     </nav>
-
-
-    <div class="main">
-        <aside id="content" class="left" style="position: sticky"></aside>
-        <aside id="contbut" class="left" style="position: sticky">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px" /></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main onclick="closeSidebar();">
+        <article id="article" onclick="CloseSidebarMenu()">
             <section id="chap0">
                 <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
+
                 <h2> Inaugural-Dissertation über die Ableitung und den Rückfluss durch den Aderlass.
                 </h2>
                 <h3>Auf Anordnung der ehrenwerten medizinischen Fakultät zur Erlangung der höchsten Würden in der
@@ -177,9 +52,6 @@
 
                 <br /><br />
             </section>
-            <div>
-                <img src="img/engel.png" alt="" style="display: block; margin-left: auto; margin-right:auto;">
-            </div>
             <section id="chap1">
                 <h3>§. 1.</h3>
                 Dem, der den Gegenstand dieser Abhandlung betrachtet, durch die ich mir das ehrenvollste Zeugnis der
@@ -2578,12 +2450,8 @@
                 empfehle ich mich deinem freundlichen Andenken und wünsche dir und deinen hochgeehrten Eltern sowie
                 Brüdern alles Glück und Wohlergehen.
                 <br><br>Leb wohl! Gegeben am 7. Oktober 1749.
-                <br><br>
-                <div>
-                    <img src="img/dissertation-ende1.png" alt=""
-                        style="display: block; margin-left: auto; margin-right:auto;" id="bro">
-                </div>
-                <br><br>
+            </section>       <br><br>
+<section id="bro">             <br><br>
                 Wenn ich der Urheber der heilenden Gesundheit bin, geboren, wie man sagt, von Aesculapius, dem Vater,
                 und von der gewissen Temperantia, der Mutter, und wenn Hygeia, stets mit ihrem heilenden Licht, mich
                 betrachtet hat, und Soemmerring, den sie einst mit ihrer eigenen Hand in ihrer heiligen Höhle gestaltete
@@ -2671,10 +2539,6 @@
                     <br>anund fügt Beobachtungen über die häufigeren
                     <br>Gallensteine hinzu.
                 </h3>
-                <div>
-                    <img src="img/Dissertation-haller.png" alt=""
-                        style="display: block; margin-left: auto; margin-right:auto;">
-                </div>
 
                 <hr style="display: block;">
                 GÖTTINGEN,
@@ -2886,17 +2750,24 @@
 
                 <br /><br />
             </section>
+        </article>
+        <aside id="asiderightimg">
 
-        </main>
-    </div>
 
-    <footer>
-        <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no">
-        </iframe>
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
-    <script src="functionscript.js"></script>
-    <script src="dissertation.js"></script>
     <script src="navbarscript.js"></script>
+    <script src="dissertationscript.js"></script>
 </body>
 
 </html>
