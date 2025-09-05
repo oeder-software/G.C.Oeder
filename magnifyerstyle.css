@@ -1,0 +1,41 @@
+.imagescontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+    .imgToMagnify {
+      width: 200px;
+      margin: 15px;
+    }
+    #myimage{
+        width: 100%; 
+    }
+    .sliderclass{
+        accent-color: var(--navbarColorDark);
+        /* background: transparent; */
+    }
+    #closebutton{
+    background-color: var(--navbarColorLight);
+    width: 300px;
+}
+#magnifybutton{
+    background-color: var(--navbarColorLight);
+}
+#imgcontainerbuttons > P{
+font-size: 18px;
+}
+#imgcontainerbuttons>button{
+    height: 30px;
+    font-size: 16px;
+}
+@media(max-width: 600px){
+    #myimage{
+        width: 350px;
+    }
+}
+.imgToMagnify:hover{
+            border-color: var(--navbarColorBrown);
+            border-radius: 0%;
+            background-color: rgb(245, 244, 238);
+            box-shadow: 10px 10px var(--navbarColorMint);
+            transition: 0.5s;
+}

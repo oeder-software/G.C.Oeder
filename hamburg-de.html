@@ -1,67 +1,41 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeder. Hamburg. VersorgungsAnstalt. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
+    <meta id="meta"  name="description" content="Georg Christian Oeder - Hamburg. VersorgungsAnstalt. ">
 
+    <title>Georg Christian Oeder - Hamburg. VersorgungsAnstalt. </title>
     <style>
-        #sidebar {
-            font-size: 0.5rem;
-        }
-
-        .tab {
-            max-width: 100%;
-            object-fit: contain;
-
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
     </style>
-    <title id="title">Georg Christian Oeder. Hamburg. VersorgungsAnstalt.</title>
 </head>
 
-<body id="dex">
-    <!-- <script src="test2.js"></script> -->
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main onclick="closeSidebar();">
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap0"></section>
             <section id="chap1">
-                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
+
                 <h2>
 
 
@@ -107,10 +81,10 @@
                         <br><br>
                         Tabelle in dieser Isten klasse.
                         <br>
-                        <img src="./img/hamburg-pic1.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic1.png" class="tab" alt="">
                         <br>
 
-                        <img src="./img/hamburg-pic2.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic2.png" class="tab" alt="">
                         Col. I enthält das Alter der Person: Col. II den Preis für eine Portion von 30 Mrk. oder 10
                         Rthl.
                         järlicher Pension, in Marken und halben fl. Col. III Genuß vom EinkaufsPreise nach ProCenten.
@@ -219,7 +193,7 @@
                         <br><br>
                         Tabelle zu dieser IIIten Klasse.
                         <br>
-                        <img src="./img/hamburg-pic3.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic3.png" class="tab" alt="">
                     </section>
                     <section id="chap6">
                         <h3>
@@ -421,11 +395,11 @@
                         <br>
                         <br>PensionistenAlter, 1 Jar
                         <br>
-                        <img src="./img/hamburg-pic4.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic4.png" class="tab" alt="">
                         <br><br>
                         PensionistenAlter 35 Jar
                         <br><br>
-                        <img src="./img/hamburg-pic5.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic5.png" class="tab" alt="">
                         <br>
 
                         Col. I enthält des Versorgers Alter; Col. II. den Einschuß auf CapitalFuß: Col. III. Verhältniß
@@ -485,7 +459,7 @@
                         <br>
                         <br>PensionistenAlter, 5 Jare.
                         <br>
-                        <img src="./img/hamburg-pic6.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic6.png" class="tab" alt="">
                         <br>
                         Die Einrichtung dieser Tab. ist wie bei der vorigen. Wer in dieser Klasse den ContributionsFuß
                         wählt, deponirt zur Sicherheit der ferneren Beiträge, ein Drittel seiner künftigen järlichen
@@ -563,16 +537,24 @@
                         Portion von 10 rthl. zu entrichten. Personen über 50 J. können nur auf CapitalFuß eintreten.
 
                     </section>
-        </main>
-    </div>
+        </article>
+        <aside id="asiderightimg">
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
-    <script src="functionscript.js"></script>
-    <script src="hamburgscript.js"></script>
     <script src="navbarscript.js"></script>
-
-
+    <script src="hamburgscript.js"></script>
 </body>
 
 </html>

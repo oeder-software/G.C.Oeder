@@ -1,67 +1,42 @@
-<!DOCTYPE html>
-<html>
-<!-- //http://www5.kb.dk/e-mat/dod/130020341018.pdf  https://www.google.dk/books/edition/_/-gluJmCBKOMC?hl=da&gbpv=1&pg=PP1&dq=georg+christian+oeder+bedenken+%C3%BCber+die+frage -->
-
 <head>
-    <meta charset="utf-8">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Georg Christian Oeder. Hamburg. Forsørgelsesanstalt. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="letterstyle.css">
     <link rel="stylesheet" href="style.css">
+    <meta  id="meta" name="description" content="Georg Christian Oeder - Hamburg. Forsørgelsesanstalt. ">
 
+    <title>Georg Christian Oeder - Hamburg. Forsørgelsesanstalt. </title>
     <style>
-        #sidebar {
-            font-size: 0.5rem;
-        }
-
-        .tab {
-            max-width: 100%;
-            object-fit: contain;
-
+        h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
     </style>
-    <title id="title">Georg Christian Oeder. Hamburg. Forsørgelsesanstalt.</title>
 </head>
 
-<body id="dex">
-    <!-- <script src="test2.js"></script> -->
-    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
     </header>
-
-    <nav class="navbar">
-        <ul class="list" id="list">
-            <li id="chapname">
-                <p>chapname</p>
-            </li>
-            <li class="menubut" id="contentbut" onclick="showSidebarContent(); return false"><a href=""><img
-                        src="./buttons/content.png" alt="content" width="20px" height="20px"></a></li>
-
-            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
-                        src="./buttons/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
-        </ul>
-        <ul class="sidebar" id="listm">
-            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./buttons/closebut.png" alt="close menu"
-                    width="30px" height="30px" style="color: black; font-size: 0.5em;"></p>
-        </ul>
-        <div id="sidebarcontent">
-            <p onclick="closeSidebar();" id="closebutcontent"><img id="closebutcontent" src="./buttons/closebut.png"
-                    alt="close menu" width="30px" height="30px" style="color: black;"></p>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
         </div>
-
     </nav>
-    <div class="main">
-
-        <aside id="content" class="left" style="position: sticky;"></aside>
-        <aside id="contbut" class="left" style="position: sticky;">
-            <a class="contentbut" onclick="showSidebarContent(); return false" href=""><img
-                    src="./buttons/contentbut.png" alt="content" width="20px" height="20px"></a>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
         </aside>
-        <main onclick="closeSidebar();">
+        <article id="article" onclick="CloseSidebarMenu()">
+                        <section id="chap0"></section>
+
             <section id="chap1">
-                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
+                                <aside class="asideright" id="frontpageimg"><a id="link" href="" target="_blank"><img id="frontpage"
                             src="">
                     </a> </aside>
+
                 <h2>
 
 
@@ -103,10 +78,10 @@
                         <br>
                         <br>Tabel for denne første klasse.
                         <br>
-                        <img src="./img/hamburg-pic1.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic1.png" class="tab" alt="">
                         <br>
 
-                        <img src="./img/hamburg-pic2.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic2.png" class="tab" alt="">
                         <br>
                         <br>Kol. I angiver personens alder; Kol. II prisen for én portion à 30 mark eller 10 rigsdaler
                         årlig pension, opført i mark og halve gylden; Kol. III udbyttet af indkøbsprisen i procenter.
@@ -188,7 +163,7 @@
                         <br>
                         <br> Tabel for denne tredje klasse.
                         <br>
-                        <img src="./img/hamburg-pic3.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic3.png" class="tab" alt="">
                     </section>
                     <section id="chap5">
                         <h3>
@@ -353,11 +328,11 @@
                         <br>
                         <br>Pensionistens alder, 1 år
                         <br>
-                        <img src="./img/hamburg-pic4.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic4.png" class="tab" alt="">
                         <br><br>
                         Pensionistens alder: 35 år
                         <br><br>
-                        <img src="./img/hamburg-pic5.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic5.png" class="tab" alt="">
                         <br>
 
                         Kolonne I indeholder forsørgerens alder;Kolonne II indskuddet efter kapitalprincip;Kolonne III
@@ -411,7 +386,7 @@
                         <br><br>
                         Pensionistens alder, 5 år
                         <br>
-                        <img src="./img/hamburg-pic6.png" class="tab" alt="">
+                        <img src="./img/hamburg/hamburg-pic6.png" class="tab" alt="">
                         <br>
                         Indretningen af denne tabel er som ved den forrige. Den, der i denne klasse vælger
                         contributionsfoden, deponerer til sikkerhed for de fremtidige bidrag en tredjedel af sin
@@ -471,16 +446,24 @@
                         og 8 skilling, og fra 4. termin og fremefter skal der hver halve år betales 18 skilling pr.
                         enkelt portion à 10 rigsdaler. Personer over 50 år kan kun indtræde efter kapitalfoden.
                     </section>
-        </main>
-    </div>
+        </article>
+        <aside id="asiderightimg">
 
-    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
     </footer>
-    <script src="functionscript.js"></script>
-    <script src="hamburgscript.js"></script>
     <script src="navbarscript.js"></script>
-
-
+    <script src="hamburgscript.js"></script>
 </body>
 
 </html>

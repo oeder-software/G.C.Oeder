@@ -1,4 +1,4 @@
-let hamburgContentDanish = [
+let ContentDanish = [
   "Første Klasse, nemlig Livrenterne, som straks bliver forfaldne. § 42–46 i Anordningen.",
   "Anden Klasse af livrenter på to personers liv, §. 47–51.",
   "Tredje klasse af opsatte livrenter, §. 52–57.",
@@ -10,7 +10,7 @@ let hamburgContentDanish = [
   "Niende klasse: Opsparingsklassen, §. 94–98",
   "Tiende Klasse – Begravelsesklassen, §§ 99–114.",
 ];
-let hamburgContentEnglish = [
+let ContentEnglish = [
   "First Class, namely the life annuities which become due immediately. § 42–46 of the Ordinance.",
   "Second class of life annuities based on the lives of two persons, §. 47–51.",
   "Third class of deferred life annuities, §. 52–57.",
@@ -22,7 +22,7 @@ let hamburgContentEnglish = [
   "Ninth Class: The Savings Class, §. 94–98",
   "Tenth Class – The Funeral Class, §§ 99–114.",
 ];
-let hamburgContentGerman = [
+let ContentGerman = [
   "Erste Classe, nämlich der LeibRenten, welche sogleich fällig werden. §. 42-46 der Anordnung.",
   "Zwote Classe der LeibRenten auf das Leben zwoer Personen, §. 47-51.",
   "Dritte Klasse der aufgeschobenen LeibRenten, S. 52-57.",
@@ -49,29 +49,29 @@ let chapter = [
 ];
 PrependBrBeforeChap(chapter);
 
-let img = "./img/stats-5-hamburg.png";
+let img = "./img/covers/stats-5-hamburg.png";
 let link =
   "https://www.digitale-sammlungen.de/en/view/bsb10616669?q=oeder&page=382";
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 if (path == "hamburg-en") {
-  SetContent(contentenglish);
-  SetAlifeContent(chapter, hamburgContentEnglish);
+//   SetContent(contentenglish);
+  SetContent(chapter, ContentEnglish);
+  infoTxt= "Translated from German."
 }
 if (path == "hamburg-de") {
-  SetContent(contentgerman);
-  SetAlifeContent(chapter, hamburgContentGerman);
+    infoTxt=" Deutsch Original."
+//   SetContent(contentgerman);
+  SetContent(chapter, ContentGerman);
 }
 if (path == "hamburg-dk") {
-  SetContent(contentdanish);
-  SetAlifeContent(chapter, hamburgContentDanish);
+    // SetContent(contentdanish);
+    SetContent(chapter, ContentDanish);
+    infoTxt="Oversat fra tysk."
 }
 
 SetLinkAndImgToFrontpage(link, img);
-// SetLetterCheContent(chapter, path);
+document.getElementById("info").innerHTML=infoTxt;
+SetFlora();
 
-// function SetLinkAndImgToFrontpage(link, img) {
-//   document.getElementById("link").setAttribute("href", link);
-//   document.getElementById("imgind").setAttribute("src", img);
-// }

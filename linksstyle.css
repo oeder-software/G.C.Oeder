@@ -1,0 +1,179 @@
+        .card-container {
+            width: calc(100%);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card-cat {
+            width: 200px;
+            padding: 0px;
+            border: 3px;
+            border-color: var(--navbarColorDark);
+            border-style: solid;
+            border-radius: 0px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            height: 300px;
+            text-align: center;
+            background-color: var(--navbarColorLight);
+            text-shadow: 5px 5px 5px var(--navbarColorMint);
+
+        }
+
+        .card {
+            width: 200px;
+            position: relative;
+            border: 3px;
+            border-color: var(--navbarColorDark);
+            border-style: solid;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            height: 300px;
+            z-index: 0;
+            text-align: left;
+            overflow: hidden;
+            background-color: var(--background-color);
+        }
+
+        .card:hover,
+        .cardNoPic:hover {
+            border-color: var(--navbarColorBrown);
+            border-radius: 0%;
+            background-color: rgb(245, 244, 238);
+            box-shadow: 8px 8px var(--navbarColorMint);
+            transition: 0.5s;
+        }
+        
+        .card:hover p {
+            color: blue;
+            opacity: 0;
+            transition: 2s;
+            /* color: var(--navbarColorDark); */
+        }
+
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 10%;
+            z-index: 0;
+
+
+        }
+
+        .card:hover .card-img {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 100%;
+            z-index: 0;
+            transition: 1s;
+
+        }
+
+        .cat {
+            writing-mode: sideways-rl;
+            text-orientation: upright;
+            margin: auto;
+            font-size: 38px;
+            height: 100%;
+            color: var(--navbarColorDark)
+        }
+
+        .card p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            z-index: 1;
+            font-size: 14px;
+        }
+
+        h3 {
+            top: 30%;
+        }
+
+        .flag {
+            width: 35px !important;
+            float: inline-start;
+            padding-left: 15px;
+            margin: 0;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            transform: translate(-5%, -5%);
+            z-index: 1;
+        }
+
+        .card-container {
+            width: 100%;
+        }
+
+        #info {
+            display: none;
+        }
+
+        @media(max-width: 1500px) {
+            #asiderightimg {
+                display: none
+            }
+        }
+
+        /* @media(max-width: 1550px) {
+            .card-container {
+                width: 100%;
+                align-items: center;
+            }
+
+            .card-cat {
+                width: 180px;
+                height: 250px;
+            }
+
+            .cat {
+                font-size: 40px;
+            }
+
+            .card {
+                height: 250px;
+                width: 180px;
+            }
+
+            .card p {
+                font-size: 12px bold;
+            }
+
+            #asiderightimg {
+                width: 300px;
+            }
+        } */
+
+        @media (max-width: 1330px) {
+            #asideleftimg {
+                display: none;
+            }
+
+            .card-container {
+                width: 100%;
+                align-content: center;
+
+            }
+.cat{
+    font-size: 28px;
+}
+            .card,
+            .card-cat {
+                height: 250px;
+                width: 150px;
+            }
+
+        }

@@ -1,6 +1,3 @@
-// let bedenkenContentDanish = [];
-// let bedenkenContentEnglish = [];
-// let bedenkenContentGerman = [];
 let LetterLink;
 let bioLink;
 let artLink;
@@ -41,7 +38,7 @@ let letterImages = [
   "letterlin",
   "letterbern",
   "lettersuhm",
-  "gunnerus1",
+  "gunnerus3",
   "175",
 ];
 let letterHypertLinks = [
@@ -87,6 +84,7 @@ let manuDe = [
   "Zulage zu Bedenken über die Frage: Wie dem Bauernstande Freyheit und Eigenthum in den Ländern, wo ihm beydes fehlet, verschaffet werden könne ?",
   "Oederiana.",
   "Einleitung zu der Kräuterkenntniß.Erster Theil.",
+    "Einleitung zu der Kräuterkenntniß.Erster Theil.",
   "Einleitung zu der Kräuterkenntniß. Zweyter Theil, Mit Kupfern.",
   " Nachricht von einem Werke, welches auf Königlichen Befehl herausgegeben werden soll, FLORA DANICA genannt, nebst einer Probe-Tafel der Moltebeeren-Pflanze (Rubus Chamæmorus.)",
   "Inaugural-Dissertation über die Ableitung und den Rückfluss durch den Aderlass.",
@@ -101,6 +99,7 @@ let manuDk = [
   "Tilføjelser til Overvejelser over spørgsmålet: Hvordan kan frihed og ejendom sikres for bondeklassen i de lande, hvor begge mangler?",
   "Oederiana.",
   "Indledning til Plante-Læren, Del 1.",
+    "Indledning til Plante-Læren, Del 1.",
   "Indledning til Plante-Læren, Del 2. Med kobberstik.",
   " Efterretning om et Verk, som paa Kongelig Befaling skal udgives, FLORA DANICA kaldet, tilligemed en Prøve- Plade af Multebaærs Planten (Rubus Chamæmorus.)",
   "Inauguralafhandling om afledning og tilbagestrømning ved åreåbning.",
@@ -116,6 +115,7 @@ let manuEn = [
   "Supplement to the Considerations on the Question: How can freedom and property be secured for the peasantry in those countries where both are lacking?",
   "Oederiana.",
   "Introduction to the Knowledge of Herbs. Part 1.",
+    "Introduction to the Knowledge of Herbs. Part 1.",
   "Introduction to the Knowledge of Herbs. Part 2. With Copper Engravings.",
   "An Account of a Work, which by Royal Command is to be published, entituled FLORA DANICA, together with a Specimen Plate of the Cloudberry Plant (Rubus Chamæmorus.)",
   "Inaugural Dissertation on Derivation and Reflux by Means of Venesection.",
@@ -131,6 +131,7 @@ let manuFlag = [
   "de",
   "de",
   "de",
+  "dk",
   "de",
   "dk",
   "vatican",
@@ -145,6 +146,7 @@ let manuImages = [
   "bedenkensup",
   "oederiana",
   "krauter1",
+  "krauter-1-dk",
   "krauter2",
   "efterretning",
   "Dissertation",
@@ -159,6 +161,7 @@ let manuHyperLinks = [
   "https://www.google.dk/books/edition/Bedenken_%C3%BCber_die_Frage_Wie_dem_bauerns/-gluJmCBKOMC?hl=da&gbpv=1&dq=&pg=PA118&printsec=frontcover",
   "https://www.kb.dk/e-mat/dod/130019453090.pdf#page=8",
   "https://www.google.dk/books/edition/_/kqnNHkbuHnAC?hl=da&gbpv=1",
+  "https://www.kb.dk/e-mat/dod/130020872900.pdf",
   "https://www.google.dk/books/edition/Einleitung_zu_der_Kr%C3%A4uterkenntni%C3%9F/QfxbAAAAcAAJ?hl=da&gbpv=1",
   "https://www.kb.dk/e-mat/dod/130021446964-color.pdf#page=6",
   "https://www.google.dk/books/edition/De_derivatione_et_reculsione_per_venae_s/rm9QAAAAcAAJ?gbpv=1",
@@ -198,6 +201,8 @@ let artDe = [
   "Nachricht von hiesiger Landes-Vermessung.",
   "Fortsetzung der Nachricht von hiesiger Landes-Vermessung.",
   "Osnabrückische und Oldenburgische Bevõlkerung.",
+  "BERICHT VON MEINER AUSLANDISCHEN REISE IM JAHR 1754-55. ALLERUNTERTHANIGST ABGELEGT, UND VON SCHLESWIG EINGESANDT, DEN 2 APRIL 1755.",
+  "Erinnerungen, veranlast durch Hrn. Kritters Aufsätze im Göttingischen Magazin. 3ten Jahrgangs 1sten Stüks S. 19 und 2ten Stücks S. 289. 2c."
 ];
 let artDk = [
   "Om Banco, Courant og Mønt.",
@@ -225,6 +230,8 @@ let artDk = [
   "Beretning om den hersteds Landmåling.",
   "Fortsættelse af meddelelsen om den lokale landopmåling.",
   "Osnabrücks og Oldenburgs befolkning.",
+  "Beretning om min udenlandske rejse i året 1754-55. Allerydmygst indsendt og afsendt fra Slesvig, den 2. april 1755.",
+  "Erindringer, foranledigede ved Hr. Kritters Afhandlinger i det Göttingiske Magazin, 3die Aargangs 1ste Stykke S. 19 og 2det Stykke S. 289. 2c."
 ];
 let artEn = [
   "On Banco, Courant, and Coinage.",
@@ -252,6 +259,8 @@ let artEn = [
   "Report on the local Land Survey.",
   "Continuation of the report on the local land survey.",
   "Population of Osnabrück and Oldenburg.",
+  "Report of My Foreign Journey in the Year 1754-55. Most Humble Submission, and Sent from Schleswig, on the 2nd of April 1755.",
+  "Remembrances, occasioned by Mr. Kritter’s essays in the Göttingen Magazine, 3rd year, 1st piece p. 19, and 2nd piece p. 289. 2c."
 ];
 
 let artFlag = [
@@ -280,6 +289,8 @@ let artFlag = [
   "de",
   "de",
   "de",
+  "de",
+  "de"
 ];
 let artHyperLinks = [
   "https://www.digitale-sammlungen.de/en/view/bsb10725586?page=327",
@@ -307,6 +318,8 @@ let artHyperLinks = [
   "https://ds.ub.uni-bielefeld.de/viewer/image/2085009_001/464/",
   "https://ds.ub.uni-bielefeld.de/viewer/image/2085009_002/488/",
   "https://www.digitale-sammlungen.de/en/view/bsb10614671?q=%28Deutsches+Museum%29&page=89",
+  "https://archive.org/details/centaurus_1950-1951_1/page/242/mode/2up",
+  "https://www.google.dk/books/edition/G%C3%B6ttingisches_Magazin_der_Wissenschafte/8HRlAAAAcAAJ?hl=da&gbpv=1&dq=%22g%C3%B6ttingischen+magazin%22&pg=PA483&printsec=frontcover"
 ];
 let artImages = [
   "stats-47-munzen",
@@ -334,6 +347,8 @@ let artImages = [
   "landes-vermessung1",
   "landes-vermessung2",
   "witwencasse-etwas",
+  "botanical",
+  "kritters"
 ];
 var path = parent.location.pathname;
 path = path.split("/").pop();
@@ -359,12 +374,27 @@ if (path == "links-en") {
   artLink = artEn;
 }
 
+// let categorynumber = 0;
 MakeCards("bio", bioLink, bioFlag, bioImages, bioHyperLinks);
 MakeCards("letter", letterLink, letterFlag, letterImages, letterHypertLinks);
 MakeCards("manu", manuLink, manuFlag, manuImages, manuHyperLinks);
 MakeCards("art", artLink, artFlag, artImages, artHyperLinks);
-
 function MakeCards(category, links, flag, Img, hyperLinks) {
+    // let linkscontainer = document.createElement("div");
+    // linkscontainer.id=category;
+    // linkscontainer.class="card-container";
+    // document.getElementById("article").appendChild(linkscontainer);
+
+    //     let cardcat = document.createElement("div");
+    // cardcat.id="card-cat";
+    // cardcat.class="card-cat";
+    // document.getElementById(category).appendChild(cardcat);
+
+    //     let cardelement = document.createElement("div");
+    // cardelement.class="cat" + categorynumber;
+    // categorynumber++;
+    // document.getElementById("card-cat").appendChild(cardelement);
+
   for (let i = 0; i < links.length; i++) {
     let linksDiv = document.createElement("div");
     linksDiv.setAttribute("id", category + "card" + i);
@@ -378,12 +408,14 @@ function MakeCards(category, links, flag, Img, hyperLinks) {
 
     let linksflagImg = document.createElement("img");
     linksflagImg.setAttribute("class", "flag");
-    linksflagImg.setAttribute("src", "./buttons/" + flag[i] + ".png");
+    linksflagImg.setAttribute("src", "./img/buttons/" + flag[i] + ".png");
     document.getElementById(category + "href" + i).append(linksflagImg);
 
     let linksImg = document.createElement("img");
     linksImg.setAttribute("class", "card-img");
-    linksImg.setAttribute("src", "./img/" + Img[i] + ".png");
+    linksImg.setAttribute("src", "./img/covers/" + Img[i] + ".png");
+        // linksImg.setAttribute("src", "./img/covers/"  + "175.png");
+
     document.getElementById(category + "href" + i).append(linksImg);
 
     let linksP = document.createElement("p");
