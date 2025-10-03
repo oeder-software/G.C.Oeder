@@ -361,7 +361,7 @@ object {
 }
 .asideright:not(#imgind)  img,
 object {
-	width: 200px !important;
+	width: 100% !important;
 	font-style: italic;
 }
 /* #imgind{display: flex;
