@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta  id="meta" name="description" content="Georg Christian Oeder - Ueber Banco, Courant, und Munze.">
+
+    <title>Georg Christian Oeder - Ueber Banco, Courant, und Munze.</title>
+    <style>
+        #info{
+            display: none;
+        }
+        .article{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" onclick="CloseSidebarMenu()">
+    </header>
+    <nav class="navbar" id="navbar">
+        <div class="sidebar">
+            <a id="sidebarmenu" onclick="CloseSidebarMenu(); OpenSidebarMenu()">
+                <img src="./img/buttons/menubut1.png" alt="menu" class="side"></a>
+            <a id="sidebarcontent" onclick="CloseSidebarMenu(); OpenSidebarContent()">
+                <img src="./img/buttons/content.png" alt="content" class="side"></a>
+        </div>
+    </nav>
+    <main>
+        <aside id="asideleftimg" onclick="CloseSidebarMenu()">
+        </aside>
+        <article id="article" onclick="CloseSidebarMenu()">
+            <section id="chap1">
+                <aside class="asideright"><a id="img1href" href=""><img id="img1" src=""></a>
+                    <br>
+                    <object id="bio1" data=""></object>
+                </aside>
+
+        <h2>
+
+          Stammbaum beginnend mit Nicolai Gotfried Oeder.
+        </h2>
+        Der Stammbaum ist völlig unwissenschaftlich.<br />Er wurde aus
+        Materialien zusammengestellt, die ich von der Gartenarchitektin
+        Vibeke Dalh erhalten habe, Informationen, die ich im Internet
+        gefunden habe,<br />sowie Anfragen von Personen, die hinzugefügt
+        werden möchten. <br /><br />
+        Bitte kontaktieren Sie mich, wenn es Unregelmäßigkeiten gibt
+        oder wenn Sie etwas hinzufügen möchten.
+      </section>
+      <br><br>
+      
+      
+      <section id="chap2">
+          <div>
+              <object id="familyobj" data=""></object>
+            </div>
+        </section>
+    </article>
+        <aside id="asiderightimg">
+
+
+        </aside>
+        <div id="responsivemenu" class="responsive">
+
+        </div>
+        <div id="responsivecontent" class="responsive">
+
+        </div>
+
+    </main>
+    <footer id="footer">
+
+    </footer>
+    <script src="navbarscript.js"></script>
+        <script src="functionscript.js"></script>
+    <script src="familynicoscript.js"></script>
+</body>
+
+</html>
