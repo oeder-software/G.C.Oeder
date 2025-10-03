@@ -39,6 +39,7 @@ let andenkenImg = [
   "oedergrav.jpg",
   "suhm.jpg",
   "stolberg.jpg",
+  "troldurt.jpg"
 ];
 
 let andenkenImgAlt = [
@@ -82,6 +83,7 @@ let andenkenImgAlt = [
   "Gertrudkirchenhof",
   "Peter Frederik Suhm",
   "Friedrich Leopold zu Stolberg",
+  "Pedicularis oederi Vahl"
 ];
 let andenkenBio = [
   "richardson",
@@ -149,7 +151,7 @@ let chapter = [
   "#chap56",
   "#chap57",
 ];
-let andenkenContentEnglish = [
+let ContentEnglish = [
   "Preface",
   "Introduction",
   "Schleswig and the Ericius Family",
@@ -172,7 +174,7 @@ let andenkenContentEnglish = [
   "Oeder's Person and Personality",
   " H. S. E. (HIC SITUS EST)",
 ];
-let andenkenContentDanish = [
+let ContentDanish = [
   "Forord af E. Willumsen",
   "Indledning",
   "Slesvig og familien Ericius",
@@ -195,7 +197,7 @@ let andenkenContentDanish = [
   " Oeders person og personlighed",
   "H. S. E. (HIC SITUS EST)",
 ];
-let andenkenContentGerman = [
+let ContentGerman = [
   "Vorwort von E. Willumsen",
   "Einleitung",
   "Sleswig und die familie Ericius",
@@ -218,7 +220,11 @@ let andenkenContentGerman = [
   " Oeders Person und Persönlichkeit",
   "H. S. E. (HIC SITUS EST)",
 ];
-SetImgAndenken(andenkenImg, andenkenImgAlt);
+let img = "./img/covers/andenken.png";
+let link = "https://www.google.dk/books/edition/_/7gfINckRRZ0C?hl=da&gbpv=1";
+SetLinkAndImgToFrontpage(link, img);
+SetBioImage(andenkenImg, andenkenImgAlt);
+// SetImgAndenken(andenkenImg, andenkenImgAlt);
 
 document
   .getElementById("img8href")
@@ -228,7 +234,7 @@ document
   );
 document.getElementById("img8href").setAttribute("target", "_blank");
 document.getElementById("img8href").style = "cursor: pointer";
-
+document.getElementById("img8").setAttribute("class", "asideLinkimgHover")
 document
   .getElementById("img10href")
   .setAttribute(
@@ -237,185 +243,79 @@ document
   );
 document.getElementById("img10href").setAttribute("target", "_blank");
 document.getElementById("img10href").style = "cursor: pointer";
+document.getElementById("img10").setAttribute("class", "asideLinkimgHover")
 
 document
   .getElementById("img17href")
   .setAttribute("href", "http://www5.kb.dk/e-mat/dod/130020341018.pdf");
+document.getElementById("img17").setAttribute("class", "asideLinkimgHover")
 
 document
   .getElementById("img19href")
   .setAttribute("href", "http://www5.kb.dk/e-mat/dod/130020341018.pdf");
+document.getElementById("img19").setAttribute("class", "asideLinkimgHover")
 
-document
-  .getElementById("img20")
-  .setAttribute("src", "./img/folketaelling1.png");
-document
-  .getElementById("img20")
-  .setAttribute("alt", "Sammlungen zur Geschichte und Staatswissenschaft");
+// document
+//   .getElementById("img20")
+//   .setAttribute("src", "./img/persons/folketaelling1.png");
+// document
+//   .getElementById("img20")
+//   .setAttribute("alt", "Sammlungen zur Geschichte und Staatswissenschaft");
 document
   .getElementById("img20href")
   .setAttribute(
     "href",
     "https://books.google.dk/books?id=KM1AAAAAcAAJ&pg=PA1&hl=da&source=gbs_selected_pages&cad=2#v=onepage&q&f=false"
   );
+document.getElementById("img20").setAttribute("class", "asideLinkimgHover")
 
-//FIXME:
-//TODO:
+// let img = "./img/covers/letterlin.png";
+// let link =
+// 	"https://www.alvin-portal.org/alvin/resultList.jsf?dswid=3548&af=%5B%22PER_PID%3Aalvin%5C%5C-person%5C%5C%3A57297%22%5D&p=1&fs=true&searchType=EXTENDED&sortString=relevance_sort_desc&noOfRows=10&query=oeder&aq=%5B%5B%7B%22A_FQ%22%3A%22oeder%22%7D%5D%5D&aqe=%5B%5D";
+// SetLinkAndImgToFrontpage(link, img);
+
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 
-if (path == "andenkendk") {
-  var a = document.createElement("a");
-  a.innerText = "Indhold";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("content").appendChild(a);
+if (path == "andenken-dk") {
+	SetBio(andenkenBio, "DK");
+	SetContent(chapter, ContentDanish);
+	  infoTxt="Dansk original."
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("a");
-  a.innerText = "Til toppen";
-  a.href = "#dex";
-  var b = a;
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
-
-  var a = document.createElement("a");
-  a.innerText = "Indhold";
-  a.style = "cursor: none; font-size: 16px";
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("a");
-  a.innerText = "Til toppen";
-  a.href = "#dex";
-  var b = a;
-  a.setAttribute("onclick", "closeSidebar()");
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  SetContentAndenken(chapter, andenkenContentDanish);
-
-  SetAndenkenBio(andenkenBio, "DK");
 }
 
-if (path == "andenkende") {
-  var a = document.createElement("a");
-  a.innerText = "Inhaltsverzeichnis";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("content").appendChild(a);
+if (path == "andenken-en") {
+	SetBio(andenkenBio, "EN");
+	SetContent(chapter, ContentEnglish);
+	  infoTxt= "Translated from Danish."
 
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("a");
-  a.innerText = "Zu Anfang";
-  a.href = "#dex";
-  var b = a;
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
-
-  var a = document.createElement("a");
-  a.innerText = "Inhaltsverzeichnis";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("a");
-  a.innerText = "Zu Anfang";
-  a.href = "#dex";
-  var b = a;
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  SetContentAndenken(chapter, andenkenContentGerman);
-  SetAndenkenBio(andenkenBio, "DE");
-}
-if (path == "andenkenen") {
-  var a = document.createElement("a");
-  a.innerText = "Content";
-  a.style = "cursor: none; font-size: 20px";
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("a");
-  a.innerText = "Page start";
-  a.href = "#dex";
-  var b = a;
-  document.getElementById("content").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("content").appendChild(a);
-
-  var a = document.createElement("a");
-  a.innerText = "Content";
-  a.style = "cursor: none; font-size: 16px";
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("a");
-  a.innerText = "Page start";
-  a.href = "#dex";
-  var b = a;
-  a.setAttribute("onclick", "closeSidebar()");
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  a = document.createElement("br");
-  document.getElementById("sidebarcontent").appendChild(a);
-
-  SetContentAndenken(chapter, andenkenContentEnglish);
-  SetAndenkenBio(andenkenBio, "EN");
 }
 
-function SetAndenkenBio(bio, language) {
-  for (let index = 0; index < bio.length; index++) {
-    document
-      .getElementById("bio" + (index + 1))
-      .setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
-  }
+if (path == "andenken-de") {
+	SetBio(andenkenBio, "DE");
+	SetContent(chapter, ContentGerman);
+	  infoTxt=" Übersetzts von Dänish."
+
 }
-function SetImgAndenken(img, alt) {
-  for (let index = 0; index < img.length; index++) {
-    document
-      .getElementById("img" + (index + 1))
-      .setAttribute("src", "./img/" + img[index]);
-    document
-      .getElementById("img" + (index + 1))
-      .setAttribute("alt", alt[index]);
-  }
-}
-// function SetContentAndenken(chapter, content) {
-//   for (let index = 0; index < content.length; index++) {
-//     a = document.createElement("a");
-//     a.innerText = content[index];
-//     a.href = chapter[index];
-//     a.setAttribute("id", index);
 
-//     document.getElementById("content").appendChild(a);
-
-//     a = document.createElement("a");
-//     a.innerText = content[index];
-//     a.href = chapter[index];
-//     a.setAttribute("id", index + "m");
-
-//     a.setAttribute("onclick", "closeSidebar()");
-//     document.getElementById("sidebarcontent").appendChild(a);
-//   }
+// function SetLetterBugBio(bio, language) {
+// 	for (let index = 0; index < bio.length; index++) {
+// 		document
+// 			.getElementById("bio" + (index + 1))
+// 			.setAttribute("data", "./bio/" + language + "-" + bio[index] + ".txt");
+// 	}
 // }
+// function SetLetterBugImg(img, alt) {
+// 	for (let index = 0; index < img.length; index++) {
+// 		document
+// 			.getElementById("img" + (index + 1))
+// 			.setAttribute("src", "./img/" + img[index]);
+// 		document
+// 			.getElementById("img" + (index + 1))
+// 			.setAttribute("alt", alt[index]);
+// 	}
+// }
+
+SetFlora();
+document.getElementById("info").innerHTML=infoTxt;
