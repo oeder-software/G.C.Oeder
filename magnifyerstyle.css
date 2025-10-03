@@ -7,7 +7,7 @@
       margin: 15px;
     }
     #myimage{
-        width: 100%; 
+        width: 90vw; 
     }
     .sliderclass{
         accent-color: var(--navbarColorDark);
@@ -27,11 +27,11 @@ font-size: 18px;
     height: 30px;
     font-size: 16px;
 }
-@media(max-width: 600px){
+/* @media(max-width: 600px){
     #myimage{
         width: 350px;
     }
-}
+} */
 .imgToMagnify:hover{
             border-color: var(--navbarColorBrown);
             border-radius: 0%;

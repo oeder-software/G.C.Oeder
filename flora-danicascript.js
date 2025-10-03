@@ -269,11 +269,11 @@ var magseize;
 var magform;
 var magtoggle;
 var closebut;
-if (path == "krauter-2-en") {
+if (path == "flora-danica-en") {
 	// SetContent(chapter, ContentEnglish);
 	infoTxt = "Translated from German.";
 }
-if (path == "krauter-2-de") {
+if (path == "flora-danica-de") {
 	// SetContent(chapter, ContentGerman);
 	infoTxt = " Deutsch Original.";
 }
@@ -317,7 +317,7 @@ function setTxtDescrip(img) {
 
 	var a = document.createElement("div");
 	a.setAttribute("id", "magtxt");
-	document.getElementById("imgcontainerbuttons").append(a);
+	document.getElementById("imgcontainerbuttons").prepend(a);
 	var a = document.createElement("p");
 	a.style = "padding: 5px;";
 	a.innerHTML = latinname[indx - 1];
