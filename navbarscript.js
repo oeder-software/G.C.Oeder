@@ -131,7 +131,8 @@ var journalsListElement = [
 	"landes-vermessung1-",
 	"landes-vermessung2-",
 	"osnabruck-",
-	"kritters-"
+	"kritters-",
+	"leibrente-"
 	
 ];
 var journalsNameDk = [
@@ -155,7 +156,8 @@ var journalsNameDk = [
 	"Beretning om den hersteds Landmåling.",
 	"Fortsættelse af den lokale landopmåling.",
 	"Osnabrücks og Oldenburgs befolkning.",
-	"Erindringer, foranledigede ved Hr. Kritters Afhandlinger"
+	"Erindringer, foranledigede ved Hr. Kritters Afhandlinger",
+	"Forordning angående Udvidelsen til Livrenter."
 ];
 var journalsNameDe = [
 	"Ueber Banco, Courant, and Münzen.",
@@ -178,7 +180,8 @@ var journalsNameDe = [
 	"Nachricht von hiesiger Landes-Vermessung.",
 	"Fortsetzung der  hiesiger Landes-Vermessung.",
 	"Osnabrückische und Oldenburgische Bevõlkerung.",
-	"Erinnerungen, veranlast durch Hrn. Kritters Aufsätze"
+	"Erinnerungen, veranlast durch Hrn. Kritters Aufsätze",
+	"Verordnung wegen Erweiterung auf LeibRente."
 ];
 var journalsNameEn = [
 	"On Banco, Courant, and Coinage.",
@@ -201,7 +204,8 @@ var journalsNameEn = [
 	"Report on the local Land Survey.",
 	"Continuation of the local land survey.",
 	"Population of Osnabrück and Oldenburg.",
-	"Remembrances, occasioned by Mr. Kritter’s essays"
+	"Remembrances, occasioned by Mr. Kritter’s essays",
+	"Ordinance concerning the Extension to Life Annuities."
 ];
 let journalsHeaderImgRight = [
 	"crest",
@@ -224,7 +228,8 @@ let journalsHeaderImgRight = [
 	"crest",
 	"crest",
 	"crest",
-	"crest"
+	"crest",
+	"crest",
 ];
 var journalsElements = [
 	journalsListElement,
@@ -513,7 +518,7 @@ function FillNavbar(elements) {
 
 	var a = document.createElement("ul");
 	a.setAttribute("id", headName[2] + "ul");
-	a.setAttribute("class", "menuItemslist");
+	a.setAttribute("class", "menuItemsList");
 	a.style = "display: none;";
 	document.getElementById(headName[2] + "li").appendChild(a);
 
