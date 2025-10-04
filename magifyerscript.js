@@ -116,9 +116,16 @@ function SetImages(img, filefolder) {
     }
 }
 
-
+let seizevalue;
 let zoomvalue = 0;
-let seizevalue = 250;
+let x = window.matchMedia("(max-width: 1000px)");
+if (window.matchMedia("(max-width: 1000px)").matches){
+seizevalue =100;
+zoomvalue = 2;
+}else{
+
+    seizevalue = 250;
+}
 let formvalue = 50;
 function OpenKrautImg(img, filefolder) {
 
@@ -188,9 +195,9 @@ function OpenKrautImg(img, filefolder) {
     a.setAttribute("id", "input-zoom");
     a.setAttribute("class", "sliderclass")
     a.setAttribute("type", "range");
-    a.setAttribute("min", "0");
+    a.setAttribute("min", "2");
     a.setAttribute("max", "6");
-    a.setAttribute("value", "0");
+    a.setAttribute("value", zoomvalue);
     a.style = "width: 300px; margin-top: 10px; margin-bottom: 10px";
     document.getElementById("buttoncontainer").append(a)
 

@@ -204,6 +204,7 @@ header > div {
 	display: none;
 	flex-direction: column;
 	padding-left: 5px;
+	font-size: 14px;
 }
 
 .responsive a:hover {
@@ -382,7 +383,12 @@ flex-direction: row;} */
 	transition: 0.5s;
 
 }
-@media (max-width: 1300px) {
+/* Hamburg tabel */
+		.tab{
+		max-width: 90%;
+	}
+
+@media (max-width: 1380px) {
 	#asiderightimg {
 		display: none;
 	}
@@ -392,6 +398,10 @@ flex-direction: row;} */
 	#frontpage {
 		width: 150;
 	}
+		/* .tab{
+		max-width: 500px;
+	} */
+
 }
 
 @media (max-width: 950px) {
@@ -459,6 +469,10 @@ flex-direction: row;} */
 	#gco{
 		font-size: 20px !important;
 	}
+		/* .tab{
+		max-width: 90vw;
+	} */
+
 }
 /* tooltips */
 .tooltip {
