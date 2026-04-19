@@ -4,10 +4,10 @@ let ContentDanish = [
   "Tredje klasse af opsatte livrenter, §. 52–57.",
   "Fjerde klasse af de stigende livrenter, §. 58–62.",
   "Femte klasse: De ophørende livrenter. § 63–66.",
-  "Sjette klasse – afhængige pensionister generelt (§ 67–78)",
+  "Sjette klasse – afhængige pensionister generelt § 67–78.",
   "Syvende Klasse, især Enkepensioner §. 78-90.",
-  "Ottende klasse, nemlig: Forældreløses klasse, § 91–98",
-  "Niende klasse: Opsparingsklassen, §. 94–98",
+  "Ottende klasse, nemlig: Forældreløses klasse, § 91–93.",
+  "Niende klasse: Opsparingsklassen, §. 94–98.",
   "Tiende Klasse – Begravelsesklassen, §§ 99–114.",
 ];
 let ContentEnglish = [
@@ -16,10 +16,10 @@ let ContentEnglish = [
   "Third class of deferred life annuities, §. 52–57.",
   "Fourth class of the increasing life annuities, §. 58–62.",
   "Fifth Class: The Terminating Life Annuities. § 63–66.",
-  "Sixth Class – Dependent Pensioners in General (§ 67–78)",
+  "Sixth Class – Dependent Pensioners in General § 67–78.",
   "Seventh Class, Widows’ Fund in particular §. 78-90.",
-  "Eighth Class, namely: Orphans' Class (§ 91–98)",
-  "Ninth Class: The Savings Class, §. 94–98",
+  "Eighth Class, namely: Orphans' Class § 91–93.",
+  "Ninth Class: The Savings Class, §. 94–98.",
   "Tenth Class – The Funeral Class, §§ 99–114.",
 ];
 let ContentGerman = [
@@ -30,13 +30,12 @@ let ContentGerman = [
   "Funfte Klasse, der aufhörenden LeibRenten. § 63-66.",
   "Sechste Klasse, abhängender Pensionisten überhaupt, §. 67-78.",
   "Siebende Klasse, oder WittwenKasse insbesondere, §. 78-90.",
-  "Achte Klasse, nämlich WaisenKlasse, §. 91-98.",
+  "Achte Klasse, nämlich WaisenKlasse, §. 91-93.",
   "Neunte Klasse die ErparungsKlasse, §. 94-98.",
   "Zehnde Klasse, die BeerdigungsKlasse, §. 99-114.",
 ];
 
 let chapter = [
-  "#chap2",
   "#chap3",
   "#chap4",
   "#chap5",
@@ -46,6 +45,7 @@ let chapter = [
   "#chap9",
   "#chap10",
   "#chap11",
+  "#chap12",
 ];
 PrependBrBeforeChap(chapter);
 
