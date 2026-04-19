@@ -6,9 +6,9 @@ let inokulation1ContentDanish = [
   "Memoire nr. 3.",
   "Memoire nr. 4.",
   "Memoire nr. 5.",
-    "I. Vedrørende arkiverne",
+    "I. Vedrørende arkiverne.",
   "II. Om renteskrivernes korrespondance.",
-  "III. Om sekretæren",
+  "III. Om sekretæren.",
 ];
 let inokulation1ContentEnglish = [
   "Preliminary Report.",
@@ -18,9 +18,9 @@ let inokulation1ContentEnglish = [
   "Memoire No. 3.",
   "Memoire No. 4.",
   "Memoir No. 5",
-  "I. Concerning the Archives",
+  "I. Concerning the Archives.",
   "II. Regarding the correspondence of the Rente-Schreiber (Revenue Clerks).",
-  "III. Regarding the secretary",
+  "III. Regarding the secretary.",
 ];
 let inokulation1ContentGerman = [
   "Vorbericht.",
@@ -30,7 +30,7 @@ let inokulation1ContentGerman = [
   "Memoire Nro. 3.",
   "Memoire Nro. 4.",
   "Memoire Nro. 5.",
-  "I.Betreffend die Archive",
+  "I.Betreffend die Archive.",
   "II. Die Correspondenz der Rente-Schreiber betreffend.",
   "III. Wegen des Secretairs.",
 ];
