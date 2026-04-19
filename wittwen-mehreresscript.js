@@ -1,13 +1,13 @@
 let ContentDanish = [
-  "Den Bremiske Enkekasse",
-  "Den Kalenbergske Enkekasse",
-  "Den kongelige preussiske enkekasse",
+  "Den Bremiske Enkekasse.",
+  "Den Kalenbergske Enkekasse.",
+  "Den kongelige preussiske enkekasse.",
   "Tillæg til artiklen om enkerkasser i april måned i dette år i D. M.",
 ];
 let ContentEnglish = [
-  "The Bremen Widow’s Fund",
-  "The Calenberg Widow’s Fund",
-  "The Royal Prussian Widow's Fund",
+  "The Bremen Widow’s Fund.",
+  "The Calenberg Widow’s Fund.",
+  "The Royal Prussian Widow's Fund.",
   "Supplement to the article on widow’s funds from April of this year in D. M.",
 ];
 let ContentGerman = [
