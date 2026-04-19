@@ -7,7 +7,7 @@
       margin: 15px;
     }
     #myimage{
-        width: 90vw; 
+       height: 80vh; 
     }
     .sliderclass{
         accent-color: var(--navbarColorDark);
