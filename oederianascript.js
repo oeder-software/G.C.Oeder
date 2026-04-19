@@ -2,18 +2,18 @@ let bedenkenContentDanish = [
     "Forord",
   "G. C. v. Oeders første irettesættelse af en indtrængen prydet med noter af en veteran.",
   "Appel til det danske publikum af Herr Stiftsamtmand von Oeder i Oldenburg, med noter af en veteran.",
-  "Om en by, der skal etableres i Nordlanden Skrevet i juni 1763 og Med noter",
+  "Om en by, der skal etableres i Nordlanden Skrevet i juni 1763 og Med noter.",
   "Bemærkninger om tankerne vedrørende militærvæsenet i Danmark. Overgivet af forfatteren, som ikke var soldat, til en minister, der levede på det tidspunkt i året 1767.",
   "Memoire fra den preussiske minister til Kong Christian VII, overleveret i år 1766 eller 1767.",
 ];
 
 let bedenkenContentEnglish = [
     "Preface",
-  "G. C. v. Oeders erste Rüge einer Zudringlichkeit geziert mit Noten eines Veteranen.",
-  "Appell An das dänische Publicum von dem Herrn Stifts-Amtmann von Oeder in Oldenburg, mit Noten von einem Veteranen.",
-  "Von einer in den Nordlanden zu errichtenden Stadt. Geschrieben im Junio 1763.",
-  "Bemerkungen über die Gedanken von dem Militairwesen in Dännemark. übergeben on dem Verfasser der kein Soldat war, an einen damahls lebenden Minister in dem Jahr 1767.",
-  "Memoire des preußischen Ministers an den König Christian VIl, übergeben im Jahr 1766 oder 1767.",
+  "G. C. v. Oeder's first rebuke of an intrusion adorned with notes by a veteran.",
+  "Appeal to the Danish Public by Herr Stifts-Amtmann von Oeder in Oldenburg, with Notes by a Veteran.",
+  "On a City to be Established in the Northern Lands Written in June 1763.",
+  "Remarks on the Thoughts Regarding Military Affairs in Denmark. Submitted by the Author, who was not a Soldier, to a Minister Living at that Time in the Year 1767.",
+  "Memoir of the Prussian Minister to King Christian VII, submitted in the year 1766 or 1767.",
 ];
 let bedenkenContentGerman = [
     "Vorede",
@@ -25,17 +25,12 @@ let bedenkenContentGerman = [
 ];
 
 let chapter = ["#chap0","#chap7", "#chap49", "#chap87", "#chap139", "#chap225"];
-// let Chapter = ["chap7", "chap49", "chap89", "chap141", "chap225"];
-// PrependBrBeforeChap(chapter);
 
 var path = parent.location.pathname;
 path = path.split("/").pop();
 path = path.split(".").shift();
 var buttontext = [];
-// if (path == "oederianaen") {
-//   SetContent(contentenglish);
-//   SetAlifeContent(bedenkenContentChapter, bedenkenContentEnglish);
-// }
+
 if (path == "oederiana-de") {
     buttontext = [
       "Briefe zeigen",
@@ -43,25 +38,15 @@ if (path == "oederiana-de") {
       "Briefe verstecken",
       "Noten verstecken",
     ];
-
-//   document.getElementById("oederbut").innerText = "";
-  // document.getElementById("oletter").innerText = "breve";
-//   SetContent(contentgerman);
   SetContent(chapter, bedenkenContentGerman);
 }
 
 if (path == "oederiana-en") {
   buttontext = ["Show Letters", "Show Notes", "Hide Letters", "Hide Notes"];
-//   document.getElementById("oederbut").innerText = "";
-
-//   SetContent(contentenglish);
   SetContent(chapter, bedenkenContentEnglish);
 }
 if (path == "oederiana-dk") {
   buttontext = ["Vis breve", "Vis noter", "Skjul breve", "Skjul noter"];
-//   document.getElementById("oederbut").innerText = "";
-
-//   SetContent(contentdanish);
   SetContent(chapter, bedenkenContentDanish);
 }
 let img = "./img/covers/oederiana.png";
@@ -138,7 +123,6 @@ function oederiana(showItem) {
       toggle("letterIsChecked", oed);
     }
 
-    // page = document.getElementsByClassName("letter")
     toggle("notesIsChecked", cam);
   }
   function toggle(isChecked, showhide) {
@@ -147,7 +131,6 @@ function oederiana(showItem) {
       switch (eval(isChecked)) {
         case false:
           showhide[index].style = "display: block;";
-          // showhide[index].parentElement.style = "width: 50%;"
           showhide[index].parentElement.style = "display: inline;";
           break;
         case true:
@@ -161,12 +144,6 @@ function oederiana(showItem) {
       if (showhide == oed && eval(isChecked) && !x.matches) {
         cam[index].parentElement.style = "width: 80%";
       }
-      // if (showhide == oed && !eval(isChecked)  && !x.matches) {
-      //     oed[index].parentElement.style = "width: 80%"
-      // }
-      // if (showhide == cam && !eval(isChecked)  && !x.matches) {
-      //     cam[index].parentElement.style = "width: 80%"
-      // }
 
       if (showhide == oed && !eval(isChecked) && !x.matches) {
         cam[index].parentElement.style = "width: 50%";
@@ -203,15 +180,12 @@ path = path.split(".").shift();
 
 if (path == "oederiana-en") {
   infoTxt= "Translated from German."
-//   SetContent(chapter, ContentEnglish);
 }
 if (path == "oederiana-de") {
   infoTxt=" Deutsch Original."
-//   SetContent(chapter, ContentGerman);
 }
 if (path == "oederiana-dk") {
   infoTxt="Oversat fra tysk."
-//   SetContent(chapter, ContentDanish);
 }
 document.getElementById("info").innerHTML=infoTxt;
 SetFlora();
