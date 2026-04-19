@@ -1,21 +1,21 @@
 let ContentDanish = [
   "uddrag fra “Udsigt over Danmarks zoologiske literatur” 1873.",
   "Rectoris Magnifici Iustitsraad Anchersens Indberetning til Universitetets Patron Gehejmeraad Grev Holstein angaaende den Oederske Disputere-Act.",
-  "G. C. Oeders Brev til Greven af Holstein. København, den 17. Februar 1757",
+  "G. C. Oeders Brev til Greven af Holstein. København, den 17. Februar 1757.",
   "Exract af Facultatis Medicæ (Buchwalds og Lodberg Friis’s) Brev til Geheimsraad Holstein af 2 Marts 1752.",
   "Rotbøll Fris's Forklaring over Doctor Oeders Disputats.",
 ];
 let ContentEnglish = [
   "uddrag fra “Udsigt over Danmarks zoologiske literatur” 1873.",
   "Rectoris Magnifici Iustitsraad Anchersens Indberetning til Universitetets Patron Gehejmeraad Grev Holstein angaaende den Oederske Disputere-Act.",
-  "G. C. Oeders Brev til Greven af Holstein. København, den 17. Februar 1757",
+  "G. C. Oeders Brev til Greven af Holstein. København, den 17. Februar 1757.",
   "Exract af Facultatis Medicæ (Buchwalds og Lodberg Friis’s) Brev til Geheimsraad Holstein af 2 Marts 1752.",
   "Rotbøll Fris's Forklaring over Doctor Oeders Disputats.",
 ];
 let ContentGerman = [
   "uddrag fra “Udsigt over Danmarks zoologiske literatur” 1873.",
   "Rectoris Magnifici Iustitsraad Anchersens Indberetning til Universitetets Patron Gehejmeraad Grev Holstein angaaende den Oederske Disputere-Act.",
-  "G. C. Oeders Brev til Greven af Holstein. København, den 17. Februar 1757",
+  "G. C. Oeders Brev til Greven af Holstein. København, den 17. Februar 1757.",
   "Exract af Facultatis Medicæ (Buchwalds og Lodberg Friis’s) Brev til Geheimsraad Holstein af 2 Marts 1752.",
   "Rotbøll Fris's Forklaring over Doctor Oeders Disputats.",
 ];
@@ -56,7 +56,7 @@ if (path == "irrabilitate-lat") {
 }
 
 let img = "./img/covers/irrabilitate3.png";
-let link = "https://www.kb.dk/e-mat/dod/130020350971.pdf#page=345";
+let link = "https://www.google.dk/books/edition/Udsigt_over_Danmarks_zoologiske_literatu/Ck0-AAAAIAAJ?hl=da&gbpv=1&pg=PA315&printsec=frontcover";
 SetLinkAndImgToFrontpage(link, img);
 
 

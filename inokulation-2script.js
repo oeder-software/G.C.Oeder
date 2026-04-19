@@ -1,14 +1,14 @@
 let inokulation1ContentDanish = [
   "BemærkningeroverHistorien om Indpodningenpaa Aunøe.",
-  "Fortsættelse den 11. Oktober",
-  "Fortsættelse den 26. oktober",
-  "Fortsættelse den 9. november",
+  "Fortsættelse den 11. Oktober.",
+  "Fortsættelse den 26. oktober.",
+  "Fortsættelse den 9. november.",
 ];
 let inokulation1ContentEnglish = [
   "Remarkson the History of the Inoculationon Aunø.",
-  "Continuation, October 11",
-  "Continuation, October 26",
-  "Continuation, November 9",
+  "Continuation, October 11.",
+  "Continuation, October 26.",
+  "Continuation, November 9.",
 ];
 let inokulation1ContentGerman = [
   "Bemerkungen über die Geschichte der Einimpfung auf Aunøe.",

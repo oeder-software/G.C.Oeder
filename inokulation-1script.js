@@ -3,13 +3,13 @@ let inokulation1ContentDanish = [
   "Historie om Indpodningen i Aaret 1770 i Almindelighed.",
   "Almindelige Bemærkninger.",
   "Historie om indpodningen i vinteren 1772.",
-  "Beretning om indpodningen i sommeren 1772",
+  "Beretning om indpodningen i sommeren 1772.",
 ];
 let inokulation1ContentEnglish = [
   "Excerpt from Prof. Tode's History of the Inoculation of the Cattle Plague.",
   "History of the Inoculation in the Year 1770, in General.",
   "General Observations.",
-  "History of the Inoculation in Winter 1772",
+  "History of the Inoculation in Winter 1772.",
   "History of the Inoculation in the Summer of 1772",
 ];
 let inokulation1ContentGerman = [
