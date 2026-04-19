@@ -10,8 +10,8 @@ let letterBernContentDanish = [
 let letterBernContentEnglish = [
   "Frederiks Hospital, 23rd January 1767.",
   "Copenhagen, 19 July 1770.",
-  "Kiöng 17 August 1770",
-  "Copenhagen, 23 November 1770",
+  "Kiöng 17 August 1770.",
+  "Copenhagen, 23 November 1770.",
 ];
 let letterBernContentGerman = [
   "Frederiks Hosp. , 23. Januar 1767.",

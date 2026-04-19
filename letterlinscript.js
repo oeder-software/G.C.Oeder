@@ -27,6 +27,9 @@ document
 	);
 document.getElementById("img12href").setAttribute("target", "_blank");
 document.getElementById("img12href").style="cursor: pointer;"
+document.getElementById("img12").setAttribute("class", "asideLinkimgHover")
+
+
 document
 	.getElementById("img19href")
 	.setAttribute(
@@ -35,6 +38,7 @@ document
 	);
 document.getElementById("img19href").setAttribute("target", "_blank");
 document.getElementById("img19href").style="cursor: pointer;"
+document.getElementById("img19").setAttribute("class", "asideLinkimgHover")
 
 let letterBugAlt = [
 	"Albrecht von Haller",
@@ -69,37 +73,37 @@ let chapter = [
 	"#chap9",
 ];
 let letterBugContentDanish = [
-	"Den 8. apr. 1752",
-	"Den 20. jun. 1761",
-	"Den 9. sep. 1761",
-	"Den 21. sep. 1761",
-	"Den 8. dec. 1762",
-	"Den 3. jan. 1763",
-	"Den 18. apr. 1764",
-	"Den 13. apr. 1768",
-	"Den 24. feb. 1770",
+	"Den 8. apr. 1752.",
+	"Den 20. jun. 1761.",
+	"Den 9. sep. 1761.",
+	"Den 21. sep. 1761.",
+	"Den 8. dec. 1762.",
+	"Den 3. jan. 1763.",
+	"Den 18. apr. 1764.",
+	"Den 13. apr. 1768.",
+	"Den 24. feb. 1770.",
 ];
 let letterBugContentEnglish = [
-	" April 8 1752",
-	" June 20 1761",
-	" September 9 1761",
-	" September 21 1761",
-	" December 8 1762",
-	" January 3  1763",
-	" April 18  1764",
-	" April 13 1768",
-	" Febuary 24 1770",
+	" April 8 1752.",
+	" June 20 1761.",
+	" September 9 1761.",
+	" September 21 1761.",
+	" December 8 1762.",
+	" January 3  1763.",
+	" April 18  1764.",
+	" April 13 1768.",
+	" Febuary 24 1770.",
 ];
 let letterBugContentGerman = [
-	" 8. apr. 1752",
-	" 20. jun. 1761",
-	" 9. sep. 1761",
-	" 21. sep. 1761",
-	" 8. dec. 1762",
-	" 3. jan. 1763",
-	" 18. apr. 1764",
-	" 13. apr. 1768",
-	" 24. feb. 1770",
+	" 8. apr. 1752.",
+	" 20. jun. 1761.",
+	" 9. sep. 1761.",
+	" 21. sep. 1761.",
+	" 8. dec. 1762.",
+	" 3. jan. 1763.",
+	" 18. apr. 1764.",
+	" 13. apr. 1768.",
+	" 24. feb. 1770.",
 ];
 
 SetBioImage(letterBugImg, letterBugAlt);

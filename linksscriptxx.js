@@ -14,12 +14,7 @@ let referencesDe = [
   "J. Möser. <br> Patriotische Phantasien. <br><br>Siehe Osnabrückische und Oldenburgische Bevölkerung.",
   "Conferenceraad Fleischers Begierde an ein unparteiisches und dänisch denkendes Publikum.<br><br> Siehe Oederiana." 
   ,"P. A. Heiberg. Die Virtuosen, Komödie in einem Akt<br><br> Siehe Oederiana",
-  "Übersicht der zoologischen Literatur Dänemarks. <br><br> Siehe Oeders abhandlung De irritabilitate.",
-  "Die Monatsschrift „Kopenhagener Schilderungen“.<br><br> Siehe Oederiana.",
-  "Species Plantarum. <br>Carl von Linné. <br><br> Siehe Oeder's Briefe an Carl von Linné.",
-  "Systema Naturae. <br>Carl von Linné. <br><br> Siehe Oeder's Briefe an Carl von Linné.",
-  "WolksMenge von Ravensberg. <br><br> Siehe Erinnerung gegen oben XXXIII.",
-  "Über das Naturalienkabinett auf Charlottenborg und seine Verbindung mit der Universität. <br><br>Siehe Entwurf zu einer Vereinigung des Charlottenburgischen Naturaliencabinetts mit der Universität."
+  "Übersicht der zoologischen Literatur Dänemarks. <br><br> Siehe Oeders abhandlung De irritabilitate."
 ];
 let referencesDk = [
 	"J. A. Kritters. <br> Undersøgelse 1. <br><br> Se Erindringer vedr. Hr. Kritters afhandling.",
@@ -27,13 +22,7 @@ let referencesDk = [
   "J. Möser. <br> Patriotiske fantasier. <br><br> Se Osnabrücks og Oldenburgs befolkning. ",
   "Conferenceraad Fleischers Begiering til et upartisk og dansk tænkende publikum.<br><br> Se Oederiana.",
   "P. A. Heiberg. Virtuosen, Komedie i én Akt<br><br> Se Oederiana",
-  "Udsigt over Danmarks zoologiske literatur. <br><br> Se Oeder's afhandling De irritabilitate.",
-  "Maanedskriftet Kiøbenhavns skilderie.<br><br> Se Oederiana.",
-  "Species Plantarum. <br>Carl von Linné. <br><br> Se Oeder's Breve til Carl von Linné.",
-  "Systema Naturae. <br>Carl von Linné. <br><br> Se Oeder's Breve til Carl von Linné.",
-  "Folkemængde i Ravensberg. <br><br> Se Påmindelse til XXXIII ovenfor.",
-  "Om Natural-Kabuínettet påå Charlottenborg, og det Forbindelse med Universitetet.<br><br>Se Udkast til Foreening af det charlottenborgske Naturalcabinet med Universitetet."
-
+  "Udsigt over Danmarks zoologiske literatur. <br><br> Se Oeder's afhandling De irritabilitate."
 ];
 let referencesEn = [
 	"J. A. Kritters. <br> Investigation 1. <br><br> See Remembrances regarding Mr. Kritters’ essays.",
@@ -41,29 +30,18 @@ let referencesEn = [
   "J. Möser. <br> Patriotic Fantasies.<br><br> See Population of Osnabrück and Oldenburg.",
   "Conference Councillor Fleischer’s Desire to an Impartial and Danish-minded Public<br><br> See Oederiana.",
   "P. A. Heiberg. The Virtuosos, Comedy in One Act<br><br> See Oederiana",
-  "Survey of Denmark’s Zoological Literature. <br><br> See Oeder’s treatise De irritabilitate.",
-  "The Monthly Periodical “Sketches of Copenhagen”.<br><br> See Oederiana.",
-  "Species Plantarum. <br>Carl von Linné. <br><br> See Oeder's Letters to Carl von Linné.",
-  "Systema Naturae. <br>Carl von Linné. <br><br> See Oeder's Letters to Carl von Linné.",
-  "Multitude of people in Ravensberg. <br><br> SeeReminder towards XXXIII above.",
-  "On the Natural Cabinet at Charlottenborg, and its connection with the University.<br><br>See Draft for a Union of the Charlottenborg Natural Cabinet with the University."
+  "Survey of Denmark’s Zoological Literature. <br><br> See Oeder’s treatise De irritabilitate."
 ];
 
-let referencesFlag = ["de", "de", "de", "dk", "dk", "dk", "dk", "vatican", "vatican", "de", "dk"];
-let referencesImages = ["refkrit1", "refkrit2", "refosna", "refupartisk", "refvirtuose", "irrabilitate3","refmaaned", "lin-species", "lin-systema", "xxxiii-ref", "udkast-ref"];
+let referencesFlag = ["de", "de", "de", "dk", "dk", "dk"];
+let referencesImages = ["refkrit1", "refkrit2", "refosna", "refupartisk", "refvirtuose", "irrabilitate3",];
 let referencesHyperLinks = [
 	"https://www.google.dk/books/edition/_/6HRlAAAAcAAJ?hl=da&gbpv=1&pg=PA19&printsec=frontcover",
 	"https://www.google.dk/books/edition/_/6nRlAAAAcAAJ?hl=da&gbpv=1&dq=&pg=PA289&printsec=frontcover",
 "https://www.digitale-sammlungen.de/en/view/bsb10725570?page=257]",
 "https://www.google.dk/books/edition/_/VlFiAAAAcAAJ?hl=da&gbpv=1&dq=&pg=PA41&printsec=frontcover",
 "https://tekster.kb.dk/text/adl-texts-heibergpa01val-shoot-workid75010",
-"https://www.google.dk/books/edition/Udsigt_over_Danmarks_zoologiske_literatu/Ck0-AAAAIAAJ?hl=da&gbpv=1&pg=PA315&printsec=frontcover",
-"https://www.kb.dk/e-mat/dod/130018131448-color.pdf#page=4",
-"https://www.biodiversitylibrary.org/item/84235#page/5/mode/1up",
-"https://www.biodiversitylibrary.org/item/15373#page/2/mode/1up",
-"https://www.digitale-sammlungen.de/en/view/bsb11099100?q=&page=152,153",
-"https://tidsskrift.dk/kuaarbog/article/view/83487/119988&page=42"
-
+"https://www.google.dk/books/edition/Udsigt_over_Danmarks_zoologiske_literatu/Ck0-AAAAIAAJ?hl=da&gbpv=1&pg=PA315&printsec=frontcover"
 ]
 let lettersDe = [
 	"Von Charlotte Hedevig Ericius.",
@@ -146,7 +124,6 @@ let manuDe = [
 	"Einleitung zu der Kräuterkenntniß.Erster Theil.",
 	"Einleitung zu der Kräuterkenntniß. Zweyter Theil, Mit Kupfern.",
 	" Nachricht von einem Werke, welches auf Königlichen Befehl herausgegeben werden soll, FLORA DANICA genannt, nebst einer Probe-Tafel der Moltebeeren-Pflanze (Rubus Chamæmorus.)",
-    " Nachricht von einem Werke, welches auf Königlichen Befehl herausgegeben werden soll, FLORA DANICA genannt, nebst einer Probe-Tafel der Moltebeeren-Pflanze (Rubus Chamæmorus.)",
 	"Inaugural-Dissertation über die Ableitung und den Rückfluss durch den Aderlass.",
 	"Antwort auf die Rezension, eingedruckt in der Allgemeinen Dänischen Literatur-Zeitschrift vierter Band, zweites Stück des Jahres 1784, über die Kupferstiche zur Flora Danica 15. Heft, von Seite 281–296. Kopenhagen.Gedruckt bei Christian Friderik Holm,1786.",
 	"Rüge einer Zudringlichkeit. Sehen Sie Oederiana.",
@@ -164,7 +141,6 @@ let manuDk = [
 	"Indledning til Plante-Læren, Del 1.",
 	"Indledning til Plante-Læren, Del 2. Med kobberstik.",
 	" Efterretning om et Verk, som paa Kongelig Befaling skal udgives, FLORA DANICA kaldet, tilligemed en Prøve- Plade af Multebaærs Planten (Rubus Chamæmorus.)",
-    " Efterretning om et Verk, som paa Kongelig Befaling skal udgives, FLORA DANICA kaldet, tilligemed en Prøve- Plade af Multebaærs Planten (Rubus Chamæmorus.)",
 	"Inauguralafhandling om afledning og tilbagestrømning ved åreåbning.",
 	"Svar paa Recensionen , indrykket i den almindelige danske Litteratur-Journal fierde Bind andet Stykke for Aar 1784, over Kobberstykker til Flora Danica 15de Hefte a Pag. 281-296 .",
 	"Irettesættelse af en indtrængen. Se Oederiana.",
@@ -183,7 +159,6 @@ let manuEn = [
 	"Introduction to the Knowledge of Herbs. Part 1.",
 	"Introduction to the Knowledge of Herbs. Part 2. With Copper Engravings.",
 	"An Account of a Work, which by Royal Command is to be published, entituled FLORA DANICA, together with a Specimen Plate of the Cloudberry Plant (Rubus Chamæmorus.)",
-    "An Account of a Work, which by Royal Command is to be published, entituled FLORA DANICA, together with a Specimen Plate of the Cloudberry Plant (Rubus Chamæmorus.)",
 	"Inaugural Dissertation on Derivation and Reflux by Means of Venesection.",
 	"Reply to the review, inserted in the General Danish Literary Journal fourth volume, second issue for the year 1784, concerning the copper engravings for Flora Danica 15th fascicle, from page 281–296. Copenhagen.",
 	"rebuke of an intrusion. See Oederiana.",
@@ -201,7 +176,6 @@ let manuFlag = [
 	"dk",
 	"de",
 	"dk",
-    "de",
 	"vatican",
 	"dk",
 	"de",
@@ -219,7 +193,6 @@ let manuImages = [
 	"krauter-1-dk",
 	"krauter2",
 	"efterretning",
-    "efterretning",
 	"Dissertation",
 	"svar",
 	"ruge",
@@ -237,7 +210,6 @@ let manuHyperLinks = [
 	"https://www.kb.dk/e-mat/dod/130020872900.pdf",
 	"https://www.google.dk/books/edition/Einleitung_zu_der_Kr%C3%A4uterkenntni%C3%9F/QfxbAAAAcAAJ?hl=da&gbpv=1",
 	"https://www.kb.dk/e-mat/dod/130021446964-color.pdf#page=4",
-    "https://www.kb.dk/e-mat/dod/130023297303-color.pdf#page=4",
 	"https://www.google.dk/books/edition/De_derivatione_et_reculsione_per_venae_s/rm9QAAAAcAAJ?gbpv=1",
 	"https://www.google.dk/books/edition/Svar_paa_Recensionen_i_den_almindelige_d/PF1bQKh_-I0C?hl=da&gbpv=1",
 	"https://dibiki.ub.uni-kiel.de/viewer/fullscreen/PPN100615888X/5/",
@@ -282,9 +254,6 @@ let artDe = [
 	"BERICHT VON MEINER AUSLANDISCHEN REISE IM JAHR 1754-55. ALLERUNTERTHANIGST ABGELEGT, UND VON SCHLESWIG EINGESANDT, DEN 2 APRIL 1755.",
 	"Erinnerungen, veranlast durch Hrn. Kritters Aufsätze im Göttingischen Magazin. 3ten Jahrgangs 1sten Stüks S. 19 und 2ten Stücks S. 289. 2c.",
 	"Verordnung wegen Erweiterung der Wittwen- und WaisenCasse auf LeibRenten.",
-	"Zusatz zu, Von einer in den Nordlanden zu errichtenden Stadt",
-	"Erinnerung gegen oben XXXIII.",
-	"Entwurf zu einer Vereinigung des Charlottenburgischen Naturaliencabinetts mit der Universität."
 ];
 let artDk = [
 	"Om Banco, Courant og Mønt.",
@@ -318,9 +287,6 @@ let artDk = [
 	"Beretning om min udenlandske rejse i året 1754-55. Allerydmygst indsendt og afsendt fra Slesvig, den 2. april 1755.",
 	"Erindringer, foranledigede ved Hr. Kritters Afhandlinger i det Göttingiske Magazin, 3die Aargangs 1ste Stykke S. 19 og 2det Stykke S. 289. 2c.",
 	"Forordning angående Udvidelsen af Enke- og Barnekassen til Livrenter.",
-	"Tillæg til, Om en by, der skal etableres i Nordlanden",
-	"Påmindelse til XXXIII ovenfor.",
-	"Udkast til en Foreening af det charlottenborgske Naturalcabinet med Universitetet."
 ];
 let artEn = [
 	"On Banco, Courant, and Coinage.",
@@ -354,9 +320,6 @@ let artEn = [
 	"Report of My Foreign Journey in the Year 1754-55. Most Humble Submission, and Sent from Schleswig, on the 2nd of April 1755.",
 	"Remembrances, occasioned by Mr. Kritter’s essays in the Göttingen Magazine, 3rd year, 1st piece p. 19, and 2nd piece p. 289. 2c.",
 	"Ordinance concerning the Extension of the Widows’ and Orphans’ Fund to Life Annuities.",
-	"Supplement to, On a City to be Established in the Northern Lands",
-	"Reminder towards XXXIII above.",
-	"Draft for a Union of the Charlottenborg Natural Cabinet with the University."
 ];
 
 let artFlag = [
@@ -391,9 +354,6 @@ let artFlag = [
 	"de",
 	"de",
 	"de",
-	"de",
-	"de",
-	"dk",
 ];
 let artHyperLinks = [
 	"https://www.digitale-sammlungen.de/en/view/bsb10725586?page=327",
@@ -427,9 +387,6 @@ let artHyperLinks = [
 	"https://archive.org/details/centaurus_1950-1951_1/page/242/mode/2up",
 	"https://www.google.dk/books/edition/G%C3%B6ttingisches_Magazin_der_Wissenschafte/8HRlAAAAcAAJ?hl=da&gbpv=1&dq=%22g%C3%B6ttingischen+magazin%22&pg=PA483&printsec=frontcover",
 	"https://www.digitale-sammlungen.de/en/view/bsb10616669?q=oeder&page=44",
-	"https://gdz.sub.uni-goettingen.de/id/PPN720564182?tify=%7B%22pages%22%3A%5B73%5D%2C%22pan%22%3A%7B%22x%22%3A0.464%2C%22y%22%3A0.96%7D%2C%22view%22%3A%22toc%22%2C%22zoom%22%3A0.638%7D",
-	"https://www.digitale-sammlungen.de/en/view/bsb11099101?q=oeder&page=386",
-	"https://tidsskrift.dk/kuaarbog/article/view/83488/119990"
 ];
 let artImages = [
 	"stats-47-munzen",
@@ -459,13 +416,11 @@ let artImages = [
 	"landes-vermessung3",
 	"landes-vermessung4",
 	"landes-vermessung2",
+
 	"witwencasse-etwas",
 	"botanical",
 	"kritters",
 	"stats-5-hamburg",
-	"nordland",
-	"xxxiii",
-	"udkast"
 ];
 var path = parent.location.pathname;
 path = path.split("/").pop();

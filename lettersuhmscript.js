@@ -6,8 +6,8 @@ document.getElementById("sidebarcontent").style = "cursor: pointer;";
 
 let chapter = ["#chap1", "#chap2", "#chap3", "#chap4", "#chap5"];
 let letterContentDanish = [
-  "Kbhvn d. 2 Jan. 1762. Oeder.",
-  "Kbhvn d. 7 Aug. 1762. Oeder",
+  "Kbhvn d. 7 Aug. 1762.",
+  "Kbhvn d. 2 Jan. 1762.",
   "Kbhvn d. 26 Nov. 1763.",
   "Bilag til brev af 26 Nov.",
   "Den 17 April 1772. Oeder.",

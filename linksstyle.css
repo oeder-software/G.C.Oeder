@@ -37,6 +37,8 @@
             text-align: left;
             overflow: hidden;
             background-color: var(--background-color);
+                        transition: 1s;
+
         }
 
         .card:hover,
@@ -63,6 +65,7 @@
             margin-right: auto;
             opacity: 10%;
             z-index: 0;
+            transition: 1s;
 
 
         }
@@ -79,6 +82,7 @@
         }
 
         .cat {
+            writing-mode: vertical-lr;
             writing-mode: sideways-rl;
             text-orientation: upright;
             margin: auto;
@@ -96,6 +100,8 @@
             color: black;
             z-index: 1;
             font-size: 14px;
+            opacity: 100%;
+            transition: 2s;
         }
 
         h3 {
@@ -168,7 +174,7 @@
 
             }
 .cat{
-    font-size: 28px;
+    font-size: 20px;
 }
             .card,
             .card-cat {

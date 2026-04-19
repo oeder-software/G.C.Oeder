@@ -3,28 +3,28 @@
 document.getElementById("sidebarcontent").style = "cursor: pointer;";
 let chapter = ["#chap1", "#chap2", "#chap3", "#chap4", "#chap5", "#chap6"];
 let letterCheContentDanish = [
-  "Den 20 maj 1755",
-  "Den 21 maj 1755",
-  "Den 22 maj 1755",
-  "Den 25 maj 1755",
-  "Den 27 maj 1755",
-  "Den 21 juni 1755",
+  "Den 20 maj 1755.",
+  "Den 21 maj 1755.",
+  "Den 22 maj 1755.",
+  "Den 25 maj 1755.",
+  "Den 27 maj 1755.",
+  "Den 21 juni 1755.",
 ];
 let letterCheContentEnglish = [
-  "May 20 1755",
-  "May 21 1755",
-  "May 22 1755",
-  "May 25 1755",
-  "May 27 1755",
-  "June 21 1755",
+  "May 20 1755.",
+  "May 21 1755.",
+  "May 22 1755.",
+  "May 25 1755.",
+  "May 27 1755.",
+  "June 21 1755.",
 ];
 let letterCheContentGerman = [
-  "Mai 20 1755",
-  "Mai 21 1755",
-  "Mai 22 1755",
-  "Mai 25 1755",
-  "Mai 27 1755",
-  "Juni 21 1755",
+  "Mai 20 1755.",
+  "Mai 21 1755.",
+  "Mai 22 1755.",
+  "Mai 25 1755.",
+  "Mai 27 1755.",
+  "Juni 21 1755.",
 ];
 PrependBrBeforeChap(chapter);
 
