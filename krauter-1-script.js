@@ -1,18 +1,11 @@
 let ContentDanish = [
     "Første afsnit. Naturen af videnskaben,§ 1-15.",
-
     "Andet afsnit. Generelle betragtninger over planteriget,§ 16-28.",
-
     "Tredje afsnit. Mere detaljeret undersøgelse af planternes dele og de forhold, under hvilke de vokser.Terminologi.§ 29-96.",
-
     "Fjerde afsnit. Nærmere undersøgelse af de botaniske karakterer.§ 97-107.",
-
     "Femte afsnit. Begreber om art og samling af arter,§ 108-116.",
-
     "Sjette afsnit. Om metoder generelt,§ 117-126.",
-
     "Syvende afsnit. Om metoder ved opdeling og metoder ved sammenføjning i særdeleshed.§ 127-136.",
-
     "Ottende afsnit. Egenskaber ved en brugbar fortegnelse over urter;Nomenklatur og øvrige hjælpemidler til kendskab om urter.§ 137-144.",
 ];
 let ContentEnglish = [
@@ -28,10 +21,10 @@ let ContentEnglish = [
 let ContentGerman = [
     "Erster Abschnit. Wesen der Wissenschaft, § . 1-15.",
     "Zweyter “ Allgemeine Betrachtungen des Pflanzenreiches §. 16-28.",
-    "Dritter “ Umständlichere Betrachtung der Theile der Gewächse und der Umstände unter denen Sie wachsen. Terminologie. §. 29-96 .",
+    "Dritter “ Umständlichere Betrachtung der Theile der Gewächse und der Umstände unter denen Sie wachsen. Terminologie. §. 29-96.",
     "Vierter “ Nähere Betrachtung der botanisschen Charactere. §. 97-107.",
-    "Fünfter “ Begriffe von Art und Sammlung von Arten. §. 108-116 .",
-    " Sechster. “ Von Methoden überhaupt , §. 117-126 ,",
+    "Fünfter “ Begriffe von Art und Sammlung von Arten. §. 108-116.",
+    " Sechster. “ Von Methoden überhaupt , §. 117-126.",
     "Siebender Abschnitt. Von den Methoden durch Abtheilung und von den Methoden durch Zusammenfügung insbesondre. §. 127-136.",
     " Achter “ Eigenschaften eines brauchbaren Verzeichnisses von Kräutern; Nomenclatur ; und übrige Hülfsmittel zur Kenntniß der Kräuter. §. 137-144.",
 ];
