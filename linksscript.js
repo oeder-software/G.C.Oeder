@@ -19,7 +19,8 @@ let referencesDe = [
   "Species Plantarum. <br>Carl von Linné. <br><br> Siehe Oeder's Briefe an Carl von Linné.",
   "Systema Naturae. <br>Carl von Linné. <br><br> Siehe Oeder's Briefe an Carl von Linné.",
   "WolksMenge von Ravensberg. <br><br> Siehe Erinnerung gegen oben XXXIII.",
-  "Über das Naturalienkabinett auf Charlottenborg und seine Verbindung mit der Universität. <br><br>Siehe Entwurf zu einer Vereinigung des Charlottenburgischen Naturaliencabinetts mit der Universität."
+  "Über das Naturalienkabinett auf Charlottenborg und seine Verbindung mit der Universität. <br><br>Siehe Entwurf zu einer Vereinigung des Charlottenburgischen Naturaliencabinetts mit der Universität.",
+  "Anordnung der in der Kays. freyen Reichs-Stadt Hamburg errichteten allgemeinen Versorgungs-Anstalt. <br><br> Siehe Hamburg Versorgungsanstalt"
 ];
 let referencesDk = [
 	"J. A. Kritters. <br> Undersøgelse 1. <br><br> Se Erindringer vedr. Hr. Kritters afhandling.",
@@ -32,7 +33,8 @@ let referencesDk = [
   "Species Plantarum. <br>Carl von Linné. <br><br> Se Oeder's Breve til Carl von Linné.",
   "Systema Naturae. <br>Carl von Linné. <br><br> Se Oeder's Breve til Carl von Linné.",
   "Folkemængde i Ravensberg. <br><br> Se Påmindelse til XXXIII ovenfor.",
-  "Om Natural-Kabuínettet påå Charlottenborg, og det Forbindelse med Universitetet.<br><br>Se Udkast til Foreening af det charlottenborgske Naturalcabinet med Universitetet."
+  "Om Natural-Kabuínettet påå Charlottenborg, og det Forbindelse med Universitetet.<br><br>Se Udkast til Foreening af det charlottenborgske Naturalcabinet med Universitetet.",
+  "Forordning for den i den kejserlige frie rigsby Hamburg oprettede almindelige forsørgelsesanstalt.<br><br> Se Hamburg Forsørgelsesanstalt"
 
 ];
 let referencesEn = [
@@ -46,11 +48,12 @@ let referencesEn = [
   "Species Plantarum. <br>Carl von Linné. <br><br> See Oeder's Letters to Carl von Linné.",
   "Systema Naturae. <br>Carl von Linné. <br><br> See Oeder's Letters to Carl von Linné.",
   "Multitude of people in Ravensberg. <br><br> SeeReminder towards XXXIII above.",
-  "On the Natural Cabinet at Charlottenborg, and its connection with the University.<br><br>See Draft for a Union of the Charlottenborg Natural Cabinet with the University."
+  "On the Natural Cabinet at Charlottenborg, and its connection with the University.<br><br>See Draft for a Union of the Charlottenborg Natural Cabinet with the University.",
+  "Ordinance of the General Relief Institution Established in the Imperial Free City of Hamburg.<br><br> See Hamburg Relief Institution"
 ];
 
-let referencesFlag = ["de", "de", "de", "dk", "dk", "dk", "dk", "vatican", "vatican", "de", "dk"];
-let referencesImages = ["refkrit1", "refkrit2", "refosna", "refupartisk", "refvirtuose", "irrabilitate3","refmaaned", "lin-species", "lin-systema", "xxxiii-ref", "udkast-ref"];
+let referencesFlag = ["de", "de", "de", "dk", "dk", "dk", "dk", "vatican", "vatican", "de", "dk","de"];
+let referencesImages = ["refkrit1", "refkrit2", "refosna", "refupartisk", "refvirtuose", "irrabilitate3","refmaaned", "lin-species", "lin-systema", "xxxiii-ref", "udkast-ref", "refhamburg"];
 let referencesHyperLinks = [
 	"https://www.google.dk/books/edition/_/6HRlAAAAcAAJ?hl=da&gbpv=1&pg=PA19&printsec=frontcover",
 	"https://www.google.dk/books/edition/_/6nRlAAAAcAAJ?hl=da&gbpv=1&dq=&pg=PA289&printsec=frontcover",
@@ -62,7 +65,8 @@ let referencesHyperLinks = [
 "https://www.biodiversitylibrary.org/item/84235#page/5/mode/1up",
 "https://www.biodiversitylibrary.org/item/15373#page/2/mode/1up",
 "https://www.digitale-sammlungen.de/en/view/bsb11099100?q=&page=152,153",
-"https://tidsskrift.dk/kuaarbog/article/view/83487/119988&page=42"
+"https://tidsskrift.dk/kuaarbog/article/view/83487/119988&page=42",
+"https://digital.slub-dresden.de/werkansicht/dlf/1041/3?tx_dlf_navigation%5Bcontroller%5D=Navigation&cHash=2b7eef6229ba85ff2b6ec7ffb9f4c277"
 
 ]
 let lettersDe = [
