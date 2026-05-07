@@ -275,8 +275,9 @@ function remmagnify() {
         }
 }
 function CloseKrautImg() {
-    location.reload();
+    location.replace("https://oeder-software.github.io/G.C.Oeder/krauter-2-en.html#chapimg");
 }
+
 function magnify(imgID, zoom, formvalue, seizevalue) {
     var img, glass, w, h, bw;
     img = document.getElementById(imgID);
