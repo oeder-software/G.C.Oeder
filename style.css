@@ -450,7 +450,7 @@ flex-direction: row;} */
 
 	article {
 		padding-left: 15px !important;
-		padding-right: 15px;
+		padding-right: 15px !important;
 	}
 
 	header {
