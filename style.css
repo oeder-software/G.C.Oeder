@@ -525,3 +525,6 @@ abbr:hover::after {
 	color: var(--navbarColorDark);
 	font-style: italic;
 }
+a#home, a#links, a#soft {
+	height: 29px;
+}
