@@ -21,6 +21,8 @@ let referencesDe = [
   "WolksMenge von Ravensberg. <br><br> Siehe Erinnerung gegen oben XXXIII.",
   "Über das Naturalienkabinett auf Charlottenborg und seine Verbindung mit der Universität. <br><br>Siehe Entwurf zu einer Vereinigung des Charlottenburgischen Naturaliencabinetts mit der Universität.",
   "Anordnung der in der Kays. freyen Reichs-Stadt Hamburg errichteten allgemeinen Versorgungs-Anstalt. <br><br> Siehe Hamburg Versorgungsanstalt"
+,"Miscellanien, statistisen und historiscen Inhalts, von Christian Wilhelm Dohm. <br><br> Siehe Osnabrückische und Oldenburgische Bevölkerung.",
+"Ole Rostocks Kartothek mit Wappen. <br><br> Siehe Stammbaum"
 ];
 let referencesDk = [
 	"J. A. Kritters. <br> Undersøgelse 1. <br><br> Se Erindringer vedr. Hr. Kritters afhandling.",
@@ -35,7 +37,8 @@ let referencesDk = [
   "Folkemængde i Ravensberg. <br><br> Se Påmindelse til XXXIII ovenfor.",
   "Om Natural-Kabuínettet påå Charlottenborg, og det Forbindelse med Universitetet.<br><br>Se Udkast til Foreening af det charlottenborgske Naturalcabinet med Universitetet.",
   "Forordning for den i den kejserlige frie rigsby Hamburg oprettede almindelige forsørgelsesanstalt.<br><br> Se Hamburg Forsørgelsesanstalt"
-
+,"Miscellanea, af statistisk og historisk indhold, af Christian Wilhelm Dohm. <br><br> Se Osnabrücks og Oldenburgs befolkning.",
+"Ole Rostocks kartotek med slægtsvåben. <br><br> Se stamtræ"
 ];
 let referencesEn = [
 	"J. A. Kritters. <br> Investigation 1. <br><br> See Remembrances regarding Mr. Kritters’ essays.",
@@ -50,10 +53,12 @@ let referencesEn = [
   "Multitude of people in Ravensberg. <br><br> SeeReminder towards XXXIII above.",
   "On the Natural Cabinet at Charlottenborg, and its connection with the University.<br><br>See Draft for a Union of the Charlottenborg Natural Cabinet with the University.",
   "Ordinance of the General Relief Institution Established in the Imperial Free City of Hamburg.<br><br> See Hamburg Relief Institution"
+,"Miscellanies, of statistical and historical content, by Christian Wilhelm Dohm. <br><br> See Population of Osnabrück and Oldenburg.",
+"Ole Rostock’s Card Index with Coats of Arms. <br><br> See Family Tree"
 ];
 
-let referencesFlag = ["de", "de", "de", "dk", "dk", "dk", "dk", "vatican", "vatican", "de", "dk","de"];
-let referencesImages = ["refkrit1", "refkrit2", "refosna", "refupartisk", "refvirtuose", "irrabilitate3","refmaaned", "lin-species", "lin-systema", "xxxiii-ref", "udkast-ref", "refhamburg"];
+let referencesFlag = ["de", "de", "de", "dk", "dk", "dk", "dk", "vatican", "vatican", "de", "dk","de", "de", "dk"];
+let referencesImages = ["refkrit1", "refkrit2", "refosna", "refupartisk", "refvirtuose", "irrabilitate3","refmaaned", "lin-species", "lin-systema", "xxxiii-ref", "udkast-ref", "refhamburg", "refosna2", "vaaben3"];
 let referencesHyperLinks = [
 	"https://www.google.dk/books/edition/_/6HRlAAAAcAAJ?hl=da&gbpv=1&pg=PA19&printsec=frontcover",
 	"https://www.google.dk/books/edition/_/6nRlAAAAcAAJ?hl=da&gbpv=1&dq=&pg=PA289&printsec=frontcover",
@@ -67,7 +72,8 @@ let referencesHyperLinks = [
 "https://www.digitale-sammlungen.de/en/view/bsb11099100?q=&page=152,153",
 "https://tidsskrift.dk/kuaarbog/article/view/83487/119988&page=42",
 "https://digital.slub-dresden.de/werkansicht/dlf/1041/3?tx_dlf_navigation%5Bcontroller%5D=Navigation&cHash=2b7eef6229ba85ff2b6ec7ffb9f4c277"
-
+,"https://www.digitale-sammlungen.de/en/view/bsb10614670?q=%28Deutsches+Museum.+1776%29&page=328",
+"https://heraldikonline.dk/RostockKort/18.%20Firedelt%20med%20centerfelt/18%20Firedelt%20med%20centerfelt%2C%20symmetrisk-0089.jpg"
 ]
 let lettersDe = [
 	"Von Charlotte Hedevig Ericius.",
